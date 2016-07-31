@@ -9,6 +9,8 @@ This repository should be cloned in the home folder of the current user.
 - [External dependencies](#external-dependencies)
   - [Windows HOME variable](#windows-home-variable)
   - [Git](#git)
+- [Packages](#packages)
+  - [Package management](#package-management)
 
 ## External dependencies
 
@@ -19,3 +21,11 @@ An environment variable named HOME is required on a Windows OS to allow Emacs to
 ### Git
 
 [Git](https://git-scm.com/) is required by [magit](https://github.com/magit/magit).
+
+## Packages
+
+The packages used by this Emacs configuration are grouped in categories. The package management is defined in init.el. For the other categories, a file suffixed with -settings.el is available in /settings.
+
+### Package management
+
+- [use-package](https://github.com/jwiegley/use-package) : Package installation and configuration.
