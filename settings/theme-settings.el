@@ -6,4 +6,7 @@
 ;; Disable blinking cursor
 (blink-cursor-mode -1)
 
+;; Highlight matching parenthesis
+(show-paren-mode 1)
+
 (provide 'theme-settings)
