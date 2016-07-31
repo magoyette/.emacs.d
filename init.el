@@ -55,4 +55,5 @@
 (require 'windows-settings)
 (require 'helm-settings)
 (require 'git-settings)
+(require 'markdown-settings)
 (require 'theme-settings)
