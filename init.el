@@ -51,4 +51,5 @@
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
 
+(require 'helm-settings)
 (require 'git-settings)
