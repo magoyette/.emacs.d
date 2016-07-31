@@ -45,3 +45,10 @@
   (package-install 'use-package))
 
 (require 'use-package)
+
+
+;;;;; Load settings files
+
+(add-to-list 'load-path "~/.emacs.d/settings/")
+
+(require 'git-settings)
