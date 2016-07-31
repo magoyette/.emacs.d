@@ -12,4 +12,7 @@
 ;; Display column number in mode line
 (setq column-number-mode t)
 
+(use-package rainbow-delimiters
+  :ensure t)
+
 (provide 'theme-settings)
