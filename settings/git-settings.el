@@ -8,6 +8,10 @@
   :ensure t
   :mode (("\\.gitconfig$" . gitconfig-mode)))
 
+(use-package gitignore-mode
+  :ensure t
+  :mode (("\\.gitignore$" . gitignore-mode)))
+
 (use-package magit
   :ensure t
   :bind (("C-x g" . magit-status)
