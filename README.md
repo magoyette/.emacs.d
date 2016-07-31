@@ -11,8 +11,10 @@ This repository should be cloned in the home folder of the current user.
   - [Git](#git)
 - [Packages](#packages)
   - [Package management](#package-management)
+  - [Helm packages](#helm-packages)
   - [Git packages](#git-packages)
 - [Essential keybindings](#essential-keybindings)
+  - [Helm keybindings](#helm-keybindings)
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
 
@@ -34,6 +36,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
 
+### Helm packages
+
+- [helm](https://github.com/emacs-helm/helm) : Incremental completion and selection framework.
+
 ### Git packages
 
 - [diff-hl](https://github.com/dgutov/diff-hl): Highlight uncommited changes.
@@ -43,7 +49,17 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 ## Essential keybindings
 
-#### Magit keybindings
+### Helm keybindings
+
+- C-x C-b : Helm mini
+- C-x b : Helm buffers list
+- C-x C-f : Helm find files
+- C-x C-r : Helm recent files
+- M-x : Helm execute command
+- M-s d : Helm search inside a directory with the platinum searcher
+- M-s p : Helm search inside project root with the platinum searcher
+
+### Magit keybindings
 
 - C-x g : Magit status
 - C-x G : Magit blame
