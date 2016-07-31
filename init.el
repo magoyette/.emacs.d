@@ -54,3 +54,4 @@
 (require 'edition-settings)
 (require 'helm-settings)
 (require 'git-settings)
+(require 'theme-settings)
