@@ -25,4 +25,8 @@
   :config
   (global-diff-hl-mode))
 
+(use-package git-timemachine
+  :ensure t
+  :bind (("C-x t" . git-timemachine)))
+
 (provide 'git-settings)
