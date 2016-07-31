@@ -20,4 +20,9 @@
   (if (eq system-type 'windows-nt)
       (setenv "GIT_ASKPASS" "git-gui--askpass")))
 
+(use-package diff-hl
+  :ensure t
+  :config
+  (global-diff-hl-mode))
+
 (provide 'git-settings)
