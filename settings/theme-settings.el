@@ -22,4 +22,9 @@
 (use-package rainbow-delimiters
   :ensure t)
 
+(use-package zenburn-theme
+ :ensure t
+ :config
+ (load-theme 'zenburn t))
+
 (provide 'theme-settings)
