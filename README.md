@@ -11,6 +11,7 @@ This repository should be cloned in the home folder of the current user.
   - [Git](#git)
 - [Packages](#packages)
   - [Package management](#package-management)
+  - [Git packages](#git-packages)
 
 ## External dependencies
 
@@ -28,4 +29,11 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 ### Package management
 
-- [use-package](https://github.com/jwiegley/use-package) : Package installation and configuration.
+- [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
+
+### Git packages
+
+- [diff-hl](https://github.com/dgutov/diff-hl): Highlight uncommited changes.
+- [git-modes](https://github.com/magit/git-modes): Modes for gitconfig, gitattributes and gitignore files.
+- [git-timemachine](https://github.com/pidu/git-timemachine): Package to navigate through the versions of a file tracked with Git.
+- [magit](https://github.com/magit/magit): Git porcelain for Emacs.
