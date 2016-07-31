@@ -9,4 +9,7 @@
 ;; Highlight matching parenthesis
 (show-paren-mode 1)
 
+;; Display column number in mode line
+(setq column-number-mode t)
+
 (provide 'theme-settings)
