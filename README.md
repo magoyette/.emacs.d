@@ -12,6 +12,9 @@ This repository should be cloned in the home folder of the current user.
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Git packages](#git-packages)
+- [Essential keybindings](#essential-keybindings)
+  - [Magit keybindings](#magit-keybindings)
+  - [Git timemachine keybindings](#git-timemachine-keybindings)
 
 ## External dependencies
 
@@ -37,3 +40,31 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [git-modes](https://github.com/magit/git-modes): Modes for gitconfig, gitattributes and gitignore files.
 - [git-timemachine](https://github.com/pidu/git-timemachine): Package to navigate through the versions of a file tracked with Git.
 - [magit](https://github.com/magit/magit): Git porcelain for Emacs.
+
+## Essential keybindings
+
+#### Magit keybindings
+
+- C-x g : Magit status
+- C-x G : Magit blame
+  - RET : Show commit at point
+  - SPC : Update commit buffer with the thing at point or scroll buffer up
+  - DEL : Update commit buffer with the thing at point or scroll buffer down
+  - n : move to next blame chunk
+  - N : move to next blame chunk from same commit
+  - p : move to previous blame chunk
+  - P : move to previous blame chunk from same commit
+  - M-w : copy hash of the commit from the current chunk
+  - q : exit Magit blame
+- In Magit commit buffer
+  - C-c C-c : Finish commit
+  - C-c C-k : Cancel commit
+
+### Git timemachine keybindings
+
+- C-x t : Git timemachine
+  - p : previous version
+  - n : next version
+  - w : copy abbreviated hash of current version
+  - q : exit Git timemachine
+
