@@ -22,6 +22,15 @@
 (use-package rainbow-delimiters
   :ensure t)
 
+(use-package spaceline
+  :ensure t
+  :init
+  (require 'spaceline-config)
+  (setq powerline-default-separator 'wave)
+  :config
+  (spaceline-emacs-theme)
+  (spaceline-helm-mode))
+
 (use-package zenburn-theme
  :ensure t
  :config
