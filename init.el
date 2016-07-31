@@ -20,3 +20,7 @@
 ;; Disable scroll bar
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
+
+;; Disable welcome screen and welcome message
+(setq inhibit-startup-message t
+      inhibit-startup-echo-area-message t)
