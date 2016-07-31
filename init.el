@@ -16,3 +16,7 @@
 ;; Disable menu bar
 (when (fboundp 'menu-bar-mode)
   (menu-bar-mode -1))
+
+;; Disable scroll bar
+(when (fboundp 'scroll-bar-mode)
+  (scroll-bar-mode -1))
