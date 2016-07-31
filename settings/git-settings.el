@@ -1,5 +1,9 @@
 (require 'use-package)
 
+(use-package gitattributes-mode
+  :ensure t
+  :mode (("\\.gitattributes$" . gitattributes-mode)))
+
 (use-package magit
   :ensure t
   :bind (("C-x g" . magit-status)
