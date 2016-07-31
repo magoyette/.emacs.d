@@ -27,3 +27,21 @@
 
 ;; Disable initial scratch message
 (setq initial-scratch-message nil)
+
+
+;;;;; Packages management
+
+;; Configure Melpa
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
+
+;; Necessary for the installation of use-package
+(unless package-archive-contents
+  (package-refresh-contents))
+
+(unless (package-installed-p 'use-package)
+  (package-install 'use-package))
+
+(require 'use-package)
