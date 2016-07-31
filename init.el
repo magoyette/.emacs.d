@@ -5,3 +5,10 @@
 
 ;; Prefer newest Emacs Lisp byte code
 (setq load-prefer-newer t)
+
+
+;;;;; UI settings
+
+;; Disable tool bar
+(when (fboundp 'tool-bar-mode)
+  (tool-bar-mode -1))
