@@ -36,4 +36,9 @@
   :config
   (add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode))
 
+;; Unique buffer names
+(use-package uniquify
+  :config
+  (setq uniquify-buffer-name-style 'forward))
+
 (provide 'edition-settings)
