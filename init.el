@@ -54,6 +54,7 @@
 (require 'edition-settings)
 (require 'windows-settings)
 (require 'helm-settings)
+(require 'search-settings)
 (require 'git-settings)
 (require 'markdown-settings)
 (require 'theme-settings)
