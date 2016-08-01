@@ -9,6 +9,15 @@
 (setq indent-line-function 'insert-tab)
 (setq require-final-newline t)
 
+(use-package whitespace
+  :ensure t
+  :config
+  (setq whitespace-line-column 80) ;; limit line length
+  (setq whitespace-style '(face tabs empty trailing lines-tail))
+
+  (add-hook 'prog-mode-hook #'whitespace-mode)
+  (add-hook 'before-save-hook #'whitespace-cleanup))
+
 ;; Backup files in a backups folder
 (setq backup-directory-alist
       `(("." . ,(expand-file-name (concat user-emacs-directory "backups")))))
