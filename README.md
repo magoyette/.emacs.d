@@ -9,14 +9,17 @@ This repository should be cloned in the home folder of the current user.
 - [External dependencies](#external-dependencies)
   - [Windows HOME variable](#windows-home-variable)
   - [Git](#git)
+  - [Pandoc](#pandoc)
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Helm packages](#helm-packages)
   - [Git packages](#git-packages)
+  - [Markdown packages](#markdown-packages)
 - [Essential keybindings](#essential-keybindings)
   - [Helm keybindings](#helm-keybindings)
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
+  - [Markdown keybindings](#markdown-keybindings)
 
 ## External dependencies
 
@@ -27,6 +30,10 @@ An environment variable named HOME is required on a Windows OS to allow Emacs to
 ### Git
 
 [Git](https://git-scm.com/) is required by [magit](https://github.com/magit/magit).
+
+### Pandoc
+
+[Pandoc](http://pandoc.org/) is necessary to preview markdown documents with markdown-mode.
 
 ## Packages
 
@@ -46,6 +53,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [git-modes](https://github.com/magit/git-modes): Modes for gitconfig, gitattributes and gitignore files.
 - [git-timemachine](https://github.com/pidu/git-timemachine): Package to navigate through the versions of a file tracked with Git.
 - [magit](https://github.com/magit/magit): Git porcelain for Emacs.
+
+### Markdown packages
+
+- [markdown-mode](http://jblevins.org/projects/markdown-mode/) : Mode for Markdown files.
 
 ## Essential keybindings
 
@@ -84,3 +95,15 @@ The packages used by this Emacs configuration are grouped in categories. The pac
   - w : copy abbreviated hash of current version
   - q : exit Git timemachine
 
+### Markdown keybindings
+
+- C-c C-c m : preview Markdown html
+- C-c C-c p : preview Markdown file in browser
+- C-c C-c l : preview Markdown in real time in an Emacs Web Wowser buffer
+- C-c C-o : open link at point in a browser
+- M-Up : Move list item up
+- M-Down : Move list item down
+- M-Right : Increase indent of list item
+- M-LEFT : Decrease indent of list item
+- C-c C-n : Move to next heading
+- C-c C-p : Move to previous heading
