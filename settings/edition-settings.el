@@ -6,7 +6,6 @@
 ;; Insert spaces instead of tab on indent, use 4 spaces for a tab
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 4)
-(setq indent-line-function 'insert-tab)
 (setq require-final-newline t)
 
 (use-package whitespace
