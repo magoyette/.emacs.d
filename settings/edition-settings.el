@@ -1,3 +1,5 @@
+(require 'use-package)
+
 (setq buffer-file-coding-system 'utf-8-unix)
 (set-language-environment "UTF-8")
 
@@ -8,5 +10,10 @@
 
 ;; Auto indent on return
 (define-key global-map (kbd "RET") 'newline-and-indent)
+
+(use-package aggressive-indent
+  :ensure t
+  :config
+  (add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode))
 
 (provide 'edition-settings)
