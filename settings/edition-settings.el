@@ -14,6 +14,12 @@
       `(("." . ,(expand-file-name (concat user-emacs-directory "backups")))))
 (setq vc-make-backup-files t)
 
+;; Kill and yank more similar to copy and paste
+(setq x-select-enable-clipboard t
+      x-select-enable-primary t
+      save-interprogram-paste-before-kill t
+      mouse-yank-at-point t)
+
 ;; Auto indent on return
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
