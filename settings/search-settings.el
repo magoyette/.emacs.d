@@ -14,4 +14,23 @@
   (global-set-key (kbd "M-%") 'anzu-query-replace)
   (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp))
 
+(use-package helm-swoop
+  :ensure t
+  :bind
+  (("M-i" . helm-swoop)
+   ("C-c M-i" . helm-multi-swoop)
+   ("C-x M-i" . helm-multi-swoop-all))
+  :config
+  ;; Enable colors in results
+  (setq helm-swoop-speed-or-color t)
+
+  ;; Move up and down like isearch
+  (define-key helm-swoop-map (kbd "C-r") 'helm-previous-line)
+  (define-key helm-swoop-map (kbd "C-s") 'helm-next-line)
+  (define-key helm-multi-swoop-map (kbd "C-r") 'helm-previous-line)
+  (define-key helm-multi-swoop-map (kbd "C-s") 'helm-next-line)
+  
+  ;; Disable pre-input
+  (setq helm-swoop-pre-input-function (lambda () "")))
+
 (provide 'search-settings)
