@@ -41,4 +41,11 @@
   :config
   (setq uniquify-buffer-name-style 'forward))
 
+;; Save last position in killed buffers
+(use-package saveplace
+  :config
+  (setq-default save-place t
+                save-place-file (expand-file-name ".places"
+                                                  user-emacs-directory)))
+
 (provide 'edition-settings)
