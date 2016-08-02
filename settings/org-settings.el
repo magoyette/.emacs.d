@@ -7,7 +7,7 @@
          ("C-c c" . org-capture)
          ("C-c a" . org-agenda))
   :config
-  (visual-line-mode)
+  (add-hook 'org-mode-hook 'visual-line-mode)
 
   ;; Enable syntax highlighting of code blocks
   (setq org-src-fontify-natively t)
