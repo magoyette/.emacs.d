@@ -14,6 +14,7 @@ This repository should be cloned in the home folder of the current user.
   - [Package management](#package-management)
   - [Helm packages](#helm-packages)
   - [Edition packages](#edition-packages)
+  - [Search and replace packages](#search-and-replace-packages)
   - [Git packages](#git-packages)
   - [Markdown packages](#markdown-packages)
 - [Essential keybindings](#essential-keybindings)
@@ -54,6 +55,11 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Edition packages
 
 - [aggressive-indent](https://github.com/Malabarba/aggressive-indent-mode) : Automatic indentation of code.
+
+### Search and replace packages
+
+- [anzu](https://github.com/syohex/emacs-anzu) : Display current and total matches when doing searches.
+- [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop) : Package to search and replace or navigate through a buffer.
 
 ### Git packages
 
