@@ -13,6 +13,7 @@ This repository should be cloned in the home folder of the current user.
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Helm packages](#helm-packages)
+  - [Edition packages](#edition-packages)
   - [Git packages](#git-packages)
   - [Markdown packages](#markdown-packages)
 - [Essential keybindings](#essential-keybindings)
@@ -49,6 +50,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Helm packages
 
 - [helm](https://github.com/emacs-helm/helm) : Incremental completion and selection framework.
+
+### Edition packages
+
+- [aggressive-indent](https://github.com/Malabarba/aggressive-indent-mode) : Automatic indentation of code.
 
 ### Git packages
 
