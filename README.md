@@ -164,6 +164,8 @@ M-g M-g : Go to line number
 C-c l : Org store link
 C-c c : Org capture
 C-c a : Org agenda
+C-c o b : Search in all opened org files with helm-org-rifle
+C-c o d : Search in the org files of a directory with helm-org-rifle
 
 ### Markdown keybindings
 
