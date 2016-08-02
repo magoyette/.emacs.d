@@ -1,6 +1,6 @@
 # .emacs.d
 
-My personal Emacs configuration. It requires Emacs 24 or 25. Most of the configuration is compatible with Windows 7 and Linux. 
+My personal Emacs configuration. It requires Emacs 24 or 25. Most of the configuration is compatible with Windows 7 and Linux.
 
 This repository should be cloned in the home folder of the current user.
 
@@ -62,11 +62,20 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 ### Helm keybindings
 
+- Helm
+  - <tab> : execute persistent action
+  - C-i : execute persistent action
+  - C-z : select action
 - C-x C-b : Helm mini
 - C-x b : Helm buffers list
 - C-x C-f : Helm find files
 - C-x C-r : Helm recent files
 - M-x : Helm execute command
+- M-y : Helm show kill ring
+- C-c <SPC> : Helm all mark rings
+- C-x r b : Helm filtered bookmarks
+- C-h a : Helm apropos
+- C-h i : Helm info emacs
 - M-s d : Helm search inside a directory with the platinum searcher
 - M-s p : Helm search inside project root with the platinum searcher
 
