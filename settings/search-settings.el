@@ -29,7 +29,7 @@
   (define-key helm-swoop-map (kbd "C-s") 'helm-next-line)
   (define-key helm-multi-swoop-map (kbd "C-r") 'helm-previous-line)
   (define-key helm-multi-swoop-map (kbd "C-s") 'helm-next-line)
-  
+
   ;; Disable pre-input
   (setq helm-swoop-pre-input-function (lambda () "")))
 

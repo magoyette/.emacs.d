@@ -17,6 +17,7 @@ This repository should be cloned in the home folder of the current user.
   - [Markdown packages](#markdown-packages)
 - [Essential keybindings](#essential-keybindings)
   - [Helm keybindings](#helm-keybindings)
+  - [Search and replace keybindings](#search-and-replace-keybindings)
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
   - [Markdown keybindings](#markdown-keybindings)
@@ -78,6 +79,23 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - C-h i : Helm info emacs
 - M-s d : Helm search inside a directory with the platinum searcher
 - M-s p : Helm search inside project root with the platinum searcher
+
+### Search and replace keybindings
+
+- C-s : regexp forward search
+- C-r : regexp backward search
+- C-M-s : search forward
+- C-M-r : search backward
+- M-% : Anzu query replace
+- C-M-% : Anzy query replace regexp
+- M-i : Helm swoop
+  - C-r : previous line
+  - C-s : next line
+  - C-SPC : choose lines to edit
+  - C-c C-e : enter edit mode
+  - C-x C-s : apply edit mode changes
+- C-c M-i : Helm multi swoop on selected buffers
+- C-x M-i : Helm multi swoop on all buffers
 
 ### Magit keybindings
 
