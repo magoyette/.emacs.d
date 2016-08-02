@@ -47,6 +47,14 @@
 (require 'use-package)
 
 
+;;;;; Configure Emacs Lisp
+
+(use-package eldoc
+  :commands eldoc-mode
+  :init
+  (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode))
+
+
 ;;;;; Load settings files
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
@@ -54,9 +62,12 @@
 (require 'edition-settings)
 (require 'windows-settings)
 (require 'helm-settings)
+(require 'company-settings)
+(require 'flycheck-settings)
 (require 'navigation-settings)
 (require 'search-settings)
 (require 'git-settings)
 (require 'org-settings)
 (require 'markdown-settings)
+(require 'web-settings)
 (require 'theme-settings)
