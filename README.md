@@ -21,6 +21,7 @@ This repository should be cloned in the home folder of the current user.
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
   - [Markdown keybindings](#markdown-keybindings)
+  - [Theme keybindings](#theme-keybindings)
 
 ## External dependencies
 
@@ -134,3 +135,8 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - M-LEFT : Decrease indent of list item
 - C-c C-n : Move to next heading
 - C-c C-p : Move to previous heading
+
+### Theme keybindings
+
+- C-+ : Increase text scale
+- C-- : Decrease text scale

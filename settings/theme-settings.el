@@ -30,7 +30,7 @@
   :config
   ;; Use unicode character for window number (window-numbering package)
   (with-no-warnings (setq spaceline-window-numbers-unicode t))
-  
+
   (spaceline-emacs-theme)
   (spaceline-helm-mode))
 
