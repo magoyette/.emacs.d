@@ -17,6 +17,7 @@ This repository should be cloned in the home folder of the current user.
   - [Markdown packages](#markdown-packages)
 - [Essential keybindings](#essential-keybindings)
   - [Helm keybindings](#helm-keybindings)
+  - [Windows keybindings](#windows-keybindings)
   - [Search and replace keybindings](#search-and-replace-keybindings)
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
@@ -61,6 +62,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/) : Mode for Markdown files.
 
 ## Essential keybindings
+
+### Windows keybindings
+
+- M-1, M-2, ... : move to a numbered window
 
 ### Helm keybindings
 
