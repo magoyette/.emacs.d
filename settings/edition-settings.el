@@ -52,4 +52,23 @@
                 save-place-file (expand-file-name ".places"
                                                   user-emacs-directory)))
 
+;; Functions to add a new blank line above or below
+;;  even if cursor is in the middle of the line
+;; Source: http://whattheemacsd.com/
+(defun open-line-below ()
+  (interactive)
+  (end-of-line)
+  (newline)
+  (indent-for-tab-command))
+
+(defun open-line-above ()
+  (interactive)
+  (beginning-of-line)
+  (newline)
+  (forward-line -1)
+  (indent-for-tab-command))
+
+(global-set-key (kbd "<C-return>") 'open-line-below)
+(global-set-key (kbd "<C-S-return>") 'open-line-above)
+
 (provide 'edition-settings)

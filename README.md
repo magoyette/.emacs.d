@@ -19,8 +19,9 @@ This repository should be cloned in the home folder of the current user.
   - [Markdown packages](#markdown-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
-  - [Helm keybindings](#helm-keybindings)
   - [Windows keybindings](#windows-keybindings)
+  - [Helm keybindings](#helm-keybindings)
+  - [Edition keybindings](#edition-keybindings)
   - [Search and replace keybindings](#search-and-replace-keybindings)
   - [Navigation keybindings](#navigation-keybindings)
   - [Magit keybindings](#magit-keybindings)
@@ -104,6 +105,11 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - C-h i : Helm info emacs
 - M-s d : Helm search inside a directory with the platinum searcher
 - M-s p : Helm search inside project root with the platinum searcher
+
+### Edition keybindings
+
+C-RET : Add a new line below
+C-S-RET : Add a new line above
 
 ### Search and replace keybindings
 
