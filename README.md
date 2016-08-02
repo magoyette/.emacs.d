@@ -17,6 +17,7 @@ This repository should be cloned in the home folder of the current user.
   - [Search and replace packages](#search-and-replace-packages)
   - [Git packages](#git-packages)
   - [Markdown packages](#markdown-packages)
+  - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
   - [Helm keybindings](#helm-keybindings)
   - [Windows keybindings](#windows-keybindings)
@@ -71,6 +72,12 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Markdown packages
 
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/) : Mode for Markdown files.
+
+### Theme packages
+
+- [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters) : Highlight delimiters according to their depth.
+- [spaceline](https://github.com/TheBB/spaceline) : The Powerline theme from Spacemacs.
+- [zenburn-theme](https://github.com/bbatsov/zenburn-emacs) : The Zenburn theme for Emacs.
 
 ## Essential keybindings
 
