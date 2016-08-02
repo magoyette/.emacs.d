@@ -71,4 +71,11 @@
 (global-set-key (kbd "<C-return>") 'open-line-below)
 (global-set-key (kbd "<C-S-return>") 'open-line-above)
 
+;; Collapse lines
+;; Source: whattheemacsd.com
+(global-set-key (kbd "M-j")
+                (lambda ()
+                  (interactive)
+                  (join-line -1)))
+
 (provide 'edition-settings)

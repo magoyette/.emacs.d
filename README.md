@@ -110,6 +110,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 C-RET : Add a new line below
 C-S-RET : Add a new line above
+M-j : Collapse lines
 
 ### Search and replace keybindings
 
