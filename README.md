@@ -22,6 +22,7 @@ This repository should be cloned in the home folder of the current user.
   - [Helm keybindings](#helm-keybindings)
   - [Windows keybindings](#windows-keybindings)
   - [Search and replace keybindings](#search-and-replace-keybindings)
+  - [Navigation keybindings](#navigation-keybindings)
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
   - [Markdown keybindings](#markdown-keybindings)
@@ -120,6 +121,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
   - C-x C-s : apply edit mode changes
 - C-c M-i : Helm multi swoop on selected buffers
 - C-x M-i : Helm multi swoop on all buffers
+
+### Navigation keybindings
+
+M-g M-g : Go to line number
 
 ### Magit keybindings
 
