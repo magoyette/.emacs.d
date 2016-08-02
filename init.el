@@ -57,5 +57,6 @@
 (require 'navigation-settings)
 (require 'search-settings)
 (require 'git-settings)
+(require 'org-settings)
 (require 'markdown-settings)
 (require 'theme-settings)

@@ -26,6 +26,7 @@ This repository should be cloned in the home folder of the current user.
   - [Navigation keybindings](#navigation-keybindings)
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
+  - [Org mode keybindings](#org-mode-keybindings)
   - [Markdown keybindings](#markdown-keybindings)
   - [Theme keybindings](#theme-keybindings)
 
@@ -157,6 +158,12 @@ M-g M-g : Go to line number
   - n : next version
   - w : copy abbreviated hash of current version
   - q : exit Git timemachine
+
+### Org mode keybindings
+
+C-c l : Org store link
+C-c c : Org capture
+C-c a : Org agenda
 
 ### Markdown keybindings
 
