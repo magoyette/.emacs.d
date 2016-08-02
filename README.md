@@ -16,6 +16,7 @@ This repository should be cloned in the home folder of the current user.
   - [Edition packages](#edition-packages)
   - [Search and replace packages](#search-and-replace-packages)
   - [Git packages](#git-packages)
+  - [Org packages](#org-packages)
   - [Markdown packages](#markdown-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
@@ -71,6 +72,12 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [git-modes](https://github.com/magit/git-modes): Modes for gitconfig, gitattributes and gitignore files.
 - [git-timemachine](https://github.com/pidu/git-timemachine): Package to navigate through the versions of a file tracked with Git.
 - [magit](https://github.com/magit/magit): Git porcelain for Emacs.
+
+### Org packages
+
+- [org-mode](http://orgmode.org/) : Plain text notes, todos, agenda, etc.
+- [org-bullets](https://github.com/sabof/org-bullets) : UTF-8 bullets for org-mode.
+- [helm-org-rifle](https://github.com/alphapapa/helm-org-rifle) : Search through org files.
 
 ### Markdown packages
 
