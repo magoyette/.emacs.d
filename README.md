@@ -114,6 +114,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 ### Theme packages
 
+- [page-break-lines](https://github.com/purcell/page-break-lines) : Display page break as lines.
 - [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters) : Highlight delimiters according to their depth.
 - [spaceline](https://github.com/TheBB/spaceline) : The Powerline theme from Spacemacs.
 - [zenburn-theme](https://github.com/bbatsov/zenburn-emacs) : The Zenburn theme for Emacs.

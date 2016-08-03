@@ -19,6 +19,11 @@
 ;; Display column number in mode line
 (setq column-number-mode t)
 
+(use-package page-break-lines
+  :ensure t
+  :config
+  (global-page-break-lines-mode))
+
 (use-package rainbow-delimiters
   :ensure t)
 
