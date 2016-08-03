@@ -4,3 +4,4 @@ elpa/
 recentf
 server/
 .places
+flycheck_init.el
