@@ -1,0 +1,97 @@
+* Tasks
+** Packages to migrate
+*** clojure-settings
+**** cider
+**** cider-eval-sexp-fu
+**** clj-refactor
+**** clojure-cheatsheet
+**** clojure-mode
+**** flycheck-clojure
+*** groovy-settings
+**** groovy-mode
+*** smartparens
+**** smartparens
+** Packages to evaluate
+*** Completion
+**** hydra
+*** Config files
+**** ansible
+**** ansible-doc
+**** dockerfile-mode
+*** Edition
+**** ace-window
+**** expand-region
+**** highlight-symbol
+**** multiple-cursors
+**** undo-tree
+*** Elisp
+**** elisp-bug-hunter
+https://github.com/Malabarba/elisp-bug-hunter/
+**** eval-sexp-fu
+https://github.com/hchbaw/eval-sexp-fu.el
+**** macrostep
+https://github.com/joddie/macrostep
+*** Java
+**** jdee
+https://github.com/jdee-emacs/jdee
+*** Navigation
+**** ace-jump-helm-line
+https://github.com/cute-jumper/ace-jump-helm-line
+**** ace-link
+https://github.com/abo-abo/ace-link
+*** Regex
+**** pcre2el
+https://github.com/joddie/pcre2el
+**** visual-regexp.el
+https://github.com/benma/visual-regexp.el
+*** Search engines
+**** engine-mode
+https://github.com/hrs/engine-mode
+*** Shell scripts
+**** company-shell
+https://github.com/Alexander-Miller/company-shell
+*** Spelling
+**** auto-dictionary-mode
+https://github.com/nschum/auto-dictionary-mode
+**** define-word
+https://github.com/abo-abo/define-word
+**** flyspell-correct
+https://github.com/d12frosted/flyspell-correct
+**** helm-flyspell
+https://github.com/pronobis/helm-flyspell
+*** Various
+**** crux
+https://github.com/bbatsov/crux
+**** ejc-sql
+https://github.com/kostafey/ejc-sql
+**** guru-mode
+https://github.com/bbatsov/guru-mode
+**** helm-describe-modes
+https://github.com/emacs-helm/helm-describe-modes
+**** helm-mode-manager
+https://github.com/istib/helm-mode-manager
+**** ledger
+https://github.com/ledger/ledger
+**** markdown-toc
+https://github.com/ardumont/markdown-toc
+**** org-reveal
+https://github.com/yjwen/org-reveal/
+**** pdf-tools
+https://github.com/politza/pdf-tools
+**** highlight-escape-sequences
+https://melpa.org/#/highlight-escape-sequences
+**** volatile-highlights.el
+https://github.com/k-talo/volatile-highlights.el
+*** Web
+**** emmet-mode
+https://github.com/smihica/emmet-mode
+**** helm-emmet
+https://github.com/yasuyk/helm-emmet
+**** karma.el
+https://github.com/tonini/karma.el
+**** mocha.el
+https://github.com/scottaj/mocha.el
+**** nodejs-repl.el
+https://github.com/abicky/nodejs-repl.el
+**** web-beautify
+https://github.com/yasuyk/web-beautify
