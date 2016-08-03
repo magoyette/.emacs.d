@@ -27,6 +27,7 @@ This repository should be cloned in the home folder of the current user.
   - [YAML packages](#yaml-packages)
   - [REST packages](#rest-packages)
   - [Cucumber packages](#cucumber-packages)
+  - [Help packages](#help-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
   - [Windows keybindings](#windows-keybindings)
@@ -44,6 +45,7 @@ This repository should be cloned in the home folder of the current user.
   - [Markdown keybindings](#markdown-keybindings)
   - [Web keybindings](#web-keybindings)
   - [REST keybindings](#rest-keybindings)
+  - [Help keybindings](#help-keybindings)
   - [Theme keybindings](#theme-keybindings)
 
 ## External dependencies
@@ -149,6 +151,11 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [feature-mode](https://github.com/michaelklishin/cucumber.el) : Mode for Gherkin and Cucumber.
 
+### Help packages
+
+- [helm-descbinds](https://github.com/emacs-helm/helm-descbinds) : Helm interface for describe bindings command.
+- [which-key](https://github.com/justbur/emacs-which-key) : Display available keybindings.
+
 ### Theme packages
 
 - [page-break-lines](https://github.com/purcell/page-break-lines) : Display page break as lines.
@@ -176,8 +183,6 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - M-y : Helm show kill ring
 - C-c <SPC> : Helm all mark rings
 - C-x r b : Helm filtered bookmarks
-- C-h a : Helm apropos
-- C-h i : Helm info emacs
 - M-s d : Helm search inside a directory with the platinum searcher
 - M-s p : Helm search inside project root with the platinum searcher
 
@@ -217,8 +222,8 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 ### YASnippet keybindings
 
-C-TAB : Expand snippet
-S-TAB : Insert a snippet
+- C-TAB : Expand snippet
+- S-TAB : Insert a snippet
 
 ### Projectile keybindings
 
@@ -245,11 +250,11 @@ For the commands that find files, C-u can be done before the command to first in
 
 #### Flycheck error list keybindings
 
-RET : Go to current error
-n : jump to next error
-p : jump to previous error
-g : check buffer and update error list
-q : quit error list
+- RET : Go to current error
+- n : jump to next error
+- p : jump to previous error
+- g : check buffer and update error list
+- q : quit error list
 
 ### Magit keybindings
 
@@ -303,9 +308,15 @@ q : quit error list
 
 ### REST keybindings
 
-C-c C-c : run a query and pretty print response
-C-c C-r : run a query and display response
-C-c C-g : Helm for rest-client variables and requests
+- C-c C-c : run a query and pretty print response
+- C-c C-r : run a query and display response
+- C-c C-g : Helm for rest-client variables and requests
+
+### Help keybindings
+
+- C-h a : Helm apropos
+- C-h i : Helm info
+- C-h b : Helm describe bindings
 
 ### Theme keybindings
 
