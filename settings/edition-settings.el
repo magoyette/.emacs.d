@@ -35,6 +35,10 @@
       save-interprogram-paste-before-kill t
       mouse-yank-at-point t)
 
+;; Undo redo
+(when (fboundp 'winner-mode)
+  (winner-mode 1))
+
 ;; Auto indent on return
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
