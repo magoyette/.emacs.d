@@ -75,4 +75,5 @@
 (require 'web-settings)
 (require 'yaml-settings)
 (require 'rest-settings)
+(require 'cucumber-settings)
 (require 'theme-settings)

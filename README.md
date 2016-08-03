@@ -23,6 +23,7 @@ This repository should be cloned in the home folder of the current user.
   - [Web packages](#web-packages)
   - [YAML packages](#yaml-packages)
   - [REST packages](#rest-packages)
+  - [Cucumber packages](#cucumber-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
   - [Windows keybindings](#windows-keybindings)
@@ -124,6 +125,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [rest-client](https://github.com/pashky/restclient.el) : REST client for Emacs.
 - [restclient-helm](https://github.com/pashky/restclient.el) : Helm interface to restclient.
 - [company-restclient](https://github.com/iquiw/company-restclient) : Company completion for HTTP methods and headers in rest-client.
+
+### Cucumber packages
+
+- [feature-mode](https://github.com/michaelklishin/cucumber.el) : Mode for Gherkin and Cucumber.
 
 ### Theme packages
 
