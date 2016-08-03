@@ -74,4 +74,5 @@
 (require 'markdown-settings)
 (require 'web-settings)
 (require 'yaml-settings)
+(require 'rest-settings)
 (require 'theme-settings)

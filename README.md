@@ -22,6 +22,7 @@ This repository should be cloned in the home folder of the current user.
   - [Markdown packages](#markdown-packages)
   - [Web packages](#web-packages)
   - [YAML packages](#yaml-packages)
+  - [REST packages](#rest-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
   - [Windows keybindings](#windows-keybindings)
@@ -36,6 +37,7 @@ This repository should be cloned in the home folder of the current user.
   - [Org mode keybindings](#org-mode-keybindings)
   - [Markdown keybindings](#markdown-keybindings)
   - [Web keybindings](#web-keybindings)
+  - [REST keybindings](#rest-keybindings)
   - [Theme keybindings](#theme-keybindings)
 
 ## External dependencies
@@ -116,6 +118,12 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### YAML packages
 
 - [yaml-mode](https://github.com/yoshiki/yaml-mode) : Mode for YAML files.
+
+### REST packages
+
+- [rest-client](https://github.com/pashky/restclient.el) : REST client for Emacs.
+- [restclient-helm](https://github.com/pashky/restclient.el) : Helm interface to restclient.
+- [company-restclient](https://github.com/iquiw/company-restclient) : Company completion for HTTP methods and headers in rest-client.
 
 ### Theme packages
 
@@ -248,6 +256,12 @@ q : quit error list
 ### Web keybindings
 
 - C-c c : Helm for CSS, LESS and Sass selectors.
+
+### REST keybindings
+
+C-c C-c : run a query and pretty print response
+C-c C-r : run a query and display response
+C-c C-g : Helm for rest-client variables and requests
 
 ### Theme keybindings
 
