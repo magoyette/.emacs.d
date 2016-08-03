@@ -1,10 +1,7 @@
-;; Need lessc in path, see https://github.com/purcell/less-css-mode/blob/master/less-css-mode.el
 (use-package less-css-mode
   :ensure t
   :mode (("\\.less$" . less-css-mode)))
 
-;; Command line utility sass is required, http://sass-lang.com/. Make sure sass location is in emacs PATH, example:
-;; https://github.com/antonj/scss-mode
 (use-package scss-mode
   :ensure t
   :mode (("\\.scss$" . scss-mode)))
@@ -22,7 +19,8 @@
   :mode (("\\.json$" . json-mode)))
 
 (use-package json-reformat
-  :ensure t)
+  :ensure t
+  :mode (("\\.json$" . json-mode)))
 
 (use-package js2-mode
   :ensure t
