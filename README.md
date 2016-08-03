@@ -30,6 +30,7 @@ This repository should be cloned in the home folder of the current user.
   - [Help packages](#help-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
+  - [Package management keybindings](#package-management-keybindings)
   - [Windows keybindings](#windows-keybindings)
   - [Helm keybindings](#helm-keybindings)
   - [Edition keybindings](#edition-keybindings)
@@ -73,6 +74,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Package management
 
 - [diminish](https://github.com/emacsmirror/diminish) : Hide or abbreviate minor modes.
+- [paradox](https://github.com/Malabarba/paradox) : A better packages menu.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
 
 ### Helm packages
@@ -167,6 +169,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [zenburn-theme](https://github.com/bbatsov/zenburn-emacs) : The Zenburn theme for Emacs.
 
 ## Essential keybindings
+
+### Package management keybindings
+
+C-x p : List packages with Paradox
 
 ### Windows keybindings
 

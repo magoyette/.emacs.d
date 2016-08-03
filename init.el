@@ -55,6 +55,17 @@
 (use-package diminish
   :ensure t)
 
+
+;;;;; Paradox
+
+(use-package paradox
+  :ensure t
+  :bind (("C-x p" . paradox-list-packages))
+  :config
+  ;; Disable paradox support for (un)starring repos
+  (setq paradox-github-token t))
+
+
 ;;;;; Configure Emacs Lisp
 
 (use-package eldoc
