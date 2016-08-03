@@ -20,8 +20,14 @@
 ;; flycheck-pos-tip show flycheck markers in a pop-up
 (use-package flycheck-pos-tip
   :ensure t
+  :after flycheck
   :config
-  (with-eval-after-load 'flycheck
-    (flycheck-pos-tip-mode)))
+  (flycheck-pos-tip-mode))
+
+(use-package helm-flycheck
+  :ensure t
+  :after flycheck
+  :config
+  (define-key flycheck-mode-map (kbd "C-c ! h") 'helm-flycheck))
 
 (provide 'flycheck-settings)

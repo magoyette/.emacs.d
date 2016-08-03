@@ -107,6 +107,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [flycheck](https://github.com/flycheck/flycheck) : Syntax checking.
 - [flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip) : Show flycheck issues in tooltip.
+- [helm-flycheck](https://github.com/yasuyk/helm-flycheck) : Helm interface for flycheck.
 
 ### Git packages
 
@@ -246,6 +247,7 @@ For the commands that find files, C-u can be done before the command to first in
 - C-c ! p : Jump to previous error
 - M-g p : Jump to previous error
 - C-c ! l : List all errors in buffer
+- C-c ! h : List all errors in buffer with Helm
 - C-c ! v : Verify the Flycheck setup for current buffer and display enabled checkers
 - C-c ! ? : Prompt for a checker and display its documentation
 
