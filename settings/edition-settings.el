@@ -1,5 +1,8 @@
 (require 'use-package)
 
+;; Trash integration for Windows
+(setq delete-by-moving-to-trash t)
+
 (setq buffer-file-coding-system 'utf-8-unix)
 (set-language-environment "UTF-8")
 
