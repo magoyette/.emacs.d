@@ -20,6 +20,7 @@ This repository should be cloned in the home folder of the current user.
   - [YASnippet packages](#yasnippet-packages)
   - [Projectile packages](#projectile-packages)
   - [Flycheck packages](#flycheck-packages)
+  - [Navigation packages](#navigation-packages)
   - [Git packages](#git-packages)
   - [Org packages](#org-packages)
   - [Markdown packages](#markdown-packages)
@@ -111,6 +112,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [flycheck](https://github.com/flycheck/flycheck) : Syntax checking.
 - [flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip) : Show flycheck issues in tooltip.
 - [helm-flycheck](https://github.com/yasuyk/helm-flycheck) : Helm interface for flycheck.
+
+### Navigation packages
+
+- [avy](https://github.com/abo-abo/avy) : Jump to a specific position in buffer.
 
 ### Git packages
 
@@ -223,6 +228,10 @@ C-x p : List packages with Paradox
 ### Navigation keybindings
 
 - M-g M-g : Go to line number
+- C-, : Input one char, then jump to a character
+- C-' : Input 2 chars, then jump to a character
+- M-g f : Jump the beginning of a line
+- M-g w : Input one char, then jump to the beginning of a word
 
 ### Company keybindings
 
