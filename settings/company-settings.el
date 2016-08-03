@@ -15,6 +15,12 @@
 
   (global-company-mode))
 
+(use-package company-quickhelp
+  :ensure t
+  :after company
+  :config
+  (company-quickhelp-mode 1))
+
 (use-package helm-company
   :ensure t
   :after company

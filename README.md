@@ -91,6 +91,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Company packages
 
 - [company](https://company-mode.github.io/) : Completion system.
+- [company-quickhelp](https://github.com/expez/company-quickhelp) : Documentation popups for company.
 - [helm-company](https://github.com/manuel-uberti/helm-company) : Helm interface for company mode.
 
 ### YASnippet packages
