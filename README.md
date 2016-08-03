@@ -9,6 +9,7 @@ This repository should be cloned in the home folder of the current user.
 - [External dependencies](#external-dependencies)
   - [Windows HOME variable](#windows-home-variable)
   - [Git](#git)
+  - [The Platinum Searcher](#the-platinum-searcher)
   - [Pandoc](#pandoc)
 - [Packages](#packages)
   - [Package management](#package-management)
@@ -51,6 +52,10 @@ An environment variable named HOME is required on a Windows OS to allow Emacs to
 
 [Git](https://git-scm.com/) is required by [magit](https://github.com/magit/magit).
 
+### The Platinum Searcher
+
+The package helm-ag is configured to use [The Platinum Searcher](https://github.com/monochromegane/the_platinum_searcher).
+
 ### Pandoc
 
 [Pandoc](http://pandoc.org/) is necessary to preview markdown documents with markdown-mode.
@@ -74,6 +79,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Search and replace packages
 
 - [anzu](https://github.com/syohex/emacs-anzu) : Display current and total matches when doing searches.
+- [helm-ag](https://github.com/syohex/emacs-helm-ag) : Integrate The Platinum Searcher with Helm.
 - [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop) : Package to search and replace or navigate through a buffer.
 
 ### Company packages
@@ -184,6 +190,8 @@ The packages used by this Emacs configuration are grouped in categories. The pac
   - C-x C-s : apply edit mode changes
 - C-c M-i : Helm multi swoop on selected buffers
 - C-x M-i : Helm multi swoop on all buffers
+- M-s d : Helm search with The Platinum Searcher in directory
+- M-s p : Helm search with The Platinum Searcher in project root
 
 ### Navigation keybindings
 

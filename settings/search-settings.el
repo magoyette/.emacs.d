@@ -33,4 +33,12 @@
   ;; Disable pre-input
   (setq helm-swoop-pre-input-function (lambda () "")))
 
+(use-package helm-ag
+  :ensure t
+  :bind (("M-s d" . helm-do-ag)
+         ("M-s p" . helm-do-ag-project-root))
+  :config
+  (custom-set-variables
+   '(helm-ag-base-command "pt -e --nocolor --nogroup")))
+
 (provide 'search-settings)
