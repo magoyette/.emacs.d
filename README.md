@@ -16,6 +16,7 @@ This repository should be cloned in the home folder of the current user.
   - [Edition packages](#edition-packages)
   - [Search and replace packages](#search-and-replace-packages)
   - [Company packages](#company-packages)
+  - [Flycheck packages](#flycheck-packages)
   - [Git packages](#git-packages)
   - [Org packages](#org-packages)
   - [Markdown packages](#markdown-packages)
@@ -27,6 +28,7 @@ This repository should be cloned in the home folder of the current user.
   - [Edition keybindings](#edition-keybindings)
   - [Search and replace keybindings](#search-and-replace-keybindings)
   - [Company keybindings](#company-keybindings)
+  - [Flycheck keybindings](#flycheck-keybindings)
   - [Navigation keybindings](#navigation-keybindings)
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
@@ -74,6 +76,11 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [company](https://company-mode.github.io/) : Completion system.
 - [helm-company](https://github.com/manuel-uberti/helm-company) : Helm interface for company mode.
+
+### Flycheck packages
+
+- [flycheck](https://github.com/flycheck/flycheck) : Syntax checking.
+- [flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip) : Show flycheck issues in tooltip.
 
 ### Git packages
 
@@ -167,6 +174,24 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - TAB : Company mode expand
 - C-: : Helm company
+
+### Flycheck keybindings
+
+- C-c ! n : Jump to next error
+- M-g n : Jump to next error
+- C-c ! p : Jump to previous error
+- M-g p : Jump to previous error
+- C-c ! l : List all errors in buffer
+- C-c ! v : Verify the Flycheck setup for current buffer and display enabled checkers
+- C-c ! ? : Prompt for a checker and display its documentation
+
+#### Flycheck error list keybindings
+
+RET : Go to current error
+n : jump to next error
+p : jump to previous error
+g : check buffer and update error list
+q : quit error list
 
 ### Magit keybindings
 
