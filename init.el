@@ -66,6 +66,7 @@
 (require 'windows-settings)
 (require 'helm-settings)
 (require 'company-settings)
+(require 'yasnippet-settings)
 (require 'flycheck-settings)
 (require 'navigation-settings)
 (require 'search-settings)

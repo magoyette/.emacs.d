@@ -17,6 +17,7 @@ This repository should be cloned in the home folder of the current user.
   - [Edition packages](#edition-packages)
   - [Search and replace packages](#search-and-replace-packages)
   - [Company packages](#company-packages)
+  - [YASnippet packages](#yasnippet-packages)
   - [Flycheck packages](#flycheck-packages)
   - [Git packages](#git-packages)
   - [Org packages](#org-packages)
@@ -32,6 +33,7 @@ This repository should be cloned in the home folder of the current user.
   - [Edition keybindings](#edition-keybindings)
   - [Search and replace keybindings](#search-and-replace-keybindings)
   - [Company keybindings](#company-keybindings)
+  - [YASnippet keybindings](#yasnippet-keybindings)
   - [Flycheck keybindings](#flycheck-keybindings)
   - [Navigation keybindings](#navigation-keybindings)
   - [Magit keybindings](#magit-keybindings)
@@ -86,6 +88,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [company](https://company-mode.github.io/) : Completion system.
 - [helm-company](https://github.com/manuel-uberti/helm-company) : Helm interface for company mode.
+
+### YASnippet packages
+
+- [yasnippet](https://github.com/capitaomorte/yasnippet) : Template system.
 
 ### Flycheck packages
 
@@ -201,6 +207,11 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - TAB : Company mode expand
 - C-: : Helm company
+
+### YASnippet keybindings
+
+C-TAB : Expand snippet
+S-TAB : Insert a snippet
 
 ### Flycheck keybindings
 
