@@ -1,5 +1,6 @@
 (use-package yasnippet
   :ensure t
+  :diminish yas-minor-mode
   :config
   (yas-global-mode 1)
   (define-key yas-minor-mode-map (kbd "<tab>") nil)

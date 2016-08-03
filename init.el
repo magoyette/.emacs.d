@@ -50,10 +50,16 @@
 (require 'use-package)
 
 
+;;;;; Diminish
+
+(use-package diminish
+  :ensure t)
+
 ;;;;; Configure Emacs Lisp
 
 (use-package eldoc
   :commands eldoc-mode
+  :diminish eldoc-mode
   :init
   (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode))
 

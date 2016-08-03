@@ -72,6 +72,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 ### Package management
 
+- [diminish](https://github.com/emacsmirror/diminish) : Hide or abbreviate minor modes.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
 
 ### Helm packages

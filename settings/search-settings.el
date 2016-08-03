@@ -7,6 +7,7 @@
 ;; Anzu displays the current match and the total matches for the current search
 (use-package anzu
   :ensure t
+  :diminish anzu-mode
   :config
   (global-anzu-mode)
 
