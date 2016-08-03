@@ -15,6 +15,7 @@ This repository should be cloned in the home folder of the current user.
   - [Helm packages](#helm-packages)
   - [Edition packages](#edition-packages)
   - [Search and replace packages](#search-and-replace-packages)
+  - [Company packages](#company-packages)
   - [Git packages](#git-packages)
   - [Org packages](#org-packages)
   - [Markdown packages](#markdown-packages)
@@ -25,6 +26,7 @@ This repository should be cloned in the home folder of the current user.
   - [Helm keybindings](#helm-keybindings)
   - [Edition keybindings](#edition-keybindings)
   - [Search and replace keybindings](#search-and-replace-keybindings)
+  - [Company keybindings](#company-keybindings)
   - [Navigation keybindings](#navigation-keybindings)
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
@@ -67,6 +69,11 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [anzu](https://github.com/syohex/emacs-anzu) : Display current and total matches when doing searches.
 - [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop) : Package to search and replace or navigate through a buffer.
+
+### Company packages
+
+- [company](https://company-mode.github.io/) : Completion system.
+- [helm-company](https://github.com/manuel-uberti/helm-company) : Helm interface for company mode.
 
 ### Git packages
 
@@ -131,9 +138,9 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 ### Edition keybindings
 
-C-RET : Add a new line below
-C-S-RET : Add a new line above
-M-j : Collapse lines
+- C-RET : Add a new line below
+- C-S-RET : Add a new line above
+- M-j : Collapse lines
 
 ### Search and replace keybindings
 
@@ -154,7 +161,12 @@ M-j : Collapse lines
 
 ### Navigation keybindings
 
-M-g M-g : Go to line number
+- M-g M-g : Go to line number
+
+### Company keybindings
+
+- TAB : Company mode expand
+- C-: : Helm company
 
 ### Magit keybindings
 
@@ -183,11 +195,11 @@ M-g M-g : Go to line number
 
 ### Org mode keybindings
 
-C-c l : Org store link
-C-c c : Org capture
-C-c a : Org agenda
-C-c o b : Search in all opened org files with helm-org-rifle
-C-c o d : Search in the org files of a directory with helm-org-rifle
+- C-c l : Org store link
+- C-c c : Org capture
+- C-c a : Org agenda
+- C-c o b : Search in all opened org files with helm-org-rifle
+- C-c o d : Search in the org files of a directory with helm-org-rifle
 
 ### Markdown keybindings
 
@@ -204,7 +216,7 @@ C-c o d : Search in the org files of a directory with helm-org-rifle
 
 ### Web keybindings
 
-C-c c : Helm for CSS, LESS and Sass selectors.
+- C-c c : Helm for CSS, LESS and Sass selectors.
 
 ### Theme keybindings
 
