@@ -73,4 +73,5 @@
 (require 'org-settings)
 (require 'markdown-settings)
 (require 'web-settings)
+(require 'yaml-settings)
 (require 'theme-settings)

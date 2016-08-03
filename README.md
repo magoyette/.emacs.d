@@ -21,6 +21,7 @@ This repository should be cloned in the home folder of the current user.
   - [Org packages](#org-packages)
   - [Markdown packages](#markdown-packages)
   - [Web packages](#web-packages)
+  - [YAML packages](#yaml-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
   - [Windows keybindings](#windows-keybindings)
@@ -111,6 +112,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [json-reformat](https://github.com/gongo/json-reformat) : Mode to reformat JSON files.
 - [typescript-mode](https://github.com/ananthakumaran/typescript.el) : Mode for TypeScript files.
 - [tide](https://github.com/ananthakumaran/tide) : TypeScript Interactive Development Environment for Emacs.
+
+### YAML packages
+
+- [yaml-mode](https://github.com/yoshiki/yaml-mode) : Mode for YAML files.
 
 ### Theme packages
 
