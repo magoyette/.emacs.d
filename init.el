@@ -67,6 +67,7 @@
 (require 'helm-settings)
 (require 'company-settings)
 (require 'yasnippet-settings)
+(require 'projectile-settings)
 (require 'flycheck-settings)
 (require 'navigation-settings)
 (require 'search-settings)

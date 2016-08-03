@@ -18,6 +18,7 @@ This repository should be cloned in the home folder of the current user.
   - [Search and replace packages](#search-and-replace-packages)
   - [Company packages](#company-packages)
   - [YASnippet packages](#yasnippet-packages)
+  - [Projectile packages](#projectile-packages)
   - [Flycheck packages](#flycheck-packages)
   - [Git packages](#git-packages)
   - [Org packages](#org-packages)
@@ -34,6 +35,7 @@ This repository should be cloned in the home folder of the current user.
   - [Search and replace keybindings](#search-and-replace-keybindings)
   - [Company keybindings](#company-keybindings)
   - [YASnippet keybindings](#yasnippet-keybindings)
+  - [Projectile keybindings](#projectile-keybindings)
   - [Flycheck keybindings](#flycheck-keybindings)
   - [Navigation keybindings](#navigation-keybindings)
   - [Magit keybindings](#magit-keybindings)
@@ -92,6 +94,11 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### YASnippet packages
 
 - [yasnippet](https://github.com/capitaomorte/yasnippet) : Template system.
+
+### Projectile packages
+
+- [projectile](https://github.com/bbatsov/projectile) : Library to work with projects.
+- [helm-projectile](https://github.com/bbatsov/projectile) : Helm interface for projectile.
 
 ### Flycheck packages
 
@@ -212,6 +219,19 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 C-TAB : Expand snippet
 S-TAB : Insert a snippet
+
+### Projectile keybindings
+
+For the commands that find files, C-u can be done before the command to first invalidate the cache of the project files.
+
+- C-c p h : Helm projectile (switch to buffer, find file, switch project)
+- C-c p b : Switch to buffer
+- C-c p p : Switch project
+- C-c p f : Find file
+- C-c p F : Find file in all known projects
+- C-c p g : Find file based on context at point
+- C-c p d : Find directory
+- C-c p e : Find recent file
 
 ### Flycheck keybindings
 

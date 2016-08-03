@@ -5,3 +5,5 @@ recentf
 server/
 .places
 flycheck_init.el
+projectile.cache
+projectile-bookmarks.eld
