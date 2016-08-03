@@ -18,6 +18,7 @@ This repository should be cloned in the home folder of the current user.
   - [Git packages](#git-packages)
   - [Org packages](#org-packages)
   - [Markdown packages](#markdown-packages)
+  - [Web packages](#web-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
   - [Windows keybindings](#windows-keybindings)
@@ -29,6 +30,7 @@ This repository should be cloned in the home folder of the current user.
   - [Git timemachine keybindings](#git-timemachine-keybindings)
   - [Org mode keybindings](#org-mode-keybindings)
   - [Markdown keybindings](#markdown-keybindings)
+  - [Web keybindings](#web-keybindings)
   - [Theme keybindings](#theme-keybindings)
 
 ## External dependencies
@@ -82,6 +84,19 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Markdown packages
 
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/) : Mode for Markdown files.
+
+### Web packages
+
+- [less-css-mode](https://github.com/purcell/less-css-mode) : Mode for LESS.
+- [scss-mode](https://github.com/antonj/scss-mode): Mode for Sass.
+- [helm-css-scss](https://github.com/ShingoFukuyama/helm-css-scss) : Helm for CSS, LESS and Sass selectors.
+- [web-mode](http://web-mode.org/) : Mode for web templates.
+- [js2-mode](https://github.com/mooz/js2-mode) : Mode for JavaScript.
+- [js2-refactor](https://github.com/magnars/js2-refactor.el) : Mode to refactor JavaScript code.
+- [json-mode](https://github.com/joshwnj/json-mode) : Mode for JSON files.
+- [json-reformat](https://github.com/gongo/json-reformat) : Mode to reformat JSON files.
+- [typescript-mode](https://github.com/ananthakumaran/typescript.el) : Mode for TypeScript files.
+- [tide](https://github.com/ananthakumaran/tide) : TypeScript Interactive Development Environment for Emacs.
 
 ### Theme packages
 
@@ -186,6 +201,10 @@ C-c o d : Search in the org files of a directory with helm-org-rifle
 - M-LEFT : Decrease indent of list item
 - C-c C-n : Move to next heading
 - C-c C-p : Move to previous heading
+
+### Web keybindings
+
+C-c c : Helm for CSS, LESS and Sass selectors.
 
 ### Theme keybindings
 
