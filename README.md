@@ -44,6 +44,7 @@ This repository should be cloned in the home folder of the current user.
   - [Navigation keybindings](#navigation-keybindings)
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
+  - [Smerge keybindings](#smerge-keybindings)
   - [Org mode keybindings](#org-mode-keybindings)
   - [Markdown keybindings](#markdown-keybindings)
   - [Web keybindings](#web-keybindings)
@@ -304,6 +305,10 @@ For the commands that find files, C-u can be done before the command to first in
   - n : next version
   - w : copy abbreviated hash of current version
   - q : exit Git timemachine
+
+### Smerge keybindings
+
+C-c s : Hydra for smerge-mode
 
 ### Org mode keybindings
 

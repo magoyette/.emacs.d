@@ -44,4 +44,23 @@
   :ensure t
   :bind (("C-x t" . git-timemachine)))
 
+(define-key smerge-mode-map (kbd "C-c s")
+  (defhydra hydra-smerge ()
+    "
+^Resolve conflict^                   ^Navigate^
+------------------------------------------------
+_m_: keep my version                 _n_: go to next conflict
+_o_: keep other version              _p_: go to previous conflict
+_b_: keep base version
+_a_: keep all 3 versions
+_c_: keep current version (at point)
+"
+    ("n" smerge-next)
+    ("p" smerge-prev)
+    ("m" smerge-keep-mine :color blue)
+    ("o" smerge-keep-other :color blue)
+    ("b" smerge-keep-base :color blue)
+    ("a" smerge-keep-all :color blue)
+    ("c" smerge-keep-current :color blue)))
+
 (provide 'git-settings)
