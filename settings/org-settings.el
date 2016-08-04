@@ -10,6 +10,10 @@
   :config
   (add-hook 'org-mode-hook 'visual-line-mode)
 
+  ;; Unbind org-cycle-agenda to prevent conflicts with avy
+  (define-key org-mode-map (kbd "C-,") nil)
+  (define-key org-mode-map (kbd "C-'") nil)
+
   ;; Enable syntax highlighting of code blocks
   (setq org-src-fontify-natively t)
 
