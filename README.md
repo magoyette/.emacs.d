@@ -13,6 +13,7 @@ This repository should be cloned in the home folder of the current user.
   - [Pandoc](#pandoc)
 - [Packages](#packages)
   - [Package management](#package-management)
+  - [Hydra packages](#hydra-packages)
   - [Helm packages](#helm-packages)
   - [Edition packages](#edition-packages)
   - [Search and replace packages](#search-and-replace-packages)
@@ -77,6 +78,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [diminish](https://github.com/emacsmirror/diminish) : Hide or abbreviate minor modes.
 - [paradox](https://github.com/Malabarba/paradox) : A better packages menu.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
+
+### Hydra packages
+
+- [hydra](https://github.com/abo-abo/hydra) : Regroup related keybindings with a common prefix.
 
 ### Helm packages
 

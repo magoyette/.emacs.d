@@ -12,8 +12,6 @@
 *** smartparens
 **** smartparens
 ** Packages to evaluate
-*** Completion
-**** hydra
 *** Config files
 **** ansible
 **** ansible-doc

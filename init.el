@@ -75,6 +75,12 @@
   (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode))
 
 
+;;;;; Configure Hydra
+
+(use-package hydra
+  :ensure t)
+
+
 ;;;;; Load settings files
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
