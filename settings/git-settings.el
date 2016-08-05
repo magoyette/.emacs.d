@@ -44,6 +44,8 @@
   :ensure t
   :bind (("C-x t" . git-timemachine)))
 
+(require 'smerge-mode)
+
 (define-key smerge-mode-map (kbd "C-c s")
   (defhydra hydra-smerge ()
     "
