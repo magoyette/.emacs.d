@@ -11,6 +11,8 @@ This repository should be cloned in the home folder of the current user.
   - [Git](#git)
   - [The Platinum Searcher](#the-platinum-searcher)
   - [Pandoc](#pandoc)
+  - [Node and npm](#node-and-npm)
+  - [TypeScript and tslint](#typescript-and-tslint)
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Hydra packages](#hydra-packages)
@@ -69,6 +71,18 @@ The package helm-ag is configured to use [The Platinum Searcher](https://github.
 ### Pandoc
 
 [Pandoc](http://pandoc.org/) is necessary to preview markdown documents with markdown-mode.
+
+### Node and npm
+
+Node and npm are required for TypeScript development.
+
+### TypeScript and tslint
+
+A global installation of TypeScript and tslint is necessary to allow Flycheck to call tslint.
+
+```
+sudo npm install -g tslint typescript
+```
 
 ## Packages
 
