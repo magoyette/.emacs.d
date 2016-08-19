@@ -101,5 +101,6 @@
 (require 'yaml-settings)
 (require 'rest-settings)
 (require 'cucumber-settings)
+(require 'clojure-settings)
 (require 'help-settings)
 (require 'theme-settings)

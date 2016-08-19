@@ -15,6 +15,7 @@ This repository should be cloned in the home folder of the current user.
   - [TypeScript and tslint](#typescript-and-tslint)
 - [Packages](#packages)
   - [Package management](#package-management)
+  - [Emacs Lisp packages](#emacs-lisp-packages)
   - [Hydra packages](#hydra-packages)
   - [Helm packages](#helm-packages)
   - [Edition packages](#edition-packages)
@@ -31,6 +32,7 @@ This repository should be cloned in the home folder of the current user.
   - [YAML packages](#yaml-packages)
   - [REST packages](#rest-packages)
   - [Cucumber packages](#cucumber-packages)
+  - [Clojure packages](#clojure-packages)
   - [Help packages](#help-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
@@ -51,6 +53,7 @@ This repository should be cloned in the home folder of the current user.
   - [Markdown keybindings](#markdown-keybindings)
   - [Web keybindings](#web-keybindings)
   - [REST keybindings](#rest-keybindings)
+  - [Clojure keybindings](#clojure-keybindings)
   - [Help keybindings](#help-keybindings)
   - [Theme keybindings](#theme-keybindings)
 
@@ -93,6 +96,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [diminish](https://github.com/emacsmirror/diminish) : Hide or abbreviate minor modes.
 - [paradox](https://github.com/Malabarba/paradox) : A better packages menu.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
+
+### Emacs Lisp packages
+
+- [eval-sexp-fu](https://github.com/hchbaw/eval-sexp-fu.el) : Highlight sexps during evaluation.
 
 ### Hydra packages
 
@@ -180,6 +187,15 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Cucumber packages
 
 - [feature-mode](https://github.com/michaelklishin/cucumber.el) : Mode for Gherkin and Cucumber.
+
+### Clojure packages
+
+- [clojure-mode](https://github.com/clojure-emacs/clojure-mode) : Mode for Clojure and ClojureScript programming.
+- [CIDER](https://github.com/clojure-emacs/cider) : Clojure(Script) Interactive Development Environment that Rocks.
+- [cider-eval-sexp-fu](https://github.com/clojure-emacs/cider-eval-sexp-fu) : Highlight Clojure(Script) sexps during evaluation.
+- [squiggly-clojure](https://github.com/clojure-emacs/squiggly-clojure) : Flycheck for Clojure. Supports eastwood, core.typed and kibit.
+- [clj-refactor](https://github.com/clojure-emacs/clj-refactor.el) : Refactoring functions for Clojure.
+- [clojure-cheatsheet](https://github.com/clojure-emacs/clojure-cheatsheet) : The Clojure Cheatsheet in Emacs.
 
 ### Help packages
 
@@ -354,6 +370,89 @@ For the commands that find files, C-u can be done before the command to first in
 - C-c C-c : run a query and pretty print response
 - C-c C-r : run a query and display response
 - C-c C-g : Helm for rest-client variables and requests
+
+### Clojure keybindings
+
+- C-c M-j : cider-jack-in
+- C-c C-m : clj-refactor
+- C-c C-m hh : Hydra menu for clj-refactor
+- C-c C-h : clojure cheatsheet
+
+#### cider general keybindings
+
+- C-c C-z : switch between the REPL buffer and the Clojure(Script) buffer
+- C-c C-q : quit current nREPL connection
+- C-c M-n : switch namespace of the REPL buffer to the namespace of the current buffer
+- C-c C-. : jump to a namespace on the classpath
+- C-c C-k : load the current buffer
+- C-c C-u : undefine symbol
+- M-. : jump to definition of a symbol
+- M-, : return to pre-jump location
+- M-TAB : complete symbol at point
+
+#### cider eval keybindings
+
+- C-c C-e : Evaluate the form preceding point and output result in echo area
+- C-c M-e : Evaluate the form preceding point and output result to the REPL buffer
+- C-c C-p : Evaluate the form preceding point and pretty print result in a popup buffer
+- C-c M-p : Load the form preceding point in the REPL buffer
+- C-c C-b : Interrupt pending evaluations
+- C-c C-x : reload all modified files in classpath
+- C-u C-c C-x : reload all files in classpath
+
+#### cider documentation keybindings
+
+- C-c C-d d : doc string for symbol at point
+- C-c C-d j : display Javadoc in default browser for symbol at point
+- C-c C-d r : search symbol in Grimoire
+
+#### cider tests keybindings
+
+- C-c C-t C-t : run test at point
+- C-c C-t C-n : run tests for current namespace
+- C-c C-t C-p : run tests for all project namespaces (load the additional namespaces)
+- C-c C-t C-r : re-run failed tests
+- C-c C-t C-b : show test report buffer
+
+#### cider-test-results keybindings
+
+- M-p/n : navigate through tests
+- M-. : jump to test definition
+- d : diff of actual vs expected
+- e : display cause and stacktrace of failed test
+
+#### cider tools keybindings
+
+- C-c C-m : macroexpand-1 on the form at point
+- C-u C-c C-m : macroexpand on the form at point
+- C-c M-m : macroexpand-all on the form at point
+- C-c M-i : inspect structure of the result of an expression
+- C-c M-t v : toggle tracing of the results of a var
+- C-c M-t n : toggle tracing of the results of all the vars of a namespace
+
+#### cider-repl-mode keybindings
+
+- RET : Evaluate current input in Clojure or open a new line
+- C-RET : Close unmatched parenthesis then evaluate current input
+- C-u C-c C-o : clear REPL buffer
+- C-c M-o : switch between Clojure and ClojureScript REPLs
+- C-up/down : navigate history of inputs
+- TAB : complete symbol at point
+- C-c M-n : switch to a namespace
+
+#### cider debugging keybindings
+
+- C-u C-c C-c : Debug the top level form under point and walk through its evaluation (defn must be evaluated to remove its instrumentation)
+
+#### cider-stacktrace-mode keybindings
+
+- M-p/n : navigate through causes
+- M-. : jump to source location for stacktrace frame
+- j : toggle display of Java frames
+- c : toggle display of Clojure frames
+- r : toggle display of REPL frames
+- t : toggle display of tooling frames
+- d : toggle display of duplicate frames
 
 ### Help keybindings
 
