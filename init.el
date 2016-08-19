@@ -85,6 +85,8 @@
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
 
+(load "~/.emacs.d/local-settings.el")
+
 (require 'edition-settings)
 (require 'windows-settings)
 (require 'helm-settings)

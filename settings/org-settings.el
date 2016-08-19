@@ -30,7 +30,8 @@
           ("TOO_MUCH_WIP" . "#CC9393")
           ("DONE" . "#dcdccc")))
 
-  (setq org-agenda-files (list "~/org"))
+  (when (fboundp 'local-settings-set-org-agenda-files)
+    (local-settings-set-org-agenda-files))
 
   ;; Configure org babel languages
   (org-babel-do-load-languages
