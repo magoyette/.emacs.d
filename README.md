@@ -6,6 +6,8 @@ This repository should be cloned in the home folder of the current user.
 
 ***
 
+- [Local settings](#local-settings)
+  - [Org mode local settings](#org-mode-local-settings)
 - [External dependencies](#external-dependencies)
   - [Windows HOME variable](#windows-home-variable)
   - [Git](#git)
@@ -53,6 +55,23 @@ This repository should be cloned in the home folder of the current user.
   - [REST keybindings](#rest-keybindings)
   - [Help keybindings](#help-keybindings)
   - [Theme keybindings](#theme-keybindings)
+
+## Local settings
+
+This Emacs configuration requires the creation of a file named local-settings.el in the folder ~/.emacs.d.
+
+The local-settings.el file is used for configurations that vary depending on the computer.
+
+### Org mode local settings
+
+The org-settings.el file will try to call a function named local-settings-set-org-agenda-files to set the org-agenda-files variable.
+
+This function should be defined in local-settings.el.
+
+```elisp
+(defun local-settings-set-org-agenda-files ()
+  (setq org-agenda-files (list "~/org")))
+```
 
 ## External dependencies
 
