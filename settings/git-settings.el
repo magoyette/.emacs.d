@@ -20,20 +20,7 @@
   (if (eq system-type 'windows-nt)
       (setenv "GIT_ASKPASS" "git-gui--askpass"))
 
-  ;; magit-status in full screen
-  ;; source : http://whattheemacsd.com/
-  (defadvice magit-status (around magit-fullscreen activate)
-    (window-configuration-to-register :magit-fullscreen)
-    ad-do-it
-    (delete-other-windows))
-
-  (defun magit-quit-session ()
-    "Restores the previous window configuration and kills the magit buffer"
-    (interactive)
-    (kill-buffer)
-    (jump-to-register :magit-fullscreen))
-
-  (define-key magit-status-mode-map (kbd "q") 'magit-quit-session))
+  (setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1))
 
 (use-package diff-hl
   :ensure t
