@@ -17,6 +17,7 @@ This repository should be cloned in the home folder of the current user.
   - [Node and npm](#node-and-npm)
   - [TypeScript and tslint](#typescript-and-tslint)
   - [Leiningen](#leiningen)
+  - [Haskell Tool Stack](#haskell-tool-stack)
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Emacs Lisp packages](#emacs-lisp-packages)
@@ -37,6 +38,7 @@ This repository should be cloned in the home folder of the current user.
   - [REST packages](#rest-packages)
   - [Cucumber packages](#cucumber-packages)
   - [Clojure packages](#clojure-packages)
+  - [Haskell packages](#haskell-packages)
   - [Help packages](#help-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
@@ -58,6 +60,7 @@ This repository should be cloned in the home folder of the current user.
   - [Web keybindings](#web-keybindings)
   - [REST keybindings](#rest-keybindings)
   - [Clojure keybindings](#clojure-keybindings)
+  - [Haskell keybindings](#haskell-keybindings)
   - [Help keybindings](#help-keybindings)
   - [Theme keybindings](#theme-keybindings)
 
@@ -120,6 +123,10 @@ sudo npm install -g tslint typescript
 ### Leiningen
 
 CIDER, the interactive development environment for Clojure, requires [Leiningen](http://leiningen.org).
+
+### Haskell Tool Stack
+
+Intero, the interactive development environment for Haskell, requires [Stack](haskellstack.org).
 
 ## Packages
 
@@ -230,6 +237,11 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [squiggly-clojure](https://github.com/clojure-emacs/squiggly-clojure) : Flycheck for Clojure. Supports eastwood, core.typed and kibit.
 - [clj-refactor](https://github.com/clojure-emacs/clj-refactor.el) : Refactoring functions for Clojure.
 - [clojure-cheatsheet](https://github.com/clojure-emacs/clojure-cheatsheet) : The Clojure Cheatsheet in Emacs.
+
+### Haskell packages
+
+- [haskell-mode](https://github.com/haskell/haskell-mode) : Mode for Haskell programming.
+- [intero](https://github.com/commercialhaskell/intero) : Interactive development environment for Haskell.
 
 ### Help packages
 
@@ -488,6 +500,19 @@ For the commands that find files, C-u can be done before the command to first in
 - r : toggle display of REPL frames
 - t : toggle display of tooling frames
 - d : toggle display of duplicate frames
+
+### Haskell keybindings
+
+### Intero keybindings
+
+- M-. : Jump to definition
+- C-c C-i : Show information of identifier at point
+- C-c C-t : Show the type of thing at point, or the selection
+- C-u C-c C-t : Insert a type signature for the thing at point
+- C-c C-l : Load this module in the REPL
+- C-c C-r : Apply suggestions from GHC
+- C-c C-k : Clear REPL
+- C-c C-z : Switch to and from the REPL
 
 ### Help keybindings
 
