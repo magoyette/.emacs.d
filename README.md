@@ -333,6 +333,7 @@ For the commands that find files, C-u can be done before the command to first in
 ### Magit keybindings
 
 - C-x g : Magit status
+- C-x M-g : Magit list repositories
 - C-x G : Magit blame
   - RET : Show commit at point
   - SPC : Update commit buffer with the thing at point or scroll buffer up
