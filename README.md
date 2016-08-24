@@ -8,6 +8,7 @@ This repository should be cloned in the home folder of the current user.
 
 - [Local settings](#local-settings)
   - [Org mode local settings](#org-mode-local-settings)
+  - [Magit local settings](#magit-local-settings)
 - [External dependencies](#external-dependencies)
   - [Windows HOME variable](#windows-home-variable)
   - [Git](#git)
@@ -74,6 +75,15 @@ This function should be defined in local-settings.el.
 ```elisp
 (defun local-settings-set-org-agenda-files ()
   (setq org-agenda-files (list "~/org")))
+```
+
+### Magit local settings
+
+magit-repository-directories can be set to configure which folders must be scanned by Magit when listing repositories (C-x M-g).
+
+```elisp
+(setq magit-repository-directories '("~/.emacs.d"
+                                     "~/.gitignore_global"))
 ```
 
 ## External dependencies
