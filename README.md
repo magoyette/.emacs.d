@@ -16,6 +16,7 @@ This repository should be cloned in the home folder of the current user.
   - [Pandoc](#pandoc)
   - [Node and npm](#node-and-npm)
   - [TypeScript and tslint](#typescript-and-tslint)
+  - [Leiningen](#leiningen)
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Emacs Lisp packages](#emacs-lisp-packages)
@@ -115,6 +116,10 @@ A global installation of TypeScript and tslint is necessary to allow Flycheck to
 ```
 sudo npm install -g tslint typescript
 ```
+
+### Leiningen
+
+CIDER, the interactive development environment for Clojure, requires [Leiningen](http://leiningen.org).
 
 ## Packages
 
