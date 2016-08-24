@@ -1,12 +1,5 @@
 * Tasks
 ** Packages to migrate
-*** clojure-settings
-**** cider
-**** cider-eval-sexp-fu
-**** clj-refactor
-**** clojure-cheatsheet
-**** clojure-mode
-**** flycheck-clojure
 *** groovy-settings
 **** groovy-mode
 *** smartparens
