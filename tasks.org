@@ -51,10 +51,14 @@ https://github.com/d12frosted/flyspell-correct
 **** helm-flyspell
 https://github.com/pronobis/helm-flyspell
 *** Various
+**** company-flx
+https://github.com/PythonNut/company-flx
 **** crux
 https://github.com/bbatsov/crux
 **** ejc-sql
 https://github.com/kostafey/ejc-sql
+**** emacs-markdownfmt
+https://github.com/nlamirault/emacs-markdownfmt
 **** guru-mode
 https://github.com/bbatsov/guru-mode
 **** helm-describe-modes
@@ -69,6 +73,8 @@ https://github.com/ardumont/markdown-toc
 https://github.com/yjwen/org-reveal/
 **** pdf-tools
 https://github.com/politza/pdf-tools
+**** realgud
+https://github.com/realgud/realgud
 **** highlight-escape-sequences
 https://melpa.org/#/highlight-escape-sequences
 **** volatile-highlights.el
@@ -78,6 +84,8 @@ https://github.com/k-talo/volatile-highlights.el
 https://github.com/smihica/emmet-mode
 **** helm-emmet
 https://github.com/yasuyk/helm-emmet
+**** jade
+https://github.com/NicolasPetton/jade
 **** karma.el
 https://github.com/tonini/karma.el
 **** mocha.el
