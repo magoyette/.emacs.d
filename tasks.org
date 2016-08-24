@@ -22,6 +22,9 @@ https://github.com/Malabarba/elisp-bug-hunter/
 https://github.com/hchbaw/eval-sexp-fu.el
 **** macrostep
 https://github.com/joddie/macrostep
+*** Haskell
+**** structured-haskell-mode
+https://github.com/chrisdone/structured-haskell-mode
 *** Java
 **** jdee
 https://github.com/jdee-emacs/jdee
