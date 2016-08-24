@@ -18,6 +18,7 @@ This repository should be cloned in the home folder of the current user.
   - [TypeScript and tslint](#typescript-and-tslint)
   - [Leiningen](#leiningen)
   - [Haskell Tool Stack](#haskell-tool-stack)
+  - [Elixir](#elixir)
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Emacs Lisp packages](#emacs-lisp-packages)
@@ -39,6 +40,7 @@ This repository should be cloned in the home folder of the current user.
   - [Cucumber packages](#cucumber-packages)
   - [Clojure packages](#clojure-packages)
   - [Haskell packages](#haskell-packages)
+  - [Elixir packages](#elixir-packages)
   - [Help packages](#help-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
@@ -127,6 +129,10 @@ CIDER, the interactive development environment for Clojure, requires [Leiningen]
 ### Haskell Tool Stack
 
 Intero, the interactive development environment for Haskell, requires [Stack](haskellstack.org).
+
+### Elixir
+
+Alchemist requires [Elixir](http://elixir-lang.org/).
 
 ## Packages
 
@@ -242,6 +248,11 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [haskell-mode](https://github.com/haskell/haskell-mode) : Mode for Haskell programming.
 - [intero](https://github.com/commercialhaskell/intero) : Interactive development environment for Haskell.
+
+### Elixir packages
+
+- [elixir-mode](https://github.com/elixir-lang/emacs-elixir) : Mode for Elixir programming.
+- [alchemist](https://github.com/tonini/alchemist.el) : Interactive development environment for Elixir.
 
 ### Help packages
 

@@ -105,5 +105,6 @@
 (require 'cucumber-settings)
 (require 'clojure-settings)
 (require 'haskell-settings)
+(require 'elixir-settings)
 (require 'help-settings)
 (require 'theme-settings)
