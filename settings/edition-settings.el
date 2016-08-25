@@ -3,7 +3,7 @@
 ;; Trash integration for Windows
 (setq delete-by-moving-to-trash t)
 
-(setq buffer-file-coding-system 'utf-8-unix)
+(setq-default buffer-file-coding-system 'utf-8-unix)
 (set-language-environment "UTF-8")
 
 ;; Insert spaces instead of tab on indent, use 4 spaces for a tab
