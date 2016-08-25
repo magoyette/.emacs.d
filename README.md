@@ -116,7 +116,7 @@ Node and npm are required for TypeScript development.
 
 ### TypeScript and tslint
 
-A global installation of TypeScript and tslint is necessary to allow Flycheck to call tslint.
+A global installation of TypeScript and tslint is necessary to allow Flycheck to call tslint. tslint will use the tslint.json file of the project directory.
 
 ```
 sudo npm install -g tslint typescript
