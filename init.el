@@ -99,6 +99,7 @@
 (require 'git-settings)
 (require 'org-settings)
 (require 'markdown-settings)
+(require 'spelling-settings)
 (require 'web-settings)
 (require 'yaml-settings)
 (require 'rest-settings)

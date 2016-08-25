@@ -34,6 +34,7 @@ This repository should be cloned in the home folder of the current user.
   - [Git packages](#git-packages)
   - [Org packages](#org-packages)
   - [Markdown packages](#markdown-packages)
+  - [Spelling packages](#spelling-packages)
   - [Web packages](#web-packages)
   - [YAML packages](#yaml-packages)
   - [REST packages](#rest-packages)
@@ -59,6 +60,7 @@ This repository should be cloned in the home folder of the current user.
   - [Smerge keybindings](#smerge-keybindings)
   - [Org mode keybindings](#org-mode-keybindings)
   - [Markdown keybindings](#markdown-keybindings)
+  - [Spelling keybindings](#spelling-keybindings)
   - [Web keybindings](#web-keybindings)
   - [REST keybindings](#rest-keybindings)
   - [Clojure keybindings](#clojure-keybindings)
@@ -207,6 +209,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Markdown packages
 
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/) : Mode for Markdown files.
+
+### Spelling packages
+
+- [flyspell-correct](https://github.com/d12frosted/flyspell-correct) : Correct words with Helm interface.
 
 ### Web packages
 
@@ -418,6 +424,10 @@ For the commands that find files, C-u can be done before the command to first in
 - M-LEFT : Decrease indent of list item
 - C-c C-n : Move to next heading
 - C-c C-p : Move to previous heading
+
+### Spelling keybindings
+
+C-; : Correct word.
 
 ### Web keybindings
 
