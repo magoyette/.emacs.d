@@ -86,4 +86,9 @@
                   (interactive)
                   (join-line -1)))
 
+(use-package expand-region
+  :ensure t
+  :config
+  (global-set-key (kbd "C-=") 'er/expand-region))
+
 (provide 'edition-settings)

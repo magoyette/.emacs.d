@@ -17,8 +17,6 @@ https://github.com/Silex/docker.el
 *** Edition
 **** ace-window
 https://github.com/abo-abo/ace-window
-**** expand-region
-https://github.com/magnars/expand-region.el
 **** highlight-symbol
 https://github.com/nschum/highlight-symbol.el
 **** multiple-cursors

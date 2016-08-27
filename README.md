@@ -189,6 +189,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Edition packages
 
 - [aggressive-indent](https://github.com/Malabarba/aggressive-indent-mode) : Automatic indentation of code.
+- [expand-region](https://github.com/magnars/expand-region.el) : Expand a region by semantic units.
 
 ### Search and replace packages
 
@@ -329,6 +330,7 @@ C-x p : List packages with Paradox
 - C-RET : Add a new line below
 - C-S-RET : Add a new line above
 - M-j : Collapse lines
+- C-= : Expand region by semantic units
 
 ### Narrowing keybindings
 
