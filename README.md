@@ -49,6 +49,7 @@ This repository should be cloned in the home folder of the current user.
   - [Windows keybindings](#windows-keybindings)
   - [Helm keybindings](#helm-keybindings)
   - [Edition keybindings](#edition-keybindings)
+  - [Narrowing keybindings](#narrowing-keybindings)
   - [Search and replace keybindings](#search-and-replace-keybindings)
   - [Company keybindings](#company-keybindings)
   - [YASnippet keybindings](#yasnippet-keybindings)
@@ -327,6 +328,11 @@ C-x p : List packages with Paradox
 - C-RET : Add a new line below
 - C-S-RET : Add a new line above
 - M-j : Collapse lines
+
+### Narrowing keybindings
+
+- C-x n : narrow or widen a region, an org block, an org subtree or a defun.
+- C-u C-x n : narrow a narrowed buffer
 
 ### Search and replace keybindings
 
