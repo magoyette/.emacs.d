@@ -16,11 +16,15 @@
 
 (use-package json-mode
   :ensure t
-  :mode (("\\.json$" . json-mode)))
+  :mode (("\\.json$" . json-mode))
+  :config
+  (setq js-indent-level 2))
 
 (use-package json-reformat
   :ensure t
-  :mode (("\\.json$" . json-mode)))
+  :mode (("\\.json$" . json-mode))
+  :config
+  (setq json-reformat:indent-width 2))
 
 (use-package js2-mode
   :ensure t
