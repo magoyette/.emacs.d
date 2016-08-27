@@ -13,6 +13,8 @@
   ;; Enable completion inside comments and strings for these modes
   (setq company-etags-everywhere '(php-mode html-mode web-mode nxml-mode))
 
+  (define-key company-mode-map (kbd "C-c f") 'company-files)
+
   (global-company-mode))
 
 (use-package company-quickhelp
