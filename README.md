@@ -210,10 +210,6 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/) : Mode for Markdown files.
 
-### Spelling packages
-
-- [flyspell-correct](https://github.com/d12frosted/flyspell-correct) : Correct words with Helm interface.
-
 ### Web packages
 
 - [less-css-mode](https://github.com/purcell/less-css-mode) : Mode for LESS.
@@ -427,7 +423,8 @@ For the commands that find files, C-u can be done before the command to first in
 
 ### Spelling keybindings
 
-C-; : Correct word.
+C-c d : Alternate between english and french dictionaries
+C-c s : Start ispell on the region or on the buffer
 
 ### Web keybindings
 
