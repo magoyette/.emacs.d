@@ -2,20 +2,33 @@
 ** Packages to migrate
 *** groovy-settings
 **** groovy-mode
+https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes
 *** smartparens
 **** smartparens
+https://github.com/Fuco1/smartparens
 ** Packages to evaluate
-*** Config files
-**** ansible
-**** ansible-doc
+*** Docker
 **** dockerfile-mode
+https://github.com/spotify/dockerfile-mode
+**** docker-tramp
+https://github.com/emacs-pe/docker-tramp.el
+**** docker.el
+https://github.com/Silex/docker.el
 *** Edition
 **** ace-window
+https://github.com/abo-abo/ace-window
 **** expand-region
+https://github.com/magnars/expand-region.el
 **** highlight-symbol
+https://github.com/nschum/highlight-symbol.el
 **** multiple-cursors
+https://github.com/magnars/multiple-cursors.el
 **** undo-tree
 *** Elisp
+**** ecukes
+https://github.com/ecukes/ecukes
+**** cask
+https://github.com/cask/cask
 **** elisp-bug-hunter
 https://github.com/Malabarba/elisp-bug-hunter/
 **** eval-sexp-fu
@@ -33,6 +46,9 @@ https://github.com/jdee-emacs/jdee
 https://github.com/cute-jumper/ace-jump-helm-line
 **** ace-link
 https://github.com/abo-abo/ace-link
+*** Org
+**** ox-pandoc
+https://github.com/kawabata/ox-pandoc
 *** Regex
 **** pcre2el
 https://github.com/joddie/pcre2el
@@ -41,18 +57,9 @@ https://github.com/benma/visual-regexp.el
 *** Search engines
 **** engine-mode
 https://github.com/hrs/engine-mode
-*** Shell scripts
-**** company-shell
-https://github.com/Alexander-Miller/company-shell
 *** Spelling
-**** auto-dictionary-mode
-https://github.com/nschum/auto-dictionary-mode
 **** define-word
 https://github.com/abo-abo/define-word
-**** flyspell-correct
-https://github.com/d12frosted/flyspell-correct
-**** helm-flyspell
-https://github.com/pronobis/helm-flyspell
 *** Various
 **** company-flx
 https://github.com/PythonNut/company-flx
@@ -78,6 +85,10 @@ https://github.com/yjwen/org-reveal/
 https://github.com/politza/pdf-tools
 **** realgud
 https://github.com/realgud/realgud
+**** shell-pop-el
+https://github.com/kyagi/shell-pop-el
+**** string-edit
+https://github.com/magnars/string-edit.el
 **** highlight-escape-sequences
 https://melpa.org/#/highlight-escape-sequences
 **** volatile-highlights.el
