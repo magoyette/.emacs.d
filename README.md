@@ -241,7 +241,8 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Web packages
 
 - [less-css-mode](https://github.com/purcell/less-css-mode) : Mode for LESS.
-- [scss-mode](https://github.com/antonj/scss-mode): Mode for Sass.
+- [scss-mode](https://github.com/antonj/scss-mode) : Mode for .scss Sass files.
+- [sass-mode](https://github.com/nex3/sass-mode) : Mode for .sass Sass files.
 - [helm-css-scss](https://github.com/ShingoFukuyama/helm-css-scss) : Helm for CSS, LESS and Sass selectors.
 - [web-mode](http://web-mode.org/) : Mode for web templates.
 - [js2-mode](https://github.com/mooz/js2-mode) : Mode for JavaScript.
