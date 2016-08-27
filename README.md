@@ -19,6 +19,7 @@ This repository should be cloned in the home folder of the current user.
   - [Leiningen](#leiningen)
   - [Haskell Tool Stack](#haskell-tool-stack)
   - [Elixir](#elixir)
+  - [Hunspell](#hunspell)
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Emacs Lisp packages](#emacs-lisp-packages)
@@ -34,7 +35,6 @@ This repository should be cloned in the home folder of the current user.
   - [Git packages](#git-packages)
   - [Org packages](#org-packages)
   - [Markdown packages](#markdown-packages)
-  - [Spelling packages](#spelling-packages)
   - [Web packages](#web-packages)
   - [YAML packages](#yaml-packages)
   - [REST packages](#rest-packages)
@@ -135,6 +135,33 @@ Intero, the interactive development environment for Haskell, requires [Stack](ha
 ### Elixir
 
 Alchemist requires [Elixir](http://elixir-lang.org/).
+
+### Hunspell
+
+Hunspell is a spell checker used with ispell. Flyspell is not used in this configuration, since I find its on-the-fly spell checking annoying in the context of my workflow.
+
+#### Hunspell on Linux
+
+Use the package manager to install hunspell. On Fedora, the packages I use are hunspell, hunspell-en and hunspell-fr.
+
+#### Hunspell on Windows
+
+The installation on Windows involves many steps.
+
+- Download Hunspell on [ezwinports](https://sourceforge.net/projects/ezwinports/files/)
+- Unzip in the folder where hunspell must be available
+- Add the path to hunspell\bin to the Path environment variable
+- Add an environment variable named DICTIONARY with the value of the default dictionary (like en_US)
+- Download the [Hunspell french dictionary from LibreOffice](https://cgit.freedesktop.org/libreoffice/dictionaries/tree/fr_FR)
+- Copy the following files to \hunspell\share\hunspell :
+  - fr.aff
+  - fr.dic
+  - hyph-fr.dic
+  - hyph-fr.tex
+  - README_fr.txt
+  - README_hyph_fr.txt
+  - README_thes_fr.txt
+  - thes_fr.dat
 
 ## Packages
 
