@@ -190,6 +190,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [aggressive-indent](https://github.com/Malabarba/aggressive-indent-mode) : Automatic indentation of code.
 - [expand-region](https://github.com/magnars/expand-region.el) : Expand a region by semantic units.
+- [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
 
 ### Search and replace packages
 
@@ -331,6 +332,13 @@ C-x p : List packages with Paradox
 - C-S-RET : Add a new line above
 - M-j : Collapse lines
 - C-= : Expand region by semantic units
+
+#### Multiple cursors keybindings
+
+C-S-c C-S-c : Edit lines in region with multiple cursors
+C-> : Add a cursor to the next expression like the selected region
+C-< : Add a cursor to the previous expression like the selected region
+C-c C-< : Add a cursor to all expressions in the buffer like the selected region
 
 ### Narrowing keybindings
 
