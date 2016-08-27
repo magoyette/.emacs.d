@@ -4,7 +4,8 @@
 
 (use-package scss-mode
   :ensure t
-  :mode (("\\.scss$" . scss-mode)))
+  :mode (("\\.scss$" . scss-mode)
+         ("\\.sass$" . scss-mode)))
 
 (use-package helm-css-scss
   :ensure t
