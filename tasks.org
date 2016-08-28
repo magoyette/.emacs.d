@@ -50,9 +50,6 @@ https://github.com/kawabata/ox-pandoc
 https://github.com/joddie/pcre2el
 **** visual-regexp.el
 https://github.com/benma/visual-regexp.el
-*** Search engines
-**** engine-mode
-https://github.com/hrs/engine-mode
 *** Spelling
 **** define-word
 https://github.com/abo-abo/define-word

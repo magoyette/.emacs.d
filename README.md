@@ -27,6 +27,7 @@ This repository should be cloned in the home folder of the current user.
   - [Helm packages](#helm-packages)
   - [Edition packages](#edition-packages)
   - [Search and replace packages](#search-and-replace-packages)
+  - [Search engines packages](#search-engines-packages)
   - [Company packages](#company-packages)
   - [YASnippet packages](#yasnippet-packages)
   - [Projectile packages](#projectile-packages)
@@ -51,6 +52,7 @@ This repository should be cloned in the home folder of the current user.
   - [Edition keybindings](#edition-keybindings)
   - [Narrowing keybindings](#narrowing-keybindings)
   - [Search and replace keybindings](#search-and-replace-keybindings)
+  - [Search engines keybindings](#search-engines-keybindings)
   - [Company keybindings](#company-keybindings)
   - [YASnippet keybindings](#yasnippet-keybindings)
   - [Projectile keybindings](#projectile-keybindings)
@@ -197,6 +199,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [anzu](https://github.com/syohex/emacs-anzu) : Display current and total matches when doing searches.
 - [helm-ag](https://github.com/syohex/emacs-helm-ag) : Integrate The Platinum Searcher with Helm.
 - [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop) : Package to search and replace or navigate through a buffer.
+
+### Search engines packages
+
+- [engine-mode](https://github.com/hrs/engine-mode) : Query search engines from Emacs.
 
 ### Company packages
 
@@ -363,6 +369,14 @@ C-c C-< : Add a cursor to all expressions in the buffer like the selected region
 - C-x M-i : Helm multi swoop on all buffers
 - M-s d : Helm search with The Platinum Searcher in directory
 - M-s p : Helm search with The Platinum Searcher in project root
+
+### Search engines keybindings
+
+C-c / d : query with DuckDuckGo
+C-c / h : query with GitHub
+C-c / g : query with Google
+C-c / s : query with StackOverflow
+C-c / w : query with Wikipedia
 
 ### Navigation keybindings
 

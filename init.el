@@ -97,6 +97,7 @@
 (require 'flycheck-settings)
 (require 'navigation-settings)
 (require 'search-settings)
+(require 'search-engines-settings)
 (require 'git-settings)
 (require 'org-settings)
 (require 'markdown-settings)
