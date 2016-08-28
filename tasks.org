@@ -38,6 +38,8 @@ https://github.com/abo-abo/ace-link
 https://github.com/joddie/pcre2el
 **** visual-regexp.el
 https://github.com/benma/visual-regexp.el
+**** visual-regexp-steroids
+https://github.com/benma/visual-regexp-steroids.el/
 *** Search engines
 **** engine-mode
 https://github.com/hrs/engine-mode
@@ -97,3 +99,8 @@ https://github.com/scottaj/mocha.el
 https://github.com/abicky/nodejs-repl.el
 **** web-beautify
 https://github.com/yasuyk/web-beautify
+** External dependencies
+*** Web
+**** Choose between sass (ruby) and node-sass (wrapper over the C lib)
+- https://sass-lang.com/
+- https://github.com/sass/node-sass
