@@ -27,6 +27,7 @@ This repository should be cloned in the home folder of the current user.
   - [Helm packages](#helm-packages)
   - [Edition packages](#edition-packages)
   - [Search and replace packages](#search-and-replace-packages)
+  - [Search engines packages](#search-engines-packages)
   - [Company packages](#company-packages)
   - [YASnippet packages](#yasnippet-packages)
   - [Projectile packages](#projectile-packages)
@@ -42,6 +43,7 @@ This repository should be cloned in the home folder of the current user.
   - [Clojure packages](#clojure-packages)
   - [Haskell packages](#haskell-packages)
   - [Elixir packages](#elixir-packages)
+  - [Docker packages](#docker-packages)
   - [Help packages](#help-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
@@ -51,6 +53,7 @@ This repository should be cloned in the home folder of the current user.
   - [Edition keybindings](#edition-keybindings)
   - [Narrowing keybindings](#narrowing-keybindings)
   - [Search and replace keybindings](#search-and-replace-keybindings)
+  - [Search engines keybindings](#search-engines-keybindings)
   - [Company keybindings](#company-keybindings)
   - [YASnippet keybindings](#yasnippet-keybindings)
   - [Projectile keybindings](#projectile-keybindings)
@@ -189,12 +192,18 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Edition packages
 
 - [aggressive-indent](https://github.com/Malabarba/aggressive-indent-mode) : Automatic indentation of code.
+- [expand-region](https://github.com/magnars/expand-region.el) : Expand a region by semantic units.
+- [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
 
 ### Search and replace packages
 
 - [anzu](https://github.com/syohex/emacs-anzu) : Display current and total matches when doing searches.
 - [helm-ag](https://github.com/syohex/emacs-helm-ag) : Integrate The Platinum Searcher with Helm.
 - [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop) : Package to search and replace or navigate through a buffer.
+
+### Search engines packages
+
+- [engine-mode](https://github.com/hrs/engine-mode) : Query search engines from Emacs.
 
 ### Company packages
 
@@ -233,6 +242,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [org-mode](http://orgmode.org/) : Plain text notes, todos, agenda, etc.
 - [org-bullets](https://github.com/sabof/org-bullets) : UTF-8 bullets for org-mode.
 - [helm-org-rifle](https://github.com/alphapapa/helm-org-rifle) : Search through org files.
+- [ace-link](https://github.com/abo-abo/ace-link) : Select a link to jump to with avy in an org buffer (also work with other modes like Info-mode).
 
 ### Markdown packages
 
@@ -241,7 +251,8 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Web packages
 
 - [less-css-mode](https://github.com/purcell/less-css-mode) : Mode for LESS.
-- [scss-mode](https://github.com/antonj/scss-mode): Mode for Sass.
+- [scss-mode](https://github.com/antonj/scss-mode) : Mode for .scss Sass files.
+- [sass-mode](https://github.com/nex3/sass-mode) : Mode for .sass Sass files.
 - [helm-css-scss](https://github.com/ShingoFukuyama/helm-css-scss) : Helm for CSS, LESS and Sass selectors.
 - [web-mode](http://web-mode.org/) : Mode for web templates.
 - [js2-mode](https://github.com/mooz/js2-mode) : Mode for JavaScript.
@@ -283,6 +294,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [elixir-mode](https://github.com/elixir-lang/emacs-elixir) : Mode for Elixir programming.
 - [alchemist](https://github.com/tonini/alchemist.el) : Interactive development environment for Elixir.
+
+### Docker packages
+
+- [dockerfile-mode](https://github.com/spotify/dockerfile-mode) : Mode to edit Dockerfiles.
 
 ### Help packages
 
@@ -328,6 +343,14 @@ C-x p : List packages with Paradox
 - C-RET : Add a new line below
 - C-S-RET : Add a new line above
 - M-j : Collapse lines
+- C-= : Expand region by semantic units
+
+#### Multiple cursors keybindings
+
+C-S-c C-S-c : Edit lines in region with multiple cursors
+C-> : Add a cursor to the next expression like the selected region
+C-< : Add a cursor to the previous expression like the selected region
+C-c C-< : Add a cursor to all expressions in the buffer like the selected region
 
 ### Narrowing keybindings
 
@@ -352,6 +375,14 @@ C-x p : List packages with Paradox
 - C-x M-i : Helm multi swoop on all buffers
 - M-s d : Helm search with The Platinum Searcher in directory
 - M-s p : Helm search with The Platinum Searcher in project root
+
+### Search engines keybindings
+
+C-c / d : query with DuckDuckGo
+C-c / h : query with GitHub
+C-c / g : query with Google
+C-c / s : query with StackOverflow
+C-c / w : query with Wikipedia
 
 ### Navigation keybindings
 
@@ -437,6 +468,7 @@ For the commands that find files, C-u can be done before the command to first in
 ### Org mode keybindings
 
 - C-c l : Org store link
+- M-o : Select a link to jump to with avy
 - C-c c : Org capture
 - C-c a : Org agenda
 - C-c o b : Search in all opened org files with helm-org-rifle

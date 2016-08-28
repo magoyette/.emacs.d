@@ -2,23 +2,30 @@
 ** Packages to migrate
 *** groovy-settings
 **** groovy-mode
+https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes
 *** smartparens
-**** smartparens
+**** TODO smartparens
+https://github.com/Fuco1/smartparens
 ** Packages to evaluate
-*** Config files
-**** ansible
-**** ansible-doc
-**** dockerfile-mode
+*** Docker
+**** docker-tramp
+https://github.com/emacs-pe/docker-tramp.el
+**** docker.el
+https://github.com/Silex/docker.el
 *** Edition
-**** ace-window
-**** expand-region
-**** highlight-symbol
-**** multiple-cursors
-**** undo-tree
+**** TODO ace-window
+https://github.com/abo-abo/ace-window
+**** TODO highlight-symbol
+https://github.com/nschum/highlight-symbol.el
+**** TODO undo-tree
 *** Elisp
+**** ecukes
+https://github.com/ecukes/ecukes
+**** cask
+https://github.com/cask/cask
 **** elisp-bug-hunter
 https://github.com/Malabarba/elisp-bug-hunter/
-**** eval-sexp-fu
+**** TODO eval-sexp-fu
 https://github.com/hchbaw/eval-sexp-fu.el
 **** macrostep
 https://github.com/joddie/macrostep
@@ -29,46 +36,33 @@ https://github.com/chrisdone/structured-haskell-mode
 **** jdee
 https://github.com/jdee-emacs/jdee
 *** Navigation
-**** ace-jump-helm-line
+**** TODO ace-jump-helm-line
 https://github.com/cute-jumper/ace-jump-helm-line
-**** ace-link
-https://github.com/abo-abo/ace-link
+*** Org
+**** ox-pandoc
+https://github.com/kawabata/ox-pandoc
 *** Regex
 **** pcre2el
 https://github.com/joddie/pcre2el
-**** visual-regexp.el
+**** TODO visual-regexp.el
 https://github.com/benma/visual-regexp.el
 **** visual-regexp-steroids
 https://github.com/benma/visual-regexp-steroids.el/
-*** Search engines
-**** engine-mode
-https://github.com/hrs/engine-mode
-*** Shell scripts
-**** company-shell
-https://github.com/Alexander-Miller/company-shell
 *** Spelling
-**** auto-dictionary-mode
-https://github.com/nschum/auto-dictionary-mode
-**** define-word
+**** TODO define-word
 https://github.com/abo-abo/define-word
-**** flyspell-correct
-https://github.com/d12frosted/flyspell-correct
-**** helm-flyspell
-https://github.com/pronobis/helm-flyspell
 *** Various
-**** company-flx
+**** TODO company-flx
 https://github.com/PythonNut/company-flx
-**** crux
+**** TODO crux
 https://github.com/bbatsov/crux
-**** ejc-sql
-https://github.com/kostafey/ejc-sql
-**** emacs-markdownfmt
+**** TODO emacs-markdownfmt
 https://github.com/nlamirault/emacs-markdownfmt
 **** guru-mode
 https://github.com/bbatsov/guru-mode
-**** helm-describe-modes
+**** TODO helm-describe-modes
 https://github.com/emacs-helm/helm-describe-modes
-**** helm-mode-manager
+**** TODO helm-mode-manager
 https://github.com/istib/helm-mode-manager
 **** ledger
 https://github.com/ledger/ledger
@@ -80,14 +74,16 @@ https://github.com/yjwen/org-reveal/
 https://github.com/politza/pdf-tools
 **** realgud
 https://github.com/realgud/realgud
-**** highlight-escape-sequences
+**** TODO string-edit
+https://github.com/magnars/string-edit.el
+**** TODO highlight-escape-sequences
 https://melpa.org/#/highlight-escape-sequences
-**** volatile-highlights.el
+**** TODO volatile-highlights.el
 https://github.com/k-talo/volatile-highlights.el
 *** Web
-**** emmet-mode
+**** TODO emmet-mode
 https://github.com/smihica/emmet-mode
-**** helm-emmet
+**** TODO helm-emmet
 https://github.com/yasuyk/helm-emmet
 **** jade
 https://github.com/NicolasPetton/jade
@@ -97,7 +93,7 @@ https://github.com/tonini/karma.el
 https://github.com/scottaj/mocha.el
 **** nodejs-repl.el
 https://github.com/abicky/nodejs-repl.el
-**** web-beautify
+**** TODO web-beautify
 https://github.com/yasuyk/web-beautify
 ** External dependencies
 *** Web
