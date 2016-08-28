@@ -43,6 +43,7 @@ This repository should be cloned in the home folder of the current user.
   - [Clojure packages](#clojure-packages)
   - [Haskell packages](#haskell-packages)
   - [Elixir packages](#elixir-packages)
+  - [Docker packages](#docker-packages)
   - [Help packages](#help-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
@@ -292,6 +293,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [elixir-mode](https://github.com/elixir-lang/emacs-elixir) : Mode for Elixir programming.
 - [alchemist](https://github.com/tonini/alchemist.el) : Interactive development environment for Elixir.
+
+### Docker packages
+
+- [dockerfile-mode](https://github.com/spotify/dockerfile-mode) : Mode to edit Dockerfiles.
 
 ### Help packages
 
