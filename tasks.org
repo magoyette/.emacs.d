@@ -58,8 +58,6 @@ https://github.com/abo-abo/define-word
 https://github.com/PythonNut/company-flx
 **** crux
 https://github.com/bbatsov/crux
-**** ejc-sql
-https://github.com/kostafey/ejc-sql
 **** emacs-markdownfmt
 https://github.com/nlamirault/emacs-markdownfmt
 **** guru-mode
