@@ -242,6 +242,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [org-mode](http://orgmode.org/) : Plain text notes, todos, agenda, etc.
 - [org-bullets](https://github.com/sabof/org-bullets) : UTF-8 bullets for org-mode.
 - [helm-org-rifle](https://github.com/alphapapa/helm-org-rifle) : Search through org files.
+- [ace-link](https://github.com/abo-abo/ace-link) : Select a link to jump to with avy in an org buffer (also work with other modes like Info-mode).
 
 ### Markdown packages
 
@@ -467,6 +468,7 @@ For the commands that find files, C-u can be done before the command to first in
 ### Org mode keybindings
 
 - C-c l : Org store link
+- M-o : Select a link to jump to with avy
 - C-c c : Org capture
 - C-c a : Org agenda
 - C-c o b : Search in all opened org files with helm-org-rifle

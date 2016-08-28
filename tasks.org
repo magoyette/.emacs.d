@@ -38,8 +38,6 @@ https://github.com/jdee-emacs/jdee
 *** Navigation
 **** ace-jump-helm-line
 https://github.com/cute-jumper/ace-jump-helm-line
-**** ace-link
-https://github.com/abo-abo/ace-link
 *** Org
 **** ox-pandoc
 https://github.com/kawabata/ox-pandoc
