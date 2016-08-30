@@ -3,9 +3,6 @@
 *** groovy-settings
 **** groovy-mode
 https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes
-*** smartparens
-**** TODO smartparens
-https://github.com/Fuco1/smartparens
 ** Packages to evaluate
 *** Docker
 **** docker-tramp

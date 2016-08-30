@@ -43,6 +43,7 @@ This repository should be cloned in the home folder of the current user.
   - [Clojure packages](#clojure-packages)
   - [Haskell packages](#haskell-packages)
   - [Elixir packages](#elixir-packages)
+  - [Smartparens packages](#smartparens-packages)
   - [Docker packages](#docker-packages)
   - [Help packages](#help-packages)
   - [Theme packages](#theme-packages)
@@ -69,6 +70,7 @@ This repository should be cloned in the home folder of the current user.
   - [REST keybindings](#rest-keybindings)
   - [Clojure keybindings](#clojure-keybindings)
   - [Haskell keybindings](#haskell-keybindings)
+  - [Smartparens keybindings](#smartparens-keybindings)
   - [Help keybindings](#help-keybindings)
   - [Theme keybindings](#theme-keybindings)
 
@@ -294,6 +296,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [elixir-mode](https://github.com/elixir-lang/emacs-elixir) : Mode for Elixir programming.
 - [alchemist](https://github.com/tonini/alchemist.el) : Interactive development environment for Elixir.
+
+### Smartparens packages
+
+- [smartparens](https://github.com/Fuco1/smartparens) : Mode to handle pairs of symbols.
 
 ### Docker packages
 
@@ -597,6 +603,37 @@ C-c s : Start ispell on the region or on the buffer
 - C-c C-r : Apply suggestions from GHC
 - C-c C-k : Clear REPL
 - C-c C-z : Switch to and from the REPL
+
+### Smartparens keybindings
+
+#### Smartparens navigation
+
+C-M-f : Jump after next balanced expression
+C-M-b : Jump before the previous balanced expression
+C-S-a : Jump to the end of the current balanced expression
+C-S-d : Jump to the beginning of the currente balanced expression
+C-M-d : Jump down one level after the opening pair of the next balanced expression
+C-M-a : Jump down backward one level from the current balanced expression
+C-M-e : Jump up one level from the current balanced expression
+C-M-u : Jump up backward one level from the current balanced expression
+C-M-n : Jump to the beginning of the following balanced expression
+C-M-p : Jump to the end of the previous balanced expression
+
+#### Smartparens manipulation
+
+C-M-k : Kill the next balanced expression (if there's no next expression, kill enclosing expression)
+C-M-w : Copy the next balanced expression
+M-<delete> : Remove the wrapping pair from the following expression
+M-<backspace> : Remove the wrapping pair from the previous expression
+C-M-t : Transpose the adjacent balanced expressions (swap the expressions)
+C-<right> : Extend the current list by one element by moving the closing delimiter
+C-<left> : Contract the current list by one element by moving the closing delimiter
+C-M-<left> : Extend the current list by one element by moving the opening delimiter
+C-M-<right> : Contract the current list by one element by moving the opening delimiter
+M-D : Remove the wrapping pair from this expression
+C-M-<delete> :  Remove the wrapping pair from this expression and kill everything from the end of expression before (point) to end of this expression
+C-M-<backspace> :  Remove the wrapping pair from this expression and kill everything from the beginning of this expression to beginning of expression after (point)
+C-S-<backspace> : Remove the wrapping pair from this expression and kill everything inside save for ARG next expressions
 
 ### Help keybindings
 

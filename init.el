@@ -109,6 +109,7 @@
 (require 'clojure-settings)
 (require 'haskell-settings)
 (require 'elixir-settings)
+(require 'smartparens-settings)
 (require 'docker-settings)
 (require 'help-settings)
 (require 'theme-settings)
