@@ -85,7 +85,8 @@
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
 
-(load "~/.emacs.d/local-settings.el")
+(if (file-exists-p "~/.emacs.d/local-settings.el")
+  (load "~/.emacs.d/local-settings.el"))
 
 (require 'edition-settings)
 (require 'narrowing-settings)
