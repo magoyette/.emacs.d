@@ -196,6 +196,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [aggressive-indent](https://github.com/Malabarba/aggressive-indent-mode) : Automatic indentation of code.
 - [expand-region](https://github.com/magnars/expand-region.el) : Expand a region by semantic units.
 - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
+- [undo-tree](https://melpa.org/#/undo-tree) : Visualize undo history as a tree of changes.
 
 ### Search and replace packages
 
@@ -350,6 +351,17 @@ C-x p : List packages with Paradox
 - C-S-RET : Add a new line above
 - M-j : Collapse lines
 - C-= : Expand region by semantic units
+
+#### Undo tree keybindings
+
+- C-x u : visualize undo tree
+  - p : undo
+  - n : redo
+  - b : switch to previous branch
+  - f : switch to next branch
+  - t : toggle timestamps
+  - s : toggle selection mode
+  - q : quit undo tree
 
 #### Multiple cursors keybindings
 

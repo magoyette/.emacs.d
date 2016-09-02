@@ -39,6 +39,11 @@
 (when (fboundp 'winner-mode)
   (winner-mode 1))
 
+(use-package undo-tree
+  :ensure t
+  :config
+  (global-undo-tree-mode))
+
 ;; Auto indent on return
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
