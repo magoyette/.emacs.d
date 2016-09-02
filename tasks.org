@@ -31,39 +31,23 @@ https://github.com/chrisdone/structured-haskell-mode
 *** Java
 **** jdee
 https://github.com/jdee-emacs/jdee
-*** Navigation
-**** TODO ace-jump-helm-line
-https://github.com/cute-jumper/ace-jump-helm-line
 *** Org
 **** ox-pandoc
 https://github.com/kawabata/ox-pandoc
 *** Regex
-**** pcre2el
+**** TODO pcre2el
 https://github.com/joddie/pcre2el
 **** TODO visual-regexp.el
 https://github.com/benma/visual-regexp.el
-**** visual-regexp-steroids
+**** TODO visual-regexp-steroids
 https://github.com/benma/visual-regexp-steroids.el/
-*** Spelling
-**** TODO define-word
-https://github.com/abo-abo/define-word
 *** Various
-**** TODO company-flx
-https://github.com/PythonNut/company-flx
 **** TODO crux
 https://github.com/bbatsov/crux
-**** TODO emacs-markdownfmt
-https://github.com/nlamirault/emacs-markdownfmt
-**** guru-mode
+**** TODO guru-mode
 https://github.com/bbatsov/guru-mode
-**** TODO helm-describe-modes
-https://github.com/emacs-helm/helm-describe-modes
-**** TODO helm-mode-manager
-https://github.com/istib/helm-mode-manager
 **** ledger
 https://github.com/ledger/ledger
-**** markdown-toc
-https://github.com/ardumont/markdown-toc
 **** org-reveal
 https://github.com/yjwen/org-reveal/
 **** pdf-tools
@@ -79,16 +63,12 @@ https://github.com/k-talo/volatile-highlights.el
 *** Web
 **** TODO emmet-mode
 https://github.com/smihica/emmet-mode
-**** TODO helm-emmet
-https://github.com/yasuyk/helm-emmet
-**** jade
+**** TODO jade
 https://github.com/NicolasPetton/jade
-**** karma.el
+**** TODO karma.el
 https://github.com/tonini/karma.el
-**** mocha.el
+**** TODO mocha.el
 https://github.com/scottaj/mocha.el
-**** nodejs-repl.el
-https://github.com/abicky/nodejs-repl.el
 **** TODO web-beautify
 https://github.com/yasuyk/web-beautify
 ** External dependencies
