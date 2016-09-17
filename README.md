@@ -399,10 +399,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 #### Multiple cursors keybindings
 
-C-S-c C-S-c : Edit lines in region with multiple cursors
-C-> : Add a cursor to the next expression like the selected region
-C-< : Add a cursor to the previous expression like the selected region
-C-c C-< : Add a cursor to all expressions in the buffer like the selected region
+- C-S-c C-S-c : Edit lines in region with multiple cursors
+- C-> : Add a cursor to the next expression like the selected region
+- C-< : Add a cursor to the previous expression like the selected region
+- C-c C-< : Add a cursor to all expressions in the buffer like the selected region
 
 ### Narrowing keybindings
 
@@ -430,11 +430,11 @@ C-c C-< : Add a cursor to all expressions in the buffer like the selected region
 
 ### Search engines keybindings
 
-C-c / d : query with DuckDuckGo
-C-c / h : query with GitHub
-C-c / g : query with Google
-C-c / s : query with StackOverflow
-C-c / w : query with Wikipedia
+- C-c / d : query with DuckDuckGo
+- C-c / h : query with GitHub
+- C-c / g : query with Google
+- C-c / s : query with StackOverflow
+- C-c / w : query with Wikipedia
 
 ### Navigation keybindings
 
@@ -541,8 +541,8 @@ For the commands that find files, C-u can be done before the command to first in
 
 ### Spelling keybindings
 
-C-c d : Alternate between english and french dictionaries
-C-c s : Start ispell on the region or on the buffer
+- C-c d : Alternate between english and french dictionaries
+- C-c s : Start ispell on the region or on the buffer
 
 ### Web keybindings
 
@@ -654,32 +654,32 @@ C-c s : Start ispell on the region or on the buffer
 
 #### Smartparens navigation
 
-C-M-f : Jump after next balanced expression
-C-M-b : Jump before the previous balanced expression
-C-S-a : Jump to the end of the current balanced expression
-C-S-d : Jump to the beginning of the currente balanced expression
-C-M-d : Jump down one level after the opening pair of the next balanced expression
-C-M-a : Jump down backward one level from the current balanced expression
-C-M-e : Jump up one level from the current balanced expression
-C-M-u : Jump up backward one level from the current balanced expression
-C-M-n : Jump to the beginning of the following balanced expression
-C-M-p : Jump to the end of the previous balanced expression
+- C-M-f : Jump after next balanced expression
+- C-M-b : Jump before the previous balanced expression
+- C-S-a : Jump to the end of the current balanced expression
+- C-S-d : Jump to the beginning of the currente balanced expression
+- C-M-d : Jump down one level after the opening pair of the next balanced expression
+- C-M-a : Jump down backward one level from the current balanced expression
+- C-M-e : Jump up one level from the current balanced expression
+- C-M-u : Jump up backward one level from the current balanced expression
+- C-M-n : Jump to the beginning of the following balanced expression
+- C-M-p : Jump to the end of the previous balanced expression
 
 #### Smartparens manipulation
 
-C-M-k : Kill the next balanced expression (if there's no next expression, kill enclosing expression)
-C-M-w : Copy the next balanced expression
-M-<delete> : Remove the wrapping pair from the following expression
-M-<backspace> : Remove the wrapping pair from the previous expression
-C-M-t : Transpose the adjacent balanced expressions (swap the expressions)
-C-<right> : Extend the current list by one element by moving the closing delimiter
-C-<left> : Contract the current list by one element by moving the closing delimiter
-C-M-<left> : Extend the current list by one element by moving the opening delimiter
-C-M-<right> : Contract the current list by one element by moving the opening delimiter
-M-D : Remove the wrapping pair from this expression
-C-M-<delete> :  Remove the wrapping pair from this expression and kill everything from the end of expression before (point) to end of this expression
-C-M-<backspace> :  Remove the wrapping pair from this expression and kill everything from the beginning of this expression to beginning of expression after (point)
-C-S-<backspace> : Remove the wrapping pair from this expression and kill everything inside save for ARG next expressions
+- C-M-k : Kill the next balanced expression (if there's no next expression, kill enclosing expression)
+- C-M-w : Copy the next balanced expression
+- M-<delete> : Remove the wrapping pair from the following expression
+- M-<backspace> : Remove the wrapping pair from the previous expression
+- C-M-t : Transpose the adjacent balanced expressions (swap the expressions)
+- C-<right> : Extend the current list by one element by moving the closing delimiter
+- C-<left> : Contract the current list by one element by moving the closing delimiter
+- C-M-<left> : Extend the current list by one element by moving the opening delimiter
+- C-M-<right> : Contract the current list by one element by moving the opening delimiter
+- M-D : Remove the wrapping pair from this expression
+- C-M-<delete> :  Remove the wrapping pair from this expression and kill everything from the end of expression before (point) to end of this expression
+- C-M-<backspace> :  Remove the wrapping pair from this expression and kill everything from the beginning of this expression to beginning of expression after (point)
+- C-S-<backspace> : Remove the wrapping pair from this expression and kill everything inside save for ARG next expressions
 
 ### Help keybindings
 
