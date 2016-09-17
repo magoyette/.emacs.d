@@ -92,6 +92,11 @@
 (require 'narrowing-settings)
 (require 'windows-settings)
 (require 'helm-settings)
+
+;; dired-settings is after helm-settings to allow peep-dired
+;;  to replace an Helm Dired keybinding
+(require 'dired-settings)
+
 (require 'company-settings)
 (require 'yasnippet-settings)
 (require 'projectile-settings)

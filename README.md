@@ -22,6 +22,7 @@ This repository should be cloned in the home folder of the current user.
   - [Hunspell](#hunspell)
 - [Packages](#packages)
   - [Package management](#package-management)
+  - [Dired packages](#dired-packages)
   - [Emacs Lisp packages](#emacs-lisp-packages)
   - [Hydra packages](#hydra-packages)
   - [Helm packages](#helm-packages)
@@ -49,6 +50,7 @@ This repository should be cloned in the home folder of the current user.
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
   - [Package management keybindings](#package-management-keybindings)
+  - [Dired keybindings](#dired-keybindings)
   - [Windows keybindings](#windows-keybindings)
   - [Helm keybindings](#helm-keybindings)
   - [Edition keybindings](#edition-keybindings)
@@ -178,6 +180,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [diminish](https://github.com/emacsmirror/diminish) : Hide or abbreviate minor modes.
 - [paradox](https://github.com/Malabarba/paradox) : A better packages menu.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
+
+### Dired packages
+
+- [peep-dired](https://github.com/asok/peep-dired) : Show file at point in Dired in another window.
 
 ### Emacs Lisp packages
 
@@ -322,7 +328,35 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 ### Package management keybindings
 
-C-x p : List packages with Paradox
+- C-x p : List packages with Paradox
+
+### Dired keybindings
+
+- C-x d : open dired mode
+- C-x C-j : show current file in dired
+
+#### Dired mode
+
+- j : jump to file
+- > : move to next directory
+- < : move to previous directory
+- ^ : move to the parent directory (..)
+- g : refresh
+- + : create a new file
+- s : alternate between sort by name and date
+- m : mark a file
+- % m [regex] : mark all fiels that match a regex
+- u : unmark a file
+- U : unmark all files
+- * t : invert marking of files
+- * s : mark all files
+- P : show file in another windows with peep-dired
+- C : copy file under cursor or marked files
+- R : rename file under cursor or marked files
+- D : delete file under cursor or marked files
+- C-x C-q : switch to editing mode to rename files (save buffer to save changes)
+- Q : run query-replace on marked files
+- q : exit dired
 
 ### Windows keybindings
 
