@@ -4,6 +4,8 @@
 (global-set-key (kbd "C-M-s") 'isearch-forward)
 (global-set-key (kbd "C-M-r") 'isearch-backward)
 
+(setq search-default-mode #'char-fold-to-regexp)
+
 ;; Anzu displays the current match and the total matches for the current search
 (use-package anzu
   :ensure t
