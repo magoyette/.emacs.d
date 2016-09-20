@@ -397,6 +397,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
   - s : toggle selection mode
   - q : quit undo tree
 
+#### Rectangle mark mode keybindings
+
+- C-x SPC : enable rectangle-mark-mode for rectangular selection
+
 #### Multiple cursors keybindings
 
 - C-S-c C-S-c : Edit lines in region with multiple cursors
