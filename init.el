@@ -69,15 +69,6 @@
   (setq paradox-github-token t))
 
 
-;;;;; Configure Emacs Lisp
-
-(use-package eldoc
-  :commands eldoc-mode
-  :diminish eldoc-mode
-  :init
-  (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode))
-
-
 ;;;;; Configure Hydra
 
 (use-package hydra
