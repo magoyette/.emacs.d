@@ -62,8 +62,8 @@
 ;; Source: http://whattheemacsd.com/
 (use-package saveplace
   :config
-  (setq-default save-place t
-                save-place-file (expand-file-name ".places"
+  (save-place-mode)
+  (setq-default save-place-file (expand-file-name ".places"
                                                   user-emacs-directory)))
 
 ;; Functions to add a new blank line above or below
