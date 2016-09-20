@@ -38,6 +38,9 @@
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
+(setq package-archive-priorities
+      '(("melpa" . 10)
+        ("gnu" . 0)))
 (package-initialize)
 
 ;; Necessary for the installation of use-package
