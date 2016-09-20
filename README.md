@@ -356,6 +356,8 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - D : delete file under cursor or marked files
 - C-x C-q : switch to editing mode to rename files (save buffer to save changes)
 - Q : run query-replace on marked files
+- Z : compress/decompress
+- c : compress many marked files to a single archive
 - q : exit dired
 
 ### Windows keybindings
