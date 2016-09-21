@@ -28,6 +28,7 @@
   :bind (("C-x C-b" . helm-mini)
          ("C-x b" . helm-buffers-list)
          ("C-x C-f" . helm-find-files)
+         ("C-x f" . helm-multi-files)
          ("C-x C-r" . helm-recentf)
          ("M-x" . helm-M-x)
          ("M-y" . helm-show-kill-ring)

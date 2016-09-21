@@ -374,6 +374,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - C-x b : Helm buffers list
 - C-x C-f : Helm find files
 - C-x C-r : Helm recent files
+- C-x f : Helm multi (combines buffers list, find files and recent files)
 - M-x : Helm execute command
 - M-y : Helm show kill ring
 - C-c <SPC> : Helm all mark rings
