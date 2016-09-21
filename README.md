@@ -381,6 +381,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - C-x r b : Helm filtered bookmarks
 - M-s d : Helm search inside a directory with the platinum searcher
 - M-s p : Helm search inside project root with the platinum searcher
+- C-x 8 : Helm select unicode character
 
 ### Edition keybindings
 

@@ -36,6 +36,7 @@
          ("C-x r b" . helm-filtered-bookmarks)
          ("C-h a" . helm-apropos)
          ("C-h i" . helm-info-emacs)
+         ("C-x 8" . helm-ucs)
          :map helm-map
          ("<tab>" . helm-execute-persistent-action)
          ("C-i" . helm-execute-persistent-action)
