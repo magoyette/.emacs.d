@@ -6,6 +6,10 @@ This repository should be cloned in the home folder of the current user.
 
 ***
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
 - [Local settings](#local-settings)
   - [Org mode local settings](#org-mode-local-settings)
   - [Magit local settings](#magit-local-settings)
@@ -20,6 +24,8 @@ This repository should be cloned in the home folder of the current user.
   - [Haskell Tool Stack](#haskell-tool-stack)
   - [Elixir](#elixir)
   - [Hunspell](#hunspell)
+    - [Hunspell on Linux](#hunspell-on-linux)
+    - [Hunspell on Windows](#hunspell-on-windows)
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Dired packages](#dired-packages)
@@ -51,17 +57,22 @@ This repository should be cloned in the home folder of the current user.
 - [Essential keybindings](#essential-keybindings)
   - [Package management keybindings](#package-management-keybindings)
   - [Dired keybindings](#dired-keybindings)
+    - [Dired mode](#dired-mode)
   - [Windows keybindings](#windows-keybindings)
   - [Helm keybindings](#helm-keybindings)
   - [Edition keybindings](#edition-keybindings)
+    - [Undo tree keybindings](#undo-tree-keybindings)
+    - [Rectangle mark mode keybindings](#rectangle-mark-mode-keybindings)
+    - [Multiple cursors keybindings](#multiple-cursors-keybindings)
   - [Narrowing keybindings](#narrowing-keybindings)
   - [Search and replace keybindings](#search-and-replace-keybindings)
   - [Search engines keybindings](#search-engines-keybindings)
+  - [Navigation keybindings](#navigation-keybindings)
   - [Company keybindings](#company-keybindings)
   - [YASnippet keybindings](#yasnippet-keybindings)
   - [Projectile keybindings](#projectile-keybindings)
   - [Flycheck keybindings](#flycheck-keybindings)
-  - [Navigation keybindings](#navigation-keybindings)
+    - [Flycheck error list keybindings](#flycheck-error-list-keybindings)
   - [Magit keybindings](#magit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
   - [Smerge keybindings](#smerge-keybindings)
@@ -71,10 +82,24 @@ This repository should be cloned in the home folder of the current user.
   - [Web keybindings](#web-keybindings)
   - [REST keybindings](#rest-keybindings)
   - [Clojure keybindings](#clojure-keybindings)
+    - [cider general keybindings](#cider-general-keybindings)
+    - [cider eval keybindings](#cider-eval-keybindings)
+    - [cider documentation keybindings](#cider-documentation-keybindings)
+    - [cider tests keybindings](#cider-tests-keybindings)
+    - [cider-test-results keybindings](#cider-test-results-keybindings)
+    - [cider tools keybindings](#cider-tools-keybindings)
+    - [cider-repl-mode keybindings](#cider-repl-mode-keybindings)
+    - [cider debugging keybindings](#cider-debugging-keybindings)
+    - [cider-stacktrace-mode keybindings](#cider-stacktrace-mode-keybindings)
   - [Haskell keybindings](#haskell-keybindings)
+  - [Intero keybindings](#intero-keybindings)
   - [Smartparens keybindings](#smartparens-keybindings)
+    - [Smartparens navigation](#smartparens-navigation)
+    - [Smartparens manipulation](#smartparens-manipulation)
   - [Help keybindings](#help-keybindings)
   - [Theme keybindings](#theme-keybindings)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Local settings
 
