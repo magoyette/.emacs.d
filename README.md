@@ -26,6 +26,7 @@ This repository should be cloned in the home folder of the current user.
   - [Hunspell](#hunspell)
     - [Hunspell on Linux](#hunspell-on-linux)
     - [Hunspell on Windows](#hunspell-on-windows)
+  - [doctoc](#doctoc)
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Dired packages](#dired-packages)
@@ -195,6 +196,20 @@ The installation on Windows involves many steps.
   - README_hyph_fr.txt
   - README_thes_fr.txt
   - thes_fr.dat
+
+### doctoc
+
+doctoc is a JavaScript library used to generate the table of contents of a markdown file.
+
+doctoc can be installed with npm.
+```
+sudo npm install -g doctoc
+```
+
+It can then be used to update the table of contents of this README.
+```
+doctoc README.md
+```
 
 ## Packages
 
