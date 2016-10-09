@@ -5,6 +5,7 @@ recentf
 server/
 url/
 .places
+customizations.el
 flycheck_init.el
 local-settings.el
 projectile.cache

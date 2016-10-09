@@ -32,6 +32,13 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 
+;;;;; Customizations
+
+;; Store customizations like package-selected-packages in a distinct file
+;; customizations.el is included in .gitignore
+(setq custom-file "~/.emacs.d/customizations.el")
+(load custom-file 'noerror)
+
 ;;;;; Packages management
 
 ;; Configure Melpa
