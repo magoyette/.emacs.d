@@ -4,16 +4,32 @@
 **** groovy-mode
 https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes
 ** Packages to evaluate
+*** Clojure
+**** parinfer
+https://github.com/DogLooksGood/parinfer-mode
+*** Communications
+**** emacs-slack
+https://github.com/yuya373/emacs-slack
+*** Dired
+**** dired-hacks
+https://github.com/Fuco1/dired-hacks
+http://pragmaticemacs.com/emacs/dynamically-filter-directory-listing-with-dired-narrow/
+**** emacs-dired-k
+https://github.com/syohex/emacs-dired-k
+**** Emacs-image-diredx
+https://github.com/mhayashi1120/Emacs-image-diredx
 *** Docker
 **** docker-tramp
 https://github.com/emacs-pe/docker-tramp.el
 **** docker.el
 https://github.com/Silex/docker.el
 *** Edition
-**** TODO ace-window
+**** ace-window
 https://github.com/abo-abo/ace-window
-**** TODO highlight-symbol
+**** highlight-symbol
 https://github.com/nschum/highlight-symbol.el
+**** move-text
+https://github.com/emacsfodder/move-text
 *** Elisp
 **** ecukes
 https://github.com/ecukes/ecukes
@@ -21,10 +37,17 @@ https://github.com/ecukes/ecukes
 https://github.com/cask/cask
 **** elisp-bug-hunter
 https://github.com/Malabarba/elisp-bug-hunter/
-**** TODO eval-sexp-fu
+**** elisp-refs.el
+https://github.com/Wilfred/elisp-refs.el
+**** eval-sexp-fu
 https://github.com/hchbaw/eval-sexp-fu.el
 **** macrostep
 https://github.com/joddie/macrostep
+*** Git
+**** browse-at-remote
+https://github.com/rmuslimov/browse-at-remote
+**** magithub
+https://github.com/vermiculus/magithub
 *** Haskell
 **** structured-haskell-mode
 https://github.com/chrisdone/structured-haskell-mode
@@ -35,17 +58,27 @@ https://github.com/jdee-emacs/jdee
 **** ox-pandoc
 https://github.com/kawabata/ox-pandoc
 *** Regex
-**** TODO pcre2el
+**** pcre2el
 https://github.com/joddie/pcre2el
-**** TODO visual-regexp.el
+**** visual-regexp.el
 https://github.com/benma/visual-regexp.el
-**** TODO visual-regexp-steroids
+**** visual-regexp-steroids
 https://github.com/benma/visual-regexp-steroids.el/
+*** RSS
+**** elfeed
+https://github.com/skeeto/elfeed
+http://pragmaticemacs.com/emacs/read-your-rss-feeds-in-emacs-with-elfeed/
+*** Shell
+**** readline-complete.el
+https://github.com/monsanto/readline-complete.el
 *** Various
-**** TODO crux
+**** crux
 https://github.com/bbatsov/crux
-**** TODO guru-mode
+**** guru-mode
 https://github.com/bbatsov/guru-mode
+**** Highlight-Indentation-for-Emacs
+https://github.com/antonj/Highlight-Indentation-for-Emacs
+https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/
 **** ledger
 https://github.com/ledger/ledger
 **** org-reveal
@@ -54,22 +87,26 @@ https://github.com/yjwen/org-reveal/
 https://github.com/politza/pdf-tools
 **** realgud
 https://github.com/realgud/realgud
-**** TODO string-edit
+**** string-edit
 https://github.com/magnars/string-edit.el
-**** TODO highlight-escape-sequences
+**** highlight-escape-sequences
 https://melpa.org/#/highlight-escape-sequences
-**** TODO volatile-highlights.el
+**** volatile-highlights.el
 https://github.com/k-talo/volatile-highlights.el
 *** Web
-**** TODO emmet-mode
+**** emmet-mode
 https://github.com/smihica/emmet-mode
-**** TODO jade
+**** eslint-fix
+https://github.com/codesuki/eslint-fix
+**** jade
 https://github.com/NicolasPetton/jade
-**** TODO karma.el
+**** karma.el
 https://github.com/tonini/karma.el
-**** TODO mocha.el
+**** mocha.el
 https://github.com/scottaj/mocha.el
-**** TODO web-beautify
+**** ng2-mode
+https://github.com/AdamNiederer/ng2-mode
+**** web-beautify
 https://github.com/yasuyk/web-beautify
 ** External dependencies
 *** Web
