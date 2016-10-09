@@ -82,6 +82,12 @@
   :ensure t)
 
 
+;;;;; Eldoc
+
+;; Activate Eldoc in mini-buffer
+(add-hook 'eval-expression-minibuffer-setup-hook #'eldoc-mode)
+
+
 ;;;;; Load settings files
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
