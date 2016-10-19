@@ -310,6 +310,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Markdown packages
 
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/) : Mode for Markdown files.
+- [doctoc.el](https://github.com/magoyette/doctoc.el) : Support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
 
 ### Web packages
 
