@@ -13,6 +13,8 @@ This repository should be cloned in the home folder of the current user.
 - [Local settings](#local-settings)
   - [Org mode local settings](#org-mode-local-settings)
   - [Magit local settings](#magit-local-settings)
+- [Emacs packages dependencies to install manually](#emacs-packages-dependencies-to-install-manually)
+  - [doctoc.el](#doctocel)
 - [External dependencies](#external-dependencies)
   - [Windows HOME variable](#windows-home-variable)
   - [Git](#git)
@@ -128,6 +130,20 @@ magit-repository-directories can be set to configure which folders must be scann
                                      "~/.gitignore_global"))
 ```
 
+## Emacs packages dependencies to install manually
+
+This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they need to be cloned manually in the folder ~/.emacs.packages.
+
+### doctoc.el
+
+doctoc.el is a package that adds support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
+
+doctoc.el can be installed by running the following command in the folder ~/.emacs.packages :
+
+```sh
+git clone https://github.com/magoyette/doctoc.el.git
+```
+
 ## External dependencies
 
 ### Windows HOME variable
@@ -203,13 +219,10 @@ doctoc is a JavaScript library used to generate the table of contents of a markd
 
 doctoc can be installed with npm.
 ```
-sudo npm install -g doctoc
+npm install -g doctoc
 ```
 
-It can then be used to update the table of contents of this README.
-```
-doctoc README.md
-```
+It can then be used to update the table of contents of this README with the command C-c C-d (provided by doctoc.el).
 
 ## Packages
 
@@ -588,6 +601,7 @@ For the commands that find files, C-u can be done before the command to first in
 - M-LEFT : Decrease indent of list item
 - C-c C-n : Move to next heading
 - C-c C-p : Move to previous heading
+- C-c C-d : Generate the table of contents of a markdown file with [DocToc](https://github.com/thlorenz/doctoc)
 
 ### Spelling keybindings
 

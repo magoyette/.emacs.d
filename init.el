@@ -98,9 +98,10 @@
 ;;;;; Load settings and features
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
+(add-to-list 'load-path "~/.emacs.packages/doctoc.el/")
 
 (if (file-exists-p "~/.emacs.d/local-settings.el")
-  (load "~/.emacs.d/local-settings.el"))
+    (load "~/.emacs.d/local-settings.el"))
 
 (require 'edition-settings)
 (require 'narrowing-settings)
@@ -120,6 +121,7 @@
 (require 'search-engines-settings)
 (require 'git-settings)
 (require 'org-settings)
+(require 'doctoc)
 (require 'markdown-settings)
 (require 'spelling-settings)
 (require 'web-settings)

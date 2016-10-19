@@ -1,3 +1,5 @@
+(require 'doctoc)
+
 (use-package markdown-mode
   :ensure t
   :commands (markdown-mode gfm-mode)
@@ -7,6 +9,8 @@
   :config
   (setq markdown-command
         "pandoc --from markdown_github -t html5 -s")
-  (setq markdown-list-indent-width 2))
+  (setq markdown-list-indent-width 2)
+
+  (define-key markdown-mode-map (kbd "C-c C-d") #'doctoc))
 
 (provide 'markdown-settings)
