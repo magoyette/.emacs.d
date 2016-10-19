@@ -227,6 +227,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 ### Emacs Lisp packages
 
+- [cask-mode](https://github.com/Wilfred/cask-mode) : A mode for Cask files.
 - [eval-sexp-fu](https://github.com/hchbaw/eval-sexp-fu.el) : Highlight sexps during evaluation.
 
 ### Hydra packages

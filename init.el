@@ -39,6 +39,7 @@
 (setq custom-file "~/.emacs.d/customizations.el")
 (load custom-file 'noerror)
 
+
 ;;;;; Packages management
 
 ;; Configure Melpa
@@ -88,7 +89,13 @@
 (add-hook 'eval-expression-minibuffer-setup-hook #'eldoc-mode)
 
 
-;;;;; Load settings files
+;;;;; Cask-mode
+
+(use-package cask-mode
+  :ensure t)
+
+
+;;;;; Load settings and features
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
 
