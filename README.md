@@ -563,6 +563,7 @@ For the commands that find files, C-u can be done before the command to first in
 
 ### Smerge keybindings
 
+- RET on Magit "unmerged" commit : Open buffer for unmerged file with smerge-mode
 - C-c s : Hydra for smerge-mode
 
 ### Org mode keybindings
