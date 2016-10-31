@@ -78,9 +78,6 @@ https://github.com/monsanto/readline-complete.el
 https://github.com/bbatsov/crux
 **** guru-mode
 https://github.com/bbatsov/guru-mode
-**** Highlight-Indentation-for-Emacs
-https://github.com/antonj/Highlight-Indentation-for-Emacs
-https://blog.chmouel.com/2016/09/07/dealing-with-yaml-in-emacs/
 **** ledger
 https://github.com/ledger/ledger
 **** org-reveal

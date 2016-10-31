@@ -105,4 +105,8 @@
   (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
   (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this))
 
+;; Only enabled in specific modes
+(use-package highlight-indentation
+  :ensure t)
+
 (provide 'edition-settings)

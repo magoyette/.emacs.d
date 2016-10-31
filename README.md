@@ -255,6 +255,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 
 - [aggressive-indent](https://github.com/Malabarba/aggressive-indent-mode) : Automatic indentation of code.
 - [expand-region](https://github.com/magnars/expand-region.el) : Expand a region by semantic units.
+- [highlight-indentation](https://github.com/antonj/Highlight-Indentation-for-Emacs) : Displays guidelines for indentation.
 - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
 - [undo-tree](https://melpa.org/#/undo-tree) : Visualize undo history as a tree of changes.
 
