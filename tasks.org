@@ -14,6 +14,7 @@ https://github.com/yuya373/emacs-slack
 **** dired-hacks
 https://github.com/Fuco1/dired-hacks
 http://pragmaticemacs.com/emacs/dynamically-filter-directory-listing-with-dired-narrow/
+http://pragmaticemacs.com/emacs/copy-and-paste-files-with-dired-ranger/
 **** emacs-dired-k
 https://github.com/syohex/emacs-dired-k
 **** Emacs-image-diredx
