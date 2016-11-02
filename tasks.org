@@ -106,6 +106,8 @@ https://github.com/scottaj/mocha.el
 https://github.com/AdamNiederer/ng2-mode
 **** web-beautify
 https://github.com/yasuyk/web-beautify
+**** yasnippets-angular2
+https://github.com/bleggett/yasnippets-angular2
 ** External dependencies
 *** Web
 **** Choose between sass (ruby) and node-sass (wrapper over the C lib)
