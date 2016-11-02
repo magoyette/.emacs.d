@@ -76,8 +76,7 @@ This repository should be cloned in the home folder of the current user.
   - [Projectile keybindings](#projectile-keybindings)
   - [Flycheck keybindings](#flycheck-keybindings)
     - [Flycheck error list keybindings](#flycheck-error-list-keybindings)
-  - [Magit keybindings](#magit-keybindings)
-  - [Git timemachine keybindings](#git-timemachine-keybindings)
+  - [Git keybindings](#git-keybindings)
   - [Smerge keybindings](#smerge-keybindings)
   - [Org mode keybindings](#org-mode-keybindings)
   - [Markdown keybindings](#markdown-keybindings)
@@ -300,6 +299,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [git-modes](https://github.com/magit/git-modes): Modes for gitconfig, gitattributes and gitignore files.
 - [git-timemachine](https://github.com/pidu/git-timemachine): Package to navigate through the versions of a file tracked with Git.
 - [magit](https://github.com/magit/magit): Git porcelain for Emacs.
+- [browse-at-remote](https://github.com/rmuslimov/browse-at-remote): Open current buffer at GitHub, GitLab or BitBucket.
 
 ### Org packages
 
@@ -551,7 +551,7 @@ For the commands that find files, C-u can be done before the command to first in
 - g : check buffer and update error list
 - q : quit error list
 
-### Magit keybindings
+### Git keybindings
 
 - C-x g : Magit status
 - C-x M-g : Magit list repositories
@@ -568,9 +568,7 @@ For the commands that find files, C-u can be done before the command to first in
 - In Magit commit buffer
   - C-c C-c : Finish commit
   - C-c C-k : Cancel commit
-
-### Git timemachine keybindings
-
+- C-c g g : open current buffer at GitHub, GitLab or BitBucket
 - C-x t : Git timemachine
   - p : previous version
   - n : next version

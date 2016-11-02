@@ -46,8 +46,6 @@ https://github.com/hchbaw/eval-sexp-fu.el
 **** macrostep
 https://github.com/joddie/macrostep
 *** Git
-**** browse-at-remote
-https://github.com/rmuslimov/browse-at-remote
 **** magithub
 https://github.com/vermiculus/magithub
 *** Haskell
