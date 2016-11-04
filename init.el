@@ -99,6 +99,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
 (add-to-list 'load-path "~/.emacs.packages/doctoc.el/")
+(add-to-list 'load-path "~/.emacs.packages/prometheus-rules-mode/")
 
 (if (file-exists-p "~/.emacs.d/local-settings.el")
     (load "~/.emacs.d/local-settings.el"))
@@ -133,5 +134,6 @@
 (require 'elixir-settings)
 (require 'smartparens-settings)
 (require 'docker-settings)
+(require 'prometheus-settings)
 (require 'help-settings)
 (require 'theme-settings)

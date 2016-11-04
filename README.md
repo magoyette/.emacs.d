@@ -135,12 +135,22 @@ This Emacs configuration depends on some packages that are in their initial deve
 
 ### doctoc.el
 
-doctoc.el is a package that adds support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
+[doctoc.el](https://github.com/magoyette/doctoc.el) is a package that adds support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
 
 doctoc.el can be installed by running the following command in the folder ~/.emacs.packages :
 
 ```sh
 git clone https://github.com/magoyette/doctoc.el.git
+```
+
+### prometheus-rules-mode
+
+[prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) is a package that adds support for [Prometheus](https://prometheus.io) rules in Emacs.
+
+prometheus-rules-mode can be installed by running the following command in the folder ~/.emacs.packages :
+
+```sh
+git clone https://github.com/magoyette/prometheus-rules-mode.git
 ```
 
 ## External dependencies
@@ -367,6 +377,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Docker packages
 
 - [dockerfile-mode](https://github.com/spotify/dockerfile-mode) : Mode to edit Dockerfiles.
+
+### Prometheus packages
+
+- [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) : Support for [Prometheus](https://prometheus.io) rules in Emacs.
 
 ### Help packages
 
