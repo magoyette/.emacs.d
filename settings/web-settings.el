@@ -2,10 +2,6 @@
   :ensure t
   :mode (("\\.less$" . less-css-mode)))
 
-(use-package scss-mode
-  :ensure t
-  :mode (("\\.scss$" . scss-mode)))
-
 (use-package sass-mode
   :ensure t
   :mode (("\\.sass$" . sass-mode)))
