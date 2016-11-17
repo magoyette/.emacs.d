@@ -55,9 +55,6 @@ https://github.com/chrisdone/structured-haskell-mode
 *** Java
 **** jdee
 https://github.com/jdee-emacs/jdee
-*** Org
-**** ox-pandoc
-https://github.com/kawabata/ox-pandoc
 *** Regex
 **** pcre2el
 https://github.com/joddie/pcre2el
