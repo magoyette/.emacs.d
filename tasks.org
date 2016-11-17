@@ -89,8 +89,6 @@ https://melpa.org/#/highlight-escape-sequences
 **** volatile-highlights.el
 https://github.com/k-talo/volatile-highlights.el
 *** Web
-**** emmet-mode
-https://github.com/smihica/emmet-mode
 **** eslint-fix
 https://github.com/codesuki/eslint-fix
 **** jade

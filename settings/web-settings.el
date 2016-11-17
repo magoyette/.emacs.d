@@ -81,4 +81,11 @@
                       (file-name-extension buffer-file-name))
     (setup-tide-mode)))
 
+(use-package emmet-mode
+  :ensure t
+  :config
+  (add-hook 'sgml-mode-hook 'emmet-mode)
+  (add-hook 'css-mode-hook  'emmet-mode)
+  (add-hook 'web-mode-hook 'emmet-mode))
+
 (provide 'web-settings)

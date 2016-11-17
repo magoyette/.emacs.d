@@ -329,6 +329,7 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 - [sass-mode](https://github.com/nex3/sass-mode) : Mode for .sass Sass files.
 - [helm-css-scss](https://github.com/ShingoFukuyama/helm-css-scss) : Helm for CSS, LESS and Sass selectors.
 - [web-mode](http://web-mode.org/) : Mode for web templates.
+- [emmet-mode](https://github.com/smihica/emmet-mode) : Support for Emmet in Emacs.
 - [js2-mode](https://github.com/mooz/js2-mode) : Mode for JavaScript.
 - [js2-refactor](https://github.com/magnars/js2-refactor.el) : Mode to refactor JavaScript code.
 - [json-mode](https://github.com/joshwnj/json-mode) : Mode for JSON files.
@@ -624,6 +625,7 @@ For the commands that find files, C-u can be done before the command to first in
 ### Web keybindings
 
 - C-c c : Helm for CSS, LESS and Sass selectors.
+- C-j : Expand an Emmet snippet in web-mode, css-mode or html-mode.
 
 ### REST keybindings
 
