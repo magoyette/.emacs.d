@@ -15,6 +15,7 @@ This repository should be cloned in the home folder of the current user.
   - [Magit local settings](#magit-local-settings)
 - [Emacs packages dependencies to install manually](#emacs-packages-dependencies-to-install-manually)
   - [doctoc.el](#doctocel)
+  - [prometheus-rules-mode](#prometheus-rules-mode)
 - [External dependencies](#external-dependencies)
   - [Windows HOME variable](#windows-home-variable)
   - [Git](#git)
@@ -55,6 +56,8 @@ This repository should be cloned in the home folder of the current user.
   - [Elixir packages](#elixir-packages)
   - [Smartparens packages](#smartparens-packages)
   - [Docker packages](#docker-packages)
+  - [Prometheus packages](#prometheus-packages)
+  - [Apache Thrift packages](#apache-thrift-packages)
   - [Help packages](#help-packages)
   - [Theme packages](#theme-packages)
 - [Essential keybindings](#essential-keybindings)
@@ -381,6 +384,10 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Prometheus packages
 
 - [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) : Support for [Prometheus](https://prometheus.io) rules in Emacs.
+
+### Apache Thrift packages
+
+- [thrift](https://github.com/apache/thrift/blob/master/contrib/thrift.el) : Support for Apache Thrift files.
 
 ### Help packages
 

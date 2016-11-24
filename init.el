@@ -135,5 +135,6 @@
 (require 'smartparens-settings)
 (require 'docker-settings)
 (require 'prometheus-settings)
+(require 'apache-thrift-settings)
 (require 'help-settings)
 (require 'theme-settings)
