@@ -1,6 +1,6 @@
 (require 'ispell)
 
-(global-set-key (kbd "C-c s") 'ispell)
+(global-set-key (kbd "C-c M-s") 'ispell)
 
 (setq ispell-program-name "hunspell")
 (setq ispell-extra-args '("-d en_US"))

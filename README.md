@@ -627,7 +627,7 @@ For the commands that find files, C-u can be done before the command to first in
 ### Spelling keybindings
 
 - C-c d : Alternate between english and french dictionaries
-- C-c s : Start ispell on the region or on the buffer
+- C-c M-s : Start ispell on the region or on the buffer
 
 ### Web keybindings
 
