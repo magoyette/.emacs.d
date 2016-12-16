@@ -609,6 +609,7 @@ For the commands that find files, C-u can be done before the command to first in
 - C-c a : Org agenda
 - C-c o b : Search in all opened org files with helm-org-rifle
 - C-c o d : Search in the org files of a directory with helm-org-rifle
+- C-c / T : Search for a specific TODO keyword and display the results in a sparse tree
 
 ### Markdown keybindings
 
