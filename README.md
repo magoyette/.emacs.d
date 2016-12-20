@@ -2,7 +2,12 @@
 
 My personal Emacs configuration. It requires Emacs 24 or 25. Most of the configuration is compatible with Windows 7 and Linux.
 
-This repository should be cloned in the home folder of the current user.
+This repository should be cloned in the home folder of the current user. Since this repository has some Git submodules, it can be cloned with the recursive option to load the submodules immediately.
+
+``` shell
+cd ~
+git clone --recursive https://github.com/magoyette/.emacs.d.git
+```
 
 ***
 
@@ -13,6 +18,9 @@ This repository should be cloned in the home folder of the current user.
 - [Local settings](#local-settings)
   - [Org mode local settings](#org-mode-local-settings)
   - [Magit local settings](#magit-local-settings)
+  - [Flycheck Checkstyle local settings](#flycheck-checkstyle-local-settings)
+- [Git Submodules](#git-submodules)
+  - [Flycheck Checkstyle](#flycheck-checkstyle)
 - [Emacs packages dependencies to install manually](#emacs-packages-dependencies-to-install-manually)
   - [doctoc.el](#doctocel)
   - [prometheus-rules-mode](#prometheus-rules-mode)
@@ -131,6 +139,36 @@ magit-repository-directories can be set to configure which folders must be scann
 (setq magit-repository-directories '("~/.emacs.d"
                                      "~/.gitignore_global"))
 ```
+
+### Flycheck Checkstyle local settings
+
+Flycheck Checkstyle is a Flycheck checker for Java code. It needs to be configured with the path to the Checkstyle jar and the path to a configuration file (ex: the [Google Java Style](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml) configuration).
+
+``` elisp
+(setq flycheck-checkstyle-jar "/home/<user>/dev/tools/checkstyle/checkstyle-7.3-all.jar")
+
+(setq flycheck-checkstyle-configuration-file "/home/<user>/dev/tools/checkstyle/google_checks.xml")
+```
+
+
+## Git Submodules
+
+This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they are included in this repository as Git submodules.
+
+The submodules can be added with the following command.
+``` shell
+git submodule update --init
+```
+
+It's also possible to clone this repository with the submodules.
+
+``` shell
+git clone --recursive https://github.com/magoyette/.emacs.d.git
+```
+
+### Flycheck Checkstyle
+
+[Flycheck Checkstyle](https://github.com/magoyette/flycheck-checkstyle) is an Emacs Flycheck checker for CheckStyle.
 
 ## Emacs packages dependencies to install manually
 

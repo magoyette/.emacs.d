@@ -1,0 +1,3 @@
+[submodule "submodules/flycheck-checkstyle"]
+	path = submodules/flycheck-checkstyle
+	url = https://github.com/magoyette/flycheck-checkstyle.git
