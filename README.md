@@ -24,19 +24,26 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Flycheck Checkstyle](#flycheck-checkstyle)
   - [prometheus-rules-mode](#prometheus-rules-mode)
 - [External dependencies](#external-dependencies)
-  - [Windows HOME variable](#windows-home-variable)
-  - [Git](#git)
-  - [The Platinum Searcher](#the-platinum-searcher)
-  - [Pandoc](#pandoc)
-  - [Node and npm](#node-and-npm)
-  - [TypeScript and tslint](#typescript-and-tslint)
-  - [Leiningen](#leiningen)
-  - [Haskell Tool Stack](#haskell-tool-stack)
-  - [Elixir](#elixir)
+  - [Windows OS setup](#windows-os-setup)
+    - [Windows HOME variable](#windows-home-variable)
+  - [General Tools](#general-tools)
+    - [Git](#git)
+    - [Pandoc](#pandoc)
+    - [The Platinum Searcher](#the-platinum-searcher)
+  - [Java Tools](#java-tools)
+    - [JDK](#jdk)
+    - [Leiningen](#leiningen)
+    - [CheckStyle](#checkstyle)
+  - [Node Tools](#node-tools)
+    - [Node and npm](#node-and-npm)
+    - [doctoc](#doctoc)
+    - [TypeScript and tslint](#typescript-and-tslint)
+  - [Other Programming Languages](#other-programming-languages)
+    - [Elixir](#elixir)
+    - [Haskell Tool Stack](#haskell-tool-stack)
   - [Hunspell](#hunspell)
     - [Hunspell on Linux](#hunspell-on-linux)
     - [Hunspell on Windows](#hunspell-on-windows)
-  - [doctoc](#doctoc)
 - [Packages](#packages)
   - [Package management](#package-management)
   - [Dired packages](#dired-packages)
@@ -178,27 +185,61 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 ## External dependencies
 
-### Windows HOME variable
+### Windows OS setup
+
+#### Windows HOME variable
 
 An environment variable named HOME is required on a Windows OS to allow Emacs to find the .emacs.d folder. The value of HOME must be the absolute path to the home folder of the current Windows user (where the .emacs.d repo should have been cloned). Magit also needs the HOME variable to execute git push from Windows.
 
-### Git
+### General Tools
+
+#### Git
 
 [Git](https://git-scm.com/) is required by [magit](https://github.com/magit/magit).
 
-### The Platinum Searcher
-
-The package helm-ag is configured to use [The Platinum Searcher](https://github.com/monochromegane/the_platinum_searcher).
-
-### Pandoc
+#### Pandoc
 
 [Pandoc](http://pandoc.org/) is necessary to preview markdown documents with markdown-mode.
 
-### Node and npm
+#### The Platinum Searcher
 
-Node and npm are required for TypeScript development.
+The package helm-ag is configured to use [The Platinum Searcher](https://github.com/monochromegane/the_platinum_searcher).
 
-### TypeScript and tslint
+### Java Tools
+
+#### JDK
+
+Many dependencies of this Emacs configuration need a JDK available in the path of the OS. The following commands should print the versions of the JRE and JDK currently available.
+
+``` shell
+java -version
+javac -version
+```
+
+#### Leiningen
+
+CIDER, the interactive development environment for Clojure, requires the [Leiningen](http://leiningen.org) build tool.
+
+#### CheckStyle
+
+Flycheck Checkstyle requires Checkstyle. Its configuration is described in [Flycheck Checkstyle local settings](#flycheck-checkstyle-local-settings).
+
+### Node Tools
+
+#### Node and npm
+
+Node and npm are required for many JavaScript libraries.
+
+#### doctoc
+
+doctoc is a JavaScript library used to generate the table of contents of a markdown file.
+
+doctoc can be installed with npm.
+```
+npm install -g doctoc
+```
+
+#### TypeScript and tslint
 
 A global installation of TypeScript and tslint is necessary to allow Flycheck to call tslint. tslint will use the tslint.json file of the project directory.
 
@@ -206,17 +247,15 @@ A global installation of TypeScript and tslint is necessary to allow Flycheck to
 sudo npm install -g tslint typescript
 ```
 
-### Leiningen
+### Other Programming Languages
 
-CIDER, the interactive development environment for Clojure, requires [Leiningen](http://leiningen.org).
-
-### Haskell Tool Stack
-
-Intero, the interactive development environment for Haskell, requires [Stack](haskellstack.org).
-
-### Elixir
+#### Elixir
 
 Alchemist requires [Elixir](http://elixir-lang.org/).
+
+#### Haskell Tool Stack
+
+Intero, the interactive development environment for Haskell, requires [Stack](haskellstack.org).
 
 ### Hunspell
 
@@ -244,17 +283,6 @@ The installation on Windows involves many steps.
   - README_hyph_fr.txt
   - README_thes_fr.txt
   - thes_fr.dat
-
-### doctoc
-
-doctoc is a JavaScript library used to generate the table of contents of a markdown file.
-
-doctoc can be installed with npm.
-```
-npm install -g doctoc
-```
-
-It can then be used to update the table of contents of this README with the command C-c C-d (provided by doctoc.el).
 
 ## Packages
 
