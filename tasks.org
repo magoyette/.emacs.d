@@ -86,8 +86,6 @@ https://github.com/NicolasPetton/jade
 https://github.com/tonini/karma.el
 **** mocha.el
 https://github.com/scottaj/mocha.el
-**** ng2-mode
-https://github.com/AdamNiederer/ng2-mode
 **** web-beautify
 https://github.com/yasuyk/web-beautify
 **** yasnippets-angular2
