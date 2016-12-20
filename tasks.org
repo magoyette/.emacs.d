@@ -38,9 +38,6 @@ https://github.com/Wilfred/elisp-refs.el
 https://github.com/hchbaw/eval-sexp-fu.el
 **** macrostep
 https://github.com/joddie/macrostep
-*** Git
-**** magithub
-https://github.com/vermiculus/magithub
 *** Haskell
 **** structured-haskell-mode
 https://github.com/chrisdone/structured-haskell-mode
