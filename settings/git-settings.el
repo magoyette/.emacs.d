@@ -21,6 +21,16 @@
   (if (eq system-type 'windows-nt)
       (setenv "GIT_ASKPASS" "git-gui--askpass"))
 
+  ;; Display Git Submodules infos in Magit status
+  (dolist (inserter '(magit-insert-modules-unpulled-from-upstream
+                      magit-insert-modules-unpulled-from-pushremote
+                      magit-insert-modules-unpushed-to-upstream
+                      magit-insert-modules-unpushed-to-pushremote
+                      magit-insert-submodules))
+    (magit-add-section-hook
+     'magit-status-sections-hook inserter
+     'magit-insert-unpulled-from-upstream))
+
   (setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1))
 
 (use-package diff-hl
