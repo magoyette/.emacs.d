@@ -16,11 +16,6 @@ http://pragmaticemacs.com/emacs/copy-and-paste-files-with-dired-ranger/
 https://github.com/syohex/emacs-dired-k
 **** Emacs-image-diredx
 https://github.com/mhayashi1120/Emacs-image-diredx
-*** Docker
-**** docker-tramp
-https://github.com/emacs-pe/docker-tramp.el
-**** docker.el
-https://github.com/Silex/docker.el
 *** Edition
 **** ace-window
 https://github.com/abo-abo/ace-window

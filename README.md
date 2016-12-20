@@ -380,6 +380,8 @@ The packages used by this Emacs configuration are grouped in categories. The pac
 ### Docker packages
 
 - [dockerfile-mode](https://github.com/spotify/dockerfile-mode) : Mode to edit Dockerfiles.
+- [docker.el](https://github.com/Silex/docker.el): Commands to manage Docker from Emacs.
+- [docker-tramp.el](https://github.com/emacs-pe/docker-tramp.el): A TRAMP method to connect to Docker containers.
 
 ### Prometheus packages
 
