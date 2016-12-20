@@ -20,10 +20,9 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Magit local settings](#magit-local-settings)
   - [Flycheck Checkstyle local settings](#flycheck-checkstyle-local-settings)
 - [Git Submodules](#git-submodules)
+  - [doctoc.el](#doctocel)
   - [Flycheck Checkstyle](#flycheck-checkstyle)
   - [prometheus-rules-mode](#prometheus-rules-mode)
-- [Emacs packages dependencies to install manually](#emacs-packages-dependencies-to-install-manually)
-  - [doctoc.el](#doctocel)
 - [External dependencies](#external-dependencies)
   - [Windows HOME variable](#windows-home-variable)
   - [Git](#git)
@@ -165,6 +164,10 @@ It's also possible to clone this repository with the submodules.
 git clone --recursive https://github.com/magoyette/.emacs.d.git
 ```
 
+### doctoc.el
+
+[doctoc.el](https://github.com/magoyette/doctoc.el) is a package that adds support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
+
 ### Flycheck Checkstyle
 
 [Flycheck Checkstyle](https://github.com/magoyette/flycheck-checkstyle) is an Emacs Flycheck checker for CheckStyle.
@@ -172,20 +175,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 ### prometheus-rules-mode
 
 [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) is a package that adds support for [Prometheus](https://prometheus.io) rules in Emacs.
-
-## Emacs packages dependencies to install manually
-
-This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they need to be cloned manually in the folder ~/.emacs.packages.
-
-### doctoc.el
-
-[doctoc.el](https://github.com/magoyette/doctoc.el) is a package that adds support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
-
-doctoc.el can be installed by running the following command in the folder ~/.emacs.packages :
-
-```sh
-git clone https://github.com/magoyette/doctoc.el.git
-```
 
 ## External dependencies
 

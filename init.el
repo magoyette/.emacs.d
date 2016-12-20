@@ -98,10 +98,13 @@
 ;;;;; Load settings and features
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
-(add-to-list 'load-path "~/.emacs.packages/doctoc.el/")
+
+;; Add Git submodules for packages not on Elpa or Melpa
+(add-to-list 'load-path "~/.emacs.d/submodules/doctoc.el/")
 (add-to-list 'load-path "~/.emacs.d/submodules/prometheus-rules-mode/")
 (add-to-list 'load-path "~/.emacs.d/submodules/flycheck-checkstyle/")
 
+;; local-settings is used to set local configurations not stored in Git
 (if (file-exists-p "~/.emacs.d/local-settings.el")
     (load "~/.emacs.d/local-settings.el"))
 

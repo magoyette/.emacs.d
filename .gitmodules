@@ -4,3 +4,6 @@
 [submodule "submodules/prometheus-rules-mode"]
 	path = submodules/prometheus-rules-mode
 	url = https://github.com/magoyette/prometheus-rules-mode.git
+[submodule "submodules/doctoc.el"]
+	path = submodules/doctoc.el
+	url = https://github.com/magoyette/doctoc.el.git
