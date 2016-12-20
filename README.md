@@ -21,9 +21,9 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Flycheck Checkstyle local settings](#flycheck-checkstyle-local-settings)
 - [Git Submodules](#git-submodules)
   - [Flycheck Checkstyle](#flycheck-checkstyle)
+  - [prometheus-rules-mode](#prometheus-rules-mode)
 - [Emacs packages dependencies to install manually](#emacs-packages-dependencies-to-install-manually)
   - [doctoc.el](#doctocel)
-  - [prometheus-rules-mode](#prometheus-rules-mode)
 - [External dependencies](#external-dependencies)
   - [Windows HOME variable](#windows-home-variable)
   - [Git](#git)
@@ -150,7 +150,6 @@ Flycheck Checkstyle is a Flycheck checker for Java code. It needs to be configur
 (setq flycheck-checkstyle-configuration-file "/home/<user>/dev/tools/checkstyle/google_checks.xml")
 ```
 
-
 ## Git Submodules
 
 This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they are included in this repository as Git submodules.
@@ -170,6 +169,10 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 [Flycheck Checkstyle](https://github.com/magoyette/flycheck-checkstyle) is an Emacs Flycheck checker for CheckStyle.
 
+### prometheus-rules-mode
+
+[prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) is a package that adds support for [Prometheus](https://prometheus.io) rules in Emacs.
+
 ## Emacs packages dependencies to install manually
 
 This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they need to be cloned manually in the folder ~/.emacs.packages.
@@ -182,16 +185,6 @@ doctoc.el can be installed by running the following command in the folder ~/.ema
 
 ```sh
 git clone https://github.com/magoyette/doctoc.el.git
-```
-
-### prometheus-rules-mode
-
-[prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) is a package that adds support for [Prometheus](https://prometheus.io) rules in Emacs.
-
-prometheus-rules-mode can be installed by running the following command in the folder ~/.emacs.packages :
-
-```sh
-git clone https://github.com/magoyette/prometheus-rules-mode.git
 ```
 
 ## External dependencies

@@ -1,3 +1,6 @@
 [submodule "submodules/flycheck-checkstyle"]
 	path = submodules/flycheck-checkstyle
 	url = https://github.com/magoyette/flycheck-checkstyle.git
+[submodule "submodules/prometheus-rules-mode"]
+	path = submodules/prometheus-rules-mode
+	url = https://github.com/magoyette/prometheus-rules-mode.git

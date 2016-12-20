@@ -99,7 +99,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/settings/")
 (add-to-list 'load-path "~/.emacs.packages/doctoc.el/")
-(add-to-list 'load-path "~/.emacs.packages/prometheus-rules-mode/")
+(add-to-list 'load-path "~/.emacs.d/submodules/prometheus-rules-mode/")
 (add-to-list 'load-path "~/.emacs.d/submodules/flycheck-checkstyle/")
 
 (if (file-exists-p "~/.emacs.d/local-settings.el")
