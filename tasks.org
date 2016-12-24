@@ -42,6 +42,8 @@ https://github.com/joddie/macrostep
 **** structured-haskell-mode
 https://github.com/chrisdone/structured-haskell-mode
 *** Java
+**** ENJIME
+https://github.com/ensime/ensime-server/issues/345
 **** jdee
 https://github.com/jdee-emacs/jdee
 *** Regex
@@ -55,6 +57,9 @@ https://github.com/benma/visual-regexp-steroids.el/
 **** elfeed
 https://github.com/skeeto/elfeed
 http://pragmaticemacs.com/emacs/read-your-rss-feeds-in-emacs-with-elfeed/
+*** Scala
+**** ENSIME
+https://ensime.github.io/
 *** Shell
 **** readline-complete.el
 https://github.com/monsanto/readline-complete.el
