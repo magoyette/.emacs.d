@@ -68,6 +68,8 @@ https://github.com/monsanto/readline-complete.el
 https://github.com/bbatsov/crux
 **** emacs-dashboard
 https://github.com/rakanalh/emacs-dashboard
+**** emacs-neotree
+https://github.com/jaypei/emacs-neotree
 **** guru-mode
 https://github.com/bbatsov/guru-mode
 **** ledger
