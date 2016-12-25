@@ -173,11 +173,13 @@
 
 ## Navigation keybindings
 
-- M-g M-g : Go to line number
-- C-, : Input one char, then jump to a character
-- C-' : Input 2 chars, then jump to a character
-- M-g f : Jump the beginning of a line
-- M-g w : Input one char, then jump to the beginning of a word
+| Keybinding | Action |
+| ---------- | ------ |
+| M-g M-g | Go to line number |
+| C-, | Input one char, then jump to a character |
+| C-' | Input 2 chars, then jump to a character |
+| M-g f | Jump the beginning of a line |
+| M-g w | Input one char, then jump to the beginning of a word |
 
 ## Company keybindings
 
