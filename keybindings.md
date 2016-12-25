@@ -275,17 +275,19 @@ For the commands that find files, C-u can be done before the command to first in
 
 ## Markdown keybindings
 
-- C-c C-c m : preview Markdown html
-- C-c C-c p : preview Markdown file in browser
-- C-c C-c l : preview Markdown in real time in an Emacs Web Wowser buffer
-- C-c C-o : open link at point in a browser
-- M-Up : Move list item up
-- M-Down : Move list item down
-- M-Right : Increase indent of list item
-- M-LEFT : Decrease indent of list item
-- C-c C-n : Move to next heading
-- C-c C-p : Move to previous heading
-- C-c C-d : Generate the table of contents of a markdown file with [DocToc](https://github.com/thlorenz/doctoc)
+| Keybinding | Action |
+| ---------- | ------ |
+| C-c C-c m | preview Markdown html |
+| C-c C-c p | preview Markdown file in browser |
+| C-c C-c l | preview Markdown in real time in an Emacs Web Wowser buffer |
+| C-c C-o | open link at point in a browser |
+| M-Up | Move list item up |
+| M-Down | Move list item down |
+| M-Right | Increase indent of list item |
+| M-LEFT | Decrease indent of list item |
+| C-c C-n | Move to next heading |
+| C-c C-p | Move to previous heading |
+| C-c C-d | Generate a table of contents with [DocToc](https://github.com/thlorenz/doctoc) |
 
 ## Spelling keybindings
 
