@@ -51,7 +51,9 @@
 
 ## Package management keybindings
 
-- C-x p : List packages with Paradox
+| Keybinding | Action |
+| ---------- | ------ |
+| C-x p | List packages with Paradox |
 
 ## Dired keybindings
 
