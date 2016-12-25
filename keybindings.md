@@ -23,7 +23,9 @@
 - [Flycheck keybindings](#flycheck-keybindings)
   - [Flycheck error list keybindings](#flycheck-error-list-keybindings)
 - [Git keybindings](#git-keybindings)
-- [Smerge keybindings](#smerge-keybindings)
+  - [Magit blame keybindings](#magit-blame-keybindings)
+  - [Magit commit keybindings](#magit-commit-keybindings)
+  - [Git timemachine keybindings](#git-timemachine-keybindings)
 - [Org mode keybindings](#org-mode-keybindings)
 - [Markdown keybindings](#markdown-keybindings)
 - [Spelling keybindings](#spelling-keybindings)
@@ -222,32 +224,44 @@ For the commands that find files, C-u can be done before the command to first in
 
 ## Git keybindings
 
-- C-x g : Magit status
-- C-x M-g : Magit list repositories
-- C-x G : Magit blame
-  - RET : Show commit at point
-  - SPC : Update commit buffer with the thing at point or scroll buffer up
-  - DEL : Update commit buffer with the thing at point or scroll buffer down
-  - n : move to next blame chunk
-  - N : move to next blame chunk from same commit
-  - p : move to previous blame chunk
-  - P : move to previous blame chunk from same commit
-  - M-w : copy hash of the commit from the current chunk
-  - q : exit Magit blame
-- In Magit commit buffer
-  - C-c C-c : Finish commit
-  - C-c C-k : Cancel commit
-- C-c g g : open current buffer at GitHub, GitLab or BitBucket
-- C-x t : Git timemachine
-  - p : previous version
-  - n : next version
-  - w : copy abbreviated hash of current version
-  - q : exit Git timemachine
+| Keybinding | Action |
+| ---------- | ------ |
+| C-x g | Magit status |
+| C-x M-g | Magit list repositories |
+| C-x G | Magit blame |
+| C-c g g | open current buffer at GitHub, GitLab or BitBucket |
+| C-x t | Git timemachine |
+| C-c s | Hydra for smerge-mode |
 
-## Smerge keybindings
+### Magit blame keybindings
 
-- RET on Magit "unmerged" commit : Open buffer for unmerged file with smerge-mode
-- C-c s : Hydra for smerge-mode
+| Keybinding | Action |
+| ---------- | ------ |
+| RET | Show commit at point |
+| SPC | Update commit buffer with the thing at point or scroll buffer up |
+| DEL | Update commit buffer with the thing at point or scroll buffer down |
+| n | move to next blame chunk |
+| N | move to next blame chunk from same commit |
+| p | move to previous blame chunk |
+| P | move to previous blame chunk from same commit |
+| M-w | copy hash of the commit from the current chunk |
+| q | exit Magit blame |
+
+### Magit commit keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-c C-c | Finish commit |
+| C-c C-k | Cancel commit |
+
+### Git timemachine keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| p | previous version |
+| n | next version |
+| w | copy abbreviated hash of current version |
+| q | exit Git timemachine |
 
 ## Org mode keybindings
 
