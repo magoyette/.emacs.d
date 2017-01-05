@@ -21,6 +21,8 @@ https://github.com/mhayashi1120/Emacs-image-diredx
 https://github.com/abo-abo/ace-window
 **** highlight-symbol
 https://github.com/nschum/highlight-symbol.el
+**** indent-tools
+https://gitlab.com/emacs-stuff/indent-tools
 **** move-text
 https://github.com/emacsfodder/move-text
 **** whole-line-or-region
