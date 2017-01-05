@@ -74,6 +74,9 @@ https://github.com/editorconfig/editorconfig-emacs
 https://github.com/rakanalh/emacs-dashboard
 **** emacs-neotree
 https://github.com/jaypei/emacs-neotree
+**** emacs-winum vs window-numbering.el
+https://github.com/deb0ch/emacs-winum
+https://github.com/nschum/window-numbering.el
 **** guru-mode
 https://github.com/bbatsov/guru-mode
 **** ledger
