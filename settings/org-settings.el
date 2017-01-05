@@ -21,13 +21,14 @@
   (setq org-confirm-babel-evaluate nil)
 
   (setq org-todo-keywords
-        '((sequence "TODO(t)" "READY(r)" "DOING(d)" "TOO_MUCH_WIP(w)" "|" "DONE(f)")))
+        '((sequence "TODO(t)" "READY(r)" "DOING(d)" "WAITING(w)" "BLOCKED(b)" "|" "DONE(f)")))
 
   (setq org-todo-keyword-faces
         '(("TODO" . "#dfaf8f")
           ("READY" . "#93e0e3")
           ("DOING" . "#dc8cc3")
-          ("TOO_MUCH_WIP" . "#CC9393")
+          ("WAITING" . "#CC9393")
+          ("BLOCKED" . "#CC9393")
           ("DONE" . "#dcdccc")))
 
   (when (fboundp 'local-settings-set-org-agenda-files)
