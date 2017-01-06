@@ -7,7 +7,7 @@
 - [Package management keybindings](#package-management-keybindings)
 - [Dired keybindings](#dired-keybindings)
   - [Dired mode](#dired-mode)
-- [Windows keybindings](#windows-keybindings)
+- [Windows and frames keybindings](#windows-and-frames-keybindings)
 - [Helm keybindings](#helm-keybindings)
 - [Edition keybindings](#edition-keybindings)
   - [Undo tree keybindings](#undo-tree-keybindings)
@@ -87,9 +87,10 @@
 - c : compress many marked files to a single archive
 - q : exit dired
 
-## Windows keybindings
+## Windows and frames keybindings
 
-- M-1, M-2, ... : move to a numbered window
+- M-1, M-2, ... : move to a numbered window in the current frame or another frame
+- C-x 5 2 : create a new frame
 
 ## Helm keybindings
 

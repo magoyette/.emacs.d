@@ -36,7 +36,7 @@
   (require 'spaceline-config)
   (setq powerline-default-separator 'wave)
   :config
-  ;; Use unicode character for window number (window-numbering package)
+  ;; Use unicode character for window number (provided by winum package)
   (with-no-warnings (setq spaceline-window-numbers-unicode t))
 
   (spaceline-emacs-theme)

@@ -10,6 +10,7 @@
 - [Hydra packages](#hydra-packages)
 - [Helm packages](#helm-packages)
 - [Edition packages](#edition-packages)
+- [Windows packages](#windows-packages)
 - [Search and replace packages](#search-and-replace-packages)
 - [Search engines packages](#search-engines-packages)
 - [Company packages](#company-packages)
@@ -66,6 +67,10 @@
 - [highlight-indentation](https://github.com/antonj/Highlight-Indentation-for-Emacs) : Displays guidelines for indentation.
 - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
 - [undo-tree](https://melpa.org/#/undo-tree) : Visualize undo history as a tree of changes.
+
+## Windows packages
+
+- [winum](https://github.com/deb0ch/emacs-winum) : Navigate between windows with numbers.
 
 ## Search and replace packages
 
