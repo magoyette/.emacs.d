@@ -101,6 +101,8 @@ https://github.com/NicolasPetton/jade
 https://github.com/tonini/karma.el
 **** mocha.el
 https://github.com/scottaj/mocha.el
+**** rjsx-mode
+https://github.com/felipeochoa/rjsx-mode
 **** web-beautify
 https://github.com/yasuyk/web-beautify
 **** yasnippets-angular2
@@ -110,3 +112,26 @@ https://github.com/bleggett/yasnippets-angular2
 **** Choose between sass (ruby) and node-sass (wrapper over the C lib)
 - https://sass-lang.com/
 - https://github.com/sass/node-sass
+** Tips
+*** Emacs Configs
+**** Look at nice emacs config files
+https://github.com/caisah/emacs.dz
+*** Emacs Lisp
+**** Read and write files
+http://www.lunaryorn.com/posts/read-and-write-files-in-emacs-lisp.html
+*** General
+**** Center text
+http://www.lunaryorn.com/posts/center-buffer-text-in-emacs.html
+**** reposition-window
+http://irreal.org/blog/?p=5658
+*** Git
+**** Try magit-ediff
+https://coderwall.com/p/mcrwag/use-magit-ediff-to-resolve-merge-conflicts
+**** Try smerge-refine
+https://emacs.stackexchange.com/questions/27810/ignoring-newline-changes-in-smerge-diff-mine-other
+*** Navigation
+**** avy-goto-char-timer
+http://irreal.org/blog/?p=5740
+*** XML
+**** Format XML in Emacs
+https://manuel-uberti.github.io/emacs/2016/12/03/xmllint/
