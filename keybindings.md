@@ -5,23 +5,24 @@
 
 
 - [Package management keybindings](#package-management-keybindings)
-- [Dired keybindings](#dired-keybindings)
-  - [Dired mode](#dired-mode)
 - [Windows and frames keybindings](#windows-and-frames-keybindings)
 - [Helm keybindings](#helm-keybindings)
   - [Helm actions](#helm-actions)
   - [Helm features](#helm-features)
+- [Movement keybindings](#movement-keybindings)
 - [Edition keybindings](#edition-keybindings)
   - [Undo tree keybindings](#undo-tree-keybindings)
   - [Rectangle mark mode keybindings](#rectangle-mark-mode-keybindings)
   - [Multiple cursors keybindings](#multiple-cursors-keybindings)
-- [Narrowing keybindings](#narrowing-keybindings)
 - [Search and replace keybindings](#search-and-replace-keybindings)
   - [Helm swoop keybindings](#helm-swoop-keybindings)
-- [Search engines keybindings](#search-engines-keybindings)
-- [Navigation keybindings](#navigation-keybindings)
 - [Company keybindings](#company-keybindings)
 - [YASnippet keybindings](#yasnippet-keybindings)
+- [Narrowing keybindings](#narrowing-keybindings)
+- [Theme keybindings](#theme-keybindings)
+- [Dired keybindings](#dired-keybindings)
+  - [Dired mode](#dired-mode)
+- [Search engines keybindings](#search-engines-keybindings)
 - [Projectile keybindings](#projectile-keybindings)
 - [Flycheck keybindings](#flycheck-keybindings)
   - [Flycheck error list keybindings](#flycheck-error-list-keybindings)
@@ -49,8 +50,6 @@
 - [Smartparens keybindings](#smartparens-keybindings)
   - [Smartparens navigation](#smartparens-navigation)
   - [Smartparens manipulation](#smartparens-manipulation)
-- [Help keybindings](#help-keybindings)
-- [Theme keybindings](#theme-keybindings)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -59,40 +58,6 @@
 | Keybinding | Action |
 | ---------- | ------ |
 | C-x p | List packages with Paradox |
-
-## Dired keybindings
-
-| Keybinding | Action |
-| ---------- | ------ |
-| C-x d | open dired mode |
-| C-x C-j | show current file in dired |
-
-### Dired mode
-
-| Keybinding | Action |
-| ---------- | ------ |
-| j | jump to file |
-| > | move to next directory |
-| < | move to previous directory |
-| ^ | move to the parent directory (..) |
-| g | refresh |
-| + | create a new file |
-| s | alternate between sort by name and date |
-| m | mark a file |
-| % m [regex] | mark all fiels that match a regex |
-| u | unmark a file |
-| U | unmark all files |
-| * t | invert marking of files |
-| * s | mark all files |
-| P | show file in another windows with peep-dired |
-| C | copy file under cursor or marked files |
-| R | rename file under cursor or marked files |
-| D | delete file under cursor or marked files |
-| C-x C-q | switch to editing mode to rename files (save buffer to save changes) |
-| Q | run query-replace on marked files |
-| Z | compress/decompress |
-| c | compress many marked files to a single archive |
-| q | exit dired |
 
 ## Windows and frames keybindings
 
@@ -127,6 +92,19 @@
 | M-s d | Helm search inside a directory with the platinum searcher |
 | M-s p | Helm search inside project root with the platinum searcher |
 | C-x 8 | Helm select unicode character |
+| C-h a | Helm apropos |
+| C-h i | Helm info |
+| C-h b | Helm describe bindings |
+
+## Movement keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| M-g M-g | Go to line number |
+| C-, | Input one char, then jump to a character |
+| C-' | Input 2 chars, then jump to a character |
+| M-g f | Jump the beginning of a line |
+| M-g w | Input one char, then jump to the beginning of a word |
 
 ## Edition keybindings
 
@@ -165,13 +143,6 @@
 | C-< | Add a cursor to the previous expression like the selected region |
 | C-c C-< | Add a cursor to all expressions in the buffer like the selected region |
 
-## Narrowing keybindings
-
-| Keybinding | Action |
-| ---------- | ------ |
-| C-x n | narrow or widen a region, an org block, an org subtree or a defun |
-| C-u C-x n | narrow a narrowed buffer |
-
 ## Search and replace keybindings
 
 | Keybinding | Action |
@@ -198,26 +169,6 @@
 | C-c C-e | enter edit mode |
 | C-x C-s | apply edit mode changes |
 
-## Search engines keybindings
-
-| Keybinding | Action |
-| ---------- | ------ |
-| C-c / d | query with DuckDuckGo |
-| C-c / h | query with GitHub |
-| C-c / g | query with Google |
-| C-c / s | query with StackOverflow |
-| C-c / w | query with Wikipedia |
-
-## Navigation keybindings
-
-| Keybinding | Action |
-| ---------- | ------ |
-| M-g M-g | Go to line number |
-| C-, | Input one char, then jump to a character |
-| C-' | Input 2 chars, then jump to a character |
-| M-g f | Jump the beginning of a line |
-| M-g w | Input one char, then jump to the beginning of a word |
-
 ## Company keybindings
 
 | Keybinding | Action |
@@ -232,6 +183,64 @@
 | ---------- | ------ |
 | C-TAB | Expand snippet |
 | S-TAB | Insert a snippet |
+
+## Narrowing keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-x n | narrow or widen a region, an org block, an org subtree or a defun |
+| C-u C-x n | narrow a narrowed buffer |
+
+## Theme keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-+ | Increase text scale |
+| C-- | Decrease text scale |
+
+## Dired keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-x d | open dired mode |
+| C-x C-j | show current file in dired |
+
+### Dired mode
+
+| Keybinding | Action |
+| ---------- | ------ |
+| j | jump to file |
+| > | move to next directory |
+| < | move to previous directory |
+| ^ | move to the parent directory (..) |
+| g | refresh |
+| + | create a new file |
+| s | alternate between sort by name and date |
+| m | mark a file |
+| % m [regex] | mark all fiels that match a regex |
+| u | unmark a file |
+| U | unmark all files |
+| * t | invert marking of files |
+| * s | mark all files |
+| P | show file in another windows with peep-dired |
+| C | copy file under cursor or marked files |
+| R | rename file under cursor or marked files |
+| D | delete file under cursor or marked files |
+| C-x C-q | switch to editing mode to rename files (save buffer to save changes) |
+| Q | run query-replace on marked files |
+| Z | compress/decompress |
+| c | compress many marked files to a single archive |
+| q | exit dired |
+
+## Search engines keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-c / d | query with DuckDuckGo |
+| C-c / h | query with GitHub |
+| C-c / g | query with Google |
+| C-c / s | query with StackOverflow |
+| C-c / w | query with Wikipedia |
 
 ## Projectile keybindings
 
@@ -514,18 +523,3 @@ For the commands that find files, C-u can be done before the command to first in
 | C-M-&lt;delete&gt; | Remove the wrapping pair from this expression and kill everything from the end of expression before (point) to end of this expression |
 | C-M-&lt;backspace&gt; | Remove the wrapping pair from this expression and kill everything from the beginning of this expression to beginning of expression after (point) |
 | C-S-&lt;backspace&gt; | Remove the wrapping pair from this expression and kill everything inside save for ARG next expressions |
-
-## Help keybindings
-
-| Keybinding | Action |
-| ---------- | ------ |
-| C-h a | Helm apropos |
-| C-h i | Helm info |
-| C-h b | Helm describe bindings |
-
-## Theme keybindings
-
-| Keybinding | Action |
-| ---------- | ------ |
-| C-+ | Increase text scale |
-| C-- | Decrease text scale |
