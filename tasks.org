@@ -19,6 +19,8 @@ https://github.com/mhayashi1120/Emacs-image-diredx
 *** Edition
 **** ace-window
 https://github.com/abo-abo/ace-window
+**** highlight-indent-guides
+https://github.com/DarthFennec/highlight-indent-guides
 **** highlight-symbol
 https://github.com/nschum/highlight-symbol.el
 **** indent-tools
@@ -32,8 +34,13 @@ https://github.com/purcell/whole-line-or-region
 *** Elisp
 **** ecukes
 https://github.com/ecukes/ecukes
+https://github.com/ecukes/espuds
 **** cask
 https://github.com/cask/cask
+**** emacs-travis
+https://github.com/rolandwalker/emacs-travis
+**** melpa
+https://github.com/melpa/melpa
 **** elisp-bug-hunter
 https://github.com/Malabarba/elisp-bug-hunter/
 **** elisp-refs.el
@@ -50,6 +57,10 @@ https://github.com/chrisdone/structured-haskell-mode
 https://github.com/ensime/ensime-server/issues/345
 **** jdee
 https://github.com/jdee-emacs/jdee
+*** Markdown
+**** vmd-mode.el vs emacs-livedown
+https://github.com/blak3mill3r/vmd-mode
+https://github.com/shime/emacs-livedown
 *** Regex
 **** pcre2el
 https://github.com/joddie/pcre2el
@@ -92,6 +103,8 @@ https://github.com/magnars/string-edit.el
 https://melpa.org/#/highlight-escape-sequences
 **** volatile-highlights.el
 https://github.com/k-talo/volatile-highlights.el
+**** ztree
+https://github.com/fourier/ztree
 *** Web
 **** eslint-fix
 https://github.com/codesuki/eslint-fix
