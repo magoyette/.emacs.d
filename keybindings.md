@@ -107,7 +107,7 @@
 
 | Keybinding | Action |
 | ---------- | ------ |
-| <tab> | execute persistent action |
+| &lt;tab&gt; | execute persistent action |
 | C-i | execute persistent action |
 | C-z | select action |
 
@@ -122,7 +122,7 @@
 | C-x f | Helm multi (combines buffers list, find files and recent files) |
 | M-x | Helm execute command |
 | M-y | Helm show kill ring |
-| C-c <SPC> | Helm all mark rings |
+| C-c &lt;SPC&gt; | Helm all mark rings |
 | C-x r b | Helm filtered bookmarks |
 | M-s d | Helm search inside a directory with the platinum searcher |
 | M-s p | Helm search inside project root with the platinum searcher |
@@ -503,17 +503,17 @@ For the commands that find files, C-u can be done before the command to first in
 | ---------- | ------ |
 | C-M-k | Kill the next balanced expression (if there's no next expression, kill enclosing expression) |
 | C-M-w | Copy the next balanced expression |
-| M-<delete> | Remove the wrapping pair from the following expression |
-| M-<backspace> | Remove the wrapping pair from the previous expression |
+| M-&lt;delete&gt; | Remove the wrapping pair from the following expression |
+| M-&lt;backspace&gt; | Remove the wrapping pair from the previous expression |
 | C-M-t | Transpose the adjacent balanced expressions (swap the expressions) |
-| C-<right> | Extend the current list by one element by moving the closing delimiter |
-| C-<left> | Contract the current list by one element by moving the closing delimiter |
-| C-M-<left> | Extend the current list by one element by moving the opening delimiter |
-| C-M-<right> | Contract the current list by one element by moving the opening delimiter |
+| C-&lt;right&gt; | Extend the current list by one element by moving the closing delimiter |
+| C-&lt;left&gt; | Contract the current list by one element by moving the closing delimiter |
+| C-M-&lt;left&gt; | Extend the current list by one element by moving the opening delimiter |
+| C-M-&lt;right&gt; | Contract the current list by one element by moving the opening delimiter |
 | M-D | Remove the wrapping pair from this expression |
-| C-M-<delete> | Remove the wrapping pair from this expression and kill everything from the end of expression before (point) to end of this expression |
-| C-M-<backspace> | Remove the wrapping pair from this expression and kill everything from the beginning of this expression to beginning of expression after (point) |
-| C-S-<backspace> | Remove the wrapping pair from this expression and kill everything inside save for ARG next expressions |
+| C-M-&lt;delete&gt; | Remove the wrapping pair from this expression and kill everything from the end of expression before (point) to end of this expression |
+| C-M-&lt;backspace&gt; | Remove the wrapping pair from this expression and kill everything from the beginning of this expression to beginning of expression after (point) |
+| C-S-&lt;backspace&gt; | Remove the wrapping pair from this expression and kill everything inside save for ARG next expressions |
 
 ## Help keybindings
 
