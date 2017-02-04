@@ -23,10 +23,7 @@
   :ensure t
   :commands (cider cider-connect cider-jack-in)
   :config
-  (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode)
-
-  ;; Run all tests of a namespace when it is loaded
-  (cider-auto-test-mode 1))
+  (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode))
 
 (use-package cider-eval-sexp-fu
   :ensure t
