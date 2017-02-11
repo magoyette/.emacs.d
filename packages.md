@@ -31,7 +31,6 @@
 - [Smartparens packages](#smartparens-packages)
 - [Docker packages](#docker-packages)
 - [Prometheus packages](#prometheus-packages)
-- [Apache Thrift packages](#apache-thrift-packages)
 - [Help packages](#help-packages)
 - [Theme packages](#theme-packages)
 
@@ -187,10 +186,6 @@
 ## Prometheus packages
 
 - [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) : Support for [Prometheus](https://prometheus.io) rules in Emacs.
-
-## Apache Thrift packages
-
-- [thrift](https://github.com/apache/thrift/blob/master/contrib/thrift.el) : Support for Apache Thrift files.
 
 ## Help packages
 
