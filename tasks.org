@@ -1,8 +1,4 @@
 * Tasks
-** Packages to migrate
-*** groovy-settings
-**** groovy-mode
-https://github.com/Groovy-Emacs-Modes/groovy-emacs-modes
 ** Packages to evaluate
 *** Clojure
 **** parinfer
