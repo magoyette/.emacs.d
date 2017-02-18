@@ -64,10 +64,6 @@ https://github.com/joddie/pcre2el
 https://github.com/benma/visual-regexp.el
 **** visual-regexp-steroids
 https://github.com/benma/visual-regexp-steroids.el/
-*** RSS
-**** elfeed
-https://github.com/skeeto/elfeed
-http://pragmaticemacs.com/emacs/read-your-rss-feeds-in-emacs-with-elfeed/
 *** Scala
 **** ENSIME
 https://ensime.github.io/
