@@ -104,6 +104,8 @@
 
 ## Navigation packages
 
+- [all-the-icons.el](https://github.com/domtronn/all-the-icons.el) : Icons for dired and NeoTree.
+- [all-the-icons-dired](https://github.com/jtbm37/all-the-icons-dired) : Add icons to dired.
 - [avy](https://github.com/abo-abo/avy) : Jump to a specific position in buffer.
 - [emacs-neotree](https://github.com/jaypei/emacs-neotree) : Displays folders and files in a tree.
 
