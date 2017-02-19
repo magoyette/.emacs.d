@@ -10,6 +10,7 @@
   - [Helm actions](#helm-actions)
   - [Helm features](#helm-features)
 - [Movement keybindings](#movement-keybindings)
+- [NeoTree keybindings](#neotree-keybindings)
 - [Edition keybindings](#edition-keybindings)
   - [Undo tree keybindings](#undo-tree-keybindings)
   - [Rectangle mark mode keybindings](#rectangle-mark-mode-keybindings)
@@ -105,6 +106,21 @@
 | C-' | Input 2 chars, then jump to a character |
 | M-g f | Jump the beginning of a line |
 | M-g w | Input one char, then jump to the beginning of a word |
+
+## NeoTree keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| F8 | Toggle NeoTree |
+| n | Next line |
+| p | Previous line |
+| SPC or RET or TAB | Fold/unfold directory or open file |
+| g | Refresh |
+| H | Toggle display of hidden files |
+| C-c C-n | Create a file or directory if name ends with / |
+| C-c C-d | Delete a file or directory |
+| C-c C-r | Rename a file or directory |
+| C-c C-c | Change the root directory |
 
 ## Edition keybindings
 

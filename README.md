@@ -120,6 +120,12 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 An environment variable named HOME is required on a Windows OS to allow Emacs to find the .emacs.d folder. The value of HOME must be the absolute path to the home folder of the current Windows user (where the .emacs.d repo should have been cloned). Magit also needs the HOME variable to execute git push from Windows.
 
+### Fonts
+
+#### all-the-icons.el fonts
+
+The neotree package is configured to use the [fonts of all-the-icons.el](https://github.com/domtronn/all-the-icons.el/tree/master/fonts).
+
 ### General Tools
 
 #### Git

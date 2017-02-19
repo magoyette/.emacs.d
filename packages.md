@@ -105,6 +105,7 @@
 ## Navigation packages
 
 - [avy](https://github.com/abo-abo/avy) : Jump to a specific position in buffer.
+- [emacs-neotree](https://github.com/jaypei/emacs-neotree) : Displays folders and files in a tree.
 
 ## Git packages
 
