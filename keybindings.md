@@ -112,6 +112,7 @@
 | Keybinding | Action |
 | ---------- | ------ |
 | F8 | Toggle NeoTree |
+| F9 | Toggle NeoTree on the root of the Projectile project |
 | n | Next line |
 | p | Previous line |
 | SPC or RET or TAB | Fold/unfold directory or open file |

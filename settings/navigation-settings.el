@@ -44,6 +44,6 @@
                 (neotree-find file-name)))
         (message "Could not find git project root."))))
 
-  (global-set-key [f8] 'neotree-project-dir))
+  (global-set-key [f9] 'neotree-project-dir))
 
 (provide 'navigation-settings)
