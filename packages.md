@@ -197,6 +197,7 @@
 
 ## Theme packages
 
+- [emacs-dashboard](https://github.com/rakanalh/emacs-dashboard) : Startup screen with recent files, bookmarks and projectile projects.
 - [page-break-lines](https://github.com/purcell/page-break-lines) : Display page break as lines.
 - [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters) : Highlight delimiters according to their depth.
 - [spaceline](https://github.com/TheBB/spaceline) : The Powerline theme from Spacemacs.

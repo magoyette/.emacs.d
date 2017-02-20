@@ -72,8 +72,6 @@ https://github.com/monsanto/readline-complete.el
 https://github.com/bbatsov/crux
 **** editorconfig-emacs
 https://github.com/editorconfig/editorconfig-emacs
-**** emacs-dashboard
-https://github.com/rakanalh/emacs-dashboard
 **** guru-mode
 https://github.com/bbatsov/guru-mode
 **** ledger
