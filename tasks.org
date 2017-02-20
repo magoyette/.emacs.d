@@ -120,8 +120,6 @@ https://github.com/caisah/emacs.dz
 **** Read and write files
 http://www.lunaryorn.com/posts/read-and-write-files-in-emacs-lisp.html
 *** General
-**** Center text
-http://www.lunaryorn.com/posts/center-buffer-text-in-emacs.html
 **** reposition-window
 http://irreal.org/blog/?p=5658
 *** Git
