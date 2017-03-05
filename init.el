@@ -31,6 +31,8 @@
 ;; Use y or n confirmations instead of yes or no
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Fix dead keys on Linux
+(require 'iso-transl)
 
 ;;;;; Customizations
 
