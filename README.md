@@ -72,7 +72,9 @@ magit-repository-directories can be set to configure which folders must be scann
 
 ```elisp
 (setq magit-repository-directories '("~/.emacs.d"
-                                     "~/.gitignore_global"))
+                                     "~/.gitconfig-setup"
+                                     "~/.lein"
+                                     "~/dev"))
 ```
 
 ### Flycheck Checkstyle local settings
