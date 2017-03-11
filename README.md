@@ -18,14 +18,14 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 - [Local settings](#local-settings)
   - [Org mode local settings](#org-mode-local-settings)
   - [Magit local settings](#magit-local-settings)
-  - [Flycheck Checkstyle local settings](#flycheck-checkstyle-local-settings)
 - [Git Submodules](#git-submodules)
   - [doctoc.el](#doctocel)
-  - [Flycheck Checkstyle](#flycheck-checkstyle)
   - [prometheus-rules-mode](#prometheus-rules-mode)
 - [External dependencies](#external-dependencies)
   - [Windows OS setup](#windows-os-setup)
     - [Windows HOME variable](#windows-home-variable)
+  - [Fonts](#fonts)
+    - [all-the-icons.el fonts](#all-the-iconsel-fonts)
   - [General Tools](#general-tools)
     - [Git](#git)
     - [Pandoc](#pandoc)
@@ -33,7 +33,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Java Tools](#java-tools)
     - [JDK](#jdk)
     - [Leiningen](#leiningen)
-    - [CheckStyle](#checkstyle)
   - [Node Tools](#node-tools)
     - [Node and npm](#node-and-npm)
     - [doctoc](#doctoc)
@@ -77,16 +76,6 @@ magit-repository-directories can be set to configure which folders must be scann
                                      "~/dev"))
 ```
 
-### Flycheck Checkstyle local settings
-
-Flycheck Checkstyle is a Flycheck checker for Java code. It needs to be configured with the path to the Checkstyle jar and the path to a configuration file (ex: the [Google Java Style](https://github.com/checkstyle/checkstyle/blob/master/src/main/resources/google_checks.xml) configuration).
-
-``` elisp
-(setq flycheck-checkstyle-jar "/home/<user>/dev/tools/checkstyle/checkstyle-7.3-all.jar")
-
-(setq flycheck-checkstyle-configuration-file "/home/<user>/dev/tools/checkstyle/google_checks.xml")
-```
-
 ## Git Submodules
 
 This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they are included in this repository as Git submodules.
@@ -105,10 +94,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 ### doctoc.el
 
 [doctoc.el](https://github.com/magoyette/doctoc.el) is a package that adds support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
-
-### Flycheck Checkstyle
-
-[Flycheck Checkstyle](https://github.com/magoyette/flycheck-checkstyle) is an Emacs Flycheck checker for CheckStyle.
 
 ### prometheus-rules-mode
 
@@ -156,10 +141,6 @@ javac -version
 #### Leiningen
 
 CIDER, the interactive development environment for Clojure, requires the [Leiningen](http://leiningen.org) build tool.
-
-#### CheckStyle
-
-Flycheck Checkstyle requires Checkstyle. Its configuration is described in [Flycheck Checkstyle local settings](#flycheck-checkstyle-local-settings).
 
 ### Node Tools
 
