@@ -12,4 +12,9 @@
   ;; Use sizes in B, K, M and G
   (setq dired-listing-switches "-alh"))
 
+(use-package dired-quick-sort
+  :ensure t
+  :config
+  (dired-quick-sort-setup))
+
 (provide 'dired-settings)

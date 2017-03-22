@@ -44,6 +44,7 @@
 
 ## Dired packages
 
+- [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort) : Sort Dired buffers.
 - [peep-dired](https://github.com/asok/peep-dired) : Show file at point in Dired in another window.
 
 ## Emacs Lisp packages
