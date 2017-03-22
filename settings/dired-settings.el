@@ -10,7 +10,9 @@
   (setq wdired-use-interactive-rename t)
 
   ;; Use sizes in B, K, M and G
-  (setq dired-listing-switches "-alh"))
+  (setq dired-listing-switches "-alh")
+
+  (setq wdired-allow-to-change-permissions t))
 
 (use-package dired-quick-sort
   :ensure t
