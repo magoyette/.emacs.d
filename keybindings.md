@@ -23,6 +23,7 @@
 - [Theme keybindings](#theme-keybindings)
 - [Dired keybindings](#dired-keybindings)
   - [Dired mode](#dired-mode)
+  - [WDired](#wdired)
 - [Search engines keybindings](#search-engines-keybindings)
 - [Projectile keybindings](#projectile-keybindings)
 - [Flycheck keybindings](#flycheck-keybindings)
@@ -32,6 +33,7 @@
   - [Magit commit keybindings](#magit-commit-keybindings)
   - [Git timemachine keybindings](#git-timemachine-keybindings)
 - [Org mode keybindings](#org-mode-keybindings)
+- [Writing keybindings](#writing-keybindings)
 - [Markdown keybindings](#markdown-keybindings)
 - [Spelling keybindings](#spelling-keybindings)
 - [Web keybindings](#web-keybindings)
@@ -243,11 +245,18 @@
 | C | copy file under cursor or marked files |
 | R | rename file under cursor or marked files |
 | D | delete file under cursor or marked files |
-| C-x C-q | switch to editing mode to rename files (save buffer to save changes) |
 | Q | run query-replace on marked files |
 | Z | compress/decompress |
 | c | compress many marked files to a single archive |
 | q | exit dired |
+| C-x C-q | switch to WDired to rename files |
+
+### WDired
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-c C-c | Save WDired change |
+| C-c ESC | Cancel WDired change |
 
 ## Search engines keybindings
 

@@ -3,4 +3,13 @@
   :bind (:map dired-mode-map
               ("P" . peep-dired)))
 
+(use-package wdired
+  :ensure t
+  :config
+  ;; Prompt when renaming files
+  (setq wdired-use-interactive-rename t)
+
+  ;; Use sizes in B, K, M and G
+  (setq dired-listing-switches "-alh"))
+
 (provide 'dired-settings)
