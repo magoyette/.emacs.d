@@ -19,4 +19,9 @@
   :config
   (dired-quick-sort-setup))
 
+(use-package dired-narrow
+  :ensure t
+  :bind (:map dired-mode-map
+              ("/" . dired-narrow)))
+
 (provide 'dired-settings)

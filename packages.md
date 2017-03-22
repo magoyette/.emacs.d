@@ -44,6 +44,7 @@
 
 ## Dired packages
 
+- [dired-narrow](https://github.com/Fuco1/dired-hacks#dired-narrow) : Filter Dired files.
 - [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort) : Sort Dired buffers.
 - [peep-dired](https://github.com/asok/peep-dired) : Show file at point in Dired in another window.
 

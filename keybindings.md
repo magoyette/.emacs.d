@@ -250,6 +250,7 @@
 | c | compress many marked files to a single archive |
 | q | exit dired |
 | S | sort dired buffer with dired-quick-sort |
+| / | narrow dired buffers to files that match a pattern (RET to save narrowing, g to remove narrowing) |
 | C-x C-q | switch to WDired to rename files |
 
 ### WDired
