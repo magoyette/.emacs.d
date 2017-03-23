@@ -91,7 +91,7 @@
 | M-x | Helm execute command |
 | M-y | Helm show kill ring |
 | C-c &lt;SPC&gt; | Helm all mark rings |
-| C-x r b | Helm filtered bookmarks |
+| C-x r b | Helm bookmarks |
 | M-s d | Helm search inside a directory with the platinum searcher |
 | M-s p | Helm search inside project root with the platinum searcher |
 | C-x 8 | Helm select unicode character |
