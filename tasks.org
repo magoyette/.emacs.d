@@ -36,11 +36,6 @@ https://github.com/Wilfred/elisp-refs.el
 https://github.com/hchbaw/eval-sexp-fu.el
 **** macrostep
 https://github.com/joddie/macrostep
-*** Java
-**** ENJIME
-https://github.com/ensime/ensime-server/issues/345
-**** jdee
-https://github.com/jdee-emacs/jdee
 *** Markdown
 **** vmd-mode.el vs emacs-livedown
 https://github.com/blak3mill3r/vmd-mode
