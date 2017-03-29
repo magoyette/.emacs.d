@@ -24,7 +24,6 @@
 - [Dired keybindings](#dired-keybindings)
   - [Dired mode](#dired-mode)
   - [WDired](#wdired)
-- [Search engines keybindings](#search-engines-keybindings)
 - [Projectile keybindings](#projectile-keybindings)
 - [Flycheck keybindings](#flycheck-keybindings)
   - [Flycheck error list keybindings](#flycheck-error-list-keybindings)
@@ -335,7 +334,8 @@ For the commands that find files, C-u can be done before the command to first in
 | ---------- | ------ |
 | p | previous version |
 | n | next version |
-| w | copy abbreviated hash of current version |
+| b | Magit blame on current revision |
+| w | copy abbreviated hash of current revision |
 | q | exit Git timemachine |
 
 ## Org mode keybindings
