@@ -25,9 +25,6 @@
 
 (use-package helm-company
   :ensure t
-  :after company
-  :config
-  (define-key company-mode-map (kbd "C-:") 'helm-company)
-  (define-key company-active-map (kbd "C-:") 'helm-company))
+  :bind (("C-:" . helm-company)))
 
 (provide 'company-settings)
