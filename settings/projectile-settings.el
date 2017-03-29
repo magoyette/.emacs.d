@@ -1,6 +1,5 @@
 (use-package projectile
   :ensure t
-  :demand t  ;; projectile is necessary at startup for the dashboard
   :bind ("C-c p" . projectile-command-map)
   :config
   (setq projectile-indexing-method 'alien)

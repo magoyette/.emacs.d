@@ -47,14 +47,4 @@
   :config
   (load-theme 'zenburn t))
 
-(use-package dashboard
-  :ensure t
-  :after page-break-lines
-  :config
-  (dashboard-setup-startup-hook)
-
-  (setq dashboard-items '((recents  . 5)
-                          (bookmarks . 5)
-                          (projects . 5))))
-
 (provide 'theme-settings)
