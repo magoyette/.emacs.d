@@ -63,6 +63,14 @@
 (require 'use-package)
 
 
+;;;;; Benchmark-init
+
+(use-package benchmark-init
+  :ensure t
+  :config
+  (benchmark-init/activate))
+
+
 ;;;;; Diminish
 
 (use-package diminish
