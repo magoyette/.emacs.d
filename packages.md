@@ -12,7 +12,6 @@
 - [Edition packages](#edition-packages)
 - [Windows packages](#windows-packages)
 - [Search and replace packages](#search-and-replace-packages)
-- [Search engines packages](#search-engines-packages)
 - [Company packages](#company-packages)
 - [YASnippet packages](#yasnippet-packages)
 - [Projectile packages](#projectile-packages)
@@ -78,10 +77,6 @@
 - [anzu](https://github.com/syohex/emacs-anzu) : Display current and total matches when doing searches.
 - [helm-ag](https://github.com/syohex/emacs-helm-ag) : Integrate The Platinum Searcher with Helm.
 - [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop) : Package to search and replace or navigate through a buffer.
-
-## Search engines packages
-
-- [engine-mode](https://github.com/hrs/engine-mode) : Query search engines from Emacs.
 
 ## Company packages
 

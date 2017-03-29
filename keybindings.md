@@ -260,16 +260,6 @@
 | C-c C-c | Save WDired change |
 | C-c ESC | Cancel WDired change |
 
-## Search engines keybindings
-
-| Keybinding | Action |
-| ---------- | ------ |
-| C-c / d | query with DuckDuckGo |
-| C-c / h | query with GitHub |
-| C-c / g | query with Google |
-| C-c / s | query with StackOverflow |
-| C-c / w | query with Wikipedia |
-
 ## Projectile keybindings
 
 For the commands that find files, C-u can be done before the command to first invalidate the cache of the project files.
