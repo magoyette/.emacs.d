@@ -85,6 +85,7 @@
 
 (use-package emmet-mode
   :ensure t
+  :after (:any css-mode web-mode sgml-mode)
   :config
   (add-hook 'sgml-mode-hook 'emmet-mode)
   (add-hook 'css-mode-hook  'emmet-mode)
