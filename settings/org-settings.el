@@ -54,7 +54,6 @@
 
 (use-package ace-link
   :ensure t
-  :after org
   :config
   (ace-link-setup-default)
   (define-key org-mode-map (kbd "M-o") 'ace-link-org))
