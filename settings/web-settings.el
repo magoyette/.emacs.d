@@ -55,6 +55,7 @@
 
 (use-package tide
   :ensure t
+  :after (:any typescript-mode js2-mode)
   :config
   (add-hook 'js2-mode-hook #'setup-tide-mode))
 
