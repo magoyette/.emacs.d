@@ -1,5 +1,6 @@
 (use-package restclient
-  :ensure t)
+  :ensure t
+  :defer t)
 
 (use-package restclient-helm
   :ensure t
