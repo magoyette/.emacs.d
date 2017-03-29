@@ -10,12 +10,10 @@
 (use-package anzu
   :ensure t
   :diminish anzu-mode
+  :bind (("M-%" . anzu-query-replace)
+         ("C-M-%" . anzu-query-replace-regexp))
   :config
-  (global-anzu-mode)
-
-  ;; Use query-replace and query-replace-regexp with anzu infos
-  (global-set-key (kbd "M-%") 'anzu-query-replace)
-  (global-set-key (kbd "C-M-%") 'anzu-query-replace-regexp))
+  (global-anzu-mode))
 
 (use-package helm-swoop
   :ensure t
