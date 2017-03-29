@@ -42,6 +42,7 @@
 (use-package undo-tree
   :ensure t
   :diminish undo-tree-mode
+  :bind (("C-x u" . undo-tree-visualize))
   :config
   (global-undo-tree-mode))
 
