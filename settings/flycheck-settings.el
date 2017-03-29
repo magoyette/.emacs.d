@@ -22,10 +22,4 @@
   :config
   (flycheck-pos-tip-mode))
 
-(use-package helm-flycheck
-  :ensure t
-  :after flycheck
-  :config
-  (define-key flycheck-mode-map (kbd "C-c ! h") 'helm-flycheck))
-
 (provide 'flycheck-settings)

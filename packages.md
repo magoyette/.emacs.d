@@ -97,7 +97,6 @@
 
 - [flycheck](https://github.com/flycheck/flycheck) : Syntax checking.
 - [flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip) : Show flycheck issues in tooltip.
-- [helm-flycheck](https://github.com/yasuyk/helm-flycheck) : Helm interface for flycheck.
 
 ## Navigation packages
 

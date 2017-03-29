@@ -284,7 +284,6 @@ For the commands that find files, C-u can be done before the command to first in
 | C-c ! p | Jump to previous error |
 | M-g p | Jump to previous error |
 | C-c ! l | List all errors in buffer |
-| C-c ! h | List all errors in buffer with Helm |
 | C-c ! v | Verify the Flycheck setup for current buffer and display enabled checkers |
 | C-c ! ? | Prompt for a checker and display its documentation |
 
