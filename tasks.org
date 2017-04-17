@@ -79,8 +79,8 @@ https://github.com/fourier/ztree
 *** Web
 **** eslint-fix
 https://github.com/codesuki/eslint-fix
-**** jade
-https://github.com/NicolasPetton/jade
+**** indium
+https://github.com/NicolasPetton/indium
 **** karma.el
 https://github.com/tonini/karma.el
 **** mocha.el
