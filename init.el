@@ -105,6 +105,13 @@
   :ensure t)
 
 
+;;;;; All-the-icons
+
+;; Used with dired and neotree
+(use-package all-the-icons
+  :ensure t)
+
+
 ;;;;; Load settings and features
 
 (add-to-list 'load-path "~/.emacs.d/settings/")

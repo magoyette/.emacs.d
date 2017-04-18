@@ -18,14 +18,6 @@
          ("M-g f" . avy-goto-line)
          ("M-g w" . avy-goto-word-1)))
 
-(use-package all-the-icons
-  :ensure t
-  :config
-  (use-package all-the-icons-dired
-    :ensure t
-    :config
-    (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)))
-
 (use-package neotree
   :ensure t
   :bind (("<f8>" . neotree-toggle))
