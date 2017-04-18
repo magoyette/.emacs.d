@@ -21,10 +21,13 @@
 
   (setq wdired-allow-to-change-permissions t))
 
-(use-package dired-quick-sort
-  :ensure t
-  :config
-  (dired-quick-sort-setup))
+;; Dired quick sort doesn't work on Windows unless an external ls is used
+;; https://www.gnu.org/software/emacs/manual/html_node/efaq-w32/Dired-ls.html
+(if (not (eq system-type 'windows-nt))
+    (use-package dired-quick-sort
+      :ensure t
+      :config
+      (dired-quick-sort-setup)))
 
 (use-package dired-narrow
   :ensure t
