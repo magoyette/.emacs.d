@@ -5,6 +5,7 @@ recentf
 server/
 url/
 .places
+bookmarks
 customizations.el
 flycheck_init.el
 local-settings.el
