@@ -1,3 +1,5 @@
+(add-hook 'dired-mode-hook 'auto-revert-mode)
+
 (use-package peep-dired
   :ensure t
   :bind (:map dired-mode-map
