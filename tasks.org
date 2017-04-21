@@ -50,8 +50,6 @@ https://ensime.github.io/
 **** readline-complete.el
 https://github.com/monsanto/readline-complete.el
 *** Various
-**** crux
-https://github.com/bbatsov/crux
 **** editorconfig-emacs
 https://github.com/editorconfig/editorconfig-emacs
 **** guru-mode

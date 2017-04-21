@@ -112,6 +112,20 @@
   :ensure t)
 
 
+;;;;; Crux
+
+(use-package crux
+  :ensure t
+  :bind (("<S-return>" . crux-smart-open-line)
+         ("<C-S-return>" . crux-smart-open-line-above)
+         ("C-c d" . crux-duplicate-current-line-or-region)
+         ("M-j" . crux-top-join-line)
+         ("C-c k" . crux-kill-other-buffers)
+         ("C-c t" . crux-visit-term-buffer)
+         ("C-c r" . crux-rename-file-and-buffer)
+         ("C-x 4 t" . crux-transpose-windows)))
+
+
 ;;;;; Load settings and features
 
 (add-to-list 'load-path "~/.emacs.d/settings/")

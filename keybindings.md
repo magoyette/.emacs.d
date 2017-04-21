@@ -9,6 +9,7 @@
 - [Helm keybindings](#helm-keybindings)
   - [Helm actions](#helm-actions)
   - [Helm features](#helm-features)
+- [Files and buffers keybindings](#files-and-buffers-keybindings)
 - [Movement keybindings](#movement-keybindings)
 - [NeoTree keybindings](#neotree-keybindings)
 - [Edition keybindings](#edition-keybindings)
@@ -24,6 +25,7 @@
 - [Dired keybindings](#dired-keybindings)
   - [Dired mode](#dired-mode)
   - [WDired](#wdired)
+- [Terminal keybindings](#terminal-keybindings)
 - [Projectile keybindings](#projectile-keybindings)
 - [Flycheck keybindings](#flycheck-keybindings)
   - [Flycheck error list keybindings](#flycheck-error-list-keybindings)
@@ -66,6 +68,7 @@
 | Keybinding | Action |
 | ---------- | ------ |
 | M-1, M-2, ... | move to a numbered window in the current frame or another frame |
+| C-x 4 t | Transpose buffers between two windows |
 | C-x 5 2 | create a new frame |
 
 ## Helm keybindings
@@ -98,6 +101,13 @@
 | C-h i | Helm info |
 | C-h b | Helm describe bindings |
 
+## Files and buffers keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-c k | Kill all open buffers except the current buffer |
+| C-c r | Rename current buffer and its visiting file if it has one |
+
 ## Movement keybindings
 
 | Keybinding | Action |
@@ -128,11 +138,12 @@
 
 | Keybinding | Action |
 | ---------- | ------ |
-| C-RET | Add a new line below |
+| S-RET | Add a new line below |
 | C-S-RET | Add a new line above |
 | M-Up | Move line or region up |
 | M-Down | Move line or region down |
-| M-j | Collapse lines |
+| M-j | Collapse/join lines |
+| C-c d | Duplicate line or region|
 | C-= | Expand region by semantic units |
 | C-x u | visualize undo tree |
 | M-= | Word count for region |
@@ -261,6 +272,12 @@
 | ---------- | ------ |
 | C-c C-c | Save WDired change |
 | C-c ESC | Cancel WDired change |
+
+## Terminal keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-c t | Open a terminal (ansi-term) |
 
 ## Projectile keybindings
 
