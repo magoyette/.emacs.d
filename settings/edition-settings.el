@@ -86,6 +86,11 @@
 (global-set-key (kbd "<C-return>") 'open-line-below)
 (global-set-key (kbd "<C-S-return>") 'open-line-above)
 
+(use-package move-text
+  :ensure t
+  :config
+  (move-text-default-bindings))
+
 ;; Collapse lines
 ;; Source: whattheemacsd.com
 (global-set-key (kbd "M-j")

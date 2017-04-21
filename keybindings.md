@@ -130,6 +130,8 @@
 | ---------- | ------ |
 | C-RET | Add a new line below |
 | C-S-RET | Add a new line above |
+| M-Up | Move line or region up |
+| M-Down | Move line or region down |
 | M-j | Collapse lines |
 | C-= | Expand region by semantic units |
 | C-x u | visualize undo tree |
