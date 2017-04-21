@@ -133,6 +133,7 @@
 | M-j | Collapse lines |
 | C-= | Expand region by semantic units |
 | C-x u | visualize undo tree |
+| M-= | Word count for region |
 
 ### Undo tree keybindings
 
