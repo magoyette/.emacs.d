@@ -14,8 +14,6 @@ https://github.com/nschum/highlight-symbol.el
 https://gitlab.com/emacs-stuff/indent-tools
 **** move-text
 https://github.com/emacsfodder/move-text
-**** wc-mode
-https://github.com/bnbeckwith/wc-mode
 **** whole-line-or-region
 https://github.com/purcell/whole-line-or-region
 *** Elisp
