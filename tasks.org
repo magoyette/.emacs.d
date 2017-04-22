@@ -12,8 +12,6 @@ https://github.com/DarthFennec/highlight-indent-guides
 https://github.com/nschum/highlight-symbol.el
 **** indent-tools
 https://gitlab.com/emacs-stuff/indent-tools
-**** whole-line-or-region
-https://github.com/purcell/whole-line-or-region
 *** Elisp
 **** ecukes
 https://github.com/ecukes/ecukes

@@ -87,4 +87,10 @@
 (use-package highlight-indentation
   :ensure t)
 
+(use-package whole-line-or-region
+  :ensure t
+  :diminish whole-line-or-region-mode
+  :config
+  (whole-line-or-region-mode 1))
+
 (provide 'edition-settings)
