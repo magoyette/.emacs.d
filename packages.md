@@ -30,6 +30,8 @@
 - [Smartparens packages](#smartparens-packages)
 - [Docker packages](#docker-packages)
 - [Prometheus packages](#prometheus-packages)
+- [Swagger packages](#swagger-packages)
+  - [swaggermacs](#swaggermacs)
 - [Help packages](#help-packages)
 - [Theme packages](#theme-packages)
 
@@ -144,6 +146,7 @@
 
 ## YAML packages
 
+- [indent-tools](https://gitlab.com/emacs-stuff/indent-tools): Move around and modify code based on indentation.
 - [yaml-mode](https://github.com/yoshiki/yaml-mode) : Mode for YAML files.
 
 ## REST packages
@@ -188,6 +191,12 @@
 ## Prometheus packages
 
 - [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) : Support for [Prometheus](https://prometheus.io) rules in Emacs.
+
+## Swagger packages
+
+### swaggermacs
+
+- [swaggermacs](https://github.com/magoyette/swaggermacs) : Support for Swagger2 YAML files in Emacs.
 
 ## Help packages
 

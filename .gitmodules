@@ -4,3 +4,6 @@
 [submodule "submodules/doctoc.el"]
 	path = submodules/doctoc.el
 	url = https://github.com/magoyette/doctoc.el.git
+[submodule "submodules/swaggermacs"]
+	path = submodules/swaggermacs
+	url = https://github.com/magoyette/swaggermacs.git

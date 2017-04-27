@@ -414,6 +414,12 @@ For the commands that find files, C-u can be done before the command to first in
 | C-c C-r | run a query and display response |
 | C-c C-g | Helm for rest-client variables and requests |
 
+## YAML keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-c > | indent-tools hydra |
+
 ## Clojure keybindings
 
 | Keybinding | Action |

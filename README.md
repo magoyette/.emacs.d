@@ -21,6 +21,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 - [Git Submodules](#git-submodules)
   - [doctoc.el](#doctocel)
   - [prometheus-rules-mode](#prometheus-rules-mode)
+  - [swaggermacs](#swaggermacs)
 - [External dependencies](#external-dependencies)
   - [Windows OS setup](#windows-os-setup)
     - [Windows HOME variable](#windows-home-variable)
@@ -36,6 +37,8 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Node Tools](#node-tools)
     - [Node and npm](#node-and-npm)
     - [doctoc](#doctoc)
+    - [js-yaml](#js-yaml)
+    - [swagger-tools](#swagger-tools)
     - [TypeScript and tslint](#typescript-and-tslint)
   - [Other Programming Languages](#other-programming-languages)
     - [Elixir](#elixir)
@@ -99,6 +102,10 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) is a package that adds support for [Prometheus](https://prometheus.io) rules in Emacs.
 
+### swaggermacs
+
+[swaggermacs](https://github.com/magoyette/swaggermacs) is a package that adds support for Swagger2 YAML files in Emacs.
+
 ## External dependencies
 
 ### Windows OS setup
@@ -155,6 +162,22 @@ doctoc is a JavaScript library used to generate the table of contents of a markd
 doctoc can be installed with npm.
 ```
 npm install -g doctoc
+```
+
+#### js-yaml
+
+[js-yaml](https://github.com/nodeca/js-yaml) is a JavaScript YAML parser. It is used by Flycheck to check YAML files.
+
+```
+npm install -g js-yaml
+```
+
+#### swagger-tools
+
+[Swagger Tools](https://github.com/apigee-127/swagger-tools/blob/master/docs/CLI.md) provides JavaScript tools to work with Swagger. It is used by Swaggermacs to check Swagger documents with Flycheck.
+
+```
+npm install -g swagger-tools
 ```
 
 #### TypeScript and tslint

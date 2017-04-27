@@ -6,4 +6,13 @@
   :config
   (add-hook 'yaml-mode-hook #'highlight-indentation-mode))
 
+(use-package indent-tools
+  :ensure t
+  :after yaml-mode
+  :config
+  (add-hook 'yaml-mode-hook
+            (lambda ()
+              (define-key yaml-mode-map (kbd "C-c >") 'indent-tools-hydra/body)))
+  (setq indent-tools-indentation-of-yaml yaml-indent-offset))
+
 (provide 'yaml-settings)
