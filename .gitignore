@@ -9,5 +9,6 @@ bookmarks
 customizations.el
 flycheck_init.el
 local-settings.el
+network-security.data
 projectile.cache
 projectile-bookmarks.eld
