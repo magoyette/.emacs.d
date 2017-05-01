@@ -58,8 +58,6 @@ https://github.com/ledger/ledger
 https://github.com/yjwen/org-reveal/
 **** pdf-tools
 https://github.com/politza/pdf-tools
-**** realgud
-https://github.com/realgud/realgud
 **** string-edit
 https://github.com/magnars/string-edit.el
 **** highlight-escape-sequences
