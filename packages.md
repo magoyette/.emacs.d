@@ -87,6 +87,7 @@
 
 ## Highlight packages
 
+- [eval-sexp-fu](https://github.com/hchbaw/eval-sexp-fu.el) : Highlight evaluation of Lisp expressions.
 - [highlight-escape-sequences](https://github.com/dgutov/highlight-escape-sequences) : Highlight escape sequences in strings.
 
 ## Company packages

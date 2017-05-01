@@ -421,6 +421,13 @@ For the commands that find files, C-u can be done before the command to first in
 | ---------- | ------ |
 | C-c > | indent-tools hydra |
 
+## Emacs Lisp keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-x C-e | evaluate the expression before point |
+| C-M-x | evaluate top-level expression containing or following point |
+
 ## Clojure keybindings
 
 | Keybinding | Action |
