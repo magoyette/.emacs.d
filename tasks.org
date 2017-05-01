@@ -60,15 +60,11 @@ https://github.com/yjwen/org-reveal/
 https://github.com/politza/pdf-tools
 **** string-edit
 https://github.com/magnars/string-edit.el
-**** volatile-highlights.el
-https://github.com/k-talo/volatile-highlights.el
 **** ztree
 https://github.com/fourier/ztree
 *** Web
 **** eslint-fix
 https://github.com/codesuki/eslint-fix
-**** indium
-https://github.com/NicolasPetton/indium
 **** karma.el
 https://github.com/tonini/karma.el
 **** mocha.el
