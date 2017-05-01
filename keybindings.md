@@ -94,8 +94,6 @@
 | M-y | Helm show kill ring |
 | C-c &lt;SPC&gt; | Helm all mark rings |
 | C-x r b | Helm bookmarks |
-| M-s d | Helm search inside a directory with the platinum searcher |
-| M-s p | Helm search inside project root with the platinum searcher |
 | C-x 8 | Helm select unicode character |
 | C-h a | Helm apropos |
 | C-h i | Helm info |
@@ -185,11 +183,14 @@
 | C-M-r | search backward |
 | M-% | Anzu query replace |
 | C-M-% | Anzy query replace regexp |
-| M-i | Helm swoop |
-| C-c M-i | Helm multi swoop on selected buffers |
-| C-x M-i | Helm multi swoop on all buffers |
-| M-s d | Helm search with The Platinum Searcher in directory |
-| M-s p | Helm search with The Platinum Searcher in project root |
+| M-s s | Helm swoop on current buffer |
+| M-s S | Helm swoop on all opened buffers |
+| M-s M-s | Helm swoop on all opened buffers from current project |
+| M-s d | Helm search with ripgrep in directory |
+| M-s p | Helm search with ripgrep in project root |
+| M-s j | Jump to definition (Clojure, Emacs Lisp, Java, JavaScript, etc.) |
+| M-s b | Jump back to initial position after M-g j |
+| M-s o | Jump to definition in another window |
 
 ### Helm swoop keybindings
 

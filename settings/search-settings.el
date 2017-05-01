@@ -17,10 +17,9 @@
 
 (use-package helm-swoop
   :ensure t
-  :bind
-  (("M-i" . helm-swoop)
-   ("C-c M-i" . helm-multi-swoop)
-   ("C-x M-i" . helm-multi-swoop-all))
+  :bind (("M-s s" . helm-swoop)
+         ("M-s S" . helm-multi-swoop-all)
+         ("M-s M-s" . helm-multi-swoop-projectile))
   :config
   ;; Enable colors in results
   (setq helm-swoop-speed-or-color t)
@@ -40,6 +39,15 @@
          ("M-s p" . helm-do-ag-project-root))
   :config
   (custom-set-variables
-   '(helm-ag-base-command "pt -e --nocolor --nogroup")))
+   '(helm-ag-base-command "rg --no-heading")))
+
+(use-package dumb-jump
+  :ensure t
+  :bind (("M-s j" . dumb-jump-go)
+         ("M-s b" . dumb-jump-back)
+         ("M-s o" . dumb-jump-go-other-window))
+  :config
+  (setq dumb-jump-selector 'helm)
+  (setq dumb-jump-prefer-searcher 'rg))
 
 (provide 'search-settings)
