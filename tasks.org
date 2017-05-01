@@ -44,9 +44,6 @@ https://github.com/benma/visual-regexp-steroids.el/
 *** Scala
 **** ENSIME
 https://ensime.github.io/
-*** Shell
-**** readline-complete.el
-https://github.com/monsanto/readline-complete.el
 *** Various
 **** editorconfig-emacs
 https://github.com/editorconfig/editorconfig-emacs
