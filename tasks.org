@@ -26,8 +26,6 @@ https://github.com/melpa/melpa
 https://github.com/Malabarba/elisp-bug-hunter/
 **** elisp-refs.el
 https://github.com/Wilfred/elisp-refs.el
-**** eval-sexp-fu
-https://github.com/hchbaw/eval-sexp-fu.el
 **** macrostep
 https://github.com/joddie/macrostep
 *** Markdown
