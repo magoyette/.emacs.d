@@ -6,8 +6,6 @@ https://github.com/DogLooksGood/parinfer-mode
 *** Edition
 **** ace-window
 https://github.com/abo-abo/ace-window
-**** highlight-indent-guides
-https://github.com/DarthFennec/highlight-indent-guides
 **** highlight-symbol
 https://github.com/nschum/highlight-symbol.el
 *** Elisp
