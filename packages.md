@@ -12,6 +12,7 @@
 - [Edition packages](#edition-packages)
 - [Windows packages](#windows-packages)
 - [Search and replace packages](#search-and-replace-packages)
+- [Highlight packages](#highlight-packages)
 - [Company packages](#company-packages)
 - [YASnippet packages](#yasnippet-packages)
 - [Projectile packages](#projectile-packages)
@@ -83,6 +84,10 @@
 - [dumb-jump](https://github.com/jacktasia/dumb-jump) : Jump to definition for many programming languages.
 - [helm-ag](https://github.com/syohex/emacs-helm-ag) : Integrate The Platinum Searcher with Helm.
 - [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop) : Package to search and replace or navigate through a buffer.
+
+## Highlight packages
+
+- [highlight-escape-sequences](https://github.com/dgutov/highlight-escape-sequences) : Highlight escape sequences in strings.
 
 ## Company packages
 

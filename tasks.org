@@ -60,8 +60,6 @@ https://github.com/yjwen/org-reveal/
 https://github.com/politza/pdf-tools
 **** string-edit
 https://github.com/magnars/string-edit.el
-**** highlight-escape-sequences
-https://melpa.org/#/highlight-escape-sequences
 **** volatile-highlights.el
 https://github.com/k-talo/volatile-highlights.el
 **** ztree
