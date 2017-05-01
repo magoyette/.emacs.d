@@ -10,8 +10,6 @@ https://github.com/abo-abo/ace-window
 https://github.com/DarthFennec/highlight-indent-guides
 **** highlight-symbol
 https://github.com/nschum/highlight-symbol.el
-**** indent-tools
-https://gitlab.com/emacs-stuff/indent-tools
 *** Elisp
 **** ecukes
 https://github.com/ecukes/ecukes
