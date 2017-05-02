@@ -50,6 +50,10 @@
 - [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort) : Sort Dired buffers.
 - [peep-dired](https://github.com/asok/peep-dired) : Show file at point in Dired in another window.
 
+## Terminal packages
+
+- [terminal-here](https://github.com/davidshepherd7/terminal-here): Open an external terminal emulator.
+
 ## Emacs Lisp packages
 
 - [benchmark-init](https://github.com/dholm/benchmark-init-el) : Benchmark the loading time of Emacs packages.

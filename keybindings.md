@@ -290,6 +290,8 @@
 | Keybinding | Action |
 | ---------- | ------ |
 | C-c t | Open a terminal (ansi-term) |
+| C-F5 | Open an external terminal |
+| C-F6 | Open an external terminal for the projectile or git project |
 
 ## Projectile keybindings
 
