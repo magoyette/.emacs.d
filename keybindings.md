@@ -11,6 +11,7 @@
   - [Helm features](#helm-features)
 - [Files and buffers keybindings](#files-and-buffers-keybindings)
 - [Movement keybindings](#movement-keybindings)
+- [Mark keybindings](#mark-keybindings)
 - [NeoTree keybindings](#neotree-keybindings)
 - [Edition keybindings](#edition-keybindings)
   - [Undo tree keybindings](#undo-tree-keybindings)
@@ -39,6 +40,8 @@
 - [Spelling keybindings](#spelling-keybindings)
 - [Web keybindings](#web-keybindings)
 - [REST keybindings](#rest-keybindings)
+- [YAML keybindings](#yaml-keybindings)
+- [Emacs Lisp keybindings](#emacs-lisp-keybindings)
 - [Clojure keybindings](#clojure-keybindings)
   - [cider general keybindings](#cider-general-keybindings)
   - [cider eval keybindings](#cider-eval-keybindings)
@@ -115,6 +118,14 @@
 | C-' | Input 2 chars, then jump to a character |
 | M-g f | Jump the beginning of a line |
 | M-g w | Input one char, then jump to the beginning of a word |
+
+## Mark keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-« | Set the mark |
+| M-« | Jump to mark |
+| C-x C-x | Exchange the point and the mark |
 
 ## NeoTree keybindings
 

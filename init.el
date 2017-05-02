@@ -159,6 +159,7 @@
     (load "~/.emacs.d/local-settings.el"))
 
 (require 'edition-settings)
+(require 'mark-settings)
 (require 'narrowing-settings)
 (require 'windows-settings)
 (require 'helm-settings)
