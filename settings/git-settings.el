@@ -33,6 +33,12 @@
 
   (setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1))
 
+(defun kill-magit-buffers ()
+  (interactive)
+  (kill-matching-buffers "^\\*magit.*"))
+
+(global-set-key (kbd "C-x M-d") 'kill-magit-buffers)
+
 (use-package diff-hl
   :ensure t
   :config

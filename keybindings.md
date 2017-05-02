@@ -324,6 +324,7 @@ For the commands that find files, C-u can be done before the command to first in
 | C-x g | Magit status |
 | C-x M-g | Magit list repositories |
 | C-x G | Magit blame |
+| C-x M-d | Kill all Magit buffers |
 | C-c g g | open current buffer at GitHub, GitLab or BitBucket |
 | C-x t | Git timemachine |
 | C-c s | Hydra for smerge-mode |
