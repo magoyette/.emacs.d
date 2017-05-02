@@ -51,6 +51,7 @@
 
 (use-package aggressive-indent
   :ensure t
+  :diminish aggressive-indent-mode
   :config
   (add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode))
 
