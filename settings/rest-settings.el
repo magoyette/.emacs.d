@@ -1,5 +1,6 @@
 (use-package restclient
   :ensure t
+  :mode (("\\.rest$" . restclient-mode))
   :defer t)
 
 (use-package restclient-helm
