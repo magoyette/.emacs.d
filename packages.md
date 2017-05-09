@@ -58,7 +58,6 @@
 
 - [benchmark-init](https://github.com/dholm/benchmark-init-el) : Benchmark the loading time of Emacs packages.
 - [cask-mode](https://github.com/Wilfred/cask-mode) : A mode for Cask files.
-- [eval-sexp-fu](https://github.com/hchbaw/eval-sexp-fu.el) : Highlight sexps during evaluation.
 
 ## Hydra packages
 
@@ -91,7 +90,6 @@
 
 ## Highlight packages
 
-- [eval-sexp-fu](https://github.com/hchbaw/eval-sexp-fu.el) : Highlight evaluation of Lisp expressions.
 - [highlight-escape-sequences](https://github.com/dgutov/highlight-escape-sequences) : Highlight escape sequences in strings.
 
 ## Company packages
