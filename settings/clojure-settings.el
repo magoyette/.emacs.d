@@ -7,12 +7,6 @@
   :config
   (subword-mode))
 
-(use-package flycheck-clojure
-  :ensure t
-  :after flycheck
-  :config
-  (flycheck-clojure-setup))
-
 (use-package clojure-cheatsheet
   :ensure t
   :after clojure-mode

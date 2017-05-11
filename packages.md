@@ -173,7 +173,6 @@
 - [clojure-mode](https://github.com/clojure-emacs/clojure-mode) : Mode for Clojure and ClojureScript programming.
 - [CIDER](https://github.com/clojure-emacs/cider) : Clojure(Script) Interactive Development Environment that Rocks.
 - [cider-eval-sexp-fu](https://github.com/clojure-emacs/cider-eval-sexp-fu) : Highlight Clojure(Script) sexps during evaluation.
-- [squiggly-clojure](https://github.com/clojure-emacs/squiggly-clojure) : Flycheck for Clojure. Supports eastwood, core.typed and kibit.
 - [clj-refactor](https://github.com/clojure-emacs/clj-refactor.el) : Refactoring functions for Clojure.
 - [clojure-cheatsheet](https://github.com/clojure-emacs/clojure-cheatsheet) : The Clojure Cheatsheet in Emacs.
 
