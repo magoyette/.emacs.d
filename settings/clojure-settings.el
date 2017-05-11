@@ -15,6 +15,7 @@
 
 (use-package cider
   :ensure t
+  :after clojure-mode
   :commands (cider cider-connect cider-jack-in)
   :config
   (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode))
@@ -25,7 +26,7 @@
 
 (use-package clj-refactor
   :ensure t
-  :defer t
+  :after clojure-mode
   :init
   (add-hook 'clojure-mode-hook 'clj-refactor-mode)
   :config
