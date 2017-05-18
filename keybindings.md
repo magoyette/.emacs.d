@@ -202,6 +202,9 @@
 | M-s j | Jump to definition (Clojure, Emacs Lisp, Java, JavaScript, etc.) |
 | M-s b | Jump back to initial position after M-g j |
 | M-s o | Jump to definition in another window |
+| M-s q | Show tooltip about definition |
+| M-s x | Jump to definition (prefer definition from other buffers |
+| M-s z | Jump to definition in another windows (prefer definition from other buffers |
 
 ### Helm swoop keybindings
 
