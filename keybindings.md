@@ -38,6 +38,7 @@
 - [Writing keybindings](#writing-keybindings)
 - [Markdown keybindings](#markdown-keybindings)
 - [Spelling keybindings](#spelling-keybindings)
+- [Programming keybindings](#programming-keybindings)
 - [Web keybindings](#web-keybindings)
 - [REST keybindings](#rest-keybindings)
 - [YAML keybindings](#yaml-keybindings)
@@ -381,6 +382,7 @@ For the commands that find files, C-u can be done before the command to first in
 | Keybinding | Action |
 | ---------- | ------ |
 | C-c l | Org store link |
+| C-c C-o | Org open url at point |
 | M-o | Select a link to jump to with avy |
 | C-c c | Org capture |
 | C-c a | Org agenda |
@@ -416,6 +418,12 @@ For the commands that find files, C-u can be done before the command to first in
 | ---------- | ------ |
 | C-c d | Alternate between english and french dictionaries |
 | C-c M-s | Start ispell on the region or on the buffer |
+
+## Programming keybindings
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-c <RET> | Open url at point |
 
 ## Web keybindings
 
