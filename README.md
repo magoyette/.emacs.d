@@ -227,7 +227,9 @@ The installation on Windows involves many steps.
 
 ## Keybindings
 
-See [keybindings.md](keybindings.md) for a list of keybindings.
+See [keybindings.md](keybindings.md) for a general list of keybindings.
+
+See [programming-keybindings.md](programming-keybindings.md) for list of keybindings related to programming.
 
 ## Packages
 
