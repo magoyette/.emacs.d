@@ -31,7 +31,10 @@
      'magit-status-sections-hook inserter
      'magit-insert-unpulled-from-upstream))
 
-  (setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1))
+  (setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1)
+
+  ;; Sort branches with more recent commits or tags at the top of the list
+  (setq magit-list-refs-sortby "-creatordate"))
 
 (defun kill-magit-buffers ()
   (interactive)
