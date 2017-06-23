@@ -11,6 +11,8 @@
         "pandoc --from markdown_github -t html5 -s")
   (setq markdown-list-indent-width 2)
 
+  (setq markdown-fontify-code-blocks-natively t)
+
   (define-key markdown-mode-map (kbd "C-c C-d") #'doctoc))
 
 (provide 'markdown-settings)
