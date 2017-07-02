@@ -43,6 +43,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Flycheck checkers](#flycheck-checkers)
     - [CSSLint](#csslint)
     - [ShellCheck](#shellcheck)
+    - [stylelint](#stylelint)
   - [Other Programming Languages](#other-programming-languages)
     - [Elixir](#elixir)
     - [Haskell Tool Stack](#haskell-tool-stack)
@@ -195,7 +196,7 @@ sudo npm install -g tslint typescript
 
 #### CSSLint
 
-[CSSLint](https://github.com/CSSLint/csslint) is used to static analysis of CSS files.
+[CSSLint](https://github.com/CSSLint/csslint) is used for static analysis of CSS files.
 
 ``` shell
 sudo npm install -g csslint
@@ -205,13 +206,23 @@ sudo npm install -g csslint
 
 [ShellCheck](https://github.com/koalaman/shellcheck) is used for static analysis of shell scripts.
 
+#### stylelint
+
+[stylelint](https://stylelint.io/) is used for static analysis of CSS, SASS and LESS files.
+
+``` shell
+sudo npm install -g stylelint
+```
+
 ### Other Programming Languages
 
 #### Elixir
 
 Alchemist requires [Elixir](http://elixir-lang.org/).
 
-#### Haskell Tool Stack
+#### Haskell
+
+haskell-mode is configured to format code on save with [stylish-haskell](https://github.com/jaspervdj/stylish-haskell).
 
 Intero, the interactive development environment for Haskell, requires [Stack](haskellstack.org).
 
