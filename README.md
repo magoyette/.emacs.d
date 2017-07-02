@@ -30,7 +30,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [General Tools](#general-tools)
     - [Git](#git)
     - [Pandoc](#pandoc)
-    - [The Platinum Searcher](#the-platinum-searcher)
+    - [RipGrep](#ripgrep)
   - [Java Tools](#java-tools)
     - [JDK](#jdk)
     - [Leiningen](#leiningen)
@@ -130,9 +130,9 @@ The neotree package is configured to use the [fonts of all-the-icons.el](https:/
 
 [Pandoc](http://pandoc.org/) is necessary to preview markdown documents with markdown-mode.
 
-#### The Platinum Searcher
+#### RipGrep
 
-The package helm-ag is configured to use [The Platinum Searcher](https://github.com/monochromegane/the_platinum_searcher).
+The package helm-ag is configured to use [RipGrep](https://github.com/BurntSushi/ripgrep).
 
 ### Java Tools
 
