@@ -42,6 +42,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [TypeScript and tslint](#typescript-and-tslint)
   - [Flycheck checkers](#flycheck-checkers)
     - [CSSLint](#csslint)
+    - [sass-lint](#sass-lint)
     - [ShellCheck](#shellcheck)
     - [stylelint](#stylelint)
   - [Other Programming Languages](#other-programming-languages)
@@ -200,6 +201,14 @@ sudo npm install -g tslint typescript
 
 ``` shell
 sudo npm install -g csslint
+```
+
+#### sass-lint
+
+[sass-lint](https://github.com/sasstools/sass-lint) is used for static analysis of SASS files.
+
+``` shell
+sudo npm install -g sass-lint
 ```
 
 #### ShellCheck
