@@ -40,6 +40,8 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [js-yaml](#js-yaml)
     - [swagger-tools](#swagger-tools)
     - [TypeScript and tslint](#typescript-and-tslint)
+  - [Flycheck checkers](#flycheck-checkers)
+    - [ShellCheck](#shellcheck)
   - [Other Programming Languages](#other-programming-languages)
     - [Elixir](#elixir)
     - [Haskell Tool Stack](#haskell-tool-stack)
@@ -187,6 +189,12 @@ A global installation of TypeScript and tslint is necessary to allow Flycheck to
 ```
 sudo npm install -g tslint typescript
 ```
+
+### Flycheck checkers
+
+#### ShellCheck
+
+[ShellCheck](https://github.com/koalaman/shellcheck) is used for static analysis of shell scripts.
 
 ### Other Programming Languages
 
