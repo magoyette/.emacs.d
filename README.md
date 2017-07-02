@@ -41,6 +41,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [swagger-tools](#swagger-tools)
     - [TypeScript and tslint](#typescript-and-tslint)
   - [Flycheck checkers](#flycheck-checkers)
+    - [CSSLint](#csslint)
     - [ShellCheck](#shellcheck)
   - [Other Programming Languages](#other-programming-languages)
     - [Elixir](#elixir)
@@ -191,6 +192,14 @@ sudo npm install -g tslint typescript
 ```
 
 ### Flycheck checkers
+
+#### CSSLint
+
+[CSSLint](https://github.com/CSSLint/csslint) is used to static analysis of CSS files.
+
+``` shell
+sudo npm install -g csslint
+```
 
 #### ShellCheck
 
