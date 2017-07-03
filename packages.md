@@ -202,9 +202,9 @@
 
 ## Swagger packages
 
-### swaggermacs
+### flycheck-swagger-tools
 
-- [swaggermacs](https://github.com/magoyette/swaggermacs) : Support for Swagger2 YAML files in Emacs.
+- [flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) : Flycheck checker for Swagger 2 YAML and JSON files.
 
 ## Help packages
 

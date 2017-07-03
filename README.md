@@ -20,8 +20,8 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Magit local settings](#magit-local-settings)
 - [Git Submodules](#git-submodules)
   - [doctoc.el](#doctocel)
+  - [flycheck-swagger-tools](#flycheck-swagger-tools)
   - [prometheus-rules-mode](#prometheus-rules-mode)
-  - [swaggermacs](#swaggermacs)
 - [External dependencies](#external-dependencies)
   - [Windows OS setup](#windows-os-setup)
     - [Windows HOME variable](#windows-home-variable)
@@ -103,13 +103,13 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 [doctoc.el](https://github.com/magoyette/doctoc.el) is a package that adds support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
 
+### flycheck-swagger-tools
+
+[flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) is a Flycheck checker for Swagger YAML and JSON files.
+
 ### prometheus-rules-mode
 
 [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) is a package that adds support for [Prometheus](https://prometheus.io) rules in Emacs.
-
-### swaggermacs
-
-[swaggermacs](https://github.com/magoyette/swaggermacs) is a package that adds support for Swagger2 YAML files in Emacs.
 
 ## External dependencies
 
