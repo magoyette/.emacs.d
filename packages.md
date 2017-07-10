@@ -6,6 +6,7 @@
 
 - [Package management](#package-management)
 - [Dired packages](#dired-packages)
+- [Terminal packages](#terminal-packages)
 - [Emacs Lisp packages](#emacs-lisp-packages)
 - [Hydra packages](#hydra-packages)
 - [Helm packages](#helm-packages)
@@ -32,7 +33,6 @@
 - [Docker packages](#docker-packages)
 - [Prometheus packages](#prometheus-packages)
 - [Swagger packages](#swagger-packages)
-  - [swaggermacs](#swaggermacs)
 - [Help packages](#help-packages)
 - [Theme packages](#theme-packages)
 
@@ -202,9 +202,8 @@
 
 ## Swagger packages
 
-### flycheck-swagger-tools
-
 - [flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) : Flycheck checker for Swagger 2 YAML and JSON files.
+- [swagger2-yaml-mode](https://github.com/magoyette/swagger2-yaml-mode) is a major mode for Swagger 2 YAML files.
 
 ## Help packages
 

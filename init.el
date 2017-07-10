@@ -153,6 +153,7 @@
 (add-to-list 'load-path "~/.emacs.d/submodules/doctoc.el/")
 (add-to-list 'load-path "~/.emacs.d/submodules/prometheus-rules-mode/")
 (add-to-list 'load-path "~/.emacs.d/submodules/flycheck-swagger-tools/")
+(add-to-list 'load-path "~/.emacs.d/submodules/swagger2-yaml-mode/")
 
 ;; local-settings is used to set local configurations not stored in Git
 (if (file-exists-p "~/.emacs.d/local-settings.el")

@@ -7,3 +7,6 @@
 [submodule "submodules/flycheck-swagger-tools"]
 	path = submodules/flycheck-swagger-tools
 	url = https://github.com/magoyette/flycheck-swagger-tools.git
+[submodule "submodules/swagger2-yaml-mode"]
+	path = submodules/swagger2-yaml-mode
+	url = https://github.com/magoyette/swagger2-yaml-mode.git

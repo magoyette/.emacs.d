@@ -22,6 +22,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [doctoc.el](#doctocel)
   - [flycheck-swagger-tools](#flycheck-swagger-tools)
   - [prometheus-rules-mode](#prometheus-rules-mode)
+  - [swagger2-yaml-mode](#swagger2-yaml-mode)
 - [External dependencies](#external-dependencies)
   - [Windows OS setup](#windows-os-setup)
     - [Windows HOME variable](#windows-home-variable)
@@ -47,7 +48,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [stylelint](#stylelint)
   - [Other Programming Languages](#other-programming-languages)
     - [Elixir](#elixir)
-    - [Haskell Tool Stack](#haskell-tool-stack)
+    - [Haskell](#haskell)
   - [Hunspell](#hunspell)
     - [Hunspell on Linux](#hunspell-on-linux)
     - [Hunspell on Windows](#hunspell-on-windows)
@@ -110,6 +111,10 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 ### prometheus-rules-mode
 
 [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) is a package that adds support for [Prometheus](https://prometheus.io) rules in Emacs.
+
+### swagger2-yaml-mode
+
+[swagger2-yaml-mode](https://github.com/magoyette/swagger2-yaml-mode) is a major mode for Swagger 2 YAML files.
 
 ## External dependencies
 
