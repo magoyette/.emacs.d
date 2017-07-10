@@ -4,6 +4,7 @@
          ("\\.yml$" . yaml-mode)
          ("\\.raml$" . yaml-mode))
   :config
+  (setq highlight-indentation-offset 2)
   (add-hook 'yaml-mode-hook #'highlight-indentation-mode))
 
 (use-package indent-tools
