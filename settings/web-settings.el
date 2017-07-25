@@ -23,7 +23,7 @@
 
 (use-package json-reformat
   :ensure t
-  :mode (("\\.json$" . json-mode))
+  :after json-mode
   :config
   (setq json-reformat:indent-width 2))
 
@@ -31,19 +31,20 @@
   :ensure t
   :mode (("\\.js$" . js2-mode))
   :config
-  (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
   (add-to-list 'interpreter-mode-alist '("node" . js2-mode)))
 
 (use-package js2-refactor
   :ensure t
-  :mode (("\\.js$" . js2-mode))
+  :after js2-mode
   :config
   (add-hook 'js2-mode-hook #'js2-refactor-mode))
 
 (defun setup-tide-mode ()
   (interactive)
   (tide-setup)
-  (eldoc-mode +1))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled)))
 
 (use-package typescript-mode
   :ensure t
@@ -57,6 +58,7 @@
   :ensure t
   :after (:any typescript-mode js2-mode)
   :config
+  ;; A jsconfig.json file at the root of the project is required for JavaScript
   (add-hook 'js2-mode-hook #'setup-tide-mode))
 
 (use-package web-mode
