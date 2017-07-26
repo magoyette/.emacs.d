@@ -81,11 +81,6 @@ http://www.lunaryorn.com/posts/read-and-write-files-in-emacs-lisp.html
 *** General
 **** reposition-window
 http://irreal.org/blog/?p=5658
-*** Git
-**** Try magit-ediff
-https://coderwall.com/p/mcrwag/use-magit-ediff-to-resolve-merge-conflicts
-**** Try smerge-refine
-https://emacs.stackexchange.com/questions/27810/ignoring-newline-changes-in-smerge-diff-mine-other
 *** XML
 **** Format XML in Emacs
 https://manuel-uberti.github.io/emacs/2016/12/03/xmllint/
