@@ -75,6 +75,7 @@
 | M-y | Helm show kill ring |
 | C-c &lt;SPC&gt; | Helm all mark rings |
 | C-x r b | Helm bookmarks |
+| M-i | Helm Imenu |
 | C-x 8 | Helm select unicode character |
 | C-h a | Helm apropos |
 | C-h i | Helm info |

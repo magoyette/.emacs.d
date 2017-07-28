@@ -18,6 +18,7 @@
          ("C-h a" . helm-apropos)
          ("C-h i" . helm-info-emacs)
          ("C-x 8" . helm-ucs)
+         ("M-i" . helm-semantic-or-imenu)
          :map helm-map
          ("<tab>" . helm-execute-persistent-action)
          ("C-i" . helm-execute-persistent-action)
