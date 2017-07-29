@@ -34,4 +34,9 @@
   :bind (:map dired-mode-map
               ("/" . dired-narrow)))
 
+(use-package dired-collapse
+  :ensure t
+  :config
+  (add-hook 'dired-mode-hook 'dired-collapse-mode))
+
 (provide 'dired-settings)
