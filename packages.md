@@ -70,7 +70,6 @@
 
 ## Edition packages
 
-- [aggressive-indent](https://github.com/Malabarba/aggressive-indent-mode) : Automatic indentation of code.
 - [expand-region](https://github.com/magnars/expand-region.el) : Expand a region by semantic units.
 - [highlight-indentation](https://github.com/antonj/Highlight-Indentation-for-Emacs) : Displays guidelines for indentation.
 - [move-text](https://github.com/emacsfodder/move-text): Move current line or region.

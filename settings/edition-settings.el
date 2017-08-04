@@ -49,12 +49,6 @@
 ;; Auto indent on return
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
-(use-package aggressive-indent
-  :ensure t
-  :diminish aggressive-indent-mode
-  :config
-  (add-hook 'emacs-lisp-mode-hook #'aggressive-indent-mode))
-
 ;; Unique buffer names
 (use-package uniquify
   :config

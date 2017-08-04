@@ -2,7 +2,6 @@
   :ensure t
   :mode (("\\.clj$" . clojure-mode))
   :init
-  (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
   (add-hook 'clojure-mode-hook #'rainbow-delimiters-mode)
   :config
   (subword-mode))
