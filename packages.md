@@ -32,7 +32,7 @@
 - [Smartparens packages](#smartparens-packages)
 - [Docker packages](#docker-packages)
 - [Prometheus packages](#prometheus-packages)
-- [Swagger packages](#swagger-packages)
+- [OpenAPI packages](#openapi-packages)
 - [Help packages](#help-packages)
 - [Theme packages](#theme-packages)
 
@@ -201,10 +201,10 @@
 
 - [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) : Support for [Prometheus](https://prometheus.io) rules in Emacs.
 
-## Swagger packages
+## OpenAPI packages
 
 - [flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) : Flycheck checker for Swagger 2 YAML and JSON files.
-- [swagger2-yaml-mode](https://github.com/magoyette/swagger2-yaml-mode) is a major mode for Swagger 2 YAML files.
+- [openapi-yaml-mode](https://github.com/magoyette/openapi-yaml-mode) is a major mode for OpenAPI YAML files.
 
 ## Help packages
 

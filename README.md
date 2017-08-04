@@ -21,8 +21,8 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 - [Git Submodules](#git-submodules)
   - [doctoc.el](#doctocel)
   - [flycheck-swagger-tools](#flycheck-swagger-tools)
+  - [openapi-yaml-mode](#openapi-yaml-mode)
   - [prometheus-rules-mode](#prometheus-rules-mode)
-  - [swagger2-yaml-mode](#swagger2-yaml-mode)
 - [External dependencies](#external-dependencies)
   - [Windows OS setup](#windows-os-setup)
     - [Windows HOME variable](#windows-home-variable)
@@ -108,13 +108,13 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 [flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) is a Flycheck checker for Swagger YAML and JSON files.
 
+### openapi-yaml-mode
+
+[openapi-yaml-mode](https://github.com/magoyette/openapi-yaml-mode) is a major mode for OpenAPI YAML files.
+
 ### prometheus-rules-mode
 
 [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) is a package that adds support for [Prometheus](https://prometheus.io) rules in Emacs.
-
-### swagger2-yaml-mode
-
-[swagger2-yaml-mode](https://github.com/magoyette/swagger2-yaml-mode) is a major mode for Swagger 2 YAML files.
 
 ## External dependencies
 
