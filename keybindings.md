@@ -74,7 +74,7 @@
 | M-x | Helm execute command |
 | M-y | Helm show kill ring |
 | C-c &lt;SPC&gt; | Helm all mark rings |
-| C-x r b | Helm bookmarks |
+| C-x M-b | Helm bookmarks |
 | M-i | Helm Imenu |
 | C-x 8 | Helm select unicode character |
 | C-h a | Helm apropos |

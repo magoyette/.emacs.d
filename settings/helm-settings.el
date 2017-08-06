@@ -14,7 +14,7 @@
          ("M-x" . helm-M-x)
          ("M-y" . helm-show-kill-ring)
          ("C-c <SPC>" . helm-all-mark-rings)
-         ("C-x r b" . helm-filtered-bookmarks)
+         ("C-x M-b" . helm-filtered-bookmarks)
          ("C-h a" . helm-apropos)
          ("C-h i" . helm-info-emacs)
          ("C-x 8" . helm-ucs)
