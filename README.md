@@ -46,9 +46,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [sass-lint](#sass-lint)
     - [ShellCheck](#shellcheck)
     - [stylelint](#stylelint)
-  - [Other Programming Languages](#other-programming-languages)
-    - [Elixir](#elixir)
-    - [Haskell](#haskell)
   - [Hunspell](#hunspell)
     - [Hunspell on Linux](#hunspell-on-linux)
     - [Hunspell on Windows](#hunspell-on-windows)
@@ -227,18 +224,6 @@ sudo npm install -g sass-lint
 ``` shell
 sudo npm install -g stylelint
 ```
-
-### Other Programming Languages
-
-#### Elixir
-
-Alchemist requires [Elixir](http://elixir-lang.org/).
-
-#### Haskell
-
-haskell-mode is configured to format code on save with [stylish-haskell](https://github.com/jaspervdj/stylish-haskell).
-
-Intero, the interactive development environment for Haskell, requires [Stack](haskellstack.org).
 
 ### Hunspell
 

@@ -27,8 +27,6 @@
 - [REST packages](#rest-packages)
 - [Cucumber packages](#cucumber-packages)
 - [Clojure packages](#clojure-packages)
-- [Haskell packages](#haskell-packages)
-- [Elixir packages](#elixir-packages)
 - [Smartparens packages](#smartparens-packages)
 - [Docker packages](#docker-packages)
 - [Prometheus packages](#prometheus-packages)
@@ -175,16 +173,6 @@
 - [cider-eval-sexp-fu](https://github.com/clojure-emacs/cider-eval-sexp-fu) : Highlight Clojure(Script) sexps during evaluation.
 - [clj-refactor](https://github.com/clojure-emacs/clj-refactor.el) : Refactoring functions for Clojure.
 - [clojure-cheatsheet](https://github.com/clojure-emacs/clojure-cheatsheet) : The Clojure Cheatsheet in Emacs.
-
-## Haskell packages
-
-- [haskell-mode](https://github.com/haskell/haskell-mode) : Mode for Haskell programming.
-- [intero](https://github.com/commercialhaskell/intero) : Interactive development environment for Haskell.
-
-## Elixir packages
-
-- [elixir-mode](https://github.com/elixir-lang/emacs-elixir) : Mode for Elixir programming.
-- [alchemist](https://github.com/tonini/alchemist.el) : Interactive development environment for Elixir.
 
 ## Smartparens packages
 

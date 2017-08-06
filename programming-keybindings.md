@@ -22,8 +22,6 @@
   - [cider-repl-mode keybindings](#cider-repl-mode-keybindings)
   - [cider debugging keybindings](#cider-debugging-keybindings)
   - [cider-stacktrace-mode keybindings](#cider-stacktrace-mode-keybindings)
-- [Haskell keybindings](#haskell-keybindings)
-  - [Intero keybindings](#intero-keybindings)
 - [Smartparens keybindings](#smartparens-keybindings)
   - [Smartparens navigation](#smartparens-navigation)
   - [Smartparens manipulation](#smartparens-manipulation)
@@ -195,21 +193,6 @@
 | r | toggle display of REPL frames |
 | t | toggle display of tooling frames |
 | d | toggle display of duplicate frames |
-
-## Haskell keybindings
-
-### Intero keybindings
-
-| Keybinding | Action |
-| ---------- | ------ |
-| M-. | Jump to definition |
-| C-c C-i | Show information of identifier at point |
-| C-c C-t | Show the type of thing at point, or the selection |
-| C-u C-c C-t | Insert a type signature for the thing at point |
-| C-c C-l | Load this module in the REPL |
-| C-c C-r | Apply suggestions from GHC |
-| C-c C-k | Clear REPL |
-| C-c C-z | Switch to and from the REPL |
 
 ## Smartparens keybindings
 
