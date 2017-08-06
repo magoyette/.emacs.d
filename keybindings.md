@@ -4,47 +4,47 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [Package management keybindings](#package-management-keybindings)
-- [Windows and frames keybindings](#windows-and-frames-keybindings)
-- [Helm keybindings](#helm-keybindings)
+- [Package management](#package-management)
+- [Windows and frames](#windows-and-frames)
+- [Helm](#helm)
   - [Helm actions](#helm-actions)
   - [Helm features](#helm-features)
-- [Files and buffers keybindings](#files-and-buffers-keybindings)
-- [Movement keybindings](#movement-keybindings)
-- [Mark keybindings](#mark-keybindings)
-- [NeoTree keybindings](#neotree-keybindings)
-- [Edition keybindings](#edition-keybindings)
-  - [Undo tree keybindings](#undo-tree-keybindings)
-  - [Rectangle mark mode keybindings](#rectangle-mark-mode-keybindings)
-  - [Multiple cursors keybindings](#multiple-cursors-keybindings)
+- [Files and buffers](#files-and-buffers)
+- [Movement](#movement)
+- [Mark](#mark)
+- [NeoTree](#neotree)
+- [Edition](#edition)
+  - [Undo tree](#undo-tree)
+  - [Rectangle mark mode](#rectangle-mark-mode)
+  - [Multiple cursors](#multiple-cursors)
 - [Projects](#projects)
-- [Search and replace keybindings](#search-and-replace-keybindings)
-  - [Helm swoop keybindings](#helm-swoop-keybindings)
-- [Company keybindings](#company-keybindings)
-- [Narrowing keybindings](#narrowing-keybindings)
-- [Theme keybindings](#theme-keybindings)
-- [Dired keybindings](#dired-keybindings)
-  - [Dired mode](#dired-mode)
+- [Search and replace](#search-and-replace)
+  - [Helm swoop](#helm-swoop)
+- [Company](#company)
+- [Narrowing](#narrowing)
+- [Fonts](#fonts)
+- [Dired](#dired)
+  - [Dired](#dired-1)
   - [WDired](#wdired)
-- [Terminal keybindings](#terminal-keybindings)
-- [Git keybindings](#git-keybindings)
-  - [Magit blame keybindings](#magit-blame-keybindings)
-  - [Magit commit keybindings](#magit-commit-keybindings)
-  - [Git timemachine keybindings](#git-timemachine-keybindings)
-- [Org mode keybindings](#org-mode-keybindings)
-- [Writing keybindings](#writing-keybindings)
-- [Markdown keybindings](#markdown-keybindings)
-- [Spelling keybindings](#spelling-keybindings)
+- [Terminal](#terminal)
+- [Git](#git)
+  - [Magit blame](#magit-blame)
+  - [Magit commit](#magit-commit)
+  - [Git timemachine](#git-timemachine)
+- [Org mode](#org-mode)
+- [Writing](#writing)
+- [Markdown](#markdown)
+- [Spelling](#spelling)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Package management keybindings
+## Package management
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-x p | List packages with Paradox |
 
-## Windows and frames keybindings
+## Windows and frames
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -52,7 +52,7 @@
 | C-x 4 t | Transpose buffers between two windows |
 | C-x 5 2 | create a new frame |
 
-## Helm keybindings
+## Helm
 
 ### Helm actions
 
@@ -81,14 +81,14 @@
 | C-h i | Helm info |
 | C-h b | Helm describe bindings |
 
-## Files and buffers keybindings
+## Files and buffers
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-c k | Kill all open buffers except the current buffer |
 | C-c r | Rename current buffer and its visiting file if it has one |
 
-## Movement keybindings
+## Movement
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -98,7 +98,7 @@
 | M-g f | Jump the beginning of a line |
 | M-g w | Input one char, then jump to the beginning of a word |
 
-## Mark keybindings
+## Mark
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -106,7 +106,7 @@
 | M-« | Jump to mark |
 | C-x C-x | Exchange the point and the mark |
 
-## NeoTree keybindings
+## NeoTree
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -122,7 +122,7 @@
 | C-c C-r | Rename a file or directory |
 | C-c C-c | Change the root directory |
 
-## Edition keybindings
+## Edition
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -136,7 +136,7 @@
 | C-x u | visualize undo tree |
 | M-= | Word count for region |
 
-### Undo tree keybindings
+### Undo tree
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -148,13 +148,13 @@
 | s | toggle selection mode |
 | q | quit undo tree |
 
-### Rectangle mark mode keybindings
+### Rectangle mark mode
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-x SPC | enable rectangle-mark-mode for rectangular selection |
 
-### Multiple cursors keybindings
+### Multiple cursors
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -167,11 +167,11 @@
 
 | Keybinding | Action |
 | ---------- | ------ |
-| C-x x | Helm projectile (basic comands) |
+| C-x x | Helm projectile (basic commands) |
 | C-x M-x | Helm hydra (additional commands) |
 | F9 | Open NeoTree on project root |
 
-## Search and replace keybindings
+## Search and replace
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -193,7 +193,7 @@
 | M-s x | Jump to definition (prefer definition from other buffers |
 | M-s z | Jump to definition in another windows (prefer definition from other buffers |
 
-### Helm swoop keybindings
+### Helm swoop
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -203,7 +203,7 @@
 | C-c C-e | enter edit mode |
 | C-x C-s | apply edit mode changes |
 
-## Company keybindings
+## Company
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -211,28 +211,28 @@
 | C-: | Helm company |
 | C-c f | Trigger expanson of a file path with company |
 
-## Narrowing keybindings
+## Narrowing
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-x n | narrow or widen a region, an org block, an org subtree or a defun |
 | C-u C-x n | narrow a narrowed buffer |
 
-## Theme keybindings
+## Fonts
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-+ | Increase text scale |
 | C-- | Decrease text scale |
 
-## Dired keybindings
+## Dired
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-x d | open dired mode |
 | C-x C-j | show current file in dired |
 
-### Dired mode
+### Dired
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -268,7 +268,7 @@
 | C-c C-c | Save WDired change |
 | C-c ESC | Cancel WDired change |
 
-## Terminal keybindings
+## Terminal
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -276,7 +276,7 @@
 | C-F5 | Open an external terminal |
 | C-F6 | Open an external terminal for the projectile or git project |
 
-## Git keybindings
+## Git
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -288,7 +288,7 @@
 | C-x t | Git timemachine |
 | C-c s | Hydra for smerge-mode |
 
-### Magit blame keybindings
+### Magit blame
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -302,14 +302,14 @@
 | M-w | copy hash of the commit from the current chunk |
 | q | exit Magit blame |
 
-### Magit commit keybindings
+### Magit commit
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-c C-c | Finish commit |
 | C-c C-k | Cancel commit |
 
-### Git timemachine keybindings
+### Git timemachine
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -319,7 +319,7 @@
 | w | copy abbreviated hash of current revision |
 | q | exit Git timemachine |
 
-## Org mode keybindings
+## Org mode
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -332,13 +332,13 @@
 | C-c o d | Search in the org files of a directory with helm-org-rifle |
 | C-c / T | Search for a specific TODO keyword and display the results in a sparse tree |
 
-## Writing keybindings
+## Writing
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-c v | Center text with Visual Fill Column Mode |
 
-## Markdown keybindings
+## Markdown
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -354,7 +354,7 @@
 | C-c C-p | Move to previous heading |
 | C-c C-d | Generate a table of contents with [DocToc](https://github.com/thlorenz/doctoc) |
 
-## Spelling keybindings
+## Spelling
 
 | Keybinding | Action |
 | ---------- | ------ |

@@ -4,31 +4,31 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [Flycheck keybindings](#flycheck-keybindings)
-  - [Flycheck error list keybindings](#flycheck-error-list-keybindings)
-- [YASnippet keybindings](#yasnippet-keybindings)
-- [Programming keybindings](#programming-keybindings)
-- [Web keybindings](#web-keybindings)
-- [REST keybindings](#rest-keybindings)
-- [YAML keybindings](#yaml-keybindings)
-- [Emacs Lisp keybindings](#emacs-lisp-keybindings)
-- [Clojure keybindings](#clojure-keybindings)
-  - [cider general keybindings](#cider-general-keybindings)
-  - [cider eval keybindings](#cider-eval-keybindings)
-  - [cider documentation keybindings](#cider-documentation-keybindings)
-  - [cider tests keybindings](#cider-tests-keybindings)
-  - [cider-test-results keybindings](#cider-test-results-keybindings)
-  - [cider tools keybindings](#cider-tools-keybindings)
-  - [cider-repl-mode keybindings](#cider-repl-mode-keybindings)
-  - [cider debugging keybindings](#cider-debugging-keybindings)
-  - [cider-stacktrace-mode keybindings](#cider-stacktrace-mode-keybindings)
-- [Smartparens keybindings](#smartparens-keybindings)
+- [Flycheck](#flycheck)
+  - [Flycheck error list](#flycheck-error-list)
+- [YASnippet](#yasnippet)
+- [Programming](#programming)
+- [Web](#web)
+- [REST](#rest)
+- [YAML](#yaml)
+- [Emacs Lisp](#emacs-lisp)
+- [Clojure](#clojure)
+  - [cider](#cider)
+  - [cider eval](#cider-eval)
+  - [cider documentation](#cider-documentation)
+  - [cider tests](#cider-tests)
+  - [cider-test-results](#cider-test-results)
+  - [cider tools](#cider-tools)
+  - [cider-repl-mode](#cider-repl-mode)
+  - [cider debugging](#cider-debugging)
+  - [cider-stacktrace-mode](#cider-stacktrace-mode)
+- [Smartparens](#smartparens)
   - [Smartparens navigation](#smartparens-navigation)
   - [Smartparens manipulation](#smartparens-manipulation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Flycheck keybindings
+## Flycheck
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -40,7 +40,7 @@
 | C-c ! v | Verify the Flycheck setup for current buffer and display enabled checkers |
 | C-c ! ? | Prompt for a checker and display its documentation |
 
-### Flycheck error list keybindings
+### Flycheck error list
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -50,27 +50,27 @@
 | g | check buffer and update error list |
 | q | quit error list |
 
-## YASnippet keybindings
+## YASnippet
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-TAB | Expand snippet |
 | S-TAB | Insert a snippet |
 
-## Programming keybindings
+## Programming
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-c <RET> | Open url at point |
 
-## Web keybindings
+## Web
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-c c | Helm for CSS, LESS and Sass selectors. |
 | C-j | Expand an Emmet snippet in web-mode, css-mode or html-mode. |
 
-## REST keybindings
+## REST
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -78,20 +78,20 @@
 | C-c C-r | run a query and display response |
 | C-c C-g | Helm for rest-client variables and requests |
 
-## YAML keybindings
+## YAML
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-c > | indent-tools hydra |
 
-## Emacs Lisp keybindings
+## Emacs Lisp
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-x C-e | evaluate the expression before point |
 | C-M-x | evaluate top-level expression containing or following point |
 
-## Clojure keybindings
+## Clojure
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -100,7 +100,7 @@
 | C-c C-m hh | Hydra menu for clj-refactor |
 | C-c C-h | clojure cheatsheet |
 
-### cider general keybindings
+### cider
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -114,7 +114,7 @@
 | M-, | return to pre-jump location |
 | M-TAB | complete symbol at point |
 
-### cider eval keybindings
+### cider eval
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -126,7 +126,7 @@
 | C-c C-x | reload all modified files in classpath |
 | C-u C-c C-x | reload all files in classpath |
 
-### cider documentation keybindings
+### cider documentation
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -134,7 +134,7 @@
 | C-c C-d j | display Javadoc in default browser for symbol at point |
 | C-c C-d r | search symbol in Grimoire |
 
-### cider tests keybindings
+### cider tests
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -144,7 +144,7 @@
 | C-c C-t C-r | re-run failed tests |
 | C-c C-t C-b | show test report buffer |
 
-### cider-test-results keybindings
+### cider-test-results
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -153,7 +153,7 @@
 | d | diff of actual vs expected |
 | e | display cause and stacktrace of failed test |
 
-### cider tools keybindings
+### cider tools
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -164,7 +164,7 @@
 | C-c M-t v | toggle tracing of the results of a var |
 | C-c M-t n | toggle tracing of the results of all the vars of a namespace |
 
-### cider-repl-mode keybindings
+### cider-repl-mode
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -176,13 +176,13 @@
 | TAB | complete symbol at point |
 | C-c M-n | switch to a namespace |
 
-### cider debugging keybindings
+### cider debugging
 
 | Keybinding | Action |
 | ---------- | ------ |
 | C-u C-c C-c | Debug the top level form under point and walk through its evaluation (defn must be evaluated to remove its instrumentation) |
 
-### cider-stacktrace-mode keybindings
+### cider-stacktrace-mode
 
 | Keybinding | Action |
 | ---------- | ------ |
@@ -194,7 +194,7 @@
 | t | toggle display of tooling frames |
 | d | toggle display of duplicate frames |
 
-## Smartparens keybindings
+## Smartparens
 
 ### Smartparens navigation
 
