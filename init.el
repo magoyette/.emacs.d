@@ -172,9 +172,13 @@
 (require 'terminal-settings)
 (require 'company-settings)
 (require 'yasnippet-settings)
-(require 'projectile-settings)
-(require 'flycheck-settings)
 (require 'navigation-settings)
+
+;; projectile-settings is after navigation-settings to allow
+;;  the projectile hydra to refer to Neotree
+(require 'projectile-settings)
+
+(require 'flycheck-settings)
 (require 'search-settings)
 (require 'highlight-settings)
 (require 'git-settings)

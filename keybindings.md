@@ -163,6 +163,14 @@
 | C-< | Add a cursor to the previous expression like the selected region |
 | C-c C-< | Add a cursor to all expressions in the buffer like the selected region |
 
+## Projects
+
+| Keybinding | Action |
+| ---------- | ------ |
+| C-x x | Helm projectile (basic comands) |
+| C-x M-x | Helm hydra (additional commands) |
+| F9 | Open NeoTree on project root |
+
 ## Search and replace keybindings
 
 | Keybinding | Action |
@@ -267,21 +275,6 @@
 | C-c t | Open a terminal (ansi-term) |
 | C-F5 | Open an external terminal |
 | C-F6 | Open an external terminal for the projectile or git project |
-
-## Projectile keybindings
-
-For the commands that find files, C-u can be done before the command to first invalidate the cache of the project files.
-
-| Keybinding | Action |
-| ---------- | ------ |
-| C-c p h | Helm projectile (switch to buffer, find file, switch project) |
-| C-c p b | Switch to buffer |
-| C-c p p | Switch project |
-| C-c p f | Find file |
-| C-c p F | Find file in all known projects |
-| C-c p g | Find file based on context at point |
-| C-c p d | Find directory |
-| C-c p e | Find recent file |
 
 ## Git keybindings
 
