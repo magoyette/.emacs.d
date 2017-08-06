@@ -32,7 +32,6 @@
   - [Magit commit](#magit-commit)
   - [Git timemachine](#git-timemachine)
 - [Org mode](#org-mode)
-- [Writing](#writing)
 - [Markdown](#markdown)
 - [Spelling](#spelling)
 
@@ -48,9 +47,8 @@
 
 | Keybinding | Action |
 | ---------- | ------ |
-| M-1, M-2, ... | move to a numbered window in the current frame or another frame |
-| C-x 4 t | Transpose buffers between two windows |
-| C-x 5 2 | create a new frame |
+| C-c w | Hydra for windows and frames |
+| M-1, M-2, ... | move to a numbered window |
 
 ## Helm
 
@@ -331,12 +329,6 @@
 | C-c o b | Search in all opened org files with helm-org-rifle |
 | C-c o d | Search in the org files of a directory with helm-org-rifle |
 | C-c / T | Search for a specific TODO keyword and display the results in a sparse tree |
-
-## Writing
-
-| Keybinding | Action |
-| ---------- | ------ |
-| C-c v | Center text with Visual Fill Column Mode |
 
 ## Markdown
 

@@ -183,7 +183,6 @@
 (require 'highlight-settings)
 (require 'git-settings)
 (require 'org-settings)
-(require 'writing-settings)
 (require 'doctoc)
 (require 'markdown-settings)
 (require 'spelling-settings)
