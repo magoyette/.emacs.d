@@ -169,7 +169,7 @@
 ;;  to replace an Helm Dired keybinding
 (require 'dired-settings)
 
-(require 'terminal-settings)
+(require 'shell-settings)
 (require 'company-settings)
 (require 'yasnippet-settings)
 (require 'navigation-settings)

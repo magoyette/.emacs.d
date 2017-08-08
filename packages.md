@@ -6,7 +6,7 @@
 
 - [Package management](#package-management)
 - [Dired packages](#dired-packages)
-- [Terminal packages](#terminal-packages)
+- [Shell packages](#shell-packages)
 - [Emacs Lisp packages](#emacs-lisp-packages)
 - [Hydra packages](#hydra-packages)
 - [Helm packages](#helm-packages)
@@ -49,7 +49,7 @@
 - [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort) : Sort Dired buffers.
 - [peep-dired](https://github.com/asok/peep-dired) : Show file at point in Dired in another window.
 
-## Terminal packages
+## Shell packages
 
 - [terminal-here](https://github.com/davidshepherd7/terminal-here): Open an external terminal emulator.
 
