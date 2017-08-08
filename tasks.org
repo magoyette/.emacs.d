@@ -4,8 +4,6 @@
 **** parinfer
 https://github.com/DogLooksGood/parinfer-mode
 *** Edition
-**** ace-window
-https://github.com/abo-abo/ace-window
 **** highlight-symbol
 https://github.com/nschum/highlight-symbol.el
 *** Elisp
@@ -35,52 +33,12 @@ https://github.com/joddie/pcre2el
 https://github.com/benma/visual-regexp.el
 **** visual-regexp-steroids
 https://github.com/benma/visual-regexp-steroids.el/
-*** Scala
-**** ENSIME
-https://ensime.github.io/
 *** Various
-**** editorconfig-emacs
-https://github.com/editorconfig/editorconfig-emacs
 **** guru-mode
 https://github.com/bbatsov/guru-mode
 **** ledger
 https://github.com/ledger/ledger
-**** org-reveal
-https://github.com/yjwen/org-reveal/
 **** pdf-tools
 https://github.com/politza/pdf-tools
-**** string-edit
-https://github.com/magnars/string-edit.el
 **** ztree
 https://github.com/fourier/ztree
-*** Web
-**** eslint-fix
-https://github.com/codesuki/eslint-fix
-**** karma.el
-https://github.com/tonini/karma.el
-**** mocha.el
-https://github.com/scottaj/mocha.el
-**** rjsx-mode
-https://github.com/felipeochoa/rjsx-mode
-**** web-beautify
-https://github.com/yasuyk/web-beautify
-**** yasnippets-angular2
-https://github.com/bleggett/yasnippets-angular2
-** External dependencies
-*** Web
-**** Choose between sass (ruby) and node-sass (wrapper over the C lib)
-- https://sass-lang.com/
-- https://github.com/sass/node-sass
-** Tips
-*** Emacs Configs
-**** Look at nice emacs config files
-https://github.com/caisah/emacs.dz
-*** Emacs Lisp
-**** Read and write files
-http://www.lunaryorn.com/posts/read-and-write-files-in-emacs-lisp.html
-*** General
-**** reposition-window
-http://irreal.org/blog/?p=5658
-*** XML
-**** Format XML in Emacs
-https://manuel-uberti.github.io/emacs/2016/12/03/xmllint/
