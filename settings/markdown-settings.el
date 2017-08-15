@@ -13,6 +13,8 @@
 
   (setq markdown-fontify-code-blocks-natively t)
 
-  (define-key markdown-mode-map (kbd "C-c C-d") #'doctoc))
+  (define-key markdown-mode-map (kbd "C-c C-d") #'doctoc)
+
+  (add-hook 'markdown-mode-hook 'turn-on-orgtbl))
 
 (provide 'markdown-settings)
