@@ -39,7 +39,6 @@
 ## Package management
 
 - [diminish](https://github.com/emacsmirror/diminish) : Hide or abbreviate minor modes.
-- [paradox](https://github.com/Malabarba/paradox) : A better packages menu.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
 
 ## Dired packages

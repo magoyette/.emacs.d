@@ -45,6 +45,8 @@
 ;;;;; Packages management
 
 ;; Configure Melpa
+(global-set-key (kbd "C-x p") 'list-packages)
+
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
@@ -94,16 +96,6 @@
 
 (use-package diminish
   :ensure t)
-
-
-;;;;; Paradox
-
-(use-package paradox
-  :ensure t
-  :bind (("C-x p" . paradox-list-packages))
-  :config
-  ;; Disable paradox support for (un)starring repos
-  (setq paradox-github-token t))
 
 
 ;;;;; Configure Hydra

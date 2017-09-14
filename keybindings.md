@@ -39,9 +39,9 @@
 
 ## Package management
 
-| Keybinding | Action                     |
-| ---------- | ------                     |
-| C-x p      | List packages with Paradox |
+| Keybinding | Action        |
+| ---------- | ------        |
+| C-x p      | List packages |
 
 ## Windows and frames
 
