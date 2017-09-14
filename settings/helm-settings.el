@@ -27,7 +27,6 @@
   (require 'helm-config)
   (helm-mode 1)
   (helm-autoresize-mode 1)
-  (helm-push-mark-mode 1)
 
   (global-unset-key (kbd "C-x c"))
 
