@@ -46,6 +46,7 @@
 - [dired-collapse](https://github.com/Fuco1/dired-hacks#dired-collapse) : Collapse nested directories with a single children.
 - [dired-narrow](https://github.com/Fuco1/dired-hacks#dired-narrow) : Filter Dired files.
 - [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort) : Sort Dired buffers.
+- [dired-subtree](https://github.com/Fuco1/dired-hacks#dired-subtree) : Insert a subdirectory in a Dired buffer as a subtree.
 - [peep-dired](https://github.com/asok/peep-dired) : Show file at point in Dired in another window.
 
 ## Shell packages

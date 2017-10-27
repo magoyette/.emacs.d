@@ -39,4 +39,10 @@
   :config
   (add-hook 'dired-mode-hook 'dired-collapse-mode))
 
+(use-package dired-subtree
+  :ensure t
+  :bind (:map dired-mode-map
+             ("i" . dired-subtree-insert)
+             (";" . dired-subtree-remove)))
+
 (provide 'dired-settings)

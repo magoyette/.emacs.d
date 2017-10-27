@@ -238,6 +238,8 @@
 | >           | move to next directory                         |
 | <           | move to previous directory                     |
 | ^           | move to the parent directory (..)              |
+| i           | insert a subtree of the selected directory    |
+| ;           | remove the selected subtree                   |
 | g           | refresh                                        |
 | +           | create a new file                              |
 | s           | alternate between sort by name and date        |
