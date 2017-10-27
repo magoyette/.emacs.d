@@ -33,6 +33,8 @@
 
   (setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1)
 
+  (setq magit-process-finish-apply-ansi-colors t)
+
   ;; Sort branches with more recent commits or tags at the top of the list
   (setq magit-list-refs-sortby "-creatordate"))
 
