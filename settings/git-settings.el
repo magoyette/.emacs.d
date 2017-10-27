@@ -16,6 +16,7 @@
   :ensure t
   :bind (("C-x g" . magit-status)
          ("C-x G" . magit-blame)
+         ("C-x r G" . magit-blame-reverse)
          ("C-x M-g" . magit-list-repositories))
   :config
   (if (eq system-type 'windows-nt)
