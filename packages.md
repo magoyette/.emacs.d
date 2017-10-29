@@ -190,7 +190,8 @@
 
 ## OpenAPI packages
 
-- [flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) : Flycheck checker for Swagger 2 YAML and JSON files.
+- [flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli) is a Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-cli.
+- [flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) is a Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-tools.
 - [openapi-yaml-mode](https://github.com/magoyette/openapi-yaml-mode) is a major mode for OpenAPI YAML files.
 
 ## Help packages

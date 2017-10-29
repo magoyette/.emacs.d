@@ -1,5 +1,7 @@
 (use-package flycheck-swagger-tools)
 
+(use-package flycheck-swagger-cli)
+
 (use-package openapi-yaml-mode
   :config
   (openapi-yaml-mode-add-to-magic-mode-alist)

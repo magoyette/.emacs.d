@@ -101,9 +101,13 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 [doctoc.el](https://github.com/magoyette/doctoc.el) is a package that adds support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
 
+### flycheck-swagger-cli
+
+[flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli) is a Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-cli.
+
 ### flycheck-swagger-tools
 
-[flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) is a Flycheck checker for Swagger YAML and JSON files.
+[flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) is a Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-tools.
 
 ### openapi-yaml-mode
 
