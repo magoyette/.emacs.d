@@ -188,5 +188,6 @@
 (require 'docker-settings)
 (require 'prometheus-settings)
 (require 'openapi-settings)
+(require 'epub-settings)
 (require 'help-settings)
 (require 'theme-settings)

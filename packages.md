@@ -22,6 +22,7 @@
 - [Git packages](#git-packages)
 - [Org packages](#org-packages)
 - [Markdown packages](#markdown-packages)
+- [ePub packages](#epub-packages)
 - [Web packages](#web-packages)
 - [YAML packages](#yaml-packages)
 - [REST packages](#rest-packages)
@@ -136,6 +137,10 @@
 
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/) : Mode for Markdown files.
 - [doctoc.el](https://github.com/magoyette/doctoc.el) : Support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
+
+## ePub packages
+
+- [nov.el](https://github.com/wasamasa/nov.el) : Mode for ePub files.
 
 ## Web packages
 

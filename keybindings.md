@@ -34,6 +34,7 @@
 - [Org mode](#org-mode)
 - [Markdown](#markdown)
 - [Spelling](#spelling)
+- [ePub](#epub)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -354,3 +355,12 @@
 | ---------- | ------                                            |
 | C-c d      | Alternate between english and french dictionaries |
 | C-c M-s    | Start ispell on the region or on the buffer       |
+
+## ePub
+
+| Keybinding | Action            |
+| ---------- | ------            |
+| SPC        | scroll            |
+| n          | next section      |
+| p          | previous section  |
+| t          | table of contents |
