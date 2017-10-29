@@ -189,5 +189,6 @@
 (require 'prometheus-settings)
 (require 'openapi-settings)
 (require 'epub-settings)
+(require 'pdf-settings)
 (require 'help-settings)
 (require 'theme-settings)

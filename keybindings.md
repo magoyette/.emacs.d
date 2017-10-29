@@ -35,6 +35,7 @@
 - [Markdown](#markdown)
 - [Spelling](#spelling)
 - [ePub](#epub)
+- [PDF](#pdf)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -364,3 +365,11 @@
 | n          | next section      |
 | p          | previous section  |
 | t          | table of contents |
+
+## PDF
+
+| Keybinding | Action                              |
+| ---------- | ------                              |
+| C-s / C-r  | incremental search forward/backward |
+| o          | display outline                     |
+| + / -      | zoom in/out                         |

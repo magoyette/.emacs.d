@@ -23,6 +23,7 @@
 - [Org packages](#org-packages)
 - [Markdown packages](#markdown-packages)
 - [ePub packages](#epub-packages)
+- [PDF packages](#pdf-packages)
 - [Web packages](#web-packages)
 - [YAML packages](#yaml-packages)
 - [REST packages](#rest-packages)
@@ -46,7 +47,7 @@
 
 - [dired-collapse](https://github.com/Fuco1/dired-hacks#dired-collapse) : Collapse nested directories with a single children.
 - [dired-narrow](https://github.com/Fuco1/dired-hacks#dired-narrow) : Filter Dired files.
-- [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort) : Sort Dired buffers.
+- [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort) : Sort Dired buffers. Disabled on Windows in this Emacs config.
 - [dired-subtree](https://github.com/Fuco1/dired-hacks#dired-subtree) : Insert a subdirectory in a Dired buffer as a subtree.
 - [peep-dired](https://github.com/asok/peep-dired) : Show file at point in Dired in another window.
 
@@ -141,6 +142,10 @@
 ## ePub packages
 
 - [nov.el](https://github.com/wasamasa/nov.el) : Mode for ePub files.
+
+## PDF packages
+
+- [pdf-tools](https://github.com/politza/pdf-tools) : Mode for PDF files. Disabled on Windows in this Emacs config.
 
 ## Web packages
 
