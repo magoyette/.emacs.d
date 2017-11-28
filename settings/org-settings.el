@@ -45,13 +45,6 @@
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
-(use-package helm-org-rifle
-  :ensure t
-  :bind (("C-c o b" . helm-org-rifle)
-         ("C-c o d" . helm-org-rifle-directories))
-  :config
-  (setq helm-org-rifle-show-path t))
-
 (use-package ace-link
   :ensure t
   :config
