@@ -94,7 +94,6 @@
 
 - [company](https://company-mode.github.io/) : Completion system.
 - [company-quickhelp](https://github.com/expez/company-quickhelp) : Documentation popups for company.
-- [helm-company](https://github.com/manuel-uberti/helm-company) : Helm interface for company mode.
 
 ## YASnippet packages
 

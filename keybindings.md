@@ -194,7 +194,6 @@
 | Keybinding | Action                                       |
 | ---------- | ------                                       |
 | TAB        | Company mode expand                          |
-| C-:        | Helm company                                 |
 | C-c f      | Trigger expanson of a file path with company |
 
 ## Narrowing

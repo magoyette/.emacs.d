@@ -23,8 +23,4 @@
   :config
   (company-quickhelp-mode 1))
 
-(use-package helm-company
-  :ensure t
-  :bind (("C-:" . helm-company)))
-
 (provide 'company-settings)
