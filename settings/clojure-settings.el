@@ -6,12 +6,6 @@
   :config
   (subword-mode))
 
-(use-package clojure-cheatsheet
-  :ensure t
-  :after clojure-mode
-  :config
-  (define-key clojure-mode-map (kbd "C-c C-h") #'clojure-cheatsheet))
-
 (use-package cider
   :ensure t
   :after clojure-mode

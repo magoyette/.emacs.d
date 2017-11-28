@@ -98,7 +98,6 @@
 | C-c M-j    | cider-jack-in               |
 | C-c C-m    | clj-refactor                |
 | C-c C-m hh | Hydra menu for clj-refactor |
-| C-c C-h    | clojure cheatsheet          |
 
 ### cider
 
