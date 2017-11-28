@@ -39,8 +39,7 @@
   ;; Use unicode character for window number (provided by winum package)
   (with-no-warnings (setq spaceline-window-numbers-unicode t))
 
-  (spaceline-emacs-theme)
-  (spaceline-helm-mode))
+  (spaceline-emacs-theme))
 
 (use-package zenburn-theme
   :ensure t

@@ -143,7 +143,7 @@ The neotree package is configured to use the [fonts of all-the-icons.el](https:/
 
 #### RipGrep
 
-The package helm-ag is configured to use [RipGrep](https://github.com/BurntSushi/ripgrep).
+The package dumb-jump is configured to use [RipGrep](https://github.com/BurntSushi/ripgrep).
 
 ### Java Tools
 

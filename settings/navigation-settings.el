@@ -11,13 +11,6 @@
         (goto-line (read-number "Goto line: ")))
     (linum-mode -1)))
 
-(use-package avy
-  :ensure t
-  :bind (("C-," . avy-goto-char)
-         ("C-'" . avy-goto-char-2)
-         ("M-g f" . avy-goto-line)
-         ("M-g w" . avy-goto-word-1)))
-
 (use-package neotree
   :ensure t
   :bind (("<f8>" . neotree-toggle))

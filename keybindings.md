@@ -4,11 +4,10 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
+- [Help](#help)
+- [Ivy and Counsel](#ivy-and-counsel)
 - [Package management](#package-management)
 - [Windows and frames](#windows-and-frames)
-- [Helm](#helm)
-  - [Helm actions](#helm-actions)
-  - [Helm features](#helm-features)
 - [Files and buffers](#files-and-buffers)
 - [Movement](#movement)
 - [Mark](#mark)
@@ -18,7 +17,9 @@
   - [Rectangle mark mode](#rectangle-mark-mode)
   - [Multiple cursors](#multiple-cursors)
 - [Projects](#projects)
+- [Bookmarks](#bookmarks)
 - [Search and replace](#search-and-replace)
+  - [Swiper](#swiper)
 - [Company](#company)
 - [Narrowing](#narrowing)
 - [Fonts](#fonts)
@@ -38,6 +39,22 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## Help
+
+| Keybinding | Action                       |
+| ---------- | ------                       |
+| F1 f       | Describe function (counsel)  |
+| F1 v       | Describe variable (counsel)  |
+| C-h a      | apropos (counsel)            |
+| C-h b      | describe keybindings (counsel)  |
+| F2 i       | info lookup symbol (counsel) |
+
+## Ivy and Counsel
+
+| Keybinding | Action                                       |
+| ---------- | ------                                       |
+| C-o        | See the action list (press again to go back) |
+
 ## Package management
 
 | Keybinding | Action        |
@@ -51,51 +68,28 @@
 | C-c w         | Hydra for windows and frames |
 | M-1, M-2, ... | move to a numbered window    |
 
-## Helm
-
-### Helm actions
-
-| Keybinding  | Action                    |
-| ----------  | ------                    |
-| &lt;tab&gt; | execute persistent action |
-| C-i         | execute persistent action |
-| C-z         | select action             |
-
-### Helm features
-
-| Keybinding      | Action                                                          |
-| ----------      | ------                                                          |
-| C-x C-b         | Helm mini                                                       |
-| C-x b           | Helm buffers list                                               |
-| C-x C-f         | Helm find files                                                 |
-| C-x C-r         | Helm recent files                                               |
-| C-x f           | Helm multi (combines buffers list, find files and recent files) |
-| M-x             | Helm execute command                                            |
-| M-y             | Helm show kill ring                                             |
-| C-c &lt;SPC&gt; | Helm all mark rings                                             |
-| C-x M-b         | Helm bookmarks                                                  |
-| M-i             | Helm Imenu                                                      |
-| C-x 8           | Helm select unicode character                                   |
-| C-h a           | Helm apropos                                                    |
-| C-h i           | Helm info                                                       |
-| C-h b           | Helm describe bindings                                          |
-
 ## Files and buffers
 
 | Keybinding | Action                                                    |
 | ---------- | ------                                                    |
+| C-x C-b    | Switch buffer (ivy)                                       |
+| M-x        | Execute command (counsel)                                 |
+| C-x C-f    | Find a file (counsel)                                     |
+| C-x C-r    | Open a recent file (counsel)                              |
 | C-c k      | Kill all open buffers except the current buffer           |
 | C-c r      | Rename current buffer and its visiting file if it has one |
 
 ## Movement
 
-| Keybinding | Action                                               |
-| ---------- | ------                                               |
-| M-g M-g    | Go to line number                                    |
-| C-,        | Input one char, then jump to a character             |
-| C-'        | Input 2 chars, then jump to a character              |
-| M-g f      | Jump the beginning of a line                         |
-| M-g w      | Input one char, then jump to the beginning of a word |
+| Keybinding | Action                                                                       |
+| ---------- | ------                                                                       |
+| M-g M-g    | Go to line number                                                            |
+| C-,        | Input one char, then jump to a character                                     |
+| C-'        | Input 2 chars, then jump to a character                                      |
+| M-g f      | Jump the beginning of a line                                                 |
+| M-g w      | Input one char, then jump to the beginning of a word                         |
+| M-i        | imenu (counsel)                                                              |
+| C-c i      | imenu in opened buffers from same major mode or projectile project (counsel) |
 
 ## Mark
 
@@ -130,6 +124,7 @@
 | M-Up       | Move line or region up          |
 | M-Down     | Move line or region down        |
 | M-j        | Collapse/join lines             |
+| M-y        | Yank from history (counsel)     |
 | C-c d      | Duplicate line or region        |
 | C-=        | Expand region by semantic units |
 | C-x u      | visualize undo tree             |
@@ -164,20 +159,29 @@
 
 ## Projects
 
-| Keybinding | Action                           |
-| ---------- | ------                           |
-| C-x x      | Helm projectile (basic commands) |
-| C-x M-x    | Helm hydra (additional commands) |
-| F9         | Open NeoTree on project root     |
+| Keybinding | Action                       |
+| ---------- | ------                       |
+| C-x M-x    | Projectile hydra             |
+| F9         | Open NeoTree on project root |
+
+## Bookmarks
+
+| Keybinding | Action                                     |
+| ---------- | ------                                     |
+| C-x M-b    | Set bookmark or jump to bookmark (counsel) |
 
 ## Search and replace
 
 | Keybinding | Action                                                                      |
 | ---------- | ------                                                                      |
-| C-s        | regexp forward search                                                       |
-| C-r        | regexp backward search                                                      |
-| C-M-s      | search forward                                                              |
-| C-M-r      | search backward                                                             |
+| C-s        | Search in current buffer (swiper), Query replace with M-q, to do a query replace        |
+| C-M-s      | Search in opened buffers (swiper)                                           |
+| C-c g      | Search file in current git repo  (counsel)                                  |
+| C-c j      | Search with grep in current git repo (counsel)                              |
+| C-c k      | Search with ag in current directory (counsel)                               |
+| C-c s      | Search with rg in current directory (counsel)                               |
+| C-c z      | Search with fzf in current directory (counsel)                              |
+| C-c l      | Call locate shell command (counsel)                                         |
 | M-s j      | Jump to definition (Clojure, Emacs Lisp, Java, JavaScript, etc.)            |
 | M-s b      | Jump back to initial position after M-g j                                   |
 | M-s o      | Jump to definition in another window                                        |
@@ -185,7 +189,13 @@
 | M-s x      | Jump to definition (prefer definition from other buffers                    |
 | M-s z      | Jump to definition in another windows (prefer definition from other buffers |
 
+### Swiper
 
+| Keybinding | Action                                      |
+| ---------- | ------                                      |
+| M-q        | Query replace in Swiper                     |
+| y          | Accept change in query replace              |
+| n          | Discard change and switch to next candidate |
 
 ## Company
 
@@ -193,6 +203,7 @@
 | ---------- | ------                                       |
 | TAB        | Company mode expand                          |
 | C-c f      | Trigger expanson of a file path with company |
+| C-c TAB    | Company mode expand (counsel)                |
 
 ## Narrowing
 
@@ -312,8 +323,6 @@
 | M-o        | Select a link to jump to with avy                                           |
 | C-c c      | Org capture                                                                 |
 | C-c a      | Org agenda                                                                  |
-| C-c o b    | Search in all opened org files with helm-org-rifle                          |
-| C-c o d    | Search in the org files of a directory with helm-org-rifle                  |
 | C-c / T    | Search for a specific TODO keyword and display the results in a sparse tree |
 
 ## Markdown

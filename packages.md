@@ -4,12 +4,10 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [Package management](#package-management)
+- [Core packages (in init.el)](#core-packages-in-initel)
 - [Dired packages](#dired-packages)
 - [Shell packages](#shell-packages)
 - [Emacs Lisp packages](#emacs-lisp-packages)
-- [Hydra packages](#hydra-packages)
-- [Helm packages](#helm-packages)
 - [Edition packages](#edition-packages)
 - [Windows packages](#windows-packages)
 - [Search and replace packages](#search-and-replace-packages)
@@ -33,15 +31,26 @@
 - [Docker packages](#docker-packages)
 - [Prometheus packages](#prometheus-packages)
 - [OpenAPI packages](#openapi-packages)
-- [Help packages](#help-packages)
 - [Theme packages](#theme-packages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Package management
+## Core packages (in init.el)
 
-- [diminish](https://github.com/emacsmirror/diminish) : Hide or abbreviate minor modes.
+- [avy](https://github.com/abo-abo/avy): Jump to a specific position in buffer, used by ivy.
+- [benchmark-init](https://github.com/dholm/benchmark-init-el): Benchmark the loading time of Emacs packages.
+- [counsel](https://github.com/abo-abo/swiper): Provides Emacs commands that uses ivy.
+- [diminish](https://github.com/emacsmirror/diminish): Hide or abbreviate minor modes.
+- [flx](https://github.com/lewang/flx): Fuzzy matching for Emacs, used by ivy.
+- [frame-fns](https://melpa.org/#/frame-fns): Used to get a dark window on GNOME.
+- [hydra](https://github.com/abo-abo/hydra): Regroup related keybindings with a common prefix, used by ivy.
+- [imenu-anywhere](https://github.com/vspinu/imenu-anywhere): imenu across buffers with ivy.
+- [ivy](https://github.com/abo-abo/swiper): Completion framework for Emacs.
+- [ivy-hydra](https://github.com/abo-abo/swiper): Add an hydra to ivy.
+- [smex](https://github.com/nonsequitur/smex): Improve M-x by remembering recent commands, used by ivy.
+- [swiper](https://github.com/abo-abo/swiper): Alternative to isearch.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
+- [which-key](https://github.com/justbur/emacs-which-key) : Display available keybindings.
 
 ## Dired packages
 
@@ -57,16 +66,7 @@
 
 ## Emacs Lisp packages
 
-- [benchmark-init](https://github.com/dholm/benchmark-init-el) : Benchmark the loading time of Emacs packages.
 - [cask-mode](https://github.com/Wilfred/cask-mode) : A mode for Cask files.
-
-## Hydra packages
-
-- [hydra](https://github.com/abo-abo/hydra) : Regroup related keybindings with a common prefix.
-
-## Helm packages
-
-- [helm](https://github.com/emacs-helm/helm) : Incremental completion and selection framework.
 
 ## Edition packages
 
@@ -75,45 +75,44 @@
 - [move-text](https://github.com/emacsfodder/move-text): Move current line or region.
 - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
 - [undo-tree](https://melpa.org/#/undo-tree) : Visualize undo history as a tree of changes.
-- [whole-line-or-region](https://github.com/purcell/whole-line-or-region) : Package to operate on the current line when the region is not defined.
+- [whole-line-or-region](https://github.com/purcell/whole-line-or-region): Package to operate on the current line when the region is not defined.
 
 ## Windows packages
 
-- [winum](https://github.com/deb0ch/emacs-winum) : Navigate between windows with numbers.
+- [winum](https://github.com/deb0ch/emacs-winum): Navigate between windows with numbers.
 
 ## Search and replace packages
 
-- [dumb-jump](https://github.com/jacktasia/dumb-jump) : Jump to definition for many programming languages.
+- [dumb-jump](https://github.com/jacktasia/dumb-jump): Jump to definition for many programming languages.
 
 ## Highlight packages
 
-- [highlight-escape-sequences](https://github.com/dgutov/highlight-escape-sequences) : Highlight escape sequences in strings.
+- [highlight-escape-sequences](https://github.com/dgutov/highlight-escape-sequences): Highlight escape sequences in strings.
 
 ## Company packages
 
-- [company](https://company-mode.github.io/) : Completion system.
-- [company-quickhelp](https://github.com/expez/company-quickhelp) : Documentation popups for company.
+- [company](https://company-mode.github.io/): Completion system.
+- [company-quickhelp](https://github.com/expez/company-quickhelp): Documentation popups for company.
 
 ## YASnippet packages
 
-- [yasnippet](https://github.com/capitaomorte/yasnippet) : Template system.
+- [yasnippet](https://github.com/capitaomorte/yasnippet): Template system.
 
 ## Projectile packages
 
-- [projectile](https://github.com/bbatsov/projectile) : Library to work with projects.
-- [helm-projectile](https://github.com/bbatsov/projectile) : Helm interface for projectile.
+- [projectile](https://github.com/bbatsov/projectile): Library to work with projects.
+- [counsel-projectile](https://github.com/ericdanan/counsel-projectile): Improve ivy integration with projectile.
 
 ## Flycheck packages
 
-- [flycheck](https://github.com/flycheck/flycheck) : Syntax checking.
-- [flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip) : Show flycheck issues in tooltip.
+- [flycheck](https://github.com/flycheck/flycheck): Syntax checking.
+- [flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip): Show flycheck issues in tooltip.
 
 ## Navigation packages
 
-- [all-the-icons.el](https://github.com/domtronn/all-the-icons.el) : Icons for dired and NeoTree.
-- [all-the-icons-dired](https://github.com/jtbm37/all-the-icons-dired) : Add icons to dired.
-- [avy](https://github.com/abo-abo/avy) : Jump to a specific position in buffer.
-- [emacs-neotree](https://github.com/jaypei/emacs-neotree) : Displays folders and files in a tree.
+- [all-the-icons.el](https://github.com/domtronn/all-the-icons.el): Icons for dired and NeoTree.
+- [all-the-icons-dired](https://github.com/jtbm37/all-the-icons-dired): Add icons to dired.
+- [emacs-neotree](https://github.com/jaypei/emacs-neotree): Displays folders and files in a tree.
 
 ## Git packages
 
@@ -124,85 +123,80 @@
 
 ## Org packages
 
-- [org-mode](http://orgmode.org/) : Plain text notes, todos, agenda, etc.
-- [org-bullets](https://github.com/sabof/org-bullets) : UTF-8 bullets for org-mode.
-- [ace-link](https://github.com/abo-abo/ace-link) : Select a link to jump to with avy in an org buffer (also work with other modes like Info-mode).
+- [org-mode](http://orgmode.org/): Plain text notes, todos, agenda, etc.
+- [org-bullets](https://github.com/sabof/org-bullets): UTF-8 bullets for org-mode.
+- [ace-link](https://github.com/abo-abo/ace-link): Select a link to jump to with avy in an org buffer (also work with other modes like Info-mode).
 
 ## Markdown packages
 
-- [markdown-mode](http://jblevins.org/projects/markdown-mode/) : Mode for Markdown files.
-- [doctoc.el](https://github.com/magoyette/doctoc.el) : Support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
+- [markdown-mode](http://jblevins.org/projects/markdown-mode/): Mode for Markdown files.
+- [doctoc.el](https://github.com/magoyette/doctoc.el): Support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
 
 ## ePub packages
 
-- [nov.el](https://github.com/wasamasa/nov.el) : Mode for ePub files.
+- [nov.el](https://github.com/wasamasa/nov.el): Mode for ePub files.
 
 ## PDF packages
 
-- [pdf-tools](https://github.com/politza/pdf-tools) : Mode for PDF files. Disabled on Windows in this Emacs config.
+- [pdf-tools](https://github.com/politza/pdf-tools): Mode for PDF files. Disabled on Windows in this Emacs config.
 
 ## Web packages
 
-- [less-css-mode](https://github.com/purcell/less-css-mode) : Mode for LESS.
-- [sass-mode](https://github.com/nex3/sass-mode) : Mode for .sass Sass files.
-- [web-mode](http://web-mode.org/) : Mode for web templates.
-- [emmet-mode](https://github.com/smihica/emmet-mode) : Support for Emmet in Emacs.
-- [js2-mode](https://github.com/mooz/js2-mode) : Mode for JavaScript.
-- [js2-refactor](https://github.com/magnars/js2-refactor.el) : Mode to refactor JavaScript code.
-- [json-mode](https://github.com/joshwnj/json-mode) : Mode for JSON files.
-- [json-reformat](https://github.com/gongo/json-reformat) : Mode to reformat JSON files.
-- [typescript-mode](https://github.com/ananthakumaran/typescript.el) : Mode for TypeScript files.
-- [tide](https://github.com/ananthakumaran/tide) : TypeScript Interactive Development Environment for Emacs.
+- [less-css-mode](https://github.com/purcell/less-css-mode): Mode for LESS.
+- [sass-mode](https://github.com/nex3/sass-mode): Mode for .sass Sass files.
+- [web-mode](http://web-mode.org/): Mode for web templates.
+- [emmet-mode](https://github.com/smihica/emmet-mode): Support for Emmet in Emacs.
+- [js2-mode](https://github.com/mooz/js2-mode): Mode for JavaScript.
+- [js2-refactor](https://github.com/magnars/js2-refactor.el): Mode to refactor JavaScript code.
+- [json-mode](https://github.com/joshwnj/json-mode): Mode for JSON files.
+- [json-reformat](https://github.com/gongo/json-reformat): Mode to reformat JSON files.
+- [typescript-mode](https://github.com/ananthakumaran/typescript.el): Mode for TypeScript files.
+- [tide](https://github.com/ananthakumaran/tide): TypeScript Interactive Development Environment for Emacs.
 
 ## YAML packages
 
 - [indent-tools](https://gitlab.com/emacs-stuff/indent-tools): Move around and modify code based on indentation.
-- [yaml-mode](https://github.com/yoshiki/yaml-mode) : Mode for YAML files.
+- [yaml-mode](https://github.com/yoshiki/yaml-mode): Mode for YAML files.
 
 ## REST packages
 
-- [rest-client](https://github.com/pashky/restclient.el) : REST client for Emacs.
-- [company-restclient](https://github.com/iquiw/company-restclient) : Company completion for HTTP methods and headers in rest-client.
+- [rest-client](https://github.com/pashky/restclient.el): REST client for Emacs.
+- [company-restclient](https://github.com/iquiw/company-restclient): Company completion for HTTP methods and headers in rest-client.
 
 ## Cucumber packages
 
-- [feature-mode](https://github.com/michaelklishin/cucumber.el) : Mode for Gherkin and Cucumber.
+- [feature-mode](https://github.com/michaelklishin/cucumber.el): Mode for Gherkin and Cucumber.
 
 ## Clojure packages
 
-- [clojure-mode](https://github.com/clojure-emacs/clojure-mode) : Mode for Clojure and ClojureScript programming.
-- [CIDER](https://github.com/clojure-emacs/cider) : Clojure(Script) Interactive Development Environment that Rocks.
-- [cider-eval-sexp-fu](https://github.com/clojure-emacs/cider-eval-sexp-fu) : Highlight Clojure(Script) sexps during evaluation.
-- [clj-refactor](https://github.com/clojure-emacs/clj-refactor.el) : Refactoring functions for Clojure.
+- [clojure-mode](https://github.com/clojure-emacs/clojure-mode): Mode for Clojure and ClojureScript programming.
+- [CIDER](https://github.com/clojure-emacs/cider): Clojure(Script) Interactive Development Environment that Rocks.
+- [cider-eval-sexp-fu](https://github.com/clojure-emacs/cider-eval-sexp-fu): Highlight Clojure(Script) sexps during evaluation.
+- [clj-refactor](https://github.com/clojure-emacs/clj-refactor.el): Refactoring functions for Clojure.
 
 ## Smartparens packages
 
-- [smartparens](https://github.com/Fuco1/smartparens) : Mode to handle pairs of symbols.
+- [smartparens](https://github.com/Fuco1/smartparens): Mode to handle pairs of symbols.
 
 ## Docker packages
 
-- [dockerfile-mode](https://github.com/spotify/dockerfile-mode) : Mode to edit Dockerfiles.
+- [dockerfile-mode](https://github.com/spotify/dockerfile-mode): Mode to edit Dockerfiles.
 - [docker.el](https://github.com/Silex/docker.el): Commands to manage Docker from Emacs.
 - [docker-tramp.el](https://github.com/emacs-pe/docker-tramp.el): A TRAMP method to connect to Docker containers.
 
 ## Prometheus packages
 
-- [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) : Support for [Prometheus](https://prometheus.io) rules in Emacs.
+- [prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode): Support for [Prometheus](https://prometheus.io) rules in Emacs.
 
 ## OpenAPI packages
 
-- [flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli) is a Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-cli.
-- [flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) is a Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-tools.
-- [openapi-yaml-mode](https://github.com/magoyette/openapi-yaml-mode) is a major mode for OpenAPI YAML files.
-
-## Help packages
-
-- [helm-descbinds](https://github.com/emacs-helm/helm-descbinds) : Helm interface for describe bindings command.
-- [which-key](https://github.com/justbur/emacs-which-key) : Display available keybindings.
+- [flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli): Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-cli.
+- [flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools): Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-tools.
+- [openapi-yaml-mode](https://github.com/magoyette/openapi-yaml-mode): Major mode for OpenAPI YAML files.
 
 ## Theme packages
 
-- [page-break-lines](https://github.com/purcell/page-break-lines) : Display page break as lines.
-- [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters) : Highlight delimiters according to their depth.
-- [spaceline](https://github.com/TheBB/spaceline) : The Powerline theme from Spacemacs.
-- [zenburn-theme](https://github.com/bbatsov/zenburn-emacs) : The Zenburn theme for Emacs.
+- [page-break-lines](https://github.com/purcell/page-break-lines): Display page break as lines.
+- [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters): Highlight delimiters according to their depth.
+- [spaceline](https://github.com/TheBB/spaceline): The Powerline theme from Spacemacs.
+- [zenburn-theme](https://github.com/bbatsov/zenburn-emacs): The Zenburn theme for Emacs.

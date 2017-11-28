@@ -10,15 +10,14 @@
                 '("elpa" "target" "node_modules" ".svn" ".cache" "bower_components"
                   ".git" ".settings" "dist")))
 
+  (setq projectile-completion-system 'ivy)
+
   (projectile-global-mode))
 
-(use-package helm-projectile
+(use-package counsel-projectile
   :ensure t
   :config
-  (setq projectile-completion-system 'helm)
-  (helm-projectile-on))
-
-(global-set-key (kbd "C-x x") 'helm-projectile)
+  (counsel-projectile-on))
 
 (defun neotree-project-dir ()
   "Open NeoTree using the projectile project root."
@@ -42,24 +41,24 @@
    "
     PROJECTILE: %(projectile-project-root)
 
-    Find File            Search/NeoTree         Buffers                Cache
+    Files/Directories    Tools                 Buffers                Cache
 ------------------------------------------------------------------------------------------
- _f_: file              _r_: ripgrep             _b_: switch to buffer    _c_: cache clear
- _p_: file in projets   _n_: NeoTree             _k_: kill all buffers    _x_: remove known project
- _d_: dir               _m_: multi-swoop                                _X_: cleanup non-existing
-                                                                    ^^^^_z_: cache current
+ _f_: file              _r_: ripgrep            _b_: switch to buffer    _c_: cache clear
+ _d_: dir               _m_: multi-occur        _k_: kill all buffers    _x_: remove known project
+ _n_: NeoTree                                                        _X_: cleanup non-existing
+ _D_: dired                                                          ^^^^_z_: cache current
 
 "
-   ("r"   helm-ag-project-root)
-   ("b"   helm-projectile-switch-to-buffer)
+   ("r"   counsel-projectile-rg)
+   ("b"   counsel-projectile-switch-to-buffer)
    ("c"   projectile-invalidate-cache)
-   ("d"   helm-projectile-find-dir)
-   ("f"   helm-projectile-find-file)
+   ("d"   counsel-projectile-find-dir)
+   ("D"   projectile-dired)
+   ("f"   counsel-projectile-find-file)
    ("n"   neotree-project-dir)
-   ("p"   helm-projectile-find-file-in-known-projects)
    ("k"   projectile-kill-buffers)
-   ("m"   helm-multi-swoop-projectile)
-   ("s"   helm-projectile-switch-project "switch project")
+   ("m"   projectile-multi-occur)
+   ("s"   counsel-projectile-switch-project "switch project")
    ("t"   terminal-here-project-launch "open external terminal")
    ("x"   projectile-remove-known-project)
    ("X"   projectile-cleanup-known-projects)

@@ -42,11 +42,13 @@
 
 (use-package org-bullets
   :ensure t
+  :after org
   :config
   (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
 (use-package ace-link
   :ensure t
+  :after org
   :config
   (ace-link-setup-default)
   (define-key org-mode-map (kbd "M-o") 'ace-link-org))
