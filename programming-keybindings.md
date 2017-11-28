@@ -75,7 +75,6 @@
 | ---------- | ------                                      |
 | C-c C-c    | run a query and pretty print response       |
 | C-c C-r    | run a query and display response            |
-| C-c C-g    | Helm for rest-client variables and requests |
 
 ## YAML
 

@@ -3,10 +3,6 @@
   :mode (("\\.rest$" . restclient-mode))
   :defer t)
 
-(use-package restclient-helm
-  :ensure t
-  :after restclient)
-
 (use-package company-restclient
   :ensure t
   :after restclient

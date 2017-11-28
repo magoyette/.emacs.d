@@ -164,7 +164,6 @@
 ## REST packages
 
 - [rest-client](https://github.com/pashky/restclient.el) : REST client for Emacs.
-- [restclient-helm](https://github.com/pashky/restclient.el) : Helm interface to restclient.
 - [company-restclient](https://github.com/iquiw/company-restclient) : Company completion for HTTP methods and headers in rest-client.
 
 ## Cucumber packages
