@@ -19,7 +19,6 @@
   - [Multiple cursors](#multiple-cursors)
 - [Projects](#projects)
 - [Search and replace](#search-and-replace)
-  - [Helm swoop](#helm-swoop)
 - [Company](#company)
 - [Narrowing](#narrowing)
 - [Fonts](#fonts)
@@ -181,11 +180,6 @@
 | C-M-r      | search backward                                                             |
 | M-%        | Anzu query replace                                                          |
 | C-M-%      | Anzy query replace regexp                                                   |
-| M-s s      | Helm swoop on current buffer                                                |
-| M-s S      | Helm swoop on all opened buffers                                            |
-| M-s M-s    | Helm swoop on all opened buffers from current project                       |
-| M-s d      | Helm search with ripgrep in directory                                       |
-| M-s p      | Helm search with ripgrep in project root                                    |
 | M-s j      | Jump to definition (Clojure, Emacs Lisp, Java, JavaScript, etc.)            |
 | M-s b      | Jump back to initial position after M-g j                                   |
 | M-s o      | Jump to definition in another window                                        |
@@ -193,15 +187,7 @@
 | M-s x      | Jump to definition (prefer definition from other buffers                    |
 | M-s z      | Jump to definition in another windows (prefer definition from other buffers |
 
-### Helm swoop
 
-| Keybinding | Action                  |
-| ---------- | ------                  |
-| C-r        | previous line           |
-| C-s        | next line               |
-| C-SPC      | choose lines to edit    |
-| C-c C-e    | enter edit mode         |
-| C-x C-s    | apply edit mode changes |
 
 ## Company
 

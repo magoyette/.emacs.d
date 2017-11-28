@@ -15,32 +15,6 @@
   :config
   (global-anzu-mode))
 
-(use-package helm-swoop
-  :ensure t
-  :bind (("M-s s" . helm-swoop)
-         ("M-s S" . helm-multi-swoop-all)
-         ("M-s M-s" . helm-multi-swoop-projectile))
-  :config
-  ;; Enable colors in results
-  (setq helm-swoop-speed-or-color t)
-
-  ;; Move up and down like isearch
-  (define-key helm-swoop-map (kbd "C-r") 'helm-previous-line)
-  (define-key helm-swoop-map (kbd "C-s") 'helm-next-line)
-  (define-key helm-multi-swoop-map (kbd "C-r") 'helm-previous-line)
-  (define-key helm-multi-swoop-map (kbd "C-s") 'helm-next-line)
-
-  ;; Disable pre-input
-  (setq helm-swoop-pre-input-function (lambda () "")))
-
-(use-package helm-ag
-  :ensure t
-  :bind (("M-s d" . helm-do-ag)
-         ("M-s p" . helm-do-ag-project-root))
-  :config
-  (custom-set-variables
-   '(helm-ag-base-command "rg --no-heading")))
-
 (use-package dumb-jump
   :ensure t
   :bind (("M-s j" . dumb-jump-go)

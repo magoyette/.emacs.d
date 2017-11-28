@@ -85,8 +85,6 @@
 
 - [anzu](https://github.com/syohex/emacs-anzu) : Display current and total matches when doing searches.
 - [dumb-jump](https://github.com/jacktasia/dumb-jump) : Jump to definition for many programming languages.
-- [helm-ag](https://github.com/syohex/emacs-helm-ag) : Integrate The Platinum Searcher with Helm.
-- [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop) : Package to search and replace or navigate through a buffer.
 
 ## Highlight packages
 
