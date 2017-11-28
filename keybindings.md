@@ -178,8 +178,6 @@
 | C-r        | regexp backward search                                                      |
 | C-M-s      | search forward                                                              |
 | C-M-r      | search backward                                                             |
-| M-%        | Anzu query replace                                                          |
-| C-M-%      | Anzy query replace regexp                                                   |
 | M-s j      | Jump to definition (Clojure, Emacs Lisp, Java, JavaScript, etc.)            |
 | M-s b      | Jump back to initial position after M-g j                                   |
 | M-s o      | Jump to definition in another window                                        |

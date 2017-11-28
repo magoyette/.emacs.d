@@ -6,15 +6,6 @@
 
 (setq search-default-mode #'char-fold-to-regexp)
 
-;; Anzu displays the current match and the total matches for the current search
-(use-package anzu
-  :ensure t
-  :diminish anzu-mode
-  :bind (("M-%" . anzu-query-replace)
-         ("C-M-%" . anzu-query-replace-regexp))
-  :config
-  (global-anzu-mode))
-
 (use-package dumb-jump
   :ensure t
   :bind (("M-s j" . dumb-jump-go)

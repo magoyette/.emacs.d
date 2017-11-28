@@ -83,7 +83,6 @@
 
 ## Search and replace packages
 
-- [anzu](https://github.com/syohex/emacs-anzu) : Display current and total matches when doing searches.
 - [dumb-jump](https://github.com/jacktasia/dumb-jump) : Jump to definition for many programming languages.
 
 ## Highlight packages
