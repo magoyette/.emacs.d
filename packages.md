@@ -151,7 +151,6 @@
 
 - [less-css-mode](https://github.com/purcell/less-css-mode) : Mode for LESS.
 - [sass-mode](https://github.com/nex3/sass-mode) : Mode for .sass Sass files.
-- [helm-css-scss](https://github.com/ShingoFukuyama/helm-css-scss) : Helm for CSS, LESS and Sass selectors.
 - [web-mode](http://web-mode.org/) : Mode for web templates.
 - [emmet-mode](https://github.com/smihica/emmet-mode) : Support for Emmet in Emacs.
 - [js2-mode](https://github.com/mooz/js2-mode) : Mode for JavaScript.

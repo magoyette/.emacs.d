@@ -67,7 +67,6 @@
 
 | Keybinding | Action                                                      |
 | ---------- | ------                                                      |
-| C-c c      | Helm for CSS, LESS and Sass selectors.                      |
 | C-j        | Expand an Emmet snippet in web-mode, css-mode or html-mode. |
 
 ## REST
