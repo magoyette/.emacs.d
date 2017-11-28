@@ -123,7 +123,6 @@
 - [git-modes](https://github.com/magit/git-modes): Modes for gitconfig, gitattributes and gitignore files.
 - [git-timemachine](https://github.com/pidu/git-timemachine): Package to navigate through the versions of a file tracked with Git.
 - [magit](https://github.com/magit/magit): Git porcelain for Emacs.
-- [browse-at-remote](https://github.com/rmuslimov/browse-at-remote): Open current buffer at GitHub, GitLab or BitBucket.
 
 ## Org packages
 

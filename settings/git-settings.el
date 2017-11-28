@@ -76,8 +76,4 @@ _c_: keep current version (at point)
     ("a" smerge-keep-all :color blue)
     ("c" smerge-keep-current :color blue)))
 
-(use-package browse-at-remote
-  :ensure t
-  :bind (("C-c g g" . browse-at-remote)))
-
 (provide 'git-settings)
