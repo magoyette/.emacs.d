@@ -270,15 +270,9 @@
 
 ## Git
 
-| Keybinding | Action                                             |
-| ---------- | ------                                             |
-| C-x g      | Magit status                                       |
-| C-x M-g    | Magit list repositories                            |
-| C-x G      | Magit blame                                        |
-| C-x r G    | Magit blame reverse                                |
-| C-x M-d    | Kill all Magit buffers                             |
-| C-x t      | Git timemachine                                    |
-| C-c s      | Hydra for smerge-mode                              |
+| Keybinding | Action                  |
+| ---------- | ------                  |
+| C-c g      | Git commands            |
 
 ### Magit blame
 
