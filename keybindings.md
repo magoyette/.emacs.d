@@ -174,14 +174,11 @@
 
 | Keybinding | Action                                                                      |
 | ---------- | ------                                                                      |
-| C-s        | Search in current buffer (swiper), Query replace with M-q, to do a query replace        |
-| C-M-s      | Search in opened buffers (swiper)                                           |
-| C-c g      | Search file in current git repo  (counsel)                                  |
-| C-c j      | Search with grep in current git repo (counsel)                              |
+| C-s        | Search in current buffer (swiper), query replace with M-q                   |
+| C-M-s      | Search in opened buffers (swiper), query replace with M-q                   |
 | C-c k      | Search with ag in current directory (counsel)                               |
 | C-c s      | Search with rg in current directory (counsel)                               |
 | C-c z      | Search with fzf in current directory (counsel)                              |
-| C-c l      | Call locate shell command (counsel)                                         |
 | M-s j      | Jump to definition (Clojure, Emacs Lisp, Java, JavaScript, etc.)            |
 | M-s b      | Jump back to initial position after M-g j                                   |
 | M-s o      | Jump to definition in another window                                        |

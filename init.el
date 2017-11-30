@@ -167,9 +167,6 @@
          ("C-x M-b" . counsel-bookmark)
          ("M-y" . counsel-yank-pop)
          ("C-c <tab>" . counsel-company)
-         ("C-c g" . counsel-git)
-         ("C-c j" . counsel-git-grep)
-         ("C-c l" . counsel-locate)
          ("C-c s" . counsel-rg)
          ("C-c z" . counsel-fzf))
   :init
