@@ -185,6 +185,9 @@
   :ensure t
   :bind (("C-c i" . ivy-imenu-anywhere)))
 
+(use-package general
+  :ensure t)
+
 (use-package which-key
   :ensure t
   :diminish which-key-mode

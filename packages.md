@@ -43,6 +43,7 @@
 - [diminish](https://github.com/emacsmirror/diminish): Hide or abbreviate minor modes.
 - [flx](https://github.com/lewang/flx): Fuzzy matching for Emacs, used by ivy.
 - [frame-fns](https://melpa.org/#/frame-fns): Used to get a dark window on GNOME.
+- [general.el](https://github.com/noctuid/general.el): Help to define keys.
 - [hydra](https://github.com/abo-abo/hydra): Regroup related keybindings with a common prefix, used by ivy.
 - [imenu-anywhere](https://github.com/vspinu/imenu-anywhere): imenu across buffers with ivy.
 - [ivy](https://github.com/abo-abo/swiper): Completion framework for Emacs.
