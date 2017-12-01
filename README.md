@@ -20,6 +20,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Magit local settings](#magit-local-settings)
 - [Git Submodules](#git-submodules)
   - [doctoc.el](#doctocel)
+  - [flycheck-swagger-cli](#flycheck-swagger-cli)
   - [flycheck-swagger-tools](#flycheck-swagger-tools)
   - [openapi-yaml-mode](#openapi-yaml-mode)
   - [prometheus-rules-mode](#prometheus-rules-mode)
@@ -43,6 +44,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [TypeScript and tslint](#typescript-and-tslint)
   - [Flycheck checkers](#flycheck-checkers)
     - [CSSLint](#csslint)
+    - [hadolint](#hadolint)
     - [sass-lint](#sass-lint)
     - [ShellCheck](#shellcheck)
     - [stylelint](#stylelint)
@@ -208,6 +210,10 @@ sudo npm install -g tslint typescript
 ``` shell
 sudo npm install -g csslint
 ```
+
+#### hadolint
+
+[hadolint](https://github.com/hadolint/hadolint) is a Dockerfile linter.
 
 #### sass-lint
 
