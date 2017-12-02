@@ -172,6 +172,7 @@
   :ensure t
   :general
   ("M-x" 'counsel-M-x
+   "C-c e" 'counsel-M-x
    "C-x C-f" 'counsel-find-file
    "C-x C-r" 'counsel-recentf
    "<f1> f" 'counsel-describe-function

@@ -74,6 +74,7 @@
 | ---------- | ------                                                    |
 | C-x C-b    | Switch buffer (ivy)                                       |
 | M-x        | Execute command (counsel)                                 |
+| C-c e      | Execute command (counsel)                                 |
 | C-x C-f    | Find a file (counsel)                                     |
 | C-x C-r    | Open a recent file (counsel)                              |
 | C-c k      | Kill all open buffers except the current buffer           |
