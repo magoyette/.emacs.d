@@ -84,7 +84,7 @@
 
 (use-package whole-line-or-region
   :ensure t
-  :diminish whole-line-or-region-mode
+  :diminish whole-line-or-region-local-mode
   :config
   (whole-line-or-region-mode 1))
 
