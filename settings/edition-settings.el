@@ -88,4 +88,10 @@
   :config
   (whole-line-or-region-mode 1))
 
+(use-package wc-mode
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook #'wc-mode)
+  (add-hook 'markdown-mode-hook #'wc-mode))
+
 (provide 'edition-settings)
