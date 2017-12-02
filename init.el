@@ -95,7 +95,20 @@
 ;;;;; Diminish
 
 (use-package diminish
+  :ensure t
+  :config
+  (diminish 'visual-line-mode))
+
+;;;;; Keybindings
+
+(use-package general
   :ensure t)
+
+(use-package which-key
+  :ensure t
+  :diminish which-key-mode
+  :config
+  (which-key-mode))
 
 ;;;;; Packages used by Ivy and Counsel
 
@@ -151,24 +164,29 @@
   (setq counsel-grep-base-command
         "rg -i -M 120 --no-heading --line-number --color never '%s' %s"))
 
+(which-key-declare-prefixes "C-c s" "Search")
+
 (use-package counsel
   :ensure t
-  :bind (("M-x" . counsel-M-x)
-         ("C-x C-f" . counsel-find-file)
-         ("C-x C-r" . counsel-recentf)
-         ("<f1> f" . counsel-describe-function)
-         ("<f1> v" . counsel-describe-variable)
-         ("<f1> l" . counsel-find-library)
-         ("<f2> i" . counsel-info-lookup-symbol)
-         ("<f2> u" . counsel-unicode-char)
-         ("C-h a" . counsel-apropos)
-         ("C-h b" . counsel-descbinds)
-         ("M-i" . counsel-imenu)
-         ("C-x M-b" . counsel-bookmark)
-         ("M-y" . counsel-yank-pop)
-         ("C-c <tab>" . counsel-company)
-         ("C-c s" . counsel-rg)
-         ("C-c z" . counsel-fzf))
+  :general
+  ("M-x" 'counsel-M-x
+   "C-x C-f" 'counsel-find-file
+   "C-x C-r" 'counsel-recentf
+   "<f1> f" 'counsel-describe-function
+   "<f1> v" 'counsel-describe-variable
+   "<f1> l" 'counsel-find-library
+   "<f2> i" 'counsel-info-lookup-symbol
+   "<f2> u" 'counsel-unicode-char
+   "C-h a" 'counsel-apropos
+   "C-h b" 'counsel-descbinds
+   "M-i" 'counsel-imenu
+   "C-x M-b" 'counsel-bookmark
+   "M-y" 'counsel-yank-pop
+   "C-c <tab>" 'counsel-company
+   "C-c h" 'counsel-switch-to-shell-buffer
+   "C-c s r" '(counsel-rg :which-key "rg")
+   "C-c s s" '(counsel-rg :which-key "rg")
+   "C-c s f" '(counsel-fzf :which-key "fzf"))
   :init
   ;; apropos also search for noninteractive functions
   (defvar apropos-do-all t)
@@ -181,15 +199,6 @@
 (use-package imenu-anywhere
   :ensure t
   :bind (("C-c i" . ivy-imenu-anywhere)))
-
-(use-package general
-  :ensure t)
-
-(use-package which-key
-  :ensure t
-  :diminish which-key-mode
-  :config
-  (which-key-mode))
 
 ;;;;; Eldoc
 
