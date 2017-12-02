@@ -146,6 +146,8 @@
   ;; Search also in recent files and bookmarks
   (setq ivy-use-virtual-buffers t)
 
+  (setq ivy-use-selectable-prompt t)
+
   (setq enable-recursive-minibuffers t))
 
 (use-package ivy-hydra
