@@ -33,6 +33,9 @@
   (when (fboundp 'local-settings-set-org-agenda-files)
     (local-settings-set-org-agenda-files))
 
+  ;; Allow M-RET to create a new item without splitting the current line
+  (setq org-M-RET-may-split-line '((item . nil)))
+
   ;; Configure org babel languages
   (org-babel-do-load-languages
    'org-babel-load-languages
