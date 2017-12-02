@@ -22,4 +22,10 @@
   :config
   (flycheck-pos-tip-mode))
 
+(use-package flycheck-package
+  :ensure t
+  :after flycheck
+  :config
+  (flycheck-package-setup))
+
 (provide 'flycheck-settings)
