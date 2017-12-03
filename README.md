@@ -84,6 +84,14 @@ magit-repository-directories can be set to configure which folders must be scann
                                      "~/dev"))
 ```
 
+### LanguageTool settings
+
+The path to the LanguageTool jar must be confirued.
+
+``` elisp
+(setq langtool-language-tool-jar "~/bin/LanguageTool-3.9/languagetool-commandline.jar")
+```
+
 ## Git Submodules
 
 This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they are included in this repository as Git submodules.
@@ -138,6 +146,10 @@ The neotree package is configured to use the [fonts of all-the-icons.el](https:/
 #### Git
 
 [Git](https://git-scm.com/) is required by [magit](https://github.com/magit/magit).
+
+#### LanguageTool
+
+[LanguageTool](https://www.languagetool.org/) is a tool for language style and grammar.
 
 #### Pandoc
 

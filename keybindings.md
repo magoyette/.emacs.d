@@ -33,7 +33,7 @@
   - [Git timemachine](#git-timemachine)
 - [Org mode](#org-mode)
 - [Markdown](#markdown)
-- [Spelling](#spelling)
+- [Spelling and Grammar](#spelling-and-grammar)
 - [ePub](#epub)
 - [PDF](#pdf)
 
@@ -333,11 +333,12 @@
 | C-c C-p    | Move to previous heading                                    |
 | C-c C-d    | Generate a table of contents with DocToc                    |
 
-## Spelling
+## Spelling and Grammar
 
 | Keybinding | Action                              |
 | ---------- | ------                              |
 | C-c i      | ispell prefix (spelling)            |
+| C-c l      | langtool prefix (grammar and style) |
 
 ## ePub
 

@@ -44,4 +44,26 @@
 
 (global-set-key (kbd "C-c i d") 'ispell-switch-dictionary)
 
+(which-key-declare-prefixes "C-c l" "langtool")
+
+(use-package langtool
+  :ensure t
+  :bind (("C-c l c" . langtool-check)
+         ("C-c l d" . langtool-check-done)
+         ("C-c l s" . langtool-switch-default-language)
+         ("C-c l m" . langtool-show-message-at-point)
+         ("C-c l b" . langtool-correct-buffer))
+  :config
+  (defun langtool-autoshow-detail-popup (overlays)
+    (when (require 'popup nil t)
+      ;; Do not interrupt current popup
+      (unless (or popup-instances
+                  ;; suppress popup after type `C-g` .
+                  (memq last-command '(keyboard-quit)))
+        (let ((msg (langtool-details-error-message overlays)))
+          (popup-tip msg)))))
+
+  (setq langtool-autoshow-message-function
+        'langtool-autoshow-detail-popup))
+
 (provide 'spelling-settings)
