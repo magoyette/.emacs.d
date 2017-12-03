@@ -89,8 +89,6 @@
 | C-'        | Input 2 chars, then jump to a character                                      |
 | M-g f      | Jump the beginning of a line                                                 |
 | M-g w      | Input one char, then jump to the beginning of a word                         |
-| M-i        | imenu (counsel)                                                              |
-| C-c i      | imenu in opened buffers from same major mode or projectile project (counsel) |
 
 ## Mark
 
@@ -173,19 +171,21 @@
 
 ## Search and replace
 
-| Keybinding | Action                                                                      |
-| ---------- | ------                                                                      |
-| C-s        | Search in current buffer (swiper), query replace with M-q                   |
-| C-M-s      | Search in opened buffers (swiper), query replace with M-q                   |
-| C-c k      | Search with ag in current directory (counsel)                               |
-| C-c s      | Search with rg in current directory (counsel)                               |
-| C-c z      | Search with fzf in current directory (counsel)                              |
-| M-s j      | Jump to definition (Clojure, Emacs Lisp, Java, JavaScript, etc.)            |
-| M-s b      | Jump back to initial position after M-g j                                   |
-| M-s o      | Jump to definition in another window                                        |
-| M-s q      | Show tooltip about definition                                               |
-| M-s x      | Jump to definition (prefer definition from other buffers                    |
-| M-s z      | Jump to definition in another windows (prefer definition from other buffers |
+| Keybinding | Action                                                                       |
+| ---------- | ------                                                                       |
+| C-s        | Search in current buffer (swiper), query replace with M-q                    |
+| C-M-s      | Search in opened buffers (swiper), query replace with M-q                    |
+| M-i        | imenu (counsel)                                                              |
+| C-c s i    | imenu in opened buffers from same major mode or projectile project (counsel) |
+| C-c k      | Search with ag in current directory (counsel)                                |
+| C-c s      | Search with rg in current directory (counsel)                                |
+| C-c z      | Search with fzf in current directory (counsel)                               |
+| M-s j      | Jump to definition (Clojure, Emacs Lisp, Java, JavaScript, etc.)             |
+| M-s b      | Jump back to initial position after M-g j                                    |
+| M-s o      | Jump to definition in another window                                         |
+| M-s q      | Show tooltip about definition                                                |
+| M-s x      | Jump to definition (prefer definition from other buffers                     |
+| M-s z      | Jump to definition in another windows (prefer definition from other buffers  |
 
 ### Swiper
 

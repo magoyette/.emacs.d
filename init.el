@@ -201,7 +201,8 @@
 ;; imenu in all buffers with same major mode or same projectile project
 (use-package imenu-anywhere
   :ensure t
-  :bind (("C-c i" . ivy-imenu-anywhere)))
+  :general
+  ("C-c s i" '(ivy-imenu-anywhere :which-key "imenu-anywhere")))
 
 ;;;;; Eldoc
 
