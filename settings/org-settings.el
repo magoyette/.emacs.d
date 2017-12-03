@@ -1,11 +1,13 @@
 (require 'use-package)
 
+(which-key-declare-prefixes "C-c o" "Org")
+
 (use-package org
   :ensure t
   :mode (("\\.org$" . org-mode))
-  :bind (("C-c l" . org-store-link)
-         ("C-c c" . org-capture)
-         ("C-c a" . org-agenda))
+  :bind (("C-c o l" . org-store-link)
+         ("C-c o c" . org-capture)
+         ("C-c o a" . org-agenda))
   :config
   (add-hook 'org-mode-hook 'visual-line-mode)
 

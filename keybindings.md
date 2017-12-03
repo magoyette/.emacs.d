@@ -310,11 +310,11 @@
 
 | Keybinding | Action                                                                      |
 | ---------- | ------                                                                      |
-| C-c l      | Org store link                                                              |
+| C-c o l    | Org store link                                                              |
 | C-c C-o    | Org open url at point                                                       |
 | M-o        | Select a link to jump to with avy                                           |
-| C-c c      | Org capture                                                                 |
-| C-c a      | Org agenda                                                                  |
+| C-c o c    | Org capture                                                                 |
+| C-c o a    | Org agenda                                                                  |
 | C-c / T    | Search for a specific TODO keyword and display the results in a sparse tree |
 
 ## Markdown
