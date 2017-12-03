@@ -335,10 +335,9 @@
 
 ## Spelling
 
-| Keybinding | Action                                            |
-| ---------- | ------                                            |
-| C-c d      | Alternate between english and french dictionaries |
-| C-c M-s    | Start ispell on the region or on the buffer       |
+| Keybinding | Action                              |
+| ---------- | ------                              |
+| C-c i      | ispell prefix (spelling)            |
 
 ## ePub
 

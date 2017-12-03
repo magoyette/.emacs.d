@@ -1,6 +1,8 @@
 (require 'ispell)
 
-(global-set-key (kbd "C-c M-s") 'ispell)
+(which-key-declare-prefixes "C-c i" "ispell")
+
+(global-set-key (kbd "C-c i s") 'ispell)
 
 (setq ispell-program-name "hunspell")
 (setq ispell-extra-args '("-d en_US"))
@@ -32,7 +34,7 @@
          utf-8)
         ))
 
-(defun switch-dictionary-en-fr ()
+(defun ispell-switch-dictionary ()
   "Switch between english and french dictionaries."
   (interactive)
   (let* ((dict ispell-current-dictionary)
@@ -40,6 +42,6 @@
     (ispell-change-dictionary new)
     (message "Switched dictionary from %s to %s" dict new)))
 
-(global-set-key (kbd "C-c d") 'switch-dictionary-en-fr)
+(global-set-key (kbd "C-c i d") 'ispell-switch-dictionary)
 
 (provide 'spelling-settings)
