@@ -92,6 +92,14 @@ The path to the LanguageTool jar must be confirued.
 (setq langtool-language-tool-jar "~/bin/LanguageTool-3.9/languagetool-commandline.jar")
 ```
 
+### Terminal-here settings
+
+The terminal opened by terminal-here can be configured.
+
+``` elisp
+(setq terminal-here-terminal-command (list "gnome-terminal"))
+```
+
 ## Git Submodules
 
 This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they are included in this repository as Git submodules.
