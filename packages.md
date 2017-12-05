@@ -76,7 +76,6 @@
 - [move-text](https://github.com/emacsfodder/move-text): Move current line or region.
 - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
 - [undo-tree](https://melpa.org/#/undo-tree) : Visualize undo history as a tree of changes.
-- [wc-mode](https://github.com/bnbeckwith/wc-mode): Count the number of words in a buffer and the difference in the number of words since the buffer was opened.
 - [whole-line-or-region](https://github.com/purcell/whole-line-or-region): Package to operate on the current line when the region is not defined.
 
 ## Windows packages
