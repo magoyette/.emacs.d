@@ -31,6 +31,8 @@
  (kbd "C-c w")
   (defhydra hydra-window ()
     "Windows/Frames"
+    ("c" clone-indirect-buffer-other-window "Clone buffer in a new window"
+     :color blue)
     ("n" make-frame-command "Open a new frame" :color blue)
     ("t" crux-transpose-windows "Transpose windows" :color blue)
     ("m" toggle-frame-maximized "Toggle maximization of frame")
