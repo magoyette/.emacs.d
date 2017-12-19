@@ -85,6 +85,7 @@
 ## Search and replace packages
 
 - [dumb-jump](https://github.com/jacktasia/dumb-jump): Jump to definition for many programming languages.
+- [visual-regexp](https://github.com/benma/visual-regexp.el): Regex replace functions with visual feedback.
 
 ## Highlight packages
 
