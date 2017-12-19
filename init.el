@@ -166,7 +166,7 @@
   (setq counsel-grep-base-command
         "rg -i -M 120 --no-heading --line-number --color never '%s' %s"))
 
-(which-key-declare-prefixes "C-c s" "Search")
+(which-key-add-key-based-replacements "C-c s" "Search & Replace")
 
 (use-package counsel
   :ensure t
@@ -188,7 +188,6 @@
    "C-c <tab>" 'counsel-company
    "C-c h" 'counsel-switch-to-shell-buffer
    "C-c s r" '(counsel-rg :which-key "rg")
-   "C-c s s" '(counsel-rg :which-key "rg")
    "C-c s f" '(counsel-fzf :which-key "fzf"))
   :init
   ;; apropos also search for noninteractive functions

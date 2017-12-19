@@ -10,4 +10,11 @@
   (setq dumb-jump-selector 'ivy)
   (setq dumb-jump-prefer-searcher 'rg))
 
+(use-package visual-regexp
+  :ensure t
+  :general
+  ("C-c s g" '(vr/replace :which-key "replace")
+   "C-c s s" '(vr/replace :which-key "query-replace")
+   "C-c s c" '(vr/mc-mark :which-key "select-multiple-cursors")))
+
 (provide 'search-settings)

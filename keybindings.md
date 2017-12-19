@@ -175,11 +175,13 @@
 | ---------- | ------                                                                       |
 | C-s        | Search in current buffer (swiper), query replace with M-q                    |
 | C-M-s      | Search in opened buffers (swiper), query replace with M-q                    |
+| C-c s g    | Replace (visual-regexp)                                                      |
+| C-c s s    | Query replace (visual-regexp)                                                |
+| C-c s c    | Select multiple cursors with a regex (visual-regexp)                         |
 | M-i        | imenu (counsel)                                                              |
 | C-c s i    | imenu in opened buffers from same major mode or projectile project (counsel) |
-| C-c k      | Search with ag in current directory (counsel)                                |
-| C-c s      | Search with rg in current directory (counsel)                                |
-| C-c z      | Search with fzf in current directory (counsel)                               |
+| C-c s r    | Search with rg in current directory (counsel)                                |
+| C-c s f    | Search with fzf in current directory (counsel)                               |
 | M-s j      | Jump to definition (Clojure, Emacs Lisp, Java, JavaScript, etc.)             |
 | M-s b      | Jump back to initial position after M-g j                                    |
 | M-s o      | Jump to definition in another window                                         |
