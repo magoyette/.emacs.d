@@ -16,8 +16,9 @@
 
 (use-package counsel-projectile
   :ensure t
+  :after projectile
   :config
-  (counsel-projectile-on))
+  (counsel-projectile-mode))
 
 (defun neotree-project-dir ()
   "Open NeoTree using the projectile project root."
