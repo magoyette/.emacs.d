@@ -3,7 +3,11 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        org-metaleft
+        org-metaright
         org-self-insert-command
+        org-shiftleft
+        org-shiftright
         ))
 
 (setq mc/cmds-to-run-once
