@@ -152,8 +152,9 @@
 | Keybinding  | Action                                                                 |
 | ----------  | ------                                                                 |
 | C-S-c C-S-c | Edit lines in region with multiple cursors                             |
-| C->         | Add a cursor to the next expression like the selected region           |
-| C-<         | Add a cursor to the previous expression like the selected region       |
+| C-c s c     | Select multiple cursors with a regex (visual-regexp)                   |
+| C-.         | Show only the lines with multiple cursors                              |
+| C-j         | Insert a newline in multiple cursors mode                              |
 | C-c C-<     | Add a cursor to all expressions in the buffer like the selected region |
 
 ## Projects

@@ -76,7 +76,10 @@
   :bind (("C-S-c C-S-c" . mc/edit-lines)
          ("C->" . mc/mark-next-like-this)
          ("C-<" . mc/mark-previous-like-this)
-         ("C-c C-<" . mc/mark-all-like-this)))
+         ("C-c C-<" . mc/mark-all-like-this))
+  :config
+  ;; Rebind to avoid conflict with avy
+  (define-key mc/keymap (kbd "C-.") 'mc-hide-unmatched-lines-mode))
 
 ;; Only enabled in specific modes
 (use-package highlight-indentation
