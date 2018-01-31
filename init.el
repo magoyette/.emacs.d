@@ -74,25 +74,6 @@
   :config
   (benchmark-init/activate))
 
-;;;;; Use a dark window on GNOME
-
-;; Required by set-selected-frame-dark for get-frame-name
-(use-package frame-fns
-  :ensure t)
-
-;; Source: https://nicolas.petton.fr/blog/emacs-dark-window-decoration.html
-(defun set-selected-frame-dark ()
-  (interactive)
-  (let ((frame-name (get-frame-name (selected-frame))))
-    (call-process-shell-command
-     (concat "xprop -f _GTK_THEME_VARIANT 8u -set "
-             "_GTK_THEME_VARIANT \"dark\" -name \""
-             frame-name
-             "\""))))
-
-(if (and (eq system-type 'gnu/linux) (window-system))
-    (set-selected-frame-dark))
-
 
 ;;;;; Diminish
 
