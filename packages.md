@@ -174,7 +174,6 @@
 
 - [clojure-mode](https://github.com/clojure-emacs/clojure-mode): Mode for Clojure and ClojureScript programming.
 - [CIDER](https://github.com/clojure-emacs/cider): Clojure(Script) Interactive Development Environment that Rocks.
-- [cider-eval-sexp-fu](https://github.com/clojure-emacs/cider-eval-sexp-fu): Highlight Clojure(Script) sexps during evaluation.
 - [clj-refactor](https://github.com/clojure-emacs/clj-refactor.el): Refactoring functions for Clojure.
 
 ## Smartparens packages

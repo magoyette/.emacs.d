@@ -13,10 +13,6 @@
   :config
   (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode))
 
-(use-package cider-eval-sexp-fu
-  :ensure t
-  :after cider)
-
 (use-package clj-refactor
   :ensure t
   :after clojure-mode
