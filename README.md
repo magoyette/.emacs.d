@@ -23,7 +23,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [flycheck-swagger-cli](#flycheck-swagger-cli)
   - [flycheck-swagger-tools](#flycheck-swagger-tools)
   - [openapi-yaml-mode](#openapi-yaml-mode)
-  - [prometheus-rules-mode](#prometheus-rules-mode)
 - [External dependencies](#external-dependencies)
   - [Windows OS setup](#windows-os-setup)
     - [Windows HOME variable](#windows-home-variable)
@@ -130,10 +129,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 ### openapi-yaml-mode
 
 [openapi-yaml-mode](https://github.com/magoyette/openapi-yaml-mode) is a major mode for OpenAPI YAML files.
-
-### prometheus-rules-mode
-
-[prometheus-rules-mode](https://github.com/magoyette/prometheus-rules-mode) is a package that adds support for [Prometheus](https://prometheus.io) rules in Emacs.
 
 ## External dependencies
 
