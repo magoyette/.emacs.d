@@ -5,6 +5,7 @@ recentf
 server/
 url/
 .places
+anaconda-mode
 bookmarks
 customizations.el
 flycheck_init.el

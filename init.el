@@ -260,6 +260,7 @@
 (require 'rest-settings)
 (require 'cucumber-settings)
 (require 'clojure-settings)
+(require 'python-settings)
 (require 'smartparens-settings)
 (require 'docker-settings)
 (require 'openapi-settings)

@@ -18,6 +18,8 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 - [Local settings](#local-settings)
   - [Org mode local settings](#org-mode-local-settings)
   - [Magit local settings](#magit-local-settings)
+  - [LanguageTool settings](#languagetool-settings)
+  - [Terminal-here settings](#terminal-here-settings)
 - [Git Submodules](#git-submodules)
   - [doctoc.el](#doctocel)
   - [flycheck-swagger-cli](#flycheck-swagger-cli)
@@ -30,7 +32,9 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [all-the-icons.el fonts](#all-the-iconsel-fonts)
   - [General Tools](#general-tools)
     - [Git](#git)
+    - [LanguageTool](#languagetool)
     - [Pandoc](#pandoc)
+    - [Python](#python)
     - [RipGrep](#ripgrep)
   - [Java Tools](#java-tools)
     - [JDK](#jdk)
@@ -157,6 +161,10 @@ The neotree package is configured to use the [fonts of all-the-icons.el](https:/
 #### Pandoc
 
 [Pandoc](http://pandoc.org/) is necessary to preview markdown documents with markdown-mode.
+
+#### Python
+
+[Python](https://www.python.org/) is required for Python development.
 
 #### RipGrep
 
