@@ -29,6 +29,7 @@
 - [Clojure packages](#clojure-packages)
 - [Python packages](#python-packages)
 - [Smartparens packages](#smartparens-packages)
+- [Prometheus packages](#prometheus-packages)
 - [Docker packages](#docker-packages)
 - [OpenAPI packages](#openapi-packages)
 - [Theme packages](#theme-packages)
@@ -183,6 +184,10 @@
 ## Smartparens packages
 
 - [smartparens](https://github.com/Fuco1/smartparens): Mode to handle pairs of symbols.
+
+## Prometheus packages
+
+- [prometheus-v1-rules-mode](https://github.com/magoyette/prometheus-v1-rules-mode): Support for [Prometheus](https://prometheus.io) v1 rules in Emacs.
 
 ## Docker packages
 

@@ -10,3 +10,6 @@
 [submodule "submodules/flycheck-swagger-cli"]
 	path = submodules/flycheck-swagger-cli
 	url = https://github.com/magoyette/flycheck-swagger-cli.git
+[submodule "submodules/prometheus-v1-rules-mode"]
+	path = submodules/prometheus-v1-rules-mode
+	url = https://github.com/magoyette/prometheus-v1-rules-mode.git
