@@ -9,6 +9,7 @@
          ("C-c o c" . org-capture)
          ("C-c o a" . org-agenda))
   :config
+
   (add-hook 'org-mode-hook 'visual-line-mode)
 
   ;; Unbind org-cycle-agenda to prevent conflicts with avy
@@ -22,14 +23,13 @@
   (setq org-confirm-babel-evaluate nil)
 
   (setq org-todo-keywords
-        '((sequence "TODO(t)" "READY(r)" "DOING(d)" "WAITING(w)" "BLOCKED(b)" "|" "DONE(f)")))
+        '((sequence "TODO(t)" "NEXT(n)" "STARTED(s)" "WAIT(w)" "|" "DONE(d)")))
 
   (setq org-todo-keyword-faces
         '(("TODO" . "#dfaf8f")
-          ("READY" . "#93e0e3")
-          ("DOING" . "#dc8cc3")
-          ("WAITING" . "#CC9393")
-          ("BLOCKED" . "#CC9393")
+          ("NEXT" . "#93e0e3")
+          ("STARTED" . "#dc8cc3")
+          ("WAIT" . "#CC9393")
           ("DONE" . "#dcdccc")))
 
   (when (fboundp 'local-settings-set-org-agenda-files)
