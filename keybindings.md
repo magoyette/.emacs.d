@@ -172,23 +172,13 @@
 
 ## Search and replace
 
-| Keybinding | Action                                                                       |
-| ---------- | ------                                                                       |
-| C-s        | Search in current buffer (swiper), query replace with M-q                    |
-| C-M-s      | Search in opened buffers (swiper), query replace with M-q                    |
-| C-c s g    | Replace (visual-regexp)                                                      |
-| C-c s s    | Query replace (visual-regexp)                                                |
-| C-c s c    | Select multiple cursors with a regex (visual-regexp)                         |
-| M-i        | imenu (counsel)                                                              |
-| C-c s i    | imenu in opened buffers from same major mode or projectile project (counsel) |
-| C-c s r    | Search with rg in current directory (counsel)                                |
-| C-c s f    | Search with fzf in current directory (counsel)                               |
-| M-s j      | Jump to definition (Clojure, Emacs Lisp, Java, JavaScript, etc.)             |
-| M-s b      | Jump back to initial position after M-g j                                    |
-| M-s o      | Jump to definition in another window                                         |
-| M-s q      | Show tooltip about definition                                                |
-| M-s x      | Jump to definition (prefer definition from other buffers                     |
-| M-s z      | Jump to definition in another windows (prefer definition from other buffers  |
+| Keybinding | Action                                                    |
+| ---------- | ------                                                    |
+| C-s        | Search in current buffer (swiper), query replace with M-q |
+| C-M-s      | Search in opened buffers (swiper), query replace with M-q |
+| C-c s      | Prefix for search and replace commands                    |
+| M-i        | imenu (counsel)                                           |
+| M-s        | Prefix for Jump to definition commands                    |
 
 ### Swiper
 
@@ -276,7 +266,7 @@
 
 | Keybinding | Action                  |
 | ---------- | ------                  |
-| C-c g      | Git commands            |
+| C-c g      | Prefix for Git commands |
 
 ### Magit blame
 
