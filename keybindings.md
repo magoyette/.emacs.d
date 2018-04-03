@@ -313,11 +313,9 @@
 
 | Keybinding | Action                                                                      |
 | ---------- | ------                                                                      |
-| C-c o l    | Org store link                                                              |
-| C-c C-o    | Org open url at point                                                       |
+| C-c o      | Prefix for Org commands                                                     |
+| C-c t      | Prefix for Org Clock commands                                               |
 | M-o        | Select a link to jump to with avy                                           |
-| C-c o c    | Org capture                                                                 |
-| C-c o a    | Org agenda                                                                  |
 | C-c / T    | Search for a specific TODO keyword and display the results in a sparse tree |
 
 ## Markdown

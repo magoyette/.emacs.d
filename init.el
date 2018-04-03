@@ -214,7 +214,7 @@
          ("C-c d" . crux-duplicate-current-line-or-region)
          ("M-j" . crux-top-join-line)
          ("C-c k" . crux-kill-other-buffers)
-         ("C-c t" . crux-visit-term-buffer)
+         ("C-c T" . crux-visit-term-buffer)
          ("C-c r" . crux-rename-file-and-buffer)
          ("C-x 4 t" . crux-transpose-windows)))
 
