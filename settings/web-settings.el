@@ -6,6 +6,15 @@
   :ensure t
   :mode (("\\.sass$" . sass-mode)))
 
+(use-package helm-css-scss
+  :ensure t
+  :after (:any css-mode less-css-mode sass-mode)
+  :init
+  (dolist ($hook '(css-mode-hook scss-mode-hook less-css-mode-hook))
+    (add-hook
+     $hook (lambda ()
+             (local-set-key (kbd "C-c M-c") 'helm-css-scss)))))
+
 (use-package json-mode
   :ensure t
   :mode (("\\.json$" . json-mode))

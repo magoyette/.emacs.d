@@ -1,5 +1,8 @@
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
+(use-package all-the-icons
+  :ensure t)
+
 (use-package all-the-icons-dired
   :ensure t
   :config
@@ -45,4 +48,28 @@
              ("i" . dired-subtree-insert)
              (";" . dired-subtree-remove)))
 
-(provide 'dired-settings)
+(use-package neotree
+  :ensure t
+  :bind (("<f8>" . neotree-toggle))
+  :config
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+  (setq neo-window-fixed-size nil)
+  (setq neo-mode-line-type 'default)
+  (setq neo-window-width 35))
+
+(defun neotree-project-dir ()
+  "Open NeoTree using the projectile project root."
+  (interactive)
+  (let ((project-dir (projectile-project-root))
+        (file-name (buffer-file-name)))
+    (neotree-toggle)
+    (if project-dir
+        (if (neo-global--window-exists-p)
+            (progn
+              (neotree-dir project-dir)
+              (neotree-find file-name)))
+      (message "Could not find git project root."))))
+
+(global-set-key (kbd "<f9>") 'neotree-project-dir)
+
+(provide 'dired-neotree-settings)

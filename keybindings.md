@@ -5,28 +5,23 @@
 
 
 - [Help](#help)
-- [Ivy and Counsel](#ivy-and-counsel)
-- [Package management](#package-management)
-- [Windows and frames](#windows-and-frames)
+- [Packages](#packages)
 - [Files and buffers](#files-and-buffers)
-- [Movement](#movement)
-- [Mark](#mark)
-- [NeoTree](#neotree)
 - [Edition](#edition)
   - [Undo tree](#undo-tree)
   - [Rectangle mark mode](#rectangle-mark-mode)
   - [Multiple cursors](#multiple-cursors)
-- [Projects](#projects)
-- [Bookmarks](#bookmarks)
-- [Search and replace](#search-and-replace)
-  - [Swiper](#swiper)
-- [Company](#company)
-- [Narrowing](#narrowing)
-- [Fonts](#fonts)
+- [Navigate in current buffer](#navigate-in-current-buffer)
+- [Search in buffers](#search-in-buffers)
+  - [Helm swoop](#helm-swoop)
+  - [Search in files](#search-in-files)
+- [Terminal](#terminal)
 - [Dired](#dired)
   - [Dired](#dired-1)
   - [WDired](#wdired)
-- [Terminal](#terminal)
+- [NeoTree](#neotree)
+- [Company](#company)
+- [Fonts](#fonts)
 - [Git](#git)
   - [Magit blame](#magit-blame)
   - [Magit commit](#magit-commit)
@@ -41,93 +36,56 @@
 
 ## Help
 
-| Keybinding | Action                       |
-| ---------- | ------                       |
-| F1 f       | Describe function (counsel)  |
-| F1 v       | Describe variable (counsel)  |
-| C-h a      | apropos (counsel)            |
-| C-h b      | describe keybindings (counsel)  |
-| F2 i       | info lookup symbol (counsel) |
+| Keybinding | Action                   |
+| ---------- | ------                   |
+| C-h a      | apropos (Helm)           |
+| C-h i      | info (Helm)              |
+| C-h b      | describe bindings (Helm) |
 
-## Ivy and Counsel
-
-| Keybinding | Action                                       |
-| ---------- | ------                                       |
-| C-o        | See the action list (press again to go back) |
-
-## Package management
+## Packages
 
 | Keybinding | Action        |
 | ---------- | ------        |
 | C-x p      | List packages |
 
-## Windows and frames
-
-| Keybinding    | Action                       |
-| ----------    | ------                       |
-| C-c w         | Hydra for windows and frames |
-| M-1, M-2, ... | move to a numbered window    |
-
 ## Files and buffers
 
-| Keybinding | Action                                                    |
-| ---------- | ------                                                    |
-| C-x C-b    | Switch buffer (ivy)                                       |
-| M-x        | Execute command (counsel)                                 |
-| C-c e      | Execute command (counsel)                                 |
-| C-x C-f    | Find a file (counsel)                                     |
-| C-x C-r    | Open a recent file (counsel)                              |
-| C-c k      | Kill all open buffers except the current buffer           |
-| C-c r      | Rename current buffer and its visiting file if it has one |
+| Keybinding | Action                                                                   |
+| ---------- | ------                                                                   |
+| C-x C-r    | List buffers, recent files, bookmarks and current directory files (Helm) |
+| C-x C-b    | List buffers (Helm)                                                      |
+| C-x C-f    | Find files (Helm)                                                        |
+| C-x M-b    | Go to a bookmark or create a bookmark                                    |
+| M-x        | Execute command (Helm)                                                   |
 
-## Movement
-
-| Keybinding | Action                                                                       |
-| ---------- | ------                                                                       |
-| M-g M-g    | Go to line number                                                            |
-| C-,        | Input one char, then jump to a character                                     |
-| C-'        | Input 2 chars, then jump to a character                                      |
-| M-g f      | Jump the beginning of a line                                                 |
-| M-g w      | Input one char, then jump to the beginning of a word                         |
-
-## Mark
-
-| Keybinding | Action                          |
-| ---------- | ------                          |
-| C-«        | Set the mark                    |
-| M-«        | Jump to mark                    |
-| C-x C-x    | Exchange the point and the mark |
-
-## NeoTree
-
-| Keybinding        | Action                                               |
-| ----------        | ------                                               |
-| F8                | Toggle NeoTree                                       |
-| F9                | Toggle NeoTree on the root of the Projectile project |
-| n                 | Next line                                            |
-| p                 | Previous line                                        |
-| SPC or RET or TAB | Fold/unfold directory or open file                   |
-| g                 | Refresh                                              |
-| H                 | Toggle display of hidden files                       |
-| C-c C-n           | Create a file or directory if name ends with /       |
-| C-c C-d           | Delete a file or directory                           |
-| C-c C-r           | Rename a file or directory                           |
-| C-c C-c           | Change the root directory                            |
+| M-x        | Execute command (counsel)                                        |
+| C-c e      | Execute command (counsel)                                        |
+| C-x C-f    | Find a file (counsel)                                            |
+| C-x C-r    | Open a recent file (counsel)                                     |
+| C-c k      | Kill all open buffers except the current buffer (Crux)           |
+| C-c r      | Rename current buffer and its visiting file if it has one (Crux) |
 
 ## Edition
 
-| Keybinding | Action                          |
-| ---------- | ------                          |
-| S-RET      | Add a new line below            |
-| C-S-RET    | Add a new line above            |
-| M-Up       | Move line or region up          |
-| M-Down     | Move line or region down        |
-| M-j        | Collapse/join lines             |
-| M-y        | Yank from history (counsel)     |
-| C-c d      | Duplicate line or region        |
-| C-=        | Expand region by semantic units |
-| C-x u      | visualize undo tree             |
-| M-=        | Word count for region           |
+| Keybinding | Action                                                            |
+| ---------- | ------                                                            |
+| S-RET      | Add a new line below (Crux)                                       |
+| C-S-RET    | Add a new line above (Crux)                                       |
+| M-Up       | Move line or region up (Move-text)                                |
+| M-Down     | Move line or region down (Move-text)                              |
+| M-j        | Collapse/join lines (Crux)                                        |
+| M-y        | Yank from history (Helm)                                          |
+| C-c d      | Duplicate line or region (Crux)                                   |
+| C-=        | Expand region by semantic units (Expand-region)                   |
+| C-x u      | visualize undo tree (Undo-tree)                                   |
+| M-=        | Word count for region                                             |
+| C-«        | Set the mark                                                      |
+| M-«        | Jump to mark                                                      |
+| C-c <SPC>  | Show all marks (Helm)                                             |
+| C-x C-x    | Exchange the point and the mark                                   |
+| C-x n      | Narrow or widen a region, an org block, an org subtree or a defun |
+| C-u C-x n  | Narrow a narrowed buffer                                          |
+| C-x 8      | Unicode characters (Helm)                                         |
 
 ### Undo tree
 
@@ -157,58 +115,51 @@
 | C-j         | Insert a newline in multiple cursors mode                              |
 | C-c C-<     | Add a cursor to all expressions in the buffer like the selected region |
 
-## Projects
+## Navigate in current buffer
 
-| Keybinding | Action                       |
-| ---------- | ------                       |
-| C-x M-x    | Projectile hydra             |
-| F9         | Open NeoTree on project root |
+| Keybinding | Action                                                              |
+| ---------- | ------                                                              |
+| M-g M-g    | Go to line number of buffer                                         |
+| C-,        | Input one char, then jump to a character (avy) [also works in Helm] |
+| C-'        | Input 2 chars, then jump to a character (avy)                       |
 
-## Bookmarks
-
-| Keybinding | Action                                     |
-| ---------- | ------                                     |
-| C-x M-b    | Set bookmark or jump to bookmark (counsel) |
-
-## Search and replace
-
-| Keybinding | Action                                                    |
-| ---------- | ------                                                    |
-| C-s        | Search in current buffer (swiper), query replace with M-q |
-| C-M-s      | Search in opened buffers (swiper), query replace with M-q |
-| C-c s      | Prefix for search and replace commands                    |
-| M-i        | imenu (counsel)                                           |
-| M-s        | Prefix for Jump to definition commands                    |
-
-### Swiper
-
-| Keybinding | Action                                      |
-| ---------- | ------                                      |
-| M-q        | Query replace in Swiper                     |
-| y          | Accept change in query replace              |
-| n          | Discard change and switch to next candidate |
-
-## Company
-
-| Keybinding | Action                                       |
-| ---------- | ------                                       |
-| TAB        | Company mode expand                          |
-| C-c f      | Trigger expanson of a file path with company |
-| C-c TAB    | Company mode expand (counsel)                |
-
-## Narrowing
+## Search in buffers
 
 | Keybinding | Action                                                            |
 | ---------- | ------                                                            |
-| C-x n      | narrow or widen a region, an org block, an org subtree or a defun |
-| C-u C-x n  | narrow a narrowed buffer                                          |
+| C-c s      | Command prefix for search                                         |
+| C-s        | Search in buffer (Helm swoop)                                     |
+| C-M-s      | Search in all opened buffers (Helm swoop)                         |
+| C-c s w    | Search in all opened buffers from projectile project (Helm swoop) |
+| C-c s g    | Regex replace (visual-regexp)                                     |
+| C-c s q    | Regex query replace (visual-regexp)                               |
+| C-c s c    | Select multiple cursors with regex (visual-regexp)                |
+| M-i        | imenu in buffer (Helm)                                            |
+| C-s s i    | imenu on all opened buffers (imenu-anywhere)                      |
 
-## Fonts
+### Helm swoop
 
-| Keybinding | Action              |
-| ---------- | ------              |
-| C-+        | Increase text scale |
-| C--        | Decrease text scale |
+| Keybinding | Action                    |
+| ---------- | ------                    |
+| C-s        | Navigate to next line     |
+| C-r        | Navigate to previous line |
+
+### Search in files
+
+| Keybinding | Action                                             |
+| ---------- | ------                                             |
+| C-r s r    | Search files with Ripgrep (Helm-ag)                |
+| C-r s s    | Search files from project with Ripgrep (Helm-ag)   |
+| M-s        | Prefix for jump to definition commands (Dumb jump) |
+| C-c p      | Command prefix for projectile                      |
+
+## Terminal
+
+| Keybinding | Action                                                      |
+| ---------- | ------                                                      |
+| C-c T      | Open an ansi-term terminal (Crux)                           |
+| C-F5       | Open an external terminal                                   |
+| C-F6       | Open an external terminal for the projectile or git project |
 
 ## Dired
 
@@ -254,13 +205,36 @@
 | C-c C-c    | Save WDired change   |
 | C-c ESC    | Cancel WDired change |
 
-## Terminal
+## NeoTree
 
-| Keybinding | Action                                                      |
-| ---------- | ------                                                      |
-| C-c t      | Open a terminal (ansi-term)                                 |
-| C-F5       | Open an external terminal                                   |
-| C-F6       | Open an external terminal for the projectile or git project |
+| Keybinding        | Action                                               |
+| ----------        | ------                                               |
+| F8                | Toggle NeoTree                                       |
+| F9                | Toggle NeoTree on the root of the Projectile project |
+| n                 | Next line                                            |
+| p                 | Previous line                                        |
+| SPC or RET or TAB | Fold/unfold directory or open file                   |
+| g                 | Refresh                                              |
+| H                 | Toggle display of hidden files                       |
+| C-c C-n           | Create a file or directory if name ends with /       |
+| C-c C-d           | Delete a file or directory                           |
+| C-c C-r           | Rename a file or directory                           |
+| C-c C-c           | Change the root directory                            |
+
+## Company
+
+| Keybinding | Action                                       |
+| ---------- | ------                                       |
+| TAB        | Company mode expand                          |
+| C-c f      | Trigger expanson of a file path with company |
+| C-c TAB    | Company mode expand (counsel)                |
+
+## Fonts
+
+| Keybinding | Action              |
+| ---------- | ------              |
+| C-+        | Increase text scale |
+| C--        | Decrease text scale |
 
 ## Git
 

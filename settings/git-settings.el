@@ -39,9 +39,6 @@
 
   (setq magit-process-finish-apply-ansi-colors t)
 
-  ;; Enable completion with ivy
-  (setq magit-completing-read-function 'ivy-completing-read)
-
   ;; Sort branches with more recent commits or tags at the top of the list
   (setq magit-list-refs-sortby "-creatordate")
 
