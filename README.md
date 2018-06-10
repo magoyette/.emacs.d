@@ -82,10 +82,8 @@ This function should be defined in local-settings.el.
 magit-repository-directories can be set to configure which folders must be scanned by Magit when listing repositories (C-x M-g).
 
 ```elisp
-(setq magit-repository-directories '("~/.emacs.d"
-                                     "~/.gitconfig-setup"
-                                     "~/.lein"
-                                     "~/dev"))
+(setq magit-repository-directories '(("~/.emacs.d" . 0)
+                                     ("~/dev" . 3)))
 ```
 
 ### LanguageTool settings
