@@ -11,6 +11,9 @@
 (setq-default tab-width 4)
 (setq require-final-newline t)
 
+;; Sentence end with a single space
+(setq sentence-end-double-space nil)
+
 (use-package whitespace
   :ensure t
   :diminish whitespace-mode
