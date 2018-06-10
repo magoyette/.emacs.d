@@ -30,7 +30,7 @@
                       magit-insert-modules-unpulled-from-pushremote
                       magit-insert-modules-unpushed-to-upstream
                       magit-insert-modules-unpushed-to-pushremote
-                      magit-insert-submodules))
+                      magit-insert-modules-overview))
     (magit-add-section-hook
      'magit-status-sections-hook inserter
      'magit-insert-unpulled-from-upstream))
