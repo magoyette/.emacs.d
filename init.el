@@ -100,6 +100,7 @@
 ;; Programming
 (require 'cucumber-settings)
 (require 'clojure-settings)
+(require 'java-settings)
 (require 'python-settings)
 (require 'smartparens-settings)
 (require 'docker-settings)
