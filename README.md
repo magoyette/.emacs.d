@@ -62,15 +62,15 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 ## Local settings
 
-This Emacs configuration requires the creation of a file named local-settings.el in the folder ~/.emacs.d.
+This Emacs configuration requires the creation of a file named `local-settings.el` in the folder `~/.emacs.d`.
 
-The local-settings.el file is used for configurations that vary depending on the computer.
+The `local-settings.el` file is used for configurations that vary depending on the computer.
 
 ### Org mode local settings
 
-The org-settings.el file will try to call a function named local-settings-set-org-agenda-files to set the org-agenda-files variable.
+The `org-settings.el` file will try to call a function named `local-settings-set-org-agenda-files` to set the `org-agenda-files` variable.
 
-This function should be defined in local-settings.el.
+This function should be defined in `local-settings.el`.
 
 ```elisp
 (defun local-settings-set-org-agenda-files ()
@@ -79,7 +79,7 @@ This function should be defined in local-settings.el.
 
 ### Magit local settings
 
-magit-repository-directories can be set to configure which folders must be scanned by Magit when listing repositories (C-x M-g).
+`magit-repository-directories` can be set to configure which folders must be scanned by Magit when listing repositories (`C-x M-g`).
 
 ```elisp
 (setq magit-repository-directories '(("~/.emacs.d" . 0)
@@ -143,7 +143,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 #### Windows HOME variable
 
-An environment variable named HOME is required on a Windows OS to allow Emacs to find the .emacs.d folder. The value of HOME must be the absolute path to the home folder of the current Windows user (where the .emacs.d repo should have been cloned). Magit also needs the HOME variable to execute git push from Windows.
+An environment variable named `HOME` is required on a Windows OS to allow Emacs to find the `.emacs.d` folder. The value of `HOME` must be the absolute path to the home folder of the current Windows user (where the `.emacs.d` repo should have been cloned). Magit also needs the `HOME` variable to execute git push from Windows.
 
 ### Fonts
 
@@ -196,7 +196,7 @@ Node and npm are required for many JavaScript libraries.
 
 #### doctoc
 
-doctoc is a JavaScript library used to generate the table of contents of a markdown file.
+doctoc is a JavaScript library used to generate the table of contents of a Markdown file.
 
 doctoc can be installed with npm.
 ```
@@ -221,7 +221,7 @@ npm install -g swagger-tools
 
 #### TypeScript and tslint
 
-A global installation of TypeScript and tslint is necessary to allow Flycheck to call tslint. tslint will use the tslint.json file of the project directory.
+A global installation of TypeScript and tslint is necessary to allow Flycheck to call tslint. tslint will use the `tslint.json` file of the project directory.
 
 ```
 sudo npm install -g tslint typescript
@@ -279,7 +279,7 @@ Hunspell is a spell checker used with ispell. Flyspell is not used in this confi
 
 #### Hunspell on Linux
 
-Use the package manager to install hunspell. On Fedora, the packages I use are hunspell, hunspell-en and hunspell-fr.
+Use the package manager to install hunspell. On Fedora, the packages I use are `hunspell`, `hunspell-en` and `hunspell-fr`.
 
 #### Hunspell on Windows
 
@@ -287,18 +287,18 @@ The installation on Windows involves many steps.
 
 - Download Hunspell on [ezwinports](https://sourceforge.net/projects/ezwinports/files/)
 - Unzip in the folder where hunspell must be available
-- Add the path to hunspell\bin to the Path environment variable
-- Add an environment variable named DICTIONARY with the value of the default dictionary (like en_US)
+- Add the path to `hunspell\bin` to the `Path` environment variable
+- Add an environment variable named `DICTIONARY` with the value of the default dictionary (like `en_US`)
 - Download the [Hunspell french dictionary from LibreOffice](https://cgit.freedesktop.org/libreoffice/dictionaries/tree/fr_FR)
 - Copy the following files to \hunspell\share\hunspell :
-  - fr.aff
-  - fr.dic
-  - hyph-fr.dic
-  - hyph-fr.tex
-  - README_fr.txt
-  - README_hyph_fr.txt
-  - README_thes_fr.txt
-  - thes_fr.dat
+  - `fr.aff`
+  - `fr.dic`
+  - `hyph-fr.dic`
+  - `hyph-fr.tex`
+  - `README_fr.txt`
+  - `README_hyph_fr.txt`
+  - `README_thes_fr.txt`
+  - `thes_fr.dat`
 
 ## Keybindings
 
@@ -308,6 +308,6 @@ See [programming-keybindings.md](programming-keybindings.md) for list of keybind
 
 ## Packages
 
-The packages used by this Emacs configuration are grouped in categories. The package management is defined in init.el. For the other categories, a file suffixed with -settings.el is available in /settings.
+The packages used by this Emacs configuration are grouped in categories. The package management is defined in `init.el`. For the other categories, a file suffixed with `-settings.el` is available in `/settings`.
 
 See [packages.md](packages.md) for a list of all the included packages.
