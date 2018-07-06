@@ -227,6 +227,8 @@ A global installation of TypeScript and tslint is necessary to allow Flycheck to
 sudo npm install -g tslint typescript
 ```
 
+[tslint rules](https://palantir.github.io/tslint/rules/)
+
 ### Flycheck checkers
 
 #### CSSLint
@@ -237,9 +239,13 @@ sudo npm install -g tslint typescript
 sudo npm install -g csslint
 ```
 
+[CSSLint rules](https://github.com/CSSLint/csslint/wiki/Rules)
+
 #### hadolint
 
 [hadolint](https://github.com/hadolint/hadolint) is a Dockerfile linter.
+
+[hadolint rules](https://github.com/hadolint/hadolint#rules)
 
 #### sass-lint
 
@@ -249,9 +255,13 @@ sudo npm install -g csslint
 sudo npm install -g sass-lint
 ```
 
+[sass-lint rules](https://github.com/sasstools/sass-lint/tree/master/docs/rules)
+
 #### ShellCheck
 
 [ShellCheck](https://github.com/koalaman/shellcheck) is used for static analysis of shell scripts.
+
+[ShellCheck rules](https://github.com/koalaman/shellcheck/wiki)
 
 #### stylelint
 
@@ -260,6 +270,8 @@ sudo npm install -g sass-lint
 ``` shell
 sudo npm install -g stylelint
 ```
+
+[stylelint rules](https://stylelint.io/user-guide/rules/)
 
 ### Hunspell
 
