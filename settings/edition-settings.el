@@ -14,6 +14,9 @@
 ;; Sentence end with a single space
 (setq sentence-end-double-space nil)
 
+;; Workaround to insert a ` symbol
+(global-set-key [S-dead-grave] "`")
+
 (use-package whitespace
   :ensure t
   :diminish whitespace-mode
