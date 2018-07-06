@@ -1,7 +1,3 @@
-(use-package less-css-mode
-  :ensure t
-  :mode (("\\.less$" . less-css-mode)))
-
 (use-package sass-mode
   :ensure t
   :mode (("\\.sass$" . sass-mode)))

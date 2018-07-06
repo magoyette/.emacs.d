@@ -146,7 +146,6 @@
 - [js2-refactor](https://github.com/magnars/js2-refactor.el): Mode to refactor JavaScript code.
 - [json-mode](https://github.com/joshwnj/json-mode): Mode for JSON files.
 - [json-reformat](https://github.com/gongo/json-reformat): Mode to reformat JSON files.
-- [less-css-mode](https://github.com/purcell/less-css-mode): Mode for LESS.
 - [sass-mode](https://github.com/nex3/sass-mode): Mode for .sass Sass files.
 - [tide](https://github.com/ananthakumaran/tide): TypeScript Interactive Development Environment for Emacs.
 - [typescript-mode](https://github.com/ananthakumaran/typescript.el): Mode for TypeScript files.
