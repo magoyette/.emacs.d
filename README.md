@@ -1,6 +1,6 @@
 # .emacs.d
 
-My personal Emacs configuration. It requires Emacs 24 or 25. Most of the configuration is compatible with Windows 7 and Linux.
+My personal Emacs configuration. It requires Emacs 26. Most of the configuration is compatible with Windows 7 and Linux.
 
 This repository should be cloned in the home folder of the current user. Since this repository has some Git submodules, it can be cloned with the recursive option to load the submodules immediately.
 
