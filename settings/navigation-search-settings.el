@@ -77,8 +77,9 @@
 
 (use-package projectile
   :ensure t
+  :bind-keymap ("C-c p" . projectile-command-map)
   :config
-  (setq projectile-indexing-method 'alien)
+  (setq projectile-indexing-method 'turbo-alien)
   (setq projectile-enable-caching t)
 
   ;; Folders ignored globally
