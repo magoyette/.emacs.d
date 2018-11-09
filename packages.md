@@ -64,6 +64,7 @@
 
 - [ace-jump-helm-line](https://github.com/cute-jumper/ace-jump-helm-line): Select an Helm candidate with avy.
 - [avy](https://github.com/abo-abo/avy): Jump to a specific position in buffer, used by ivy.
+- [deadgrep](https://github.com/Wilfred/deadgrep): Search with [ripgrep](https://github.com/BurntSushi/ripgrep).
 - [dumb-jump](https://github.com/jacktasia/dumb-jump): Jump to definition for many programming languages.
 - [helm-ag](https://github.com/syohex/emacs-helm-ag): Search in files with Helm.
 - [helm-projectile](https://github.com/bbatsov/helm-projectile): Use projectile with Helm.

@@ -148,8 +148,9 @@
 
 | Keybinding | Action                                             |
 | ---------- | ------                                             |
-| C-r s r    | Search files with Ripgrep (Helm-ag)                |
-| C-r s s    | Search files from project with Ripgrep (Helm-ag)   |
+| C-c s d    | Search files with Ripgrep (deadgrep)               |
+| C-c s r    | Search files with Ripgrep (Helm-ag)                |
+| C-c s s    | Search files from project with Ripgrep (Helm-ag)   |
 | M-s        | Prefix for jump to definition commands (Dumb jump) |
 | C-c p      | Command prefix for projectile                      |
 

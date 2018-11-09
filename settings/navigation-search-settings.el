@@ -41,6 +41,10 @@
   (custom-set-variables
    '(helm-ag-base-command "rg --no-heading")))
 
+(use-package deadgrep
+  :ensure t
+  :bind (("C-c s d" . deadgrep)))
+
 (use-package visual-regexp
   :ensure t
   :general
