@@ -27,11 +27,6 @@
   (add-hook 'prog-mode-hook #'whitespace-mode)
   (add-hook 'before-save-hook #'whitespace-cleanup))
 
-;; Backup files in a single backups folder
-;; Source: http://whattheemacsd.com/
-(setq backup-directory-alist
-      `(("." . ,(expand-file-name (concat user-emacs-directory "backups")))))
-
 ;; Backup files that are in source control
 (setq vc-make-backup-files t)
 
@@ -60,13 +55,9 @@
   :config
   (setq uniquify-buffer-name-style 'forward))
 
-;; Save last position in killed buffers
-;; Source: http://whattheemacsd.com/
 (use-package saveplace
   :config
-  (save-place-mode)
-  (setq-default save-place-file (expand-file-name ".places"
-                                                  user-emacs-directory)))
+  (save-place-mode))
 
 (use-package move-text
   :ensure t

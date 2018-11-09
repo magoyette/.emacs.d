@@ -41,6 +41,7 @@
 - [diminish](https://github.com/emacsmirror/diminish): Hide or abbreviate minor modes.
 - [general.el](https://github.com/noctuid/general.el): Help to define keys.
 - [hydra](https://github.com/abo-abo/hydra): Regroup related keybindings with a common prefix, used by ivy.
+- [no-littering](https://github.com/emacscollective/no-littering): Store Emacs configuration files and persistent data in consistent paths.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
 - [which-key](https://github.com/justbur/emacs-which-key) : Display available keybindings.
 

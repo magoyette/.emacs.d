@@ -39,11 +39,4 @@
 ;; Activate Eldoc in mini-buffer
 (add-hook 'eval-expression-minibuffer-setup-hook #'eldoc-mode)
 
-;;;;; Customizations
-
-;; Store customizations like package-selected-packages in a distinct file
-;; customizations.el is included in .gitignore
-(setq custom-file "~/.emacs.d/customizations.el")
-(load custom-file 'noerror)
-
 (provide 'emacs-settings)

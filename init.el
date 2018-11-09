@@ -24,6 +24,18 @@
 
 (require 'use-package)
 
+(use-package no-littering
+  :ensure t
+  :config
+  (require 'recentf)
+  (add-to-list 'recentf-exclude no-littering-var-directory)
+  (add-to-list 'recentf-exclude no-littering-etc-directory)
+
+  (setq custom-file (no-littering-expand-etc-file-name "custom.el"))
+
+  (setq auto-save-file-name-transforms
+      `((".*" ,(no-littering-expand-var-file-name "auto-save/") t))))
+
 (use-package benchmark-init
   :ensure t
   :config
