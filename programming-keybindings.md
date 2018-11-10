@@ -25,6 +25,7 @@
 - [Smartparens](#smartparens)
   - [Smartparens navigation](#smartparens-navigation)
   - [Smartparens manipulation](#smartparens-manipulation)
+- [SQL packages](#sql-packages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -222,3 +223,9 @@
 | C-M-&lt;left&gt;    | Extend current list by 1 element by moving the opening delimiter   |
 | C-M-&lt;right&gt;   | Contract current list by 1 element by moving the opening delimiter |
 | M-D                 | Remove the wrapping pair from this expression                      |
+
+## SQL packages
+
+| Keybinding | Action               |
+| ---------- | ------               |
+| C-c C-f    | Format SQL in region |

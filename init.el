@@ -118,6 +118,7 @@
 (require 'docker-settings)
 (require 'prometheus-settings)
 (require 'openapi-settings)
+(require 'sql-settings)
 
 ;; Emacs Theme
 (require 'theme-settings)

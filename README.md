@@ -46,6 +46,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [js-yaml](#js-yaml)
     - [swagger-tools](#swagger-tools)
     - [TypeScript and tslint](#typescript-and-tslint)
+  - [Python tools](#python-tools)
   - [Flycheck checkers](#flycheck-checkers)
     - [CSSLint](#csslint)
     - [hadolint](#hadolint)
@@ -228,6 +229,14 @@ sudo npm install -g tslint typescript
 ```
 
 [tslint rules](https://palantir.github.io/tslint/rules/)
+
+### Python tools
+
+[sqlparse](https://github.com/andialbrecht/sqlparse) is used by the [sqlformat](https://github.com/purcell/sqlformat) package to format SQL.
+
+``` shell
+pip install --user --upgrade sqlparse
+```
 
 ### Flycheck checkers
 

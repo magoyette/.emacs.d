@@ -30,6 +30,7 @@
 - [Docker packages](#docker-packages)
 - [Prometheus packages](#prometheus-packages)
 - [OpenAPI packages](#openapi-packages)
+- [SQL packages](#sql-packages)
 - [Theme packages](#theme-packages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -196,6 +197,10 @@
 - [flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli): Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-cli.
 - [flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools): Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-tools.
 - [openapi-yaml-mode](https://github.com/magoyette/openapi-yaml-mode): Major mode for OpenAPI YAML files.
+
+## SQL packages
+
+- [sqlformat](https://github.com/purcell/sqlformat) formats SQL.
 
 ## Theme packages
 
