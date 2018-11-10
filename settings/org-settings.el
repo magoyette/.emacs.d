@@ -27,6 +27,9 @@
   ;; Enable syntax highlighting of code blocks
   (setq org-src-fontify-natively t)
 
+  ;; Hide markup elements for display
+  (setq org-hide-emphasis-markers t)
+
   ;; Disable security prompt before code evaluation
   (setq org-confirm-babel-evaluate nil)
 
