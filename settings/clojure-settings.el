@@ -11,7 +11,8 @@
   :after clojure-mode
   :commands (cider cider-connect cider-jack-in)
   :config
-  (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode))
+  (add-hook 'clojure-mode-hook 'turn-on-eldoc-mode)
+  (setq cider-repl-pop-to-buffer-on-connect nil))
 
 (use-package clj-refactor
   :ensure t
