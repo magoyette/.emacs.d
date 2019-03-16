@@ -280,7 +280,11 @@ sudo npm install -g sass-lint
 sudo npm install -g stylelint
 ```
 
-[stylelint rules](https://stylelint.io/user-guide/rules/)
+A stylelint configuration can be installed globally.
+
+``` shell
+sudo npm install -g stylelint-config-standard
+```
 
 ### Hunspell
 
