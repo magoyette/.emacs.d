@@ -240,31 +240,11 @@ pip install --user --upgrade sqlparse
 
 ### Flycheck checkers
 
-#### CSSLint
-
-[CSSLint](https://github.com/CSSLint/csslint) is used for static analysis of CSS files.
-
-``` shell
-sudo npm install -g csslint
-```
-
-[CSSLint rules](https://github.com/CSSLint/csslint/wiki/Rules)
-
 #### hadolint
 
 [hadolint](https://github.com/hadolint/hadolint) is a Dockerfile linter.
 
 [hadolint rules](https://github.com/hadolint/hadolint#rules)
-
-#### sass-lint
-
-[sass-lint](https://github.com/sasstools/sass-lint) is used for static analysis of SASS files.
-
-``` shell
-sudo npm install -g sass-lint
-```
-
-[sass-lint rules](https://github.com/sasstools/sass-lint/tree/master/docs/rules)
 
 #### ShellCheck
 
