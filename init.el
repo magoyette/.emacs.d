@@ -119,6 +119,7 @@
 (require 'prometheus-settings)
 (require 'openapi-settings)
 (require 'sql-settings)
+(require 'lsp-settings)
 
 ;; Emacs Theme
 (require 'theme-settings)

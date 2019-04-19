@@ -143,14 +143,11 @@
 
 ## Web packages
 
-- [emmet-mode](https://github.com/smihica/emmet-mode): Support for Emmet in Emacs.
-- [helm-css-scss](https://github.com/ShingoFukuyama/helm-css-scss): Navigate CSS, SCSS and Less files with Helm.
 - [js2-mode](https://github.com/mooz/js2-mode): Mode for JavaScript.
 - [js2-refactor](https://github.com/magnars/js2-refactor.el): Mode to refactor JavaScript code.
 - [json-mode](https://github.com/joshwnj/json-mode): Mode for JSON files.
 - [json-reformat](https://github.com/gongo/json-reformat): Mode to reformat JSON files.
 - [sass-mode](https://github.com/nex3/sass-mode): Mode for .sass Sass files.
-- [tide](https://github.com/ananthakumaran/tide): TypeScript Interactive Development Environment for Emacs.
 - [typescript-mode](https://github.com/ananthakumaran/typescript.el): Mode for TypeScript files.
 - [web-mode](http://web-mode.org/): Mode for web templates.
 

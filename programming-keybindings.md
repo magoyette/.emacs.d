@@ -8,7 +8,6 @@
   - [Flycheck error list](#flycheck-error-list)
 - [YASnippet](#yasnippet)
 - [Programming](#programming)
-- [Web](#web)
 - [REST](#rest)
 - [YAML](#yaml)
 - [Emacs Lisp](#emacs-lisp)
@@ -63,12 +62,6 @@
 | Keybinding | Action            |
 | ---------- | ------            |
 | C-c <RET>  | Open url at point |
-
-## Web
-
-| Keybinding | Action                                                      |
-| ---------- | ------                                                      |
-| C-j        | Expand an Emmet snippet in web-mode, css-mode or html-mode. |
 
 ## REST
 

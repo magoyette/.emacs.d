@@ -304,7 +304,7 @@
 | Keybinding | Action                              |
 | ---------- | ------                              |
 | C-c i      | ispell prefix (spelling)            |
-| C-c l      | langtool prefix (grammar and style) |
+| C-c L      | langtool prefix (grammar and style) |
 
 ## ePub
 

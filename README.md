@@ -43,14 +43,14 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Node Tools](#node-tools)
     - [Node and npm](#node-and-npm)
     - [doctoc](#doctoc)
+    - [HTML Language Server](#html-language-server)
     - [js-yaml](#js-yaml)
     - [swagger-tools](#swagger-tools)
     - [TypeScript and tslint](#typescript-and-tslint)
   - [Python tools](#python-tools)
+  - [VS Code CSS Language Server](#vs-code-css-language-server)
   - [Flycheck checkers](#flycheck-checkers)
-    - [CSSLint](#csslint)
     - [hadolint](#hadolint)
-    - [sass-lint](#sass-lint)
     - [ShellCheck](#shellcheck)
     - [stylelint](#stylelint)
   - [Hunspell](#hunspell)
@@ -204,6 +204,14 @@ doctoc can be installed with npm.
 npm install -g doctoc
 ```
 
+#### HTML Language Server
+
+The HTML Language Server is used by lsp-mode.
+
+``` shell
+npm install -g vscode-html-languageserver-bin
+```
+
 #### js-yaml
 
 [js-yaml](https://github.com/nodeca/js-yaml) is a JavaScript YAML parser. It is used by Flycheck to check YAML files.
@@ -222,10 +230,10 @@ npm install -g swagger-tools
 
 #### TypeScript and tslint
 
-A global installation of TypeScript and tslint is necessary to allow Flycheck to call tslint. tslint will use the `tslint.json` file of the project directory.
+A global installation of TypeScript, the TypeScript language server and tslint is necessary for lsp-mode and Flycheck. tslint will use the `tslint.json` file of the project directory.
 
 ```
-sudo npm install -g tslint typescript
+sudo npm install -g tslint typescript typescript-language-server
 ```
 
 [tslint rules](https://palantir.github.io/tslint/rules/)
@@ -236,6 +244,14 @@ sudo npm install -g tslint typescript
 
 ``` shell
 pip install --user --upgrade sqlparse
+```
+
+### VS Code CSS Language Server
+
+The VS Code CSS language server is used by lsp-mode for CSS, Less, SASS and SCSS.
+
+``` shell
+sudo npm install -g vscode-css-languageserver-bin
 ```
 
 ### Flycheck checkers

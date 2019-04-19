@@ -1,15 +1,8 @@
+(setq css-indent-offset 2)
+
 (use-package sass-mode
   :ensure t
   :mode (("\\.sass$" . sass-mode)))
-
-(use-package helm-css-scss
-  :ensure t
-  :after (:any css-mode less-css-mode sass-mode)
-  :init
-  (dolist ($hook '(css-mode-hook scss-mode-hook less-css-mode-hook))
-    (add-hook
-     $hook (lambda ()
-             (local-set-key (kbd "C-c M-c") 'helm-css-scss)))))
 
 (use-package json-mode
   :ensure t
@@ -35,27 +28,11 @@
   :config
   (add-hook 'js2-mode-hook #'js2-refactor-mode))
 
-(defun setup-tide-mode ()
-  (interactive)
-  (tide-setup)
-  (eldoc-mode +1)
-  (tide-hl-identifier-mode +1)
-  (setq flycheck-check-syntax-automatically '(save mode-enabled)))
-
 (use-package typescript-mode
   :ensure t
   :mode (("\\.ts$" . typescript-mode))
   :init
-  (setq-default typescript-indent-level 2)
-  :config
-  (add-hook 'typescript-mode-hook #'setup-tide-mode))
-
-(use-package tide
-  :ensure t
-  :after (:any typescript-mode js2-mode)
-  :config
-  ;; A jsconfig.json file at the root of the project is required for JavaScript
-  (add-hook 'js2-mode-hook #'setup-tide-mode))
+  (setq-default typescript-indent-level 2))
 
 (use-package web-mode
   :ensure t
@@ -74,19 +51,6 @@
 
   ;; Highlight current HTML element (with a Zenburn color)
   (setq web-mode-enable-current-element-highlight t)
-  (set-face-background 'web-mode-current-element-highlight-face "#2B2B2B")
-
-  ;; Enable tide in web-mode for jsx and tsx support
-  (when (string-match "[jt]sx"
-                      (file-name-extension buffer-file-name))
-    (setup-tide-mode)))
-
-(use-package emmet-mode
-  :ensure t
-  :after (:any css-mode web-mode sgml-mode)
-  :config
-  (add-hook 'sgml-mode-hook 'emmet-mode)
-  (add-hook 'css-mode-hook  'emmet-mode)
-  (add-hook 'web-mode-hook 'emmet-mode))
+  (set-face-background 'web-mode-current-element-highlight-face "#2B2B2B"))
 
 (provide 'web-settings)
