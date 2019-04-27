@@ -86,6 +86,8 @@
 | C-x n      | Narrow or widen a region, an org block, an org subtree or a defun |
 | C-u C-x n  | Narrow a narrowed buffer                                          |
 | C-x 8      | Unicode characters (Helm)                                         |
+| C-c 8      | Insert Unicode characters with typo.el                            |
+| C-c 8 SPC  | Insert a non-break space with typo.el                             |
 
 ### Undo tree
 

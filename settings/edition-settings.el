@@ -40,6 +40,11 @@
 (when (fboundp 'winner-mode)
   (winner-mode 1))
 
+(use-package typo
+  :ensure t
+  :config
+  (typo-global-mode))
+
 (use-package undo-tree
   :ensure t
   :diminish undo-tree-mode

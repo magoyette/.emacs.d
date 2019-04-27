@@ -53,6 +53,7 @@
 - [highlight-indentation](https://github.com/antonj/Highlight-Indentation-for-Emacs) : Displays guidelines for indentation.
 - [move-text](https://github.com/emacsfodder/move-text): Move current line or region.
 - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
+- [typo.el](https://github.com/emacs-lsp/lsp-ui): Insert unicode characters for typography.
 - [undo-tree](https://melpa.org/#/undo-tree) : Visualize undo history as a tree of changes.
 - [whole-line-or-region](https://github.com/purcell/whole-line-or-region): Package to operate on the current line when the region is not defined.
 
