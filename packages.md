@@ -175,6 +175,12 @@
 - [anaconda-mode](https://github.com/proofit404/anaconda-mode): Navigation, completion and documentation for Python.
 - [company-anaconda](https://github.com/proofit404/company-anaconda): Company backend for anaconda-mode.
 
+## LSP packages
+
+- [company-lsp](https://github.com/tigersoldier/company-lsp): Company backend for lsp-mode.
+- [lsp-mode](https://github.com/emacs-lsp/lsp-mode): Language Server Protocol support for Emacs.
+- [lsp-ui](https://github.com/emacs-lsp/lsp-ui): Additional UI features for lsp-mode.
+
 ## Smartparens packages
 
 - [smartparens](https://github.com/Fuco1/smartparens): Mode to handle pairs of symbols.
