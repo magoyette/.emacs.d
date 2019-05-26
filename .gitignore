@@ -2,3 +2,4 @@ elpa/
 etc/
 var/
 local-settings.el
+.projectile
