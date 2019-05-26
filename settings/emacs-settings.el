@@ -1,3 +1,6 @@
+;; Font settings
+(set-face-attribute 'default nil :font "DejaVu Sans Mono 12")
+
 ;; Set the garbage collector to only run for each 50 MB
 (setq gc-cons-threshold 50000000)
 

@@ -1,8 +1,5 @@
 (require 'use-package)
 
-;; Font settings
-(set-face-attribute 'default nil :font "DejaVu Sans Mono 12")
-
 ;; Commands to change text scale
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
