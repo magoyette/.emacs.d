@@ -93,10 +93,6 @@
 (require 'flycheck-settings)
 (require 'spelling-settings)
 
-;; Reading
-(require 'epub-settings)
-(require 'pdf-settings)
-
 ;; Tools
 (require 'shell-settings)
 (require 'git-settings)

@@ -29,8 +29,6 @@
 - [Org mode](#org-mode)
 - [Markdown](#markdown)
 - [Spelling and Grammar](#spelling-and-grammar)
-- [ePub](#epub)
-- [PDF](#pdf)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -307,20 +305,3 @@
 | ---------- | ------                              |
 | C-c i      | ispell prefix (spelling)            |
 | C-c L      | langtool prefix (grammar and style) |
-
-## ePub
-
-| Keybinding | Action            |
-| ---------- | ------            |
-| SPC        | scroll            |
-| n          | next section      |
-| p          | previous section  |
-| t          | table of contents |
-
-## PDF
-
-| Keybinding | Action                              |
-| ---------- | ------                              |
-| C-s / C-r  | incremental search forward/backward |
-| o          | display outline                     |
-| + / -      | zoom in/out                         |

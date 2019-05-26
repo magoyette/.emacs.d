@@ -14,8 +14,6 @@
 - [YASnippet packages](#yasnippet-packages)
 - [Flycheck packages](#flycheck-packages)
 - [Spelling packages](#spelling-packages)
-- [ePub packages](#epub-packages)
-- [PDF packages](#pdf-packages)
 - [Shell packages](#shell-packages)
 - [Git packages](#git-packages)
 - [Org packages](#org-packages)
@@ -109,15 +107,6 @@
 ## Spelling packages
 
 - [emacs-langtool](https://github.com/mhayashi1120/Emacs-langtool): Use LanguageTool from Emacs.
-
-## ePub packages
-
-- [nov.el](https://github.com/wasamasa/nov.el): Mode for ePub files.
-
-## PDF packages
-
-- [pdf-tools](https://github.com/politza/pdf-tools): Mode for PDF files. Disabled on Windows in this Emacs config.
-
 
 ## Shell packages
 
