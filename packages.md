@@ -208,6 +208,7 @@
 
 ## Theme packages
 
+- [emacs-dashboard](https://github.com/emacs-dashboard/emacs-dashboard): A dashboard that is displayed at startup.
 - [page-break-lines](https://github.com/purcell/page-break-lines): Display page break as lines.
 - [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters): Highlight delimiters according to their depth.
 - [spaceline](https://github.com/TheBB/spaceline): The Powerline theme from Spacemacs.
