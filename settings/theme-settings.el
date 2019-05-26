@@ -47,6 +47,7 @@
   :init
   (setq dashboard-set-heading-icons t)
   (setq dashboard-set-file-icons t)
+  (setq dashboard-startup-banner 'logo)
   :config
   (dashboard-setup-startup-hook)
   :custom
