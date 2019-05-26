@@ -39,7 +39,7 @@
 - [crux](https://github.com/bbatsov/crux): Extensions for Emacs.
 - [diminish](https://github.com/emacsmirror/diminish): Hide or abbreviate minor modes.
 - [general.el](https://github.com/noctuid/general.el): Help to define keys.
-- [hydra](https://github.com/abo-abo/hydra): Regroup related keybindings with a common prefix, used by ivy.
+- [hydra](https://github.com/abo-abo/hydra): Regroup related keybindings with a common prefix.
 - [no-littering](https://github.com/emacscollective/no-littering): Store Emacs configuration files and persistent data in consistent paths.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
 - [which-key](https://github.com/justbur/emacs-which-key) : Display available keybindings.
@@ -59,12 +59,12 @@
 
 - [helm](https://github.com/emacs-helm/helm): Completion and selection framework for Emacs.
 - [helm-descbinds](https://github.com/emacs-helm/helm-descbinds): Search active keybindings with Helm.
-- [smex](https://github.com/nonsequitur/smex): Improve M-x by remembering recent commands, used by ivy.
+- [smex](https://github.com/nonsequitur/smex): Improve M-x by remembering recent commands.
 
 ## Navigation and search packages
 
 - [ace-jump-helm-line](https://github.com/cute-jumper/ace-jump-helm-line): Select an Helm candidate with avy.
-- [avy](https://github.com/abo-abo/avy): Jump to a specific position in buffer, used by ivy.
+- [avy](https://github.com/abo-abo/avy): Jump to a specific position in buffer.
 - [deadgrep](https://github.com/Wilfred/deadgrep): Search with [ripgrep](https://github.com/BurntSushi/ripgrep).
 - [dumb-jump](https://github.com/jacktasia/dumb-jump): Jump to definition for many programming languages.
 - [helm-ag](https://github.com/syohex/emacs-helm-ag): Search in files with Helm.
