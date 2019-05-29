@@ -1,8 +1,7 @@
 (use-package terminal-here
   :ensure t
-  :config
-  (global-set-key (kbd "C-<f5>") #'terminal-here-launch)
-  (global-set-key (kbd "C-<f6>") #'terminal-here-project-launch))
+  :bind (("C-<f5>" . terminal-here-launch)
+         ("C-<f6>" . terminal-here-project-launch)))
 
 ;; Syntax highlight for Bash variables inside strings
 ;; Source: https://fuco1.github.io/2017-06-11-Font-locking-with-custom-matchers.html
