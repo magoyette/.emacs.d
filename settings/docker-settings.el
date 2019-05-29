@@ -3,9 +3,11 @@
   :mode (("Dockerfile$" . dockerfile-mode)))
 
 (use-package docker
-  :ensure t)
+  :ensure t
+  :bind ("C-c D" . docker))
 
 (use-package docker-tramp
-  :ensure t)
+  :ensure t
+  :after docker)
 
 (provide 'docker-settings)
