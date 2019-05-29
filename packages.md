@@ -6,7 +6,6 @@
 
 - [init.el packages](#initel-packages)
 - [Edition packages](#edition-packages)
-- [Helm packages](#helm-packages)
 - [Navigation and search packages](#navigation-and-search-packages)
 - [Dired and Neotree packages](#dired-and-neotree-packages)
 - [Windows packages](#windows-packages)
@@ -35,12 +34,19 @@
 
 ## init.el packages
 
+- [avy](https://github.com/abo-abo/avy): Jump to a specific position in buffer.
 - [benchmark-init](https://github.com/dholm/benchmark-init-el): Benchmark the loading time of Emacs packages.
+- [counsel](https://github.com/abo-abo/swiper): Alternatives to common commands that leverage Ivy.
 - [crux](https://github.com/bbatsov/crux): Extensions for Emacs.
 - [diminish](https://github.com/emacsmirror/diminish): Hide or abbreviate minor modes.
+- [flx](https://github.com/lewang/flx): Fuzzy matching for Ivy.
 - [general.el](https://github.com/noctuid/general.el): Help to define keys.
+- [imenu-anywhere](https://github.com/vspinu/imenu-anywhere): imenu across buffers.
+- [ivy](https://github.com/abo-abo/swiper): Completion mechanism for Emacs.
 - [hydra](https://github.com/abo-abo/hydra): Regroup related keybindings with a common prefix.
 - [no-littering](https://github.com/emacscollective/no-littering): Store Emacs configuration files and persistent data in consistent paths.
+- [smex](https://github.com/nonsequitur/smex): Improve M-x by remembering recent commands.
+- [swiper](https://github.com/abo-abo/swiper): Alternative to isearch that uses ivy.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
 - [which-key](https://github.com/justbur/emacs-which-key) : Display available keybindings.
 
@@ -55,22 +61,11 @@
 - [undo-tree](https://melpa.org/#/undo-tree) : Visualize undo history as a tree of changes.
 - [whole-line-or-region](https://github.com/purcell/whole-line-or-region): Package to operate on the current line when the region is not defined.
 
-## Helm packages
-
-- [helm](https://github.com/emacs-helm/helm): Completion and selection framework for Emacs.
-- [helm-descbinds](https://github.com/emacs-helm/helm-descbinds): Search active keybindings with Helm.
-- [smex](https://github.com/nonsequitur/smex): Improve M-x by remembering recent commands.
-
 ## Navigation and search packages
 
-- [ace-jump-helm-line](https://github.com/cute-jumper/ace-jump-helm-line): Select an Helm candidate with avy.
-- [avy](https://github.com/abo-abo/avy): Jump to a specific position in buffer.
+- [counsel-projectile](https://github.com/ericdanan/counsel-projectile): Improve integration between projectile and ivy.
 - [deadgrep](https://github.com/Wilfred/deadgrep): Search with [ripgrep](https://github.com/BurntSushi/ripgrep).
 - [dumb-jump](https://github.com/jacktasia/dumb-jump): Jump to definition for many programming languages.
-- [helm-ag](https://github.com/syohex/emacs-helm-ag): Search in files with Helm.
-- [helm-projectile](https://github.com/bbatsov/helm-projectile): Use projectile with Helm.
-- [helm-swoop](https://github.com/ShingoFukuyama/helm-swoop): Search and replace in buffers with Helm.
-- [imenu-anywhere](https://github.com/vspinu/imenu-anywhere): imenu across buffers.
 - [projectile](https://github.com/bbatsov/projectile): Library to work with projects.
 - [visual-regexp](https://github.com/benma/visual-regexp.el): Regex replace functions with visual feedback.
 
@@ -122,7 +117,6 @@
 ## Org packages
 
 - [ace-link](https://github.com/abo-abo/ace-link): Select a link to jump to with avy in an org buffer (also work with other modes like Info-mode).
-- [helm-org-rifle](https://github.com/alphapapa/helm-org-rifle): Search in org-mode buffers.
 - [org-mode](http://orgmode.org/): Plain text notes, todos, agenda, etc.
 - [org-bullets](https://github.com/sabof/org-bullets): UTF-8 bullets for org-mode.
 

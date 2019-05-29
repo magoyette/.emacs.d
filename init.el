@@ -55,8 +55,94 @@
   :config
   (which-key-mode))
 
+;; Used by ivy to show recent commands in M-x
+(use-package smex
+  :ensure t)
+
+;; Used by ivy-avy
+(use-package avy
+  :ensure t
+  :bind (("C-," . avy-goto-char)
+         ("C-'" . avy-goto-char-2)))
+
+;; Ivy has an hydra
 (use-package hydra
   :ensure t)
+
+; Used by ivy while doing fuzzy matching
+(use-package flx
+  :ensure t)
+
+(use-package ivy
+  :ensure t
+  :diminish (ivy-mode)
+  :bind (("C-x C-b" . ivy-switch-buffer))
+  :init
+  (ivy-mode 1)
+  :config
+  (setq ivy-height 20)
+  (setq ivy-count-format "(%d/%d) ")
+
+  ;; Search also in recent files and bookmarks
+  (setq ivy-use-virtual-buffers t)
+
+  (setq ivy-use-selectable-prompt t)
+
+  (setq enable-recursive-minibuffers t))
+
+(use-package ivy-hydra
+  :ensure t)
+
+(use-package swiper
+  :ensure t
+  :bind (("C-s" . counsel-grep-or-swiper)
+         ([remap isearch-backward] . counsel-grep-or-swiper)
+         ("C-M-s" . swiper-all))
+  :config
+  ;; Use rg instead of grep in counsel-grep-or-swiper
+  ;; -M 120 allows to hide lines that are too long to avoid slowdowns
+  ;;        (ex: log files)
+  (setq counsel-grep-base-command
+        "rg -i -M 120 --no-heading --line-number --color never '%s' %s"))
+
+(which-key-add-key-based-replacements "C-c s" "Search & Replace")
+
+(use-package counsel
+  :ensure t
+  :general
+  ("M-x" 'counsel-M-x
+   "C-c e" 'counsel-M-x
+   "C-x C-f" 'counsel-find-file
+   "C-x C-r" 'counsel-recentf
+   "<f1> f" 'counsel-describe-function
+   "<f1> v" 'counsel-describe-variable
+   "<f1> l" 'counsel-find-library
+   "<f2> i" 'counsel-info-lookup-symbol
+   "<f2> u" 'counsel-unicode-char
+   "C-h a" 'counsel-apropos
+   "C-h b" 'counsel-descbinds
+   "M-i" 'counsel-imenu
+   "C-x M-b" 'counsel-bookmark
+   "M-y" 'counsel-yank-pop
+   "C-c <tab>" 'counsel-company
+   "C-c h" 'counsel-switch-to-shell-buffer
+   "C-c s s" '(counsel-rg :which-key "rg")
+   "C-c s f" '(counsel-fzf :which-key "fzf"))
+  :init
+  ;; apropos also search for noninteractive functions
+  (defvar apropos-do-all t)
+  :config
+  (setq ivy-use-selectable-prompt t)
+
+  ;; Use a vertical bar as separator in counsel-yank-pop
+  (setq counsel-yank-pop-separator
+         (format "\n%s\n" (make-string 60 ?┅))))
+
+;; imenu in all buffers with same major mode or same projectile project
+(use-package imenu-anywhere
+  :ensure t
+  :general
+  ("C-c s i" '(ivy-imenu-anywhere :which-key "imenu-anywhere")))
 
 (use-package crux
   :ensure t
@@ -84,7 +170,6 @@
 
 ;; Core settings
 (require 'edition-settings)
-(require 'helm-settings)
 (require 'navigation-search-settings)
 (require 'dired-neotree-settings)
 (require 'windows-settings)

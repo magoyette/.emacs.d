@@ -13,7 +13,6 @@
   - [Multiple cursors](#multiple-cursors)
 - [Navigate in current buffer](#navigate-in-current-buffer)
 - [Search in buffers](#search-in-buffers)
-  - [Helm swoop](#helm-swoop)
   - [Search in files](#search-in-files)
 - [Terminal](#terminal)
 - [Dired](#dired)
@@ -34,11 +33,10 @@
 
 ## Help
 
-| Keybinding | Action                   |
-| ---------- | ------                   |
-| C-h a      | apropos (Helm)           |
-| C-h i      | info (Helm)              |
-| C-h b      | describe bindings (Helm) |
+| Keybinding | Action            |
+| ---------- | ------            |
+| C-h a      | apropos           |
+| C-h b      | describe bindings |
 
 ## Packages
 
@@ -48,42 +46,36 @@
 
 ## Files and buffers
 
-| Keybinding | Action                                                                   |
-| ---------- | ------                                                                   |
-| C-x C-r    | List buffers, recent files, bookmarks and current directory files (Helm) |
-| C-x C-b    | List buffers (Helm)                                                      |
-| C-x C-f    | Find files (Helm)                                                        |
-| C-x M-b    | Go to a bookmark or create a bookmark                                    |
-| M-x        | Execute command (Helm)                                                   |
-
-| M-x        | Execute command (counsel)                                        |
-| C-c e      | Execute command (counsel)                                        |
-| C-x C-f    | Find a file (counsel)                                            |
-| C-x C-r    | Open a recent file (counsel)                                     |
-| C-c k      | Kill all open buffers except the current buffer (Crux)           |
-| C-c r      | Rename current buffer and its visiting file if it has one (Crux) |
+| Keybinding | Action                                                    |
+| ---------- | ------                                                    |
+| C-x C-r    | List recent files                                         |
+| C-x C-b    | List buffers                                              |
+| C-x C-f    | Find files                                                |
+| C-x M-b    | Go to a bookmark or create a bookmark                     |
+| M-x        | Execute                                                   |
+| C-c k      | Kill all open buffers except the current buffer           |
+| C-c r      | Rename current buffer and its visiting file if it has one |
 
 ## Edition
 
 | Keybinding | Action                                                            |
 | ---------- | ------                                                            |
-| S-RET      | Add a new line below (Crux)                                       |
-| C-S-RET    | Add a new line above (Crux)                                       |
-| M-Up       | Move line or region up (Move-text)                                |
-| M-Down     | Move line or region down (Move-text)                              |
-| M-j        | Collapse/join lines (Crux)                                        |
-| M-y        | Yank from history (Helm)                                          |
-| C-c d      | Duplicate line or region (Crux)                                   |
-| C-=        | Expand region by semantic units (Expand-region)                   |
-| C-x u      | visualize undo tree (Undo-tree)                                   |
+| S-RET      | Add a new line below                                              |
+| C-S-RET    | Add a new line above                                              |
+| M-Up       | Move line or region up                                            |
+| M-Down     | Move line or region down                                          |
+| M-j        | Collapse/join lines                                               |
+| M-y        | Yank from history                                                 |
+| C-c d      | Duplicate line or region                                          |
+| C-=        | Expand region by semantic units                                   |
+| C-x u      | visualize undo tree                                               |
 | M-=        | Word count for region                                             |
 | C-«        | Set the mark                                                      |
 | M-«        | Jump to mark                                                      |
-| C-c <SPC>  | Show all marks (Helm)                                             |
 | C-x C-x    | Exchange the point and the mark                                   |
 | C-x n      | Narrow or widen a region, an org block, an org subtree or a defun |
 | C-u C-x n  | Narrow a narrowed buffer                                          |
-| C-x 8      | Unicode characters (Helm)                                         |
+| C-x 8      | Unicode characters                                                |
 | C-c 8      | Insert Unicode characters with typo.el                            |
 | C-c 8 SPC  | Insert a non-break space with typo.el                             |
 
@@ -110,55 +102,46 @@
 | Keybinding  | Action                                                                 |
 | ----------  | ------                                                                 |
 | C-S-c C-S-c | Edit lines in region with multiple cursors                             |
-| C-c s c     | Select multiple cursors with a regex (visual-regexp)                   |
+| C-c s c     | Select multiple cursors with a regex                                   |
 | C-.         | Show only the lines with multiple cursors                              |
 | C-j         | Insert a newline in multiple cursors mode                              |
 | C-c C-<     | Add a cursor to all expressions in the buffer like the selected region |
 
 ## Navigate in current buffer
 
-| Keybinding | Action                                                              |
-| ---------- | ------                                                              |
-| M-g M-g    | Go to line number of buffer                                         |
-| C-,        | Input one char, then jump to a character (avy) [also works in Helm] |
-| C-'        | Input 2 chars, then jump to a character (avy)                       |
+| Keybinding | Action                                   |
+| ---------- | ------                                   |
+| M-g M-g    | Go to line number of buffer              |
+| C-,        | Input one char, then jump to a character |
+| C-'        | Input 2 chars, then jump to a character  |
 
 ## Search in buffers
 
-| Keybinding | Action                                                            |
-| ---------- | ------                                                            |
-| C-c s      | Command prefix for search                                         |
-| C-s        | Search in buffer (Helm swoop)                                     |
-| C-M-s      | Search in all opened buffers (Helm swoop)                         |
-| C-c s w    | Search in all opened buffers from projectile project (Helm swoop) |
-| C-c s g    | Regex replace (visual-regexp)                                     |
-| C-c s q    | Regex query replace (visual-regexp)                               |
-| C-c s c    | Select multiple cursors with regex (visual-regexp)                |
-| M-i        | imenu in buffer (Helm)                                            |
-| C-s s i    | imenu on all opened buffers (imenu-anywhere)                      |
-
-### Helm swoop
-
-| Keybinding | Action                    |
-| ---------- | ------                    |
-| C-s        | Navigate to next line     |
-| C-r        | Navigate to previous line |
+| Keybinding | Action                             |
+| ---------- | ------                             |
+| C-c s      | Command prefix for search          |
+| C-s        | Search in buffer                   |
+| C-M-s      | Search in all opened buffers       |
+| C-c s g    | Regex replace                      |
+| C-c s q    | Regex query replace                |
+| C-c s c    | Select multiple cursors with regex |
+| M-i        | imenu in buffer                    |
+| C-s s i    | imenu on all opened buffers        |
 
 ### Search in files
 
-| Keybinding | Action                                             |
-| ---------- | ------                                             |
-| C-c s d    | Search files with Ripgrep (deadgrep)               |
-| C-c s r    | Search files with Ripgrep (Helm-ag)                |
-| C-c s s    | Search files from project with Ripgrep (Helm-ag)   |
-| M-s        | Prefix for jump to definition commands (Dumb jump) |
-| C-c p      | Command prefix for projectile                      |
+| Keybinding | Action                                 |
+| ---------- | ------                                 |
+| C-c s d    | Search files with Ripgrep (deadgrep)   |
+| C-c s s    | Search files with Ripgrep (counsel)    |
+| M-s        | Prefix for jump to definition commands |
+| C-c p      | Command prefix for projectile          |
 
 ## Terminal
 
 | Keybinding | Action                                                      |
 | ---------- | ------                                                      |
-| C-c T      | Open an ansi-term terminal (Crux)                           |
+| C-c T      | Open an ansi-term terminal                                  |
 | C-F5       | Open an external terminal                                   |
 | C-F6       | Open an external terminal for the projectile or git project |
 
@@ -177,8 +160,8 @@
 | >           | move to next directory                         |
 | <           | move to previous directory                     |
 | ^           | move to the parent directory (..)              |
-| i           | insert a subtree of the selected directory    |
-| ;           | remove the selected subtree                   |
+| i           | insert a subtree of the selected directory     |
+| ;           | remove the selected subtree                    |
 | g           | refresh                                        |
 | +           | create a new file                              |
 | s           | alternate between sort by name and date        |
@@ -228,7 +211,7 @@
 | ---------- | ------                                       |
 | TAB        | Company mode expand                          |
 | C-c f      | Trigger expanson of a file path with company |
-| C-c TAB    | Company mode expand (counsel)                |
+| C-c TAB    | Company mode expand                          |
 
 ## Fonts
 
