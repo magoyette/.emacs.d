@@ -1,5 +1,6 @@
 elpa/
 etc/
 var/
+flycheck_init.el
 local-settings.el
 .projectile
