@@ -54,8 +54,7 @@
 
 | Keybinding | Action           |
 | ---------- | ------           |
-| C-TAB      | Expand snippet   |
-| S-TAB      | Insert a snippet |
+| C-y        | Select a snippet |
 
 ## Programming
 

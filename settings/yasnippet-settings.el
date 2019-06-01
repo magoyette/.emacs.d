@@ -1,12 +1,16 @@
 (use-package yasnippet
   :ensure t
-  :defer 3
   :diminish yas-minor-mode
   :config
-  (yas-global-mode 1)
-  (define-key yas-minor-mode-map (kbd "<tab>") nil)
-  (define-key yas-minor-mode-map (kbd "TAB") nil)
-  (define-key yas-minor-mode-map (kbd "C-<tab>") 'yas-expand)
-  (define-key yas-minor-mode-map (kbd "S-<tab>") 'yas-insert-snippet))
+  (yas-global-mode 1))
+
+(use-package yasnippet-snippets
+  :ensure t
+  :after yasnippet)
+
+(use-package ivy-yasnippet
+  :ensure t
+  :bind ("C-c y" . ivy-yasnippet)
+  :after yasnippet)
 
 (provide 'yasnippet-settings)

@@ -89,7 +89,9 @@
 
 ## YASnippet packages
 
+- [ivy-yasnippet](https://github.com/mkcms/ivy-yasnippet): Select snippets with ivy.
 - [yasnippet](https://github.com/capitaomorte/yasnippet): Template system.
+- [yasnippet-snippets](https://github.com/AndreaCrotti/yasnippet-snippets): Collection of snippets.
 
 ## Flycheck packages
 
