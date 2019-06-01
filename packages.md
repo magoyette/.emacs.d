@@ -74,7 +74,6 @@
 - [all-the-icons-dired](https://github.com/jtbm37/all-the-icons-dired): Add icons to dired.
 - [dired-collapse](https://github.com/Fuco1/dired-hacks#dired-collapse) : Collapse nested directories with a single children.
 - [dired-narrow](https://github.com/Fuco1/dired-hacks#dired-narrow) : Filter Dired files.
-- [dired-quick-sort](https://gitlab.com/xuhdev/dired-quick-sort) : Sort Dired buffers. Disabled on Windows in this Emacs config.
 - [dired-subtree](https://github.com/Fuco1/dired-hacks#dired-subtree) : Insert a subdirectory in a Dired buffer as a subtree.
 - [emacs-neotree](https://github.com/jaypei/emacs-neotree): Displays folders and files in a tree.
 - [peep-dired](https://github.com/asok/peep-dired) : Show file at point in Dired in another window.

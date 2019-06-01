@@ -179,7 +179,6 @@
 | Z           | compress/decompress                            |
 | c           | compress many marked files to a single archive |
 | q           | exit dired                                     |
-| S           | sort dired buffer with dired-quick-sort        |
 | C-x C-q     | switch to WDired to rename files               |
 
 ### WDired
