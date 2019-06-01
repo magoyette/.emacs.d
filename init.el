@@ -159,7 +159,6 @@
 
 ;; Add Git submodules for packages not on Elpa or Melpa
 (add-to-list 'load-path "~/.emacs.d/submodules/doctoc.el/")
-(add-to-list 'load-path "~/.emacs.d/submodules/prometheus-v1-rules-mode/")
 (add-to-list 'load-path "~/.emacs.d/submodules/flycheck-swagger-tools/")
 (add-to-list 'load-path "~/.emacs.d/submodules/flycheck-swagger-cli/")
 (add-to-list 'load-path "~/.emacs.d/submodules/openapi-yaml-mode/")
@@ -196,7 +195,6 @@
 (require 'java-settings)
 (require 'smartparens-settings)
 (require 'docker-settings)
-(require 'prometheus-settings)
 (require 'openapi-settings)
 (require 'sql-settings)
 (require 'lsp-settings)

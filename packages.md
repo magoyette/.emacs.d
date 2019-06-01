@@ -24,7 +24,6 @@
 - [Clojure packages](#clojure-packages)
 - [Smartparens packages](#smartparens-packages)
 - [Docker packages](#docker-packages)
-- [Prometheus packages](#prometheus-packages)
 - [OpenAPI packages](#openapi-packages)
 - [SQL packages](#sql-packages)
 - [Theme packages](#theme-packages)
@@ -169,10 +168,6 @@
 - [dockerfile-mode](https://github.com/spotify/dockerfile-mode): Mode to edit Dockerfiles.
 - [docker.el](https://github.com/Silex/docker.el): Commands to manage Docker from Emacs.
 - [docker-tramp.el](https://github.com/emacs-pe/docker-tramp.el): A TRAMP method to connect to Docker containers.
-
-## Prometheus packages
-
-- [prometheus-v1-rules-mode](https://github.com/magoyette/prometheus-v1-rules-mode): Support for [Prometheus](https://prometheus.io) v1 rules in Emacs.
 
 ## OpenAPI packages
 
