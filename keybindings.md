@@ -56,6 +56,13 @@
 | C-c k      | Kill all open buffers except the current buffer           |
 | C-c r      | Rename current buffer and its visiting file if it has one |
 
+## Windows
+
+| Keybinding | Action                       |
+| ---------- | ------                       |
+| M-o        | Switch to another window     |
+| C-c w      | Hydra for windows management |
+
 ## Edition
 
 | Keybinding | Action                                                            |
@@ -262,7 +269,7 @@
 | ---------- | ------                                                                      |
 | C-c o      | Prefix for Org commands                                                     |
 | C-c t      | Prefix for Org Clock commands                                               |
-| M-o        | Select a link to jump to with avy                                           |
+| M-O        | Select a link to jump to with avy                                           |
 | C-c / T    | Search for a specific TODO keyword and display the results in a sparse tree |
 
 ## Markdown

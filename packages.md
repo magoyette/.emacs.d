@@ -80,7 +80,7 @@
 
 ## Windows packages
 
-- [winum](https://github.com/deb0ch/emacs-winum): Navigate between windows with numbers.
+- [ace-window](https://github.com/abo-abo/ace-window/wiki/Hydra): Windows selection.
 
 ## Company packages
 

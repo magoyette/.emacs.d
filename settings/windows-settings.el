@@ -1,23 +1,33 @@
-(use-package winum
+(use-package ace-window
   :ensure t
-  :config
-  (setcdr (assoc 'winum-mode minor-mode-map-alist)
-          (let ((map (make-sparse-keymap)))
-            (define-key map (kbd "M-0") 'winum-select-window-0-or-10)
-            (define-key map (kbd "M-1") 'winum-select-window-1)
-            (define-key map (kbd "M-2") 'winum-select-window-2)
-            (define-key map (kbd "M-3") 'winum-select-window-3)
-            (define-key map (kbd "M-4") 'winum-select-window-4)
-            (define-key map (kbd "M-5") 'winum-select-window-5)
-            (define-key map (kbd "M-6") 'winum-select-window-6)
-            (define-key map (kbd "M-7") 'winum-select-window-7)
-            (define-key map (kbd "M-8") 'winum-select-window-8)
-            map))
+  :bind (("M-o" . ace-window)))
 
-  ;; Necessary for spaceline integration
-  (setq winum-auto-setup-mode-line nil)
-
-  (winum-mode))
+(global-set-key
+ (kbd "C-c w")
+ (defhydra hydra-frame-window (:color red :hint nil)
+  "
+^Frames^          ^Window^                    ^Window Size^ ^Text^
+_n_: new          _c_: clone in new window    ^ ^ _k_ ^ ^   _K_
+_m_: maximize     _e_: swap                   _h_ ^+^ _l_   ^+^
+_f_: fullscreen   _w_: delete                 ^ ^ _j_ ^ ^   _J_
+_d_: delete       _v_: visual fill column     _b_alance     ^ ^
+"
+  ("n" make-frame-command :exit t)
+  ("m" toggle-frame-maximized)
+  ("f" toggle-frame-fullscreen)
+  ("d" delete-frame :exit t)
+  ("c" clone-indirect-buffer-other-window :exit t)
+  ("t" crux-transpose-windows :color blue)
+  ("v" visual-fill-column-mode)
+  ("e" ace-swap-window)
+  ("w" ace-delete-window :exit t)
+  ("k" shrink-window)
+  ("h" shrink-window-horizontally)
+  ("l" enlarge-window-horizontally)
+  ("j" enlarge-window)
+  ("b" balance-windows)
+  ("K" text-scale-decrease)
+  ("J" text-scale-increase)))
 
 (use-package visual-fill-column
   :ensure t
@@ -26,19 +36,5 @@
   (setq-default fill-column 80)
   :config (setq-default visual-fill-column-center-text t
                         visual-fill-column-fringes-outside-margins nil))
-
-(global-set-key
- (kbd "C-c w")
-  (defhydra hydra-window ()
-    "Windows/Frames"
-    ("c" clone-indirect-buffer-other-window "Clone buffer in a new window"
-     :color blue)
-    ("n" make-frame-command "Open a new frame" :color blue)
-    ("t" crux-transpose-windows "Transpose windows" :color blue)
-    ("m" toggle-frame-maximized "Toggle maximization of frame")
-    ("f" toggle-frame-fullscreen "Toggle fullscreen")
-    ("o" other-frame "Select other frame")
-    ("d" delete-frame "Delete frame")
-    ("v" visual-fill-column-mode "Toggle visual-fill-column-mode")))
 
 (provide 'windows-settings)
