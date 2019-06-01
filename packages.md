@@ -22,7 +22,6 @@
 - [REST packages](#rest-packages)
 - [Cucumber packages](#cucumber-packages)
 - [Clojure packages](#clojure-packages)
-- [Python packages](#python-packages)
 - [Smartparens packages](#smartparens-packages)
 - [Docker packages](#docker-packages)
 - [Prometheus packages](#prometheus-packages)
@@ -153,11 +152,6 @@
 - [clojure-mode](https://github.com/clojure-emacs/clojure-mode): Mode for Clojure and ClojureScript programming.
 - [CIDER](https://github.com/clojure-emacs/cider): Clojure(Script) Interactive Development Environment that Rocks.
 - [clj-refactor](https://github.com/clojure-emacs/clj-refactor.el): Refactoring functions for Clojure.
-
-## Python packages
-
-- [anaconda-mode](https://github.com/proofit404/anaconda-mode): Navigation, completion and documentation for Python.
-- [company-anaconda](https://github.com/proofit404/company-anaconda): Company backend for anaconda-mode.
 
 ## LSP packages
 

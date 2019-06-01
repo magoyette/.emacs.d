@@ -35,7 +35,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [Git](#git)
     - [LanguageTool](#languagetool)
     - [Pandoc](#pandoc)
-    - [Python](#python)
     - [RipGrep](#ripgrep)
   - [Java Tools](#java-tools)
     - [JDK](#jdk)
@@ -165,10 +164,6 @@ The neotree package is configured to use the [fonts of all-the-icons.el](https:/
 #### Pandoc
 
 [Pandoc](http://pandoc.org/) is necessary to preview markdown documents with markdown-mode.
-
-#### Python
-
-[Python](https://www.python.org/) is required for Python development.
 
 #### RipGrep
 
