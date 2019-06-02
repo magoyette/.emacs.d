@@ -33,10 +33,9 @@
 
 ## Help
 
-| Keybinding | Action            |
-| ---------- | ------            |
-| C-h a      | apropos           |
-| C-h b      | describe bindings |
+| Keybinding | Action               |
+| ---------- | ------               |
+| C-c h      | Help commands prefix |
 
 ## Packages
 
@@ -67,6 +66,7 @@
 
 | Keybinding | Action                                                            |
 | ---------- | ------                                                            |
+| C-c e      | Edition commands prefix                                           |
 | S-RET      | Add a new line below                                              |
 | C-S-RET    | Add a new line above                                              |
 | M-Up       | Move line or region up                                            |
@@ -147,11 +147,9 @@
 
 ## Terminal
 
-| Keybinding | Action                                                      |
-| ---------- | ------                                                      |
-| C-c T      | Open an ansi-term terminal                                  |
-| C-F5       | Open an external terminal                                   |
-| C-F6       | Open an external terminal for the projectile or git project |
+| Keybinding | Action                   |
+| ---------- | ------                   |
+| C-c T      | Terminal commands prefix |
 
 ## Dired
 

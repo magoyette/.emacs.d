@@ -53,7 +53,12 @@
   :ensure t
   :diminish which-key-mode
   :config
-  (which-key-mode))
+  (which-key-mode)
+
+  (which-key-add-key-based-replacements "C-c e" "Edition")
+  (which-key-add-key-based-replacements "C-c h" "Help")
+  (which-key-add-key-based-replacements "C-c s" "Search & Replace")
+  (which-key-add-key-based-replacements "C-c t" "Terminal"))
 
 ;; Used by ivy to show recent commands in M-x
 (use-package smex
@@ -127,27 +132,24 @@
   (setq counsel-grep-base-command
         "rg -i -M 120 --no-heading --line-number --color never '%s' %s"))
 
-(which-key-add-key-based-replacements "C-c s" "Search & Replace")
-
 (use-package counsel
   :ensure t
   :general
   ("M-x" 'counsel-M-x
-   "C-c e" 'counsel-M-x
    "C-x C-f" 'counsel-find-file
    "C-x C-r" 'counsel-recentf
-   "<f1> f" 'counsel-describe-function
-   "<f1> v" 'counsel-describe-variable
-   "<f1> l" 'counsel-find-library
-   "<f2> i" 'counsel-info-lookup-symbol
-   "<f2> u" 'counsel-unicode-char
+   "C-c h f" 'counsel-describe-function
+   "C-c h v" 'counsel-describe-variable
+   "C-c h l" 'counsel-find-library
+   "C-c h i" 'counsel-info-lookup-symbol
+   "C-c e u" 'counsel-unicode-char
    "C-h a" 'counsel-apropos
    "C-h b" 'counsel-descbinds
    "M-i" 'counsel-imenu
    "C-x M-b" 'counsel-bookmark
    "M-y" 'counsel-yank-pop
    "C-c <tab>" 'counsel-company
-   "C-c h" 'counsel-switch-to-shell-buffer
+   "C-c T s" 'counsel-switch-to-shell-buffer
    "C-c s s" '(counsel-rg :which-key "rg")
    "C-c s f" '(counsel-fzf :which-key "fzf"))
   :init
@@ -173,9 +175,8 @@
          ("C-c d" . crux-duplicate-current-line-or-region)
          ("M-j" . crux-top-join-line)
          ("C-c k" . crux-kill-other-buffers)
-         ("C-c T" . crux-visit-term-buffer)
-         ("C-c r" . crux-rename-file-and-buffer)
-         ("C-x 4 t" . crux-transpose-windows)))
+         ("C-c T b" . crux-visit-term-buffer)
+         ("C-c r" . crux-rename-file-and-buffer)))
 
 ;;;;; Load settings and features
 

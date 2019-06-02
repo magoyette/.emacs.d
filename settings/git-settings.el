@@ -12,7 +12,7 @@
   :ensure t
   :mode (("\\.gitignore$" . gitignore-mode)))
 
-(which-key-declare-prefixes "C-c g" "Git")
+(which-key-add-key-based-replacements "C-c g" "Git")
 
 (use-package magit
   :ensure t

@@ -1,4 +1,4 @@
-(which-key-declare-prefixes "C-c l" "lsp")
+(which-key-add-key-based-replacements "C-c l" "lsp")
 
 (use-package lsp-mode
   :ensure t
@@ -10,10 +10,10 @@
          ("C-c l t" . lsp-goto-type-definition)
          ("C-c l r" . lsp-rename)
          ("C-c l h" . lsp-symbol-highlight)
-         ("C-c l w" . lsp-restart-workspace)
+         ("C-c l w" . lsp-workspace-restart)
          ("C-c l F a" . lsp-workspace-folders-add)
          ("C-c l F r" . lsp-workspace-folders-remove)
-         ("C-c l F s" . lsp-workspace-folders-switch)
+         ("C-c l F s" . lsp-workspace-folders-open)
          ("C-c l r" . lsp-find-references)
          ("C-c l R" . lsp-find-definition)
          ("C-c l l s" . lsp-lens-show)

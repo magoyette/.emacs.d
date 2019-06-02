@@ -1,7 +1,7 @@
 (require 'use-package)
 
-(which-key-declare-prefixes "C-c o" "Org")
-(which-key-declare-prefixes "C-c t" "Org Clock")
+(which-key-add-key-based-replacements "C-c o" "Org")
+(which-key-add-key-based-replacements "C-c t" "Org Clock")
 
 (use-package org
   :ensure t

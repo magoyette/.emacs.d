@@ -1,6 +1,6 @@
 (require 'ispell)
 
-(which-key-declare-prefixes "C-c i" "ispell")
+(which-key-add-key-based-replacements "C-c i" "ispell")
 
 (global-set-key (kbd "C-c i s") 'ispell)
 
@@ -44,7 +44,7 @@
 
 (global-set-key (kbd "C-c i d") 'ispell-switch-dictionary)
 
-(which-key-declare-prefixes "C-c L" "langtool")
+(which-key-add-key-based-replacements "C-c L" "langtool")
 
 (use-package langtool
   :ensure t

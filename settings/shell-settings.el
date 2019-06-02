@@ -1,7 +1,7 @@
 (use-package terminal-here
   :ensure t
-  :bind (("C-<f5>" . terminal-here-launch)
-         ("C-<f6>" . terminal-here-project-launch)))
+  :bind (("C-c T l" . terminal-here-launch)
+         ("C-c T p" . terminal-here-project-launch)))
 
 ;; Syntax highlight for Bash variables inside strings
 ;; Source: https://fuco1.github.io/2017-06-11-Font-locking-with-custom-matchers.html
