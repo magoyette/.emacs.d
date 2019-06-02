@@ -59,7 +59,7 @@
 
 | Keybinding | Action                       |
 | ---------- | ------                       |
-| M-o        | Switch to another window     |
+| M-z        | Switch to another window     |
 | C-c w      | Hydra for windows management |
 
 ## Edition

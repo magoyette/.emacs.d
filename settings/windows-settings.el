@@ -1,6 +1,6 @@
 (use-package ace-window
   :ensure t
-  :bind (("M-o" . ace-window)))
+  :bind (("M-z" . ace-window)))
 
 (global-set-key
  (kbd "C-c w")
