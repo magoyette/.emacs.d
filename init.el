@@ -58,7 +58,9 @@
   (which-key-add-key-based-replacements "C-c e" "Edition")
   (which-key-add-key-based-replacements "C-c h" "Help")
   (which-key-add-key-based-replacements "C-c s" "Search & Replace")
-  (which-key-add-key-based-replacements "C-c t" "Terminal"))
+  (which-key-add-key-based-replacements "C-c t" "Terminal")
+
+  (global-set-key (kbd "C-c h m") 'which-key-show-major-mode))
 
 ;; Used by ivy to show recent commands in M-x
 (use-package smex
