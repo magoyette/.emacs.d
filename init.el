@@ -142,9 +142,9 @@
    "C-c h v" 'counsel-describe-variable
    "C-c h l" 'counsel-find-library
    "C-c h i" 'counsel-info-lookup-symbol
+   "C-c h a" 'counsel-apropos
+   "C-c h b" 'counsel-descbinds
    "C-c e u" 'counsel-unicode-char
-   "C-h a" 'counsel-apropos
-   "C-h b" 'counsel-descbinds
    "M-i" 'counsel-imenu
    "C-x M-b" 'counsel-bookmark
    "M-y" 'counsel-yank-pop
