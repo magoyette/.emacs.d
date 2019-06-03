@@ -66,8 +66,8 @@
 
 (use-package move-text
   :ensure t
-  :config
-  (move-text-default-bindings))
+  :bind (("M-<up>" . move-text-up)
+         ("M-<down>" . move-text-down)))
 
 (use-package expand-region
   :ensure t
