@@ -1,6 +1,8 @@
+(require 'sql)
+
 (use-package sqlformat
   :ensure t
   :config
-  (add-hook 'sql-mode-hook 'sqlformat-mode))
+  (define-key sql-mode-map (kbd "C-c C-f") 'sqlformat))
 
 (provide 'sql-settings)
