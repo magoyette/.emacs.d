@@ -79,7 +79,7 @@
 
 ## Windows packages
 
-- [ace-window](https://github.com/abo-abo/ace-window/wiki/Hydra): Windows selection.
+- [ace-window](https://github.com/abo-abo/ace-window): Windows selection.
 
 ## Company packages
 
