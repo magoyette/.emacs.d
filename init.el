@@ -205,7 +205,6 @@
 ;; Tools
 (require 'shell-settings)
 (require 'git-settings)
-(require 'org-settings)
 (require 'doctoc)
 
 ;; Web & markup
@@ -223,6 +222,9 @@
 (require 'openapi-settings)
 (require 'sql-settings)
 (require 'lsp-settings)
+
+;; Org
+(require 'org-settings)
 
 ;; Emacs Theme
 (require 'theme-settings)

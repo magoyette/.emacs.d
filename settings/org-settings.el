@@ -3,6 +3,10 @@
 (which-key-add-key-based-replacements "C-c o" "Org")
 (which-key-add-key-based-replacements "C-c t" "Org Clock")
 
+(use-package ob-restclient
+  :ensure t
+  :after restclient)
+
 (use-package org
   :ensure t
   :mode (("\\.org$" . org-mode))
@@ -50,7 +54,8 @@
   (org-babel-do-load-languages
    'org-babel-load-languages
    '((sql . t)
-     (java . t))))
+     (java . t)
+     (restclient . t))))
 
 (use-package org-bullets
   :ensure t
