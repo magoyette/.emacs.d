@@ -22,10 +22,12 @@
 - [REST packages](#rest-packages)
 - [Cucumber packages](#cucumber-packages)
 - [Clojure packages](#clojure-packages)
+- [LSP packages](#lsp-packages)
 - [Smartparens packages](#smartparens-packages)
 - [Docker packages](#docker-packages)
 - [OpenAPI packages](#openapi-packages)
 - [SQL packages](#sql-packages)
+- [Polymode packages](#polymode-packages)
 - [Theme packages](#theme-packages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -179,6 +181,10 @@
 ## SQL packages
 
 - [sqlformat](https://github.com/purcell/sqlformat) formats SQL.
+
+## Polymode packages
+
+- [polymode](https://github.com/polymode/polymode): Framework to combine multiple major modes.
 
 ## Theme packages
 

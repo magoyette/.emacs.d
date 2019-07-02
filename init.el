@@ -226,5 +226,8 @@
 ;; Org
 (require 'org-settings)
 
+;; Polymode
+(require 'polymode-settings)
+
 ;; Emacs Theme
 (require 'theme-settings)
