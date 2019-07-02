@@ -6,8 +6,8 @@
 
   (define-innermode poly-markdown-edn-metadata-header-innermode
     :mode 'clojure-mode
-    :head-matcher "---\n"
-    :tail-matcher "---\n"
+    :head-matcher "\\`---\n"
+    :tail-matcher "[^\\`]---\n"
     :head-mode 'host
     :tail-mode 'host)
 
