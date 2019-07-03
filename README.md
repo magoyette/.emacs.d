@@ -1,6 +1,6 @@
 # .emacs.d
 
-My personal Emacs configuration. It requires Emacs 26. Most of the configuration is compatible with Windows 7 and Linux.
+My personal Emacs configuration. It requires Emacs 26. The configuration is optimized for Linux, but most of its features are compatible with Windows 10.
 
 This repository should be cloned in the home folder of the current user. Since this repository has some Git submodules, it can be cloned with the recursive option to load the submodules immediately.
 
@@ -301,9 +301,7 @@ The installation on Windows involves many steps.
 
 ## Keybindings
 
-See [keybindings.md](keybindings.md) for a general list of keybindings.
-
-See [programming-keybindings.md](programming-keybindings.md) for list of keybindings related to programming.
+See [keybindings.md](keybindings.md) for a list of commonly used keybindings.
 
 ## Packages
 
