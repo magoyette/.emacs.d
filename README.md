@@ -43,6 +43,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [doctoc](#doctoc)
     - [HTML Language Server](#html-language-server)
     - [js-yaml](#js-yaml)
+    - [stylelint](#stylelint)
     - [swagger-tools](#swagger-tools)
     - [TypeScript and tslint](#typescript-and-tslint)
   - [Python tools](#python-tools)
@@ -50,7 +51,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Flycheck checkers](#flycheck-checkers)
     - [hadolint](#hadolint)
     - [ShellCheck](#shellcheck)
-    - [stylelint](#stylelint)
   - [Hunspell](#hunspell)
     - [Hunspell on Linux](#hunspell-on-linux)
     - [Hunspell on Windows](#hunspell-on-windows)
@@ -210,6 +210,20 @@ npm install -g vscode-html-languageserver-bin
 npm install -g js-yaml
 ```
 
+#### stylelint
+
+[stylelint](https://stylelint.io/) is used for static analysis of CSS, SASS and LESS files.
+
+``` shell
+sudo npm install -g stylelint
+```
+
+A stylelint configuration can be installed globally.
+
+``` shell
+sudo npm install -g stylelint-config-standard
+```
+
 #### swagger-tools
 
 [Swagger Tools](https://github.com/apigee-127/swagger-tools/blob/master/docs/CLI.md) provides JavaScript tools to work with Swagger. It is used by Swaggermacs to check Swagger documents with Flycheck.
@@ -257,20 +271,6 @@ sudo npm install -g vscode-css-languageserver-bin
 [ShellCheck](https://github.com/koalaman/shellcheck) is used for static analysis of shell scripts.
 
 [ShellCheck rules](https://github.com/koalaman/shellcheck/wiki)
-
-#### stylelint
-
-[stylelint](https://stylelint.io/) is used for static analysis of CSS, SASS and LESS files.
-
-``` shell
-sudo npm install -g stylelint
-```
-
-A stylelint configuration can be installed globally.
-
-``` shell
-sudo npm install -g stylelint-config-standard
-```
 
 ### Hunspell
 
