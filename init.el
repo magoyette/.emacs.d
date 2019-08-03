@@ -187,6 +187,7 @@
 (add-to-list 'load-path "~/.emacs.d/submodules/flycheck-swagger-tools/")
 (add-to-list 'load-path "~/.emacs.d/submodules/flycheck-swagger-cli/")
 (add-to-list 'load-path "~/.emacs.d/submodules/openapi-yaml-mode/")
+(add-to-list 'load-path "~/.emacs.d/submodules/twee-mode/")
 
 ;; local-settings is used to set local configurations not stored in Git
 (if (file-exists-p "~/.emacs.d/local-settings.el")
@@ -225,6 +226,10 @@
 
 ;; Org
 (require 'org-settings)
+
+;; Twee
+
+(require 'twee-settings)
 
 ;; Polymode
 (require 'polymode-settings)

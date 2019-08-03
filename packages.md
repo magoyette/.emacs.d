@@ -27,6 +27,7 @@
 - [Docker packages](#docker-packages)
 - [OpenAPI packages](#openapi-packages)
 - [SQL packages](#sql-packages)
+- [Twee packages](#twee-packages)
 - [Polymode packages](#polymode-packages)
 - [Theme packages](#theme-packages)
 
@@ -181,6 +182,10 @@
 ## SQL packages
 
 - [sqlformat](https://github.com/purcell/sqlformat) formats SQL.
+
+## Twee packages
+
+- [twee-mode](https://github.com/magoyette/twee-mode) provide major modes to write [Twine](http://twinery.org/) interactive fictions in Twee.
 
 ## Polymode packages
 
