@@ -160,6 +160,9 @@
   :config
   (setq ivy-use-selectable-prompt t)
 
+  (define-key minibuffer-local-map
+    (kbd "C-r") 'counsel-minibuffer-history)
+
   ;; Use a vertical bar as separator in counsel-yank-pop
   (setq counsel-yank-pop-separator
          (format "\n%s\n" (make-string 60 ?┅))))

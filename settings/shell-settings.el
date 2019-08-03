@@ -3,6 +3,11 @@
   :bind (("C-c T l" . terminal-here-launch)
          ("C-c T p" . terminal-here-project-launch)))
 
+(use-package shell
+  :config
+  (define-key shell-mode-map
+    (kbd "C-r") 'counsel-shell-history))
+
 ;; Syntax highlight for Bash variables inside strings
 ;; Source: https://fuco1.github.io/2017-06-11-Font-locking-with-custom-matchers.html
 (defun my-match-variables-in-quotes (limit)
