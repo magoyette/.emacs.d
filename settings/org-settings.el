@@ -44,6 +44,8 @@
           ("WAIT" . "#CC9393")
           ("DONE" . "#dcdccc")))
 
+  (setq org-agenda-window-setup 'current-window)
+
   (when (fboundp 'local-settings-set-org-agenda-files)
     (local-settings-set-org-agenda-files))
 
