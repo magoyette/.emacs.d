@@ -140,6 +140,7 @@
   ("M-x" 'counsel-M-x
    "C-x C-f" 'counsel-find-file
    "C-x C-r" 'counsel-recentf
+   "C-x d" 'counsel-dired
    "C-c h f" 'counsel-describe-function
    "C-c h v" 'counsel-describe-variable
    "C-c h l" 'counsel-find-library

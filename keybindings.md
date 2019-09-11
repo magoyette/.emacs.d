@@ -71,6 +71,7 @@
 | C-x C-r    | List recent files                                         |
 | C-x C-b    | List buffers                                              |
 | C-x C-f    | Find files                                                |
+| C-x d      | Open dired                                                |
 | C-x M-b    | Go to a bookmark or create a bookmark                     |
 | M-x        | Execute                                                   |
 | C-c k      | Kill all open buffers except the current buffer           |
@@ -171,13 +172,6 @@
 | Keybinding | Action                   |
 | ---------- | ------                   |
 | C-c T      | Terminal commands prefix |
-
-## Dired
-
-| Keybinding | Action                     |
-| ---------- | ------                     |
-| C-x d      | open dired mode            |
-| C-x C-j    | show current file in dired |
 
 ### Dired
 
