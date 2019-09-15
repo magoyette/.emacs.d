@@ -22,14 +22,19 @@
    "C-c s q" '(vr/replace :which-key "query-replace")
    "C-c s c" '(vr/mc-mark :which-key "select-multiple-cursors")))
 
+(defhydra dumb-jump-hydra (:color blue :columns 3)
+  "Dumb Jump"
+  ("s" dumb-jump-go "Jump")
+  ("w" dumb-jump-go-prompt "Prompt where to jump")
+  ("c" dumb-jump-go-other-window "Jump in other window")
+  ("e" dumb-jump-go-prefer-external "Jump (prefer external)")
+  ("d" dumb-jump-go-prefer-external-other-window "Jump in other window (prefer external)")
+  ("q" dumb-jump-quick-look "Quick look def at point")
+  ("b" dumb-jump-back "Jump back"))
+
 (use-package dumb-jump
   :ensure t
-  :bind (("M-s j" . dumb-jump-go)
-         ("M-s b" . dumb-jump-back)
-         ("M-s o" . dumb-jump-go-other-window)
-         ("M-s q" . dumb-jump-quick-look)
-         ("M-s x" . dumb-jump-go-prefer-external)
-         ("M-s z" . dumb-jump-go-prefer-external-other-window))
+  :bind (("M-s" . dumb-jump-hydra/body))
   :config
   (setq dumb-jump-selector 'ivy)
   (setq dumb-jump-prefer-searcher 'rg))

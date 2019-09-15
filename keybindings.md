@@ -160,12 +160,12 @@
 
 ### Search in files
 
-| Keybinding | Action                                 |
-| ---------- | ------                                 |
-| C-c s d    | Search files with Ripgrep (deadgrep)   |
-| C-c s s    | Search files with Ripgrep (counsel)    |
-| M-s        | Prefix for jump to definition commands |
-| C-c p      | Command prefix for projectile          |
+| Keybinding | Action                               |
+| ---------- | ------                               |
+| C-c s d    | Search files with Ripgrep (deadgrep) |
+| C-c s s    | Search files with Ripgrep (counsel)  |
+| M-s        | Hydra for dumb-jump                  |
+| C-c p      | Command prefix for projectile        |
 
 ## Terminal
 
