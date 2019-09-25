@@ -107,17 +107,12 @@
   :diminish (ivy-mode)
   :bind (("C-x C-b" . ivy-switch-buffer))
   :init
+  (setq enable-recursive-minibuffers t)
   (ivy-mode 1)
   :config
   (setq ivy-height 20)
   (setq ivy-count-format "(%d/%d) ")
-
-  ;; Search also in recent files and bookmarks
-  (setq ivy-use-virtual-buffers t)
-
-  (setq ivy-use-selectable-prompt t)
-
-  (setq enable-recursive-minibuffers t))
+  (setq ivy-use-selectable-prompt t))
 
 (use-package ivy-hydra
   :ensure t)
@@ -159,8 +154,6 @@
   ;; apropos also search for noninteractive functions
   (defvar apropos-do-all t)
   :config
-  (setq ivy-use-selectable-prompt t)
-
   (define-key minibuffer-local-map
     (kbd "C-r") 'counsel-minibuffer-history)
 
@@ -210,7 +203,6 @@
 ;; Tools
 (require 'shell-settings)
 (require 'git-settings)
-(require 'doctoc)
 
 ;; Web & markup
 (require 'markdown-settings)
