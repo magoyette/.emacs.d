@@ -17,7 +17,6 @@
   - [Search in files](#search-in-files)
 - [Terminal](#terminal)
 - [Dired](#dired)
-  - [Dired](#dired-1)
   - [WDired](#wdired)
 - [NeoTree](#neotree)
 - [Company](#company)
@@ -173,7 +172,7 @@
 | ---------- | ------                   |
 | C-c T      | Terminal commands prefix |
 
-### Dired
+## Dired
 
 | Keybinding  | Action                                         |
 | ----------  | ------                                         |
