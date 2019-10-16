@@ -13,3 +13,6 @@
 [submodule "submodules/twee-mode"]
 	path = submodules/twee-mode
 	url = https://github.com/magoyette/twee-mode.git
+[submodule "submodules/twee-chapbook-mode"]
+	path = submodules/twee-chapbook-mode
+	url = https://github.com/magoyette/twee-chapbook-mode.git

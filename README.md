@@ -26,6 +26,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [flycheck-swagger-tools](#flycheck-swagger-tools)
   - [openapi-yaml-mode](#openapi-yaml-mode)
   - [twee-mode](#twee-mode)
+  - [twee-chapbook-mode](#twee-chapbook-mode)
 - [External dependencies](#external-dependencies)
   - [Windows OS setup](#windows-os-setup)
     - [Windows HOME variable](#windows-home-variable)
@@ -135,7 +136,11 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 ### twee-mode
 
-[twee-mode](https://github.com/magoyette/twee-mode) provide major modes to write [Twine](http://twinery.org/) interactive fictions in Twee.
+[twee-mode](https://github.com/magoyette/twee-mode) provide a minor mode for [Twine](http://twinery.org/) interactive fictions written with Twee files.
+
+### twee-chapbook-mode
+
+[twee-chapbook-mode](https://github.com/magoyette/twee-chapbook-mode) provide a major mode to write [Twine](http://twinery.org/) interactive fictions in the [Chapbook](https://github.com/klembot/chapbook) story format.
 
 ## External dependencies
 
