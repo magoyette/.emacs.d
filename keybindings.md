@@ -17,7 +17,6 @@
   - [Search in files](#search-in-files)
 - [Terminal](#terminal)
 - [Dired](#dired)
-  - [WDired](#wdired)
 - [NeoTree](#neotree)
 - [Company](#company)
 - [Fonts](#fonts)
@@ -174,39 +173,9 @@
 
 ## Dired
 
-| Keybinding  | Action                                         |
-| ----------  | ------                                         |
-| j           | jump to file                                   |
-| >           | move to next directory                         |
-| <           | move to previous directory                     |
-| ^           | move to the parent directory (..)              |
-| i           | insert a subtree of the selected directory     |
-| ;           | remove the selected subtree                    |
-| g           | refresh                                        |
-| +           | create a new file                              |
-| s           | alternate between sort by name and date        |
-| m           | mark a file                                    |
-| % m [regex] | mark all fiels that match a regex              |
-| u           | unmark a file                                  |
-| U           | unmark all files                               |
-| * t         | invert marking of files                        |
-| * s         | mark all files                                 |
-| P           | show file in another windows with peep-dired   |
-| C           | copy file under cursor or marked files         |
-| R           | rename file under cursor or marked files       |
-| D           | delete file under cursor or marked files       |
-| Q           | run query-replace on marked files              |
-| Z           | compress/decompress                            |
-| c           | compress many marked files to a single archive |
-| q           | exit dired                                     |
-| C-x C-q     | switch to WDired to rename files               |
-
-### WDired
-
-| Keybinding | Action               |
-| ---------- | ------               |
-| C-c C-c    | Save WDired change   |
-| C-c ESC    | Cancel WDired change |
+| Keybinding  | Action                                  |
+| ----------  | ------                                  |
+| C-x d       | Dired (Hydra with .)                    |
 
 ## NeoTree
 
