@@ -92,7 +92,7 @@ This function should be defined in `local-settings.el`.
 The path to the LanguageTool jar must be confirued.
 
 ``` elisp
-(setq langtool-language-tool-jar "~/bin/LanguageTool-3.9/languagetool-commandline.jar")
+(setq langtool-language-tool-jar "~/bin/LanguageTool-4.7/languagetool-commandline.jar")
 ```
 
 ### Terminal-here settings
