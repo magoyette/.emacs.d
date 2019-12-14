@@ -35,20 +35,6 @@
   :config
   (spaceline-emacs-theme))
 
-;; Depends on page-break-lines
-(use-package dashboard
-  :ensure t
-  :init
-  (setq dashboard-set-heading-icons t)
-  (setq dashboard-set-file-icons t)
-  (setq dashboard-startup-banner 'logo)
-  :config
-  (dashboard-setup-startup-hook)
-  :custom
-  (dashboard-items '((projects . 10)
-                     (recents  . 10)
-                     (bookmarks . 5))))
-
 (use-package zenburn-theme
   :ensure t
   :config
