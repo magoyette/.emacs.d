@@ -22,6 +22,8 @@
    "C-c s q" '(vr/replace :which-key "query-replace")
    "C-c s c" '(vr/mc-mark :which-key "select-multiple-cursors")))
 
+(global-set-key (kbd "C-c s r") 're-builder)
+
 (defhydra dumb-jump-hydra (:color blue :columns 3)
   "Dumb Jump"
   ("s" dumb-jump-go "Jump")

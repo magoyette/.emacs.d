@@ -146,7 +146,6 @@
    "M-i" 'counsel-imenu
    "C-x M-b" 'counsel-bookmark
    "M-y" 'counsel-yank-pop
-   "C-c <tab>" 'counsel-company
    "C-c T s" 'counsel-switch-to-shell-buffer
    "C-c s s" '(counsel-rg :which-key "rg")
    "C-c s f" '(counsel-fzf :which-key "fzf"))

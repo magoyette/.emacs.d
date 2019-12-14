@@ -145,16 +145,17 @@
 
 ## Search in buffers
 
-| Keybinding | Action                             |
-| ---------- | ------                             |
-| C-c s      | Command prefix for search          |
-| C-s        | Search in buffer                   |
-| C-M-s      | Search in all opened buffers       |
-| C-c s g    | Regex replace                      |
-| C-c s q    | Regex query replace                |
-| C-c s c    | Select multiple cursors with regex |
-| M-i        | imenu in buffer                    |
-| C-s s i    | imenu on all opened buffers        |
+| Keybinding | Action                                        |
+| ---------- | ------                                        |
+| C-c s      | Command prefix for search                     |
+| C-s        | Search in buffer                              |
+| C-M-s      | Search in all opened buffers                  |
+| C-c s g    | Regex replace                                 |
+| C-c s q    | Regex query replace                           |
+| C-c s c    | Select multiple cursors with regex            |
+| M-i        | imenu in buffer                               |
+| C-s s i    | imenu on all opened buffers                   |
+| C-c s r    | re-builder (C-c <tab> to change regex syntax) |
 
 ### Search in files
 
