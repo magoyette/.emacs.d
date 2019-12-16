@@ -223,8 +223,10 @@
 ;; Org
 (require 'org-settings)
 
-;; Twee
+;; Elfeed
+(require 'elfeed-settings)
 
+;; Twee
 (require 'twee-settings)
 
 ;; Polymode

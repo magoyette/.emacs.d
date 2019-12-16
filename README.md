@@ -20,6 +20,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Magit local settings](#magit-local-settings)
   - [LanguageTool settings](#languagetool-settings)
   - [Terminal-here settings](#terminal-here-settings)
+  - [Elfeed settings](#elfeed-settings)
 - [Git Submodules](#git-submodules)
   - [doctoc.el](#doctocel)
   - [flycheck-swagger-cli](#flycheck-swagger-cli)
@@ -89,7 +90,7 @@ This function should be defined in `local-settings.el`.
 
 ### LanguageTool settings
 
-The path to the LanguageTool jar must be confirued.
+The path to the LanguageTool jar must be configured.
 
 ``` elisp
 (setq langtool-language-tool-jar "~/bin/LanguageTool-4.7/languagetool-commandline.jar")
@@ -101,6 +102,15 @@ The terminal opened by terminal-here can be configured.
 
 ``` elisp
 (setq terminal-here-terminal-command (list "gnome-terminal"))
+```
+
+### Elfeed settings
+
+Elfeed is an Atom/RSS reader. The feeds for Elfeed are configured in local settings.
+
+``` elisp
+(setq elfeed-feeds
+      '(("https://planet.emacslife.com/atom.xml" emacs)))
 ```
 
 ## Git Submodules

@@ -27,6 +27,7 @@
 - [Docker packages](#docker-packages)
 - [OpenAPI packages](#openapi-packages)
 - [SQL packages](#sql-packages)
+- [Elfeed packages](#elfeed-packages)
 - [Twee packages](#twee-packages)
 - [Polymode packages](#polymode-packages)
 - [Theme packages](#theme-packages)
@@ -181,6 +182,10 @@
 ## SQL packages
 
 - [sqlformat](https://github.com/purcell/sqlformat) formats SQL.
+
+## Elfeed packages
+
+- [elfeed](https://github.com/skeeto/elfeed) is an Atom/RSS reader.
 
 ## Twee packages
 

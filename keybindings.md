@@ -47,6 +47,7 @@
   - [Smartparens navigation](#smartparens-navigation)
   - [Smartparens manipulation](#smartparens-manipulation)
 - [SQL packages](#sql-packages)
+- [Elfeed](#elfeed)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -465,3 +466,9 @@
 | Keybinding | Action               |
 | ---------- | ------               |
 | C-c C-f    | Format SQL in region |
+
+## Elfeed
+
+| Keybinding | Action      |
+| ---------- | ------      |
+| C-x w      | Open Elfeed |
