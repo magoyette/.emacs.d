@@ -43,16 +43,24 @@
   ;; Sort branches with more recent commits or tags at the top of the list
   (setq magit-list-refs-sortby "-creatordate")
 
-  (add-hook 'dired-mode-hook #'diff-hl-dired-mode))
+  (add-hook 'dired-mode-hook #'diff-hl-dired-mode)
+
+  ;; Source: https://manuel-uberti.github.io/emacs/2018/02/17/magit-bury-buffer/
+  (defun mu-magit-kill-buffers ()
+    "Restore window configuration and kill all Magit buffers."
+    (interactive)
+    (let ((buffers (magit-mode-get-buffers)))
+      (magit-restore-window-configuration)
+      (mapc #'kill-buffer buffers)))
+
+  (bind-key "q" #'mu-magit-kill-buffers magit-status-mode-map))
 
 (defun kill-magit-buffers ()
   "Prompt to kill each magit buffer."
   (interactive)
-  (kill-matching-buffers "^\\*magit.*"))
-
-(general-define-key
- :prefix "C-c"
- "g k" '(kill-magit-buffers :which-key "kill magit"))
+  (let ((buffers (magit-mode-get-buffers)))
+    (magit-restore-window-configuration)
+    (mapc #'kill-buffer buffers)))
 
 (use-package diff-hl
   :ensure t
