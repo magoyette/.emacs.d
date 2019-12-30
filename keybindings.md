@@ -274,10 +274,9 @@
 
 ## Spelling and Grammar
 
-| Keybinding | Action                              |
-| ---------- | ------                              |
-| C-c i      | ispell prefix (spelling)            |
-| C-c L      | langtool prefix (grammar and style) |
+| Keybinding | Action                                            |
+| ---------- | ------                                            |
+| C-c L      | LanguageTool prefix (spelling, grammar and style) |
 
 ## Flycheck
 
