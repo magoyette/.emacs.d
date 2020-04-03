@@ -121,7 +121,7 @@
 - [ace-link](https://github.com/abo-abo/ace-link): Select a link to jump to with avy in an org buffer (also work with other modes like Info-mode).
 - [ob-restclient.el](https://github.com/alf/ob-restclient.el): Support for restclient in Org Babel.
 - [org-mode](http://orgmode.org/): Plain text notes, todos, agenda, etc.
-- [org-bullets](https://github.com/sabof/org-bullets): UTF-8 bullets for org-mode.
+- [org-superstar-mode](https://github.com/integral-dw/org-superstar-mode): Prettify headings and lists with UTF-8 bullets.
 
 ## Markdown packages
 

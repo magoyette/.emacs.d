@@ -59,11 +59,12 @@
      (java . t)
      (restclient . t))))
 
-(use-package org-bullets
+(use-package org-superstar
   :ensure t
   :after org
   :config
-  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+  (setq org-hide-leading-stars t)
+  (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1))))
 
 (use-package ace-link
   :ensure t
