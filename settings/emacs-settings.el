@@ -1,8 +1,11 @@
 ;; Font settings
 (set-face-attribute 'default nil :font "DejaVu Sans Mono 12")
 
-;; Set the garbage collector to only run for each 50 MB
-(setq gc-cons-threshold 50000000)
+;; Set the garbage collector to only run for each 100 MB
+(setq gc-cons-threshold 100000000)
+
+;; Increase amount of data read from process for emacs-lsp
+(setq read-process-output-max (* 1024 1024)) ;; 1mb
 
 ;; Prefer newest Emacs Lisp byte code
 (setq load-prefer-newer t)
