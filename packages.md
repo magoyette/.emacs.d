@@ -23,7 +23,6 @@
 - [Smartparens packages](#smartparens-packages)
 - [Docker packages](#docker-packages)
 - [OpenAPI packages](#openapi-packages)
-- [SQL packages](#sql-packages)
 - [Twee packages](#twee-packages)
 - [Theme packages](#theme-packages)
 
@@ -159,10 +158,6 @@
 - [flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli): Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-cli.
 - [flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools): Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-tools.
 - [openapi-yaml-mode](https://github.com/magoyette/openapi-yaml-mode): Major mode for OpenAPI YAML files.
-
-## SQL packages
-
-- [sqlformat](https://github.com/purcell/sqlformat) formats SQL.
 
 ## Twee packages
 

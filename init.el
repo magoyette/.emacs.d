@@ -204,7 +204,6 @@
 (require 'smartparens-settings)
 (require 'docker-settings)
 (require 'openapi-settings)
-(require 'sql-settings)
 (require 'lsp-settings)
 
 ;; Org

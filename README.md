@@ -46,7 +46,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [stylelint](#stylelint)
     - [swagger-tools](#swagger-tools)
     - [TypeScript and tslint](#typescript-and-tslint)
-  - [Python tools](#python-tools)
   - [VS Code CSS Language Server](#vs-code-css-language-server)
   - [Flycheck checkers](#flycheck-checkers)
     - [hadolint](#hadolint)
@@ -208,13 +207,13 @@ npm install -g js-yaml
 [stylelint](https://stylelint.io/) is used for static analysis of CSS, SASS and LESS files.
 
 ``` shell
-sudo npm install -g stylelint
+npm install -g stylelint
 ```
 
 A stylelint configuration can be installed globally.
 
 ``` shell
-sudo npm install -g stylelint-config-standard
+npm install -g stylelint-config-standard
 ```
 
 #### swagger-tools
@@ -230,25 +229,17 @@ npm install -g swagger-tools
 A global installation of TypeScript, the TypeScript language server and tslint is necessary for lsp-mode and Flycheck. tslint will use the `tslint.json` file of the project directory.
 
 ```
-sudo npm install -g tslint typescript typescript-language-server
+npm install -g tslint typescript typescript-language-server
 ```
 
 [tslint rules](https://palantir.github.io/tslint/rules/)
-
-### Python tools
-
-[sqlparse](https://github.com/andialbrecht/sqlparse) is used by the [sqlformat](https://github.com/purcell/sqlformat) package to format SQL.
-
-``` shell
-pip install --user --upgrade sqlparse
-```
 
 ### VS Code CSS Language Server
 
 The VS Code CSS language server is used by lsp-mode for CSS, Less, SASS and SCSS.
 
 ``` shell
-sudo npm install -g vscode-css-languageserver-bin
+npm install -g vscode-css-languageserver-bin
 ```
 
 ### Flycheck checkers
