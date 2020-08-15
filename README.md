@@ -1,6 +1,6 @@
 # .emacs.d
 
-My personal Emacs configuration. It requires Emacs 26. The configuration is optimized for Linux, but most of its features are compatible with Windows 10.
+My personal Emacs configuration. It requires Emacs 27.
 
 This repository should be cloned in the home folder of the current user. Since this repository has some Git submodules, it can be cloned with the recursive option to load the submodules immediately.
 
