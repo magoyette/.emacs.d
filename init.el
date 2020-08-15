@@ -211,9 +211,6 @@
 (require 'rest-settings)
 
 ;; Programming
-(require 'cucumber-settings)
-(require 'clojure-settings)
-(require 'java-settings)
 (require 'smartparens-settings)
 (require 'docker-settings)
 (require 'openapi-settings)
@@ -223,14 +220,8 @@
 ;; Org
 (require 'org-settings)
 
-;; Elfeed
-(require 'elfeed-settings)
-
 ;; Twee
 (require 'twee-settings)
-
-;; Polymode
-(require 'polymode-settings)
 
 ;; Emacs Theme
 (require 'theme-settings)

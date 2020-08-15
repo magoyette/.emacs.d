@@ -1,8 +1,3 @@
-(use-package terminal-here
-  :ensure t
-  :bind (("C-c T l" . terminal-here-launch)
-         ("C-c T p" . terminal-here-project-launch)))
-
 (use-package shell
   :config
   (define-key shell-mode-map

@@ -13,23 +13,18 @@
 - [YASnippet packages](#yasnippet-packages)
 - [Flycheck packages](#flycheck-packages)
 - [Spelling packages](#spelling-packages)
-- [Shell packages](#shell-packages)
 - [Git packages](#git-packages)
 - [Org packages](#org-packages)
 - [Markdown packages](#markdown-packages)
 - [Web packages](#web-packages)
 - [YAML packages](#yaml-packages)
 - [REST packages](#rest-packages)
-- [Cucumber packages](#cucumber-packages)
-- [Clojure packages](#clojure-packages)
 - [LSP packages](#lsp-packages)
 - [Smartparens packages](#smartparens-packages)
 - [Docker packages](#docker-packages)
 - [OpenAPI packages](#openapi-packages)
 - [SQL packages](#sql-packages)
-- [Elfeed packages](#elfeed-packages)
 - [Twee packages](#twee-packages)
-- [Polymode packages](#polymode-packages)
 - [Theme packages](#theme-packages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -105,10 +100,6 @@
 
 - [emacs-langtool](https://github.com/mhayashi1120/Emacs-langtool): Use LanguageTool from Emacs.
 
-## Shell packages
-
-- [terminal-here](https://github.com/davidshepherd7/terminal-here): Open an external terminal emulator.
-
 ## Git packages
 
 - [diff-hl](https://github.com/dgutov/diff-hl): Highlight uncommited changes.
@@ -147,16 +138,6 @@
 
 - [rest-client](https://github.com/pashky/restclient.el): REST client for Emacs.
 
-## Cucumber packages
-
-- [feature-mode](https://github.com/michaelklishin/cucumber.el): Mode for Gherkin and Cucumber.
-
-## Clojure packages
-
-- [clojure-mode](https://github.com/clojure-emacs/clojure-mode): Mode for Clojure and ClojureScript programming.
-- [CIDER](https://github.com/clojure-emacs/cider): Clojure(Script) Interactive Development Environment that Rocks.
-- [clj-refactor](https://github.com/clojure-emacs/clj-refactor.el): Refactoring functions for Clojure.
-
 ## LSP packages
 
 - [company-lsp](https://github.com/tigersoldier/company-lsp): Company backend for lsp-mode.
@@ -183,18 +164,10 @@
 
 - [sqlformat](https://github.com/purcell/sqlformat) formats SQL.
 
-## Elfeed packages
-
-- [elfeed](https://github.com/skeeto/elfeed) is an Atom/RSS reader.
-
 ## Twee packages
 
 - [twee-mode](https://github.com/magoyette/twee-mode) provide a minor mode for [Twine](http://twinery.org/) interactive fictions written with Twee files.
 - [twee-chapbook-mode](https://github.com/magoyette/twee-chapbook-mode) provide a major mode to write [Twine](http://twinery.org/) interactive fictions in the [Chapbook](https://github.com/klembot/chapbook) story format.
-
-## Polymode packages
-
-- [polymode](https://github.com/polymode/polymode): Framework to combine multiple major modes.
 
 ## Theme packages
 

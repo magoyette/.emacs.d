@@ -19,8 +19,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [Org mode local settings](#org-mode-local-settings)
   - [Magit local settings](#magit-local-settings)
   - [LanguageTool settings](#languagetool-settings)
-  - [Terminal-here settings](#terminal-here-settings)
-  - [Elfeed settings](#elfeed-settings)
 - [Git Submodules](#git-submodules)
   - [doctoc.el](#doctocel)
   - [flycheck-swagger-cli](#flycheck-swagger-cli)
@@ -40,7 +38,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [RipGrep](#ripgrep)
   - [Java Tools](#java-tools)
     - [JDK](#jdk)
-    - [Leiningen](#leiningen)
   - [Node Tools](#node-tools)
     - [Node and npm](#node-and-npm)
     - [doctoc](#doctoc)
@@ -91,23 +88,6 @@ The path to the LanguageTool jar must be configured.
 
 ``` elisp
 (setq langtool-language-tool-jar "~/bin/LanguageTool-4.7/languagetool-commandline.jar")
-```
-
-### Terminal-here settings
-
-The terminal opened by terminal-here can be configured.
-
-``` elisp
-(setq terminal-here-terminal-command (list "gnome-terminal"))
-```
-
-### Elfeed settings
-
-Elfeed is an Atom/RSS reader. The feeds for Elfeed are configured in local settings.
-
-``` elisp
-(setq elfeed-feeds
-      '(("https://planet.emacslife.com/atom.xml" emacs)))
 ```
 
 ## Git Submodules
@@ -191,10 +171,6 @@ Many dependencies of this Emacs configuration need a JDK available in the path o
 java -version
 javac -version
 ```
-
-#### Leiningen
-
-CIDER, the interactive development environment for Clojure, requires the [Leiningen](http://leiningen.org) build tool.
 
 ### Node Tools
 
