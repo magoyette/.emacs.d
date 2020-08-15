@@ -1,9 +1,6 @@
 ;; Font settings
 (set-face-attribute 'default nil :font "DejaVu Sans Mono 12")
 
-;; Set the garbage collector to only run for each 100 MB
-(setq gc-cons-threshold 100000000)
-
 ;; Increase amount of data read from process for emacs-lsp
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 
@@ -11,18 +8,6 @@
 (setq load-prefer-newer t)
 
 ;;;;; UI settings
-
-;; Disable tool bar
-(when (fboundp 'tool-bar-mode)
-  (tool-bar-mode -1))
-
-;; Disable menu bar
-(when (fboundp 'menu-bar-mode)
-  (menu-bar-mode -1))
-
-;; Disable scroll bar
-(when (fboundp 'scroll-bar-mode)
-  (scroll-bar-mode -1))
 
 ;; Disable welcome screen and welcome message
 (setq inhibit-startup-message t
