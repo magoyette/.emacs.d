@@ -1,4 +1,5 @@
 (setq css-indent-offset 2)
+(setq js-indent-level 2)
 
 (use-package sass-mode
   :ensure t
@@ -18,8 +19,8 @@
 
 (use-package js2-mode
   :ensure t
-  :mode (("\\.js$" . js2-mode))
   :config
+  (add-hook 'js-mode-hook 'js2-minor-mode)
   (add-to-list 'interpreter-mode-alist '("node" . js2-mode)))
 
 (use-package js2-refactor
@@ -37,8 +38,7 @@
 (use-package web-mode
   :ensure t
   :mode (("\\.html?\\'" . web-mode)
-         ("\\.[agj]sp\\'" . web-mode)
-         ("\\.[jt]sx\\'" . web-mode))
+         ("\\.[agj]sp\\'" . web-mode))
   :config
   ;; HTML indentation
   (setq web-mode-markup-indent-offset 2)
@@ -52,5 +52,11 @@
   ;; Highlight current HTML element (with a Zenburn color)
   (setq web-mode-enable-current-element-highlight t)
   (set-face-background 'web-mode-current-element-highlight-face "#2B2B2B"))
+
+(use-package prettier-js
+  :ensure t
+  :config
+  (add-hook 'js-mode-hook 'prettier-js-mode)
+  (add-hook 'web-mode-hook 'prettier-js-mode))
 
 (provide 'web-settings)

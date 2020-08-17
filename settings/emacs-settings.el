@@ -1,7 +1,7 @@
 ;; Font settings
 (set-face-attribute 'default nil :font "DejaVu Sans Mono 12")
 
-;; Increase amount of data read from process for emacs-lsp
+;; Increase amount of data read from process for lsp
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 
 ;; Prefer newest Emacs Lisp byte code

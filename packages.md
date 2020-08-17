@@ -7,7 +7,6 @@
 - [init.el packages](#initel-packages)
 - [Edition packages](#edition-packages)
 - [Navigation and search packages](#navigation-and-search-packages)
-- [Dired and Neotree packages](#dired-and-neotree-packages)
 - [Windows packages](#windows-packages)
 - [Company packages](#company-packages)
 - [YASnippet packages](#yasnippet-packages)
@@ -65,15 +64,18 @@
 - [projectile](https://github.com/bbatsov/projectile): Library to work with projects.
 - [visual-regexp](https://github.com/benma/visual-regexp.el): Regex replace functions with visual feedback.
 
-## Dired and Neotree packages
+## Dired and Treemacs packages
 
-- [all-the-icons.el](https://github.com/domtronn/all-the-icons.el): Icons for dired and NeoTree.
+- [all-the-icons.el](https://github.com/domtronn/all-the-icons.el): Icons for dired and Treemacs.
 - [all-the-icons-dired](https://github.com/jtbm37/all-the-icons-dired): Add icons to dired.
 - [dired-collapse](https://github.com/Fuco1/dired-hacks#dired-collapse) : Collapse nested directories with a single children.
 - [dired-narrow](https://github.com/Fuco1/dired-hacks#dired-narrow) : Filter Dired files.
 - [dired-subtree](https://github.com/Fuco1/dired-hacks#dired-subtree) : Insert a subdirectory in a Dired buffer as a subtree.
-- [emacs-neotree](https://github.com/jaypei/emacs-neotree): Displays folders and files in a tree.
 - [peep-dired](https://github.com/asok/peep-dired) : Show file at point in Dired in another window.
+- [treemacs](https://github.com/Alexander-Miller/treemacs): A file explorer with a tree layout.
+- [treemacs-all-the-icons](https://github.com/Alexander-Miller/treemacs): Change the theme of treemacs to use all-the-icons.el.
+- [treemacs-magit](https://github.com/Alexander-Miller/treemacs): Allow treemacs to refresh after actions done in magit.
+- [treemacs-projectile](https://github.com/Alexander-Miller/treemacs): Integrates treemacs with projectile.
 
 ## Windows packages
 
@@ -124,6 +126,7 @@
 - [js2-refactor](https://github.com/magnars/js2-refactor.el): Mode to refactor JavaScript code.
 - [json-mode](https://github.com/joshwnj/json-mode): Mode for JSON files.
 - [json-reformat](https://github.com/gongo/json-reformat): Mode to reformat JSON files.
+- [prettier-js](https://github.com/prettier/prettier-emacs/): Format with Prettier.
 - [sass-mode](https://github.com/nex3/sass-mode): Mode for .sass Sass files.
 - [typescript-mode](https://github.com/ananthakumaran/typescript.el): Mode for TypeScript files.
 - [web-mode](http://web-mode.org/): Mode for web templates.
@@ -139,8 +142,8 @@
 
 ## LSP packages
 
-- [company-lsp](https://github.com/tigersoldier/company-lsp): Company backend for lsp-mode.
 - [lsp-mode](https://github.com/emacs-lsp/lsp-mode): Language Server Protocol support for Emacs.
+- [lsp-treemacs](https://github.com/emacs-lsp/lsp-treemacs): Integrate lsp-mode with treemacs.
 - [lsp-ui](https://github.com/emacs-lsp/lsp-ui): Additional UI features for lsp-mode.
 
 ## Smartparens packages

@@ -136,11 +136,21 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 An environment variable named `HOME` is required on a Windows OS to allow Emacs to find the `.emacs.d` folder. The value of `HOME` must be the absolute path to the home folder of the current Windows user (where the `.emacs.d` repo should have been cloned). Magit also needs the `HOME` variable to execute git push from Windows.
 
+#### diff
+
+The package prettier-js requires diff, which isn't installed on Windows.
+
+If Chocolatey is installed on Windows, then diff can be installed with the command below.
+
+``` shell
+choco install diffutils
+```
+
 ### Fonts
 
 #### all-the-icons.el fonts
 
-The neotree package is configured to use the [fonts of all-the-icons.el](https://github.com/domtronn/all-the-icons.el/tree/master/fonts).
+The fonts from [all-the-icons.el](https://github.com/domtronn/all-the-icons.el/tree/master/fonts) must be installed since many packages use them.
 
 ### General Tools
 
@@ -182,7 +192,8 @@ Node and npm are required for many JavaScript libraries.
 doctoc is a JavaScript library used to generate the table of contents of a Markdown file.
 
 doctoc can be installed with npm.
-```
+
+``` shell
 npm install -g doctoc
 ```
 
@@ -198,8 +209,16 @@ npm install -g vscode-html-languageserver-bin
 
 [js-yaml](https://github.com/nodeca/js-yaml) is a JavaScript YAML parser. It is used by Flycheck to check YAML files.
 
-```
+``` shell
 npm install -g js-yaml
+```
+
+#### prettier
+
+Prettier must be installed for the prettier-js package.
+
+``` shell
+npm install -g prettier
 ```
 
 #### stylelint
@@ -240,6 +259,14 @@ The VS Code CSS language server is used by lsp-mode for CSS, Less, SASS and SCSS
 
 ``` shell
 npm install -g vscode-css-languageserver-bin
+```
+
+### YAML Language Server
+
+The YAML language server is used by lsp-mode for YAML files.
+
+``` shell
+npm install -g yaml-language-server
 ```
 
 ### Flycheck checkers

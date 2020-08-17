@@ -13,16 +13,16 @@
   :bind (("C-c o l" . org-store-link)
          ("C-c o c" . org-capture)
          ("C-c o a" . org-agenda)
-         ("C-c t l" . org-clock-in-last)
-         ("C-c t o" . org-clock-out))
+         ("C-c o I" . org-clock-in-last)
+         ("C-c o o" . org-clock-out))
   :config
 
   (add-hook 'org-mode-hook 'visual-line-mode)
 
-  (define-key org-mode-map (kbd "C-c t i") 'org-clock-in)
-  (define-key org-mode-map (kbd "C-c t c") 'org-clock-cancel)
-  (define-key org-mode-map (kbd "C-c t c") 'org-clock-goto)
-  (define-key org-mode-map (kbd "C-c t c") 'org-clock-display)
+  (define-key org-mode-map (kbd "C-c o i") 'org-clock-in)
+  (define-key org-mode-map (kbd "C-c o C") 'org-clock-cancel)
+  (define-key org-mode-map (kbd "C-c o g") 'org-clock-goto)
+  (define-key org-mode-map (kbd "C-c o d") 'org-clock-display)
 
   ;; Unbind org-cycle-agenda to prevent conflicts with avy
   (define-key org-mode-map (kbd "C-,") nil)

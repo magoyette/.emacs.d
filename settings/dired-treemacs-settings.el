@@ -74,28 +74,42 @@ _Q__regex replace
 
 (define-key dired-mode-map "." 'hydra-dired/body)
 
-(use-package neotree
+(use-package treemacs
   :ensure t
-  :bind (("<f8>" . neotree-toggle))
+  :defer t
+  :bind
+  (:map global-map
+        ("M-0" . treemacs-select-window)
+        ("C-c t d" . treemacs-delete-other-windows)
+        ("C-c t t" . treemacs)
+        ("C-c t b" . treemacs-bookmark)
+        ("C-c t f" . treemacs-find-file)
+        ("C-c t T" . treemacs-find-tag)
+        ("C-c t p" . treemacs-projectile))
   :config
-  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
-  (setq neo-window-fixed-size nil)
-  (setq neo-mode-line-type 'default)
-  (setq neo-window-width 35))
+  (treemacs-follow-mode t)
+  (treemacs-filewatch-mode t)
+  (treemacs-fringe-indicator-mode t)
 
-(defun neotree-project-dir ()
-  "Open NeoTree using the projectile project root."
-  (interactive)
-  (let ((project-dir (projectile-project-root))
-        (file-name (buffer-file-name)))
-    (neotree-toggle)
-    (if project-dir
-        (if (neo-global--window-exists-p)
-            (progn
-              (neotree-dir project-dir)
-              (neotree-find file-name)))
-      (message "Could not find git project root."))))
+  (pcase (cons (not (null (executable-find "git")))
+               (not (null treemacs-python-executable)))
+    (`(t . t)
+     (treemacs-git-mode 'deferred))
+    (`(t . _)
+     (treemacs-git-mode 'simple))))
 
-(global-set-key (kbd "<f9>") 'neotree-project-dir)
+(use-package treemacs-projectile
+  :after treemacs projectile
+  :ensure t)
 
-(provide 'dired-neotree-settings)
+(use-package treemacs-magit
+  :after treemacs magit
+  :ensure t)
+
+(use-package treemacs-all-the-icons
+  :after treemacs all-the-icons
+  :ensure t
+  :config
+  (treemacs-load-theme "all-the-icons"))
+
+(provide 'dired-treemacs-settings)

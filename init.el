@@ -150,6 +150,9 @@
   (setq counsel-yank-pop-separator
          (format "\n%s\n" (make-string 60 ?┅))))
 
+;; Disable imenu's results cache
+(setq imenu-auto-rescan t)
+
 ;; imenu in all buffers with same major mode or same projectile project
 (use-package imenu-anywhere
   :ensure t
@@ -183,7 +186,7 @@
 ;; Core settings
 (require 'edition-settings)
 (require 'navigation-search-settings)
-(require 'dired-neotree-settings)
+(require 'dired-treemacs-settings)
 (require 'windows-settings)
 (require 'company-settings)
 (require 'yasnippet-settings)

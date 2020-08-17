@@ -17,7 +17,7 @@
   - [Search in files](#search-in-files)
 - [Terminal](#terminal)
 - [Dired](#dired)
-- [NeoTree](#neotree)
+- [Treemacs](#treemacs)
 - [Company](#company)
 - [Fonts](#fonts)
 - [Git](#git)
@@ -167,21 +167,13 @@
 | ----------  | ------                                  |
 | C-x d       | Dired (Hydra with .)                    |
 
-## NeoTree
+## Treemacs
 
-| Keybinding        | Action                                               |
-| ----------        | ------                                               |
-| F8                | Toggle NeoTree                                       |
-| F9                | Toggle NeoTree on the root of the Projectile project |
-| n                 | Next line                                            |
-| p                 | Previous line                                        |
-| SPC or RET or TAB | Fold/unfold directory or open file                   |
-| g                 | Refresh                                              |
-| H                 | Toggle display of hidden files                       |
-| C-c C-n           | Create a file or directory if name ends with /       |
-| C-c C-d           | Delete a file or directory                           |
-| C-c C-r           | Rename a file or directory                           |
-| C-c C-c           | Change the root directory                            |
+| Keybinding      | Action                         |
+| ----------      | ------                         |
+| M-0             | Select or open Treemacs window |
+| C-c t           | Treemacs commands prefix       |
+| ? [in Treemacs] | Treemacs hydra                 |
 
 ## Company
 
@@ -240,7 +232,6 @@
 | Keybinding | Action                                                                      |
 | ---------- | ------                                                                      |
 | C-c o      | Prefix for Org commands                                                     |
-| C-c t      | Prefix for Org Clock commands                                               |
 | M-O        | Select a link to jump to with avy                                           |
 | C-c / T    | Search for a specific TODO keyword and display the results in a sparse tree |
 
