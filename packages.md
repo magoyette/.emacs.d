@@ -7,6 +7,7 @@
 - [init.el packages](#initel-packages)
 - [Edition packages](#edition-packages)
 - [Navigation and search packages](#navigation-and-search-packages)
+- [Dired and Treemacs packages](#dired-and-treemacs-packages)
 - [Windows packages](#windows-packages)
 - [Company packages](#company-packages)
 - [YASnippet packages](#yasnippet-packages)
