@@ -97,6 +97,7 @@
 - [flycheck](https://github.com/flycheck/flycheck): Syntax checking.
 - [flycheck-package](https://github.com/purcell/flycheck-package): Flycheck checker for Emacs Lisp packages that invokes [package-lint](https://github.com/purcell/package-lint).
 - [flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip): Show flycheck issues in tooltip.
+- [flycheck-relint](https://github.com/purcell/flycheck-relint/): Flycheck checker for Emacs Lisp regular expressions.
 
 ## Spelling packages
 

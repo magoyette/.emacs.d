@@ -28,4 +28,10 @@
   :config
   (flycheck-package-setup))
 
+(use-package flycheck-relint
+  :ensure t
+  :after flycheck
+  :config
+  (flycheck-relint-setup))
+
 (provide 'flycheck-settings)
