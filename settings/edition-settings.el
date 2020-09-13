@@ -90,7 +90,7 @@
   :ensure t
   :diminish whole-line-or-region-local-mode
   :config
-  (whole-line-or-region-mode 1))
+  (whole-line-or-region-global-mode 1))
 
 ;; Fix mark commands in transient mark mode
 ;; Source: https://www.masteringemacs.org/article/fixing-mark-commands-transient-mark-mode
