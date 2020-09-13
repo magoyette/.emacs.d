@@ -216,6 +216,14 @@ npm install -g vscode-html-languageserver-bin
 npm install -g js-yaml
 ```
 
+#### JSON Language Server
+
+The JSON language server is used by lsp-mode.
+
+``` shell
+npm i -g vscode-json-languageserver
+```
+
 #### prettier
 
 Prettier must be installed for the prettier-js package.

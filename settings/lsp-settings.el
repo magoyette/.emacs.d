@@ -7,9 +7,11 @@
   :hook ((lsp-mode . lsp-enable-which-key-integration)
          (css-mode . lsp)
          (js-mode . lsp)
+         (json-mode . lsp)
          (sass-mode . lsp)
          (typescript-mode . lsp)
-         (web-mode . lsp))
+         (web-mode . lsp)
+         (yaml-mode .lsp))
   :commands lsp
   :config
   (setq lsp-completion-provider :capf))
