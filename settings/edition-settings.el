@@ -18,7 +18,6 @@
 (global-set-key [S-dead-grave] "`")
 
 (use-package whitespace
-  :ensure t
   :diminish whitespace-mode
   :config
   (setq whitespace-style '(face tabs empty trailing))
@@ -40,12 +39,10 @@
   (winner-mode 1))
 
 (use-package typo
-  :ensure t
   :config
   (typo-global-mode))
 
 (use-package undo-tree
-  :ensure t
   :diminish undo-tree-mode
   :bind (("C-x u" . undo-tree-visualize))
   :config
@@ -56,6 +53,7 @@
 
 ;; Unique buffer names
 (use-package uniquify
+  :ensure nil
   :config
   (setq uniquify-buffer-name-style 'forward))
 
@@ -64,16 +62,13 @@
   (save-place-mode))
 
 (use-package move-text
-  :ensure t
   :bind (("M-<up>" . move-text-up)
          ("M-<down>" . move-text-down)))
 
 (use-package expand-region
-  :ensure t
   :bind (("C-=" . er/expand-region)))
 
 (use-package multiple-cursors
-  :ensure t
   :bind (("C-S-c C-S-c" . mc/edit-lines)
          ("C->" . mc/mark-next-like-this)
          ("C-<" . mc/mark-previous-like-this)
@@ -83,11 +78,9 @@
   (define-key mc/keymap (kbd "C-.") 'mc-hide-unmatched-lines-mode))
 
 ;; Only enabled in specific modes
-(use-package highlight-indentation
-  :ensure t)
+(use-package highlight-indentation)
 
 (use-package whole-line-or-region
-  :ensure t
   :diminish whole-line-or-region-local-mode
   :config
   (whole-line-or-region-global-mode 1))
@@ -123,7 +116,6 @@ This is the same as using \\[set-mark-command] with the prefix argument."
   'exchange-point-and-mark-no-activate)
 
 (use-package highlight-escape-sequences
-  :ensure t
   :config
   (hes-mode))
 

@@ -1,7 +1,6 @@
 (require 'use-package)
 
 (use-package flycheck
-  :ensure t
   :diminish flycheck-mode
   :config
   (global-flycheck-mode)
@@ -17,19 +16,16 @@
 
 ;; flycheck-pos-tip show flycheck markers in a pop-up
 (use-package flycheck-pos-tip
-  :ensure t
   :after flycheck
   :config
   (flycheck-pos-tip-mode))
 
 (use-package flycheck-package
-  :ensure t
   :after flycheck
   :config
   (flycheck-package-setup))
 
 (use-package flycheck-relint
-  :ensure t
   :after flycheck
   :config
   (flycheck-relint-setup))

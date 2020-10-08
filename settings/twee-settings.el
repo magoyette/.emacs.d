@@ -1,11 +1,12 @@
 (use-package twee-chapbook-mode
+  :ensure nil
   :mode (("\\.tw$" . twee-chapbook-mode)
          ("\\.twee$" . twee-chapbook-mode)))
 
 (use-package twee-mode
+  :ensure nil
   :after twee-chapbook-mode
-  :init
-  (add-hook 'twee-chapbook-mode-hook 'twee-mode)
+  :hook (twee-chapbook-mode . twee-mode)
   :config
   (define-key twee-mode-map (kbd "M-<up>") 'outline-move-subtree-up)
   (define-key twee-mode-map (kbd "M-<down>") 'outline-move-subtree-down)

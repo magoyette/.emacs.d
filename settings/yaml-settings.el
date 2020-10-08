@@ -1,5 +1,4 @@
 (use-package yaml-mode
-  :ensure t
   :mode (("\\.yaml$" . yaml-mode)
          ("\\.yml$" . yaml-mode)
          ("\\.raml$" . yaml-mode))
@@ -8,7 +7,6 @@
   (add-hook 'yaml-mode-hook #'highlight-indentation-mode))
 
 (use-package indent-tools
-  :ensure t
   :after yaml-mode
   :config
   (add-hook 'yaml-mode-hook

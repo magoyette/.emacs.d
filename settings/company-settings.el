@@ -1,7 +1,6 @@
 (require 'use-package)
 
 (use-package company
-  :ensure t
   :diminish company-mode
   :config
   ;; Case-sensitive completion
@@ -22,7 +21,6 @@
   (global-company-mode))
 
 (use-package company-quickhelp
-  :ensure t
   :after company
   :config
   (company-quickhelp-mode 1))

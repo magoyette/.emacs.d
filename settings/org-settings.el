@@ -4,11 +4,9 @@
 (which-key-add-key-based-replacements "C-c t" "Org Clock")
 
 (use-package ob-restclient
-  :ensure t
   :after restclient)
 
 (use-package org
-  :ensure t
   :mode (("\\.org$" . org-mode))
   :bind (("C-c o l" . org-store-link)
          ("C-c o c" . org-capture)
@@ -60,14 +58,12 @@
      (restclient . t))))
 
 (use-package org-superstar
-  :ensure t
   :after org
   :config
   (setq org-hide-leading-stars t)
   (add-hook 'org-mode-hook (lambda () (org-superstar-mode 1))))
 
 (use-package ace-link
-  :ensure t
   :after org
   :config
   (ace-link-setup-default)

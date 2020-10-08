@@ -1,21 +1,17 @@
 (require 'use-package)
 
 (use-package gitattributes-mode
-  :ensure t
   :mode (("\\.gitattributes$" . gitattributes-mode)))
 
 (use-package gitconfig-mode
-  :ensure t
   :mode (("\\.gitconfig$" . gitconfig-mode)))
 
 (use-package gitignore-mode
-  :ensure t
   :mode (("\\.gitignore$" . gitignore-mode)))
 
 (which-key-add-key-based-replacements "C-c g" "Git")
 
 (use-package magit
-  :ensure t
   :general
   ("C-c g g" '(magit-status :which-key "status")
    "C-c g b" '(magit-blame :which-key "blame")
@@ -63,7 +59,6 @@
     (mapc #'kill-buffer buffers)))
 
 (use-package diff-hl
-  :ensure t
   :config
   (global-diff-hl-mode)
   (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
@@ -75,7 +70,6 @@
    "g p" '(diff-hl-previous-hunk :which-key "previous hunk")))
 
 (use-package git-timemachine
-  :ensure t
   :general
   ("C-c g t" '(git-timemachine :which-key "timemachine")))
 

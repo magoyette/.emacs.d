@@ -1,5 +1,4 @@
 (use-package ace-window
-  :ensure t
   :bind (("M-z" . ace-window)))
 
 (global-set-key
@@ -30,7 +29,6 @@ _d_: delete       _v_: visual fill column     _b_alance     ^ ^
   ("J" text-scale-increase)))
 
 (use-package visual-fill-column
-  :ensure t
   :bind (("C-c v" . visual-fill-column-mode))
   :init
   (setq-default fill-column 80)

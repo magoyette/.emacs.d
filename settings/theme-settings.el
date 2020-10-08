@@ -17,18 +17,14 @@
 (setq column-number-mode t)
 
 (use-package page-break-lines
-  :ensure t
   :diminish page-break-lines-mode
   :config
   (global-page-break-lines-mode))
 
 (use-package rainbow-delimiters
-  :ensure t
-  :config
-  (add-hook 'emacs-lisp-mode-hook #'rainbow-delimiters-mode))
+  :hook (emacs-lisp-mode . rainbow-delimiters-mode))
 
 (use-package spaceline
-  :ensure t
   :init
   (require 'spaceline-config)
   (setq powerline-default-separator 'wave)
@@ -36,7 +32,6 @@
   (spaceline-emacs-theme))
 
 (use-package zenburn-theme
-  :ensure t
   :config
   (load-theme 'zenburn t))
 

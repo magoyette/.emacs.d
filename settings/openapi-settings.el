@@ -1,6 +1,8 @@
-(use-package flycheck-swagger-tools)
+(use-package flycheck-swagger-tools
+  :ensure nil)
 
-(use-package flycheck-swagger-cli)
+(use-package flycheck-swagger-cli
+  :ensure nil)
 
 ;; Adapted from https://stackoverflow.com/questions/14275122/editing-markdown-pipe-tables-in-emacs
 (defun transform-org-table-in-markdown-table ()
@@ -10,6 +12,7 @@
     (while (search-forward "--+--" nil t) (replace-match "--|--"))))
 
 (use-package openapi-yaml-mode
+  :ensure nil
   :config
   (openapi-yaml-mode-add-to-magic-mode-alist)
 

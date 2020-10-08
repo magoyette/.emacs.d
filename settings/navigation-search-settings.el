@@ -12,11 +12,9 @@
     (linum-mode -1)))
 
 (use-package deadgrep
-  :ensure t
   :bind (("C-c s d" . deadgrep)))
 
 (use-package visual-regexp
-  :ensure t
   :general
   ("C-c s g" '(vr/replace :which-key "replace")
    "C-c s q" '(vr/replace :which-key "query-replace")
@@ -35,14 +33,12 @@
   ("b" dumb-jump-back "Jump back"))
 
 (use-package dumb-jump
-  :ensure t
   :bind (("M-s" . dumb-jump-hydra/body))
   :config
   (setq dumb-jump-selector 'ivy)
   (setq dumb-jump-prefer-searcher 'rg))
 
 (use-package projectile
-  :ensure t
   :bind-keymap ("C-c p" . projectile-command-map)
   :config
   (setq projectile-enable-caching t)
@@ -58,7 +54,6 @@
   (projectile-global-mode))
 
 (use-package counsel-projectile
-  :ensure t
   :after projectile
   :config
   (counsel-projectile-mode))

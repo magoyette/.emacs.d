@@ -13,9 +13,10 @@
   (package-install 'use-package))
 
 (require 'use-package)
+(require 'use-package-ensure)
+(setq use-package-always-ensure t)
 
 (use-package no-littering
-  :ensure t
   :config
   (require 'recentf)
   (add-to-list 'recentf-exclude no-littering-var-directory)
@@ -27,20 +28,16 @@
       `((".*" ,(no-littering-expand-var-file-name "auto-save/") t))))
 
 (use-package benchmark-init
-  :ensure t
   :config
   (benchmark-init/activate))
 
 (use-package diminish
-  :ensure t
   :config
   (diminish 'visual-line-mode))
 
-(use-package general
-  :ensure t)
+(use-package general)
 
 (use-package which-key
-  :ensure t
   :diminish which-key-mode
   :config
   (which-key-mode)
@@ -53,16 +50,13 @@
   (global-set-key (kbd "C-c h m") 'which-key-show-major-mode))
 
 ;; Used by ivy to show recent commands in M-x
-(use-package smex
-  :ensure t)
+(use-package smex)
 
 ;; Ivy has an hydra
-(use-package hydra
-  :ensure t)
+(use-package hydra)
 
 ;; Used by ivy-avy
 (use-package avy
-  :ensure t
   :bind (("C-," . avy-goto-char)
          ("C-'" . avy-goto-char-2)))
 
@@ -89,11 +83,9 @@
   ("Y" avy-copy-region)))
 
 ; Used by ivy while doing fuzzy matching
-(use-package flx
-  :ensure t)
+(use-package flx)
 
 (use-package ivy
-  :ensure t
   :diminish (ivy-mode)
   :bind (("C-x C-b" . ivy-switch-buffer))
   :init
@@ -104,11 +96,9 @@
   (setq ivy-count-format "(%d/%d) ")
   (setq ivy-use-selectable-prompt t))
 
-(use-package ivy-hydra
-  :ensure t)
+(use-package ivy-hydra)
 
 (use-package swiper
-  :ensure t
   :bind (("C-s" . counsel-grep-or-swiper)
          ([remap isearch-backward] . counsel-grep-or-swiper)
          ("C-M-s" . swiper-all))
@@ -120,7 +110,6 @@
         "rg -i -M 120 --no-heading --line-number --color never '%s' %s"))
 
 (use-package counsel
-  :ensure t
   :general
   ("M-x" 'counsel-M-x
    "C-x C-f" 'counsel-find-file
@@ -155,12 +144,10 @@
 
 ;; imenu in all buffers with same major mode or same projectile project
 (use-package imenu-anywhere
-  :ensure t
   :general
   ("C-c s i" '(ivy-imenu-anywhere :which-key "imenu-anywhere")))
 
 (use-package crux
-  :ensure t
   :bind (("<S-return>" . crux-smart-open-line)
          ("<C-S-return>" . crux-smart-open-line-above)
          ("C-c d" . crux-duplicate-current-line-or-region)

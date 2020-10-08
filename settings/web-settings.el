@@ -2,41 +2,33 @@
 (setq js-indent-level 2)
 
 (use-package sass-mode
-  :ensure t
   :mode (("\\.sass$" . sass-mode)))
 
 (use-package json-mode
-  :ensure t
   :mode (("\\.json$" . json-mode))
   :config
   (setq js-indent-level 2))
 
 (use-package json-reformat
-  :ensure t
   :after json-mode
   :config
   (setq json-reformat:indent-width 2))
 
 (use-package js2-mode
-  :ensure t
+  :hook (js-mode . js2-minor-mode)
   :config
-  (add-hook 'js-mode-hook 'js2-minor-mode)
   (add-to-list 'interpreter-mode-alist '("node" . js2-mode)))
 
 (use-package js2-refactor
-  :ensure t
   :after js2-mode
-  :config
-  (add-hook 'js2-mode-hook #'js2-refactor-mode))
+  :hook (js2-mode . js2-refactor-mode))
 
 (use-package typescript-mode
-  :ensure t
   :mode (("\\.ts$" . typescript-mode))
   :init
   (setq-default typescript-indent-level 2))
 
 (use-package web-mode
-  :ensure t
   :mode (("\\.html?\\'" . web-mode)
          ("\\.[agj]sp\\'" . web-mode))
   :config
@@ -54,9 +46,7 @@
   (set-face-background 'web-mode-current-element-highlight-face "#2B2B2B"))
 
 (use-package prettier-js
-  :ensure t
-  :config
-  (add-hook 'js-mode-hook 'prettier-js-mode)
-  (add-hook 'web-mode-hook 'prettier-js-mode))
+  :hook ((js-mode . prettier-js-mode)
+         (web-mode . prettier-js-mode)))
 
 (provide 'web-settings)

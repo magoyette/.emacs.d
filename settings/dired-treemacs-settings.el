@@ -1,20 +1,15 @@
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
-(use-package all-the-icons
-  :ensure t)
+(use-package all-the-icons)
 
 (use-package all-the-icons-dired
-  :ensure t
-  :config
-  (add-hook 'dired-mode-hook 'all-the-icons-dired-mode))
+  :hook (dired-mode . all-the-icons-dired-mode))
 
 (use-package peep-dired
-  :ensure t
   :bind (:map dired-mode-map
               ("P" . peep-dired)))
 
 (use-package wdired
-  :ensure t
   :config
   ;; Prompt when renaming files
   (setq wdired-use-interactive-rename t)
@@ -25,17 +20,13 @@
   (setq wdired-allow-to-change-permissions t))
 
 (use-package dired-narrow
-  :ensure t
   :bind (:map dired-mode-map
               ("/" . dired-narrow)))
 
 (use-package dired-collapse
-  :ensure t
-  :config
-  (add-hook 'dired-mode-hook 'dired-collapse-mode))
+  :hook (dired-mode . dired-collapse-mode))
 
 (use-package dired-subtree
-  :ensure t
   :bind (:map dired-mode-map
              ("i" . dired-subtree-insert)
              (";" . dired-subtree-remove)))
@@ -75,7 +66,6 @@ _Q__regex replace
 (define-key dired-mode-map "." 'hydra-dired/body)
 
 (use-package treemacs
-  :ensure t
   :defer t
   :bind
   (:map global-map
@@ -99,16 +89,13 @@ _Q__regex replace
      (treemacs-git-mode 'simple))))
 
 (use-package treemacs-projectile
-  :after treemacs projectile
-  :ensure t)
+  :after treemacs projectile)
 
 (use-package treemacs-magit
-  :after treemacs magit
-  :ensure t)
+  :after treemacs magit)
 
 (use-package treemacs-all-the-icons
   :after treemacs all-the-icons
-  :ensure t
   :config
   (treemacs-load-theme "all-the-icons"))
 

@@ -1,7 +1,6 @@
 (which-key-add-key-based-replacements "C-c L" "langtool")
 
 (use-package langtool
-  :ensure t
   :bind (("C-c L c" . langtool-check)
          ("C-c L d" . langtool-check-done)
          ("C-c L s" . langtool-switch-default-language)

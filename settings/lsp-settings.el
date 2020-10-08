@@ -3,7 +3,6 @@
 (setq lsp-keymap-prefix "C-c l")
 
 (use-package lsp-mode
-  :ensure t
   :hook ((lsp-mode . lsp-enable-which-key-integration)
          (css-mode . lsp)
          (js-mode . lsp)
@@ -17,11 +16,9 @@
   (setq lsp-completion-provider :capf))
 
 (use-package lsp-ui
-  :ensure t
   :commands lsp-ui-mode)
 
 (use-package lsp-treemacs
-  :ensure t
   :config
   (lsp-treemacs-sync-mode 1))
 
