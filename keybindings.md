@@ -20,6 +20,7 @@
 - [Treemacs](#treemacs)
 - [Company](#company)
 - [Fonts](#fonts)
+- [Theme](#theme)
 - [Git](#git)
   - [Magit blame](#magit-blame)
   - [Magit commit](#magit-commit)
@@ -189,6 +190,12 @@
 | ---------- | ------              |
 | C-+        | Increase text scale |
 | C--        | Decrease text scale |
+
+## Theme
+
+| Keybinding | Action                                                        |
+| ---------- | ------                                                        |
+| F5         | Alternate between the Modus Operandi and Modus Vivendi themes |
 
 ## Git
 

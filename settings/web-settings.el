@@ -41,9 +41,7 @@
   ;; Programming languages indentation (JavaScript and others)
   (setq web-mode-code-indent-offset 2)
 
-  ;; Highlight current HTML element (with a Zenburn color)
-  (setq web-mode-enable-current-element-highlight t)
-  (set-face-background 'web-mode-current-element-highlight-face "#2B2B2B"))
+  (setq web-mode-enable-current-element-highlight t))
 
 (use-package prettier-js
   :hook ((js-mode . prettier-js-mode)

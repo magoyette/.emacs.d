@@ -36,11 +36,11 @@
         '((sequence "TODO(t)" "NEXT(n)" "STARTED(s)" "WAIT(w)" "|" "DONE(d)")))
 
   (setq org-todo-keyword-faces
-        '(("TODO" . "#dfaf8f")
-          ("NEXT" . "#93e0e3")
-          ("STARTED" . "#dc8cc3")
-          ("WAIT" . "#CC9393")
-          ("DONE" . "#dcdccc")))
+        '(("TODO" . '((t (:inherit font-lock-negation-char-face :weight bold))))
+          ("NEXT" . '((t (:inherit font-lock-constant-face :weight bold))))
+          ("STARTED" . '((t (:inherit font-lock-builtin-face :weight bold))))
+          ("WAIT" . '((t (:inherit font-lock-comment-face :weight bold))))
+          ("DONE" . '((t (:inherit font-lock-type-face))))))
 
   (setq org-agenda-window-setup 'current-window)
 

@@ -22,7 +22,7 @@
   (global-page-break-lines-mode))
 
 (use-package rainbow-delimiters
-  :hook (emacs-lisp-mode . rainbow-delimiters-mode))
+  :hook (prog-mode . rainbow-delimiters-mode))
 
 (use-package spaceline
   :init
@@ -31,8 +31,24 @@
   :config
   (spaceline-emacs-theme))
 
-(use-package zenburn-theme
+(defun modus-themes-toggle-with-spaceline ()
+  "Switch between the modus-themes and reset spaceline"
+  (interactive)
+  (modus-themes-toggle)
+  (powerline-reset))
+
+(use-package modus-themes
+  :ensure t
+  :init
+  (setq modus-themes-bold-constructs t
+        modus-themes-fringes 'subtle
+        modus-themes-intense-hl-line t
+        modus-themes-region 'bg-only
+        modus-themes-org-blocks 'grayscale)
+
+  (modus-themes-load-themes)
   :config
-  (load-theme 'zenburn t))
+  (modus-themes-load-operandi)
+  :bind ("<f5>" . modus-themes-toggle-with-spaceline))
 
 (provide 'theme-settings)
