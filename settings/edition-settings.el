@@ -17,6 +17,9 @@
 ;; Workaround to insert a ` symbol
 (global-set-key [S-dead-grave] "`")
 
+;; Insert a typesetter's apostrophe
+(global-set-key (kbd "M-,") "’")
+
 (use-package whitespace
   :diminish whitespace-mode
   :config
