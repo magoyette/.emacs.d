@@ -20,7 +20,6 @@
 - [YAML packages](#yaml-packages)
 - [REST packages](#rest-packages)
 - [LSP packages](#lsp-packages)
-- [Smartparens packages](#smartparens-packages)
 - [Docker packages](#docker-packages)
 - [OpenAPI packages](#openapi-packages)
 - [Twee packages](#twee-packages)
@@ -147,10 +146,6 @@
 - [lsp-mode](https://github.com/emacs-lsp/lsp-mode): Language Server Protocol support for Emacs.
 - [lsp-treemacs](https://github.com/emacs-lsp/lsp-treemacs): Integrate lsp-mode with treemacs.
 - [lsp-ui](https://github.com/emacs-lsp/lsp-ui): Additional UI features for lsp-mode.
-
-## Smartparens packages
-
-- [smartparens](https://github.com/Fuco1/smartparens): Mode to handle pairs of symbols.
 
 ## Docker packages
 

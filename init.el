@@ -191,7 +191,6 @@
 (require 'rest-settings)
 
 ;; Programming
-(require 'smartparens-settings)
 (require 'docker-settings)
 (require 'openapi-settings)
 (require 'lsp-settings)

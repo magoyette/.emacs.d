@@ -34,9 +34,6 @@
 - [REST](#rest)
 - [YAML](#yaml)
 - [Emacs Lisp](#emacs-lisp)
-- [Smartparens](#smartparens)
-  - [Smartparens navigation](#smartparens-navigation)
-  - [Smartparens manipulation](#smartparens-manipulation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -311,35 +308,3 @@
 | ---------- | ------                                                      |
 | C-x C-e    | evaluate the expression before point                        |
 | C-M-x      | evaluate top-level expression containing or following point |
-
-## Smartparens
-
-### Smartparens navigation
-
-| Keybinding | Action                                                                     |
-| ---------- | ------                                                                     |
-| C-M-f      | Jump after next balanced expression                                        |
-| C-M-b      | Jump before the previous balanced expression                               |
-| C-S-a      | Jump to the end of the current balanced expression                         |
-| C-S-d      | Jump to the beginning of the currente balanced expression                  |
-| C-M-d      | Jump down one level after the opening pair of the next balanced expression |
-| C-M-a      | Jump down backward one level from the current balanced expression          |
-| C-M-e      | Jump up one level from the current balanced expression                     |
-| C-M-u      | Jump up backward one level from the current balanced expression            |
-| C-M-n      | Jump to the beginning of the following balanced expression                 |
-| C-M-p      | Jump to the end of the previous balanced expression                        |
-
-### Smartparens manipulation
-
-| Keybinding          | Action                                                             |
-| ----------          | ------                                                             |
-| C-M-k               | Kill the next balanced expression (or kill enclosing expression)   |
-| C-M-w               | Copy the next balanced expression                                  |
-| M-&lt;delete&gt;    | Remove the wrapping pair from the following expression             |
-| M-&lt;backspace&gt; | Remove the wrapping pair from the previous expression              |
-| C-M-t               | Transpose the adjacent balanced expressions (swap the expressions) |
-| C-&lt;right&gt;     | Extend current list by 1 element by moving the closing delimiter   |
-| C-&lt;left&gt;      | Contract current list by 1 element by moving the closing delimiter |
-| C-M-&lt;left&gt;    | Extend current list by 1 element by moving the opening delimiter   |
-| C-M-&lt;right&gt;   | Contract current list by 1 element by moving the opening delimiter |
-| M-D                 | Remove the wrapping pair from this expression                      |
