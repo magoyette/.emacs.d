@@ -4,16 +4,15 @@ My personal Emacs configuration. It requires Emacs 27.
 
 This repository should be cloned in the home folder of the current user. Since this repository has some Git submodules, it can be cloned with the recursive option to load the submodules immediately.
 
-``` shell
+```shell
 cd ~
 git clone --recursive https://github.com/magoyette/.emacs.d.git
 ```
 
-***
+---
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 
 - [Local settings](#local-settings)
   - [Org mode local settings](#org-mode-local-settings)
@@ -29,7 +28,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 - [External dependencies](#external-dependencies)
   - [Windows OS setup](#windows-os-setup)
     - [Windows HOME variable](#windows-home-variable)
-    - [diff](#diff)
   - [Fonts](#fonts)
     - [all-the-icons.el fonts](#all-the-iconsel-fonts)
   - [General Tools](#general-tools)
@@ -44,6 +42,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [doctoc](#doctoc)
     - [HTML Language Server](#html-language-server)
     - [js-yaml](#js-yaml)
+    - [JSON Language Server](#json-language-server)
     - [prettier](#prettier)
     - [stylelint](#stylelint)
     - [swagger-tools](#swagger-tools)
@@ -88,7 +87,7 @@ This function should be defined in `local-settings.el`.
 
 The path to the LanguageTool jar must be configured.
 
-``` elisp
+```elisp
 (setq langtool-language-tool-jar "~/bin/LanguageTool-4.7/languagetool-commandline.jar")
 ```
 
@@ -97,13 +96,14 @@ The path to the LanguageTool jar must be configured.
 This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they are included in this repository as Git submodules.
 
 The submodules can be added with the following command.
-``` shell
+
+```shell
 git submodule update --init
 ```
 
 It's also possible to clone this repository with the submodules.
 
-``` shell
+```shell
 git clone --recursive https://github.com/magoyette/.emacs.d.git
 ```
 
@@ -139,16 +139,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 An environment variable named `HOME` is required on a Windows OS to allow Emacs to find the `.emacs.d` folder. The value of `HOME` must be the absolute path to the home folder of the current Windows user (where the `.emacs.d` repo should have been cloned). Magit also needs the `HOME` variable to execute git push from Windows.
 
-#### diff
-
-The package prettier-js requires diff, which isn't installed on Windows.
-
-If Chocolatey is installed on Windows, then diff can be installed with the command below.
-
-``` shell
-choco install diffutils
-```
-
 ### Fonts
 
 #### all-the-icons.el fonts
@@ -179,7 +169,7 @@ The package dumb-jump is configured to use [RipGrep](https://github.com/BurntSus
 
 Many dependencies of this Emacs configuration need a JDK available in the path of the OS. The following commands should print the versions of the JRE and JDK currently available.
 
-``` shell
+```shell
 java -version
 javac -version
 ```
@@ -196,7 +186,7 @@ doctoc is a JavaScript library used to generate the table of contents of a Markd
 
 doctoc can be installed with npm.
 
-``` shell
+```shell
 npm install -g doctoc
 ```
 
@@ -204,7 +194,7 @@ npm install -g doctoc
 
 The HTML Language Server is used by lsp-mode.
 
-``` shell
+```shell
 npm install -g vscode-html-languageserver-bin
 ```
 
@@ -212,7 +202,7 @@ npm install -g vscode-html-languageserver-bin
 
 [js-yaml](https://github.com/nodeca/js-yaml) is a JavaScript YAML parser. It is used by Flycheck to check YAML files.
 
-``` shell
+```shell
 npm install -g js-yaml
 ```
 
@@ -220,7 +210,7 @@ npm install -g js-yaml
 
 The JSON language server is used by lsp-mode.
 
-``` shell
+```shell
 npm i -g vscode-json-languageserver
 ```
 
@@ -228,7 +218,7 @@ npm i -g vscode-json-languageserver
 
 Prettier must be installed for the prettier-js package.
 
-``` shell
+```shell
 npm install -g prettier
 ```
 
@@ -236,13 +226,13 @@ npm install -g prettier
 
 [stylelint](https://stylelint.io/) is used for static analysis of CSS, SASS and LESS files.
 
-``` shell
+```shell
 npm install -g stylelint
 ```
 
 A stylelint configuration can be installed globally.
 
-``` shell
+```shell
 npm install -g stylelint-config-standard
 ```
 
@@ -268,7 +258,7 @@ npm install -g tslint typescript typescript-language-server
 
 The VS Code CSS language server is used by lsp-mode for CSS, Less, SASS and SCSS.
 
-``` shell
+```shell
 npm install -g vscode-css-languageserver-bin
 ```
 
@@ -276,7 +266,7 @@ npm install -g vscode-css-languageserver-bin
 
 The YAML language server is used by lsp-mode for YAML files.
 
-``` shell
+```shell
 npm install -g yaml-language-server
 ```
 

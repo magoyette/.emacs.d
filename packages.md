@@ -124,7 +124,7 @@
 
 - [json-mode](https://github.com/joshwnj/json-mode): Mode for JSON files.
 - [json-reformat](https://github.com/gongo/json-reformat): Mode to reformat JSON files.
-- [prettier-js](https://github.com/prettier/prettier-emacs/): Format with Prettier.
+- [prettier](https://github.com/jscheid/prettier.el): Format with Prettier.
 - [sass-mode](https://github.com/nex3/sass-mode): Mode for .sass Sass files.
 - [typescript-mode](https://github.com/ananthakumaran/typescript.el): Mode for TypeScript files.
 - [web-mode](http://web-mode.org/): Mode for web templates.
