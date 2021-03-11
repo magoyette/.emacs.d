@@ -46,8 +46,8 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [stylelint](#stylelint)
     - [swagger-cli](#swagger-cli)
     - [TypeScript and tslint](#typescript-and-tslint)
-  - [VS Code CSS Language Server](#vs-code-css-language-server)
-  - [YAML Language Server](#yaml-language-server)
+    - [VS Code CSS Language Server](#vs-code-css-language-server)
+    - [YAML Language Server](#yaml-language-server)
   - [Flycheck checkers](#flycheck-checkers)
     - [hadolint](#hadolint)
     - [ShellCheck](#shellcheck)
@@ -249,7 +249,7 @@ npm install -g tslint typescript typescript-language-server
 
 [tslint rules](https://palantir.github.io/tslint/rules/)
 
-### VS Code CSS Language Server
+#### VS Code CSS Language Server
 
 The VS Code CSS language server is used by lsp-mode for CSS, Less, SASS and SCSS.
 
@@ -257,7 +257,7 @@ The VS Code CSS language server is used by lsp-mode for CSS, Less, SASS and SCSS
 npm install -g vscode-css-languageserver-bin
 ```
 
-### YAML Language Server
+#### YAML Language Server
 
 The YAML language server is used by lsp-mode for YAML files.
 
