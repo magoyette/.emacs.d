@@ -14,15 +14,6 @@
   :config
   (setq json-reformat:indent-width 2))
 
-(use-package js2-mode
-  :hook (js-mode . js2-minor-mode)
-  :config
-  (add-to-list 'interpreter-mode-alist '("node" . js2-mode)))
-
-(use-package js2-refactor
-  :after js2-mode
-  :hook (js2-mode . js2-refactor-mode))
-
 (use-package typescript-mode
   :mode (("\\.ts$" . typescript-mode))
   :init

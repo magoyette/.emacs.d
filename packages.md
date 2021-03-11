@@ -3,7 +3,6 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
 - [init.el packages](#initel-packages)
 - [Edition packages](#edition-packages)
 - [Navigation and search packages](#navigation-and-search-packages)
@@ -123,8 +122,6 @@
 
 ## Web packages
 
-- [js2-mode](https://github.com/mooz/js2-mode): Mode for JavaScript.
-- [js2-refactor](https://github.com/magnars/js2-refactor.el): Mode to refactor JavaScript code.
 - [json-mode](https://github.com/joshwnj/json-mode): Mode for JSON files.
 - [json-reformat](https://github.com/gongo/json-reformat): Mode to reformat JSON files.
 - [prettier-js](https://github.com/prettier/prettier-emacs/): Format with Prettier.
