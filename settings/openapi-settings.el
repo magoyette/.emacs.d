@@ -1,6 +1,3 @@
-(use-package flycheck-swagger-tools
-  :ensure nil)
-
 (use-package flycheck-swagger-cli
   :ensure nil)
 

@@ -1,9 +1,6 @@
 [submodule "submodules/doctoc.el"]
 	path = submodules/doctoc.el
 	url = https://github.com/magoyette/doctoc.el.git
-[submodule "submodules/flycheck-swagger-tools"]
-	path = submodules/flycheck-swagger-tools
-	url = https://github.com/magoyette/flycheck-swagger-tools.git
 [submodule "submodules/openapi-yaml-mode"]
 	path = submodules/openapi-yaml-mode
 	url = https://github.com/magoyette/openapi-yaml-mode.git

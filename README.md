@@ -21,7 +21,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 - [Git Submodules](#git-submodules)
   - [doctoc.el](#doctocel)
   - [flycheck-swagger-cli](#flycheck-swagger-cli)
-  - [flycheck-swagger-tools](#flycheck-swagger-tools)
   - [openapi-yaml-mode](#openapi-yaml-mode)
   - [twee-mode](#twee-mode)
   - [twee-chapbook-mode](#twee-chapbook-mode)
@@ -45,7 +44,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [JSON Language Server](#json-language-server)
     - [prettier](#prettier)
     - [stylelint](#stylelint)
-    - [swagger-tools](#swagger-tools)
+    - [swagger-cli](#swagger-cli)
     - [TypeScript and tslint](#typescript-and-tslint)
   - [VS Code CSS Language Server](#vs-code-css-language-server)
   - [YAML Language Server](#yaml-language-server)
@@ -113,11 +112,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 
 ### flycheck-swagger-cli
 
-[flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli) is a Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-cli.
-
-### flycheck-swagger-tools
-
-[flycheck-swagger-tools](https://github.com/magoyette/flycheck-swagger-tools) is a Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-tools.
+[flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli) is a Flycheck checker for OpenAPI and Swagger files that uses swagger-cli.
 
 ### openapi-yaml-mode
 
@@ -236,12 +231,12 @@ A stylelint configuration can be installed globally.
 npm install -g stylelint-config-standard
 ```
 
-#### swagger-tools
+#### swagger-cli
 
-[Swagger Tools](https://github.com/apigee-127/swagger-tools/blob/master/docs/CLI.md) provides JavaScript tools to work with Swagger. It is used by Swaggermacs to check Swagger documents with Flycheck.
+[Swagger/OpenAPI CLI](https://github.com/APIDevTools/swagger-cli) provides JavaScript tools to work with Swagger/OpenAPI. It is used by [flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli) to validate Swagger/OpenAPI documents with Flycheck.
 
 ```
-npm install -g swagger-tools
+npm install -g @apidevtools/swagger-cli
 ```
 
 #### TypeScript and tslint
