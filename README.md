@@ -22,8 +22,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
   - [doctoc.el](#doctocel)
   - [flycheck-swagger-cli](#flycheck-swagger-cli)
   - [openapi-yaml-mode](#openapi-yaml-mode)
-  - [twee-mode](#twee-mode)
-  - [twee-chapbook-mode](#twee-chapbook-mode)
 - [External dependencies](#external-dependencies)
   - [Windows OS setup](#windows-os-setup)
     - [Windows HOME variable](#windows-home-variable)
@@ -117,14 +115,6 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
 ### openapi-yaml-mode
 
 [openapi-yaml-mode](https://github.com/magoyette/openapi-yaml-mode) is a major mode for OpenAPI YAML files.
-
-### twee-mode
-
-[twee-mode](https://github.com/magoyette/twee-mode) provide a minor mode for [Twine](http://twinery.org/) interactive fictions written with Twee files.
-
-### twee-chapbook-mode
-
-[twee-chapbook-mode](https://github.com/magoyette/twee-chapbook-mode) provide a major mode to write [Twine](http://twinery.org/) interactive fictions in the [Chapbook](https://github.com/klembot/chapbook) story format.
 
 ## External dependencies
 

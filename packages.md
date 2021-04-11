@@ -21,7 +21,6 @@
 - [LSP packages](#lsp-packages)
 - [Docker packages](#docker-packages)
 - [OpenAPI packages](#openapi-packages)
-- [Twee packages](#twee-packages)
 - [Theme packages](#theme-packages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -154,11 +153,6 @@
 
 - [flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli): Flycheck checker for OpenAPI 2 and Swagger files that uses swagger-cli.
 - [openapi-yaml-mode](https://github.com/magoyette/openapi-yaml-mode): Major mode for OpenAPI YAML files.
-
-## Twee packages
-
-- [twee-mode](https://github.com/magoyette/twee-mode) provide a minor mode for [Twine](http://twinery.org/) interactive fictions written with Twee files.
-- [twee-chapbook-mode](https://github.com/magoyette/twee-chapbook-mode) provide a major mode to write [Twine](http://twinery.org/) interactive fictions in the [Chapbook](https://github.com/klembot/chapbook) story format.
 
 ## Theme packages
 
