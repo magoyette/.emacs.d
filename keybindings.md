@@ -23,7 +23,6 @@
 - [Git](#git)
   - [Magit blame](#magit-blame)
   - [Magit commit](#magit-commit)
-  - [Git timemachine](#git-timemachine)
 - [Org mode](#org-mode)
 - [Markdown](#markdown)
 - [Spelling and Grammar](#spelling-and-grammar)
@@ -220,16 +219,6 @@
 | ---------- | ------------- |
 | C-c C-c    | Finish commit |
 | C-c C-k    | Cancel commit |
-
-### Git timemachine
-
-| Keybinding | Action                                    |
-| ---------- | ----------------------------------------- |
-| p          | previous version                          |
-| n          | next version                              |
-| b          | Magit blame on current revision           |
-| w          | copy abbreviated hash of current revision |
-| q          | exit Git timemachine                      |
 
 ## Org mode
 

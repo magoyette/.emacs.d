@@ -104,7 +104,6 @@
 
 - [diff-hl](https://github.com/dgutov/diff-hl): Highlight uncommited changes.
 - [git-modes](https://github.com/magit/git-modes): Modes for gitconfig, gitattributes and gitignore files.
-- [git-timemachine](https://gitlab.com/pidu/git-timemachine): Package to navigate through the versions of a file tracked with Git.
 - [magit](https://github.com/magit/magit): Git porcelain for Emacs.
 
 ## Org packages

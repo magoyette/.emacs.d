@@ -69,10 +69,6 @@
    "g n" '(diff-hl-next-hunk :which-key "next hunk")
    "g p" '(diff-hl-previous-hunk :which-key "previous hunk")))
 
-(use-package git-timemachine
-  :general
-  ("C-c g t" '(git-timemachine :which-key "timemachine")))
-
 ;; Source: https://github.com/alphapapa/unpackaged.el#smerge-mode
 (use-package smerge-mode
   :after hydra
