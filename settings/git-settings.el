@@ -15,8 +15,8 @@
   :general
   ("C-c g g" '(magit-status :which-key "status")
    "C-c g b" '(magit-blame :which-key "blame")
-   "C-c g f" '(magit-file-popup :which-key "file")
-   "C-c g c" '(magit-dispatch-popup :which-key "commands")
+   "C-c g f" '(magit-file-dispatch :which-key "file")
+   "C-c g c" '(magit-dispatch :which-key "commands")
    "C-c g r" '(magit-list-repositories :which-key "repositories"))
   :config
   (if (eq system-type 'windows-nt)
