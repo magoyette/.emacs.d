@@ -9,11 +9,6 @@
   :config
   (setq js-indent-level 2))
 
-(use-package json-reformat
-  :after json-mode
-  :config
-  (setq json-reformat:indent-width 2))
-
 (use-package typescript-mode
   :mode (("\\.ts$" . typescript-mode))
   :init
