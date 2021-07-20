@@ -69,7 +69,7 @@ _Q__regex replace
   :defer t
   :bind
   (:map global-map
-        ("M-0" . treemacs-select-window)
+        ("M-a" . treemacs-select-window)
         ("C-c t d" . treemacs-delete-other-windows)
         ("C-c t t" . treemacs)
         ("C-c t b" . treemacs-bookmark)

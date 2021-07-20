@@ -168,7 +168,7 @@
 
 | Keybinding      | Action                         |
 | --------------- | ------------------------------ |
-| M-0             | Select or open Treemacs window |
+| M-a             | Select or open Treemacs window |
 | C-c t           | Treemacs commands prefix       |
 | ? [in Treemacs] | Treemacs hydra                 |
 
