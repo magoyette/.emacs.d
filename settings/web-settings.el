@@ -30,7 +30,13 @@
   (setq web-mode-enable-current-element-highlight t))
 
 (use-package prettier
-  :config
-  (add-hook 'after-init-hook #'global-prettier-mode))
+  :hook ((css-mode . prettier-mode)
+         (js-mode . prettier-mode)
+         (json-mode . prettier-mode)
+         (markdown-mode . prettier-mode)
+         (sass-mode . prettier-mode)
+         (typescript-mode . prettier-mode)
+         (web-mode . prettier-mode)
+         (yaml-mode . prettier-mode)))
 
 (provide 'web-settings)
