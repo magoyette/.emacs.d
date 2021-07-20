@@ -16,7 +16,8 @@
 
 (use-package web-mode
   :mode (("\\.html?\\'" . web-mode)
-         ("\\.[agj]sp\\'" . web-mode))
+         ("\\.[agj]sp\\'" . web-mode)
+         ("\\.tsx\\'" . web-mode))
   :config
   ;; HTML indentation
   (setq web-mode-markup-indent-offset 2)
@@ -28,6 +29,13 @@
   (setq web-mode-code-indent-offset 2)
 
   (setq web-mode-enable-current-element-highlight t))
+
+  (add-hook 'web-mode-hook
+            (lambda ()
+              (when (string-equal "tsx" (file-name-extension buffer-file-name))
+                (progn
+                  (flycheck-add-mode 'javascript-eslint 'web-mode)
+                  (flycheck-add-next-checker 'lsp 'javascript-eslint)))))
 
 (use-package prettier
   :hook ((css-mode . prettier-mode)
