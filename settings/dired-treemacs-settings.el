@@ -75,18 +75,8 @@ _Q__regex replace
         ("C-c t b" . treemacs-bookmark)
         ("C-c t f" . treemacs-find-file)
         ("C-c t T" . treemacs-find-tag)
-        ("C-c t p" . treemacs-projectile))
-  :config
-  (treemacs-follow-mode t)
-  (treemacs-filewatch-mode t)
-  (treemacs-fringe-indicator-mode t)
-
-  (pcase (cons (not (null (executable-find "git")))
-               (not (null treemacs-python-executable)))
-    (`(t . t)
-     (treemacs-git-mode 'deferred))
-    (`(t . _)
-     (treemacs-git-mode 'simple))))
+        ("C-c t p" . treemacs-projectile)
+        ("C-c t e" . treemacs-edit-workspaces)))
 
 (use-package treemacs-projectile
   :after treemacs projectile)
