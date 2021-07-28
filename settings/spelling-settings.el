@@ -1,10 +1,10 @@
-(which-key-add-key-based-replacements "C-c L" "langtool")
-
 (use-package langtool
   :bind (("C-c L c" . langtool-check)
          ("C-c L d" . langtool-check-done)
          ("C-c L s" . langtool-switch-default-language)
          ("C-c L b" . langtool-correct-buffer))
+  :init
+  (which-key-add-key-based-replacements "C-c L" "langtool")
   :config
   ;; Display message at point with popup
   (defun langtool-autoshow-detail-popup (overlays)

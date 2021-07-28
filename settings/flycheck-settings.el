@@ -2,6 +2,8 @@
 
 (use-package flycheck
   :diminish flycheck-mode
+  :init
+  (which-key-add-key-based-replacements "C-c !" "flycheck")
   :config
   (global-flycheck-mode)
 

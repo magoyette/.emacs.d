@@ -16,9 +16,9 @@
 
 (use-package visual-regexp
   :general
-  ("C-c s g" '(vr/replace :which-key "replace")
-   "C-c s q" '(vr/replace :which-key "query-replace")
-   "C-c s c" '(vr/mc-mark :which-key "select-multiple-cursors")))
+  ("C-c s g" '(vr/replace :which-key "regex-replace")
+   "C-c s q" '(vr/query-replace :which-key "regex-query-replace")
+   "C-c s c" '(vr/mc-mark :which-key "regex-multiple-cursors")))
 
 (global-set-key (kbd "C-c s r") 're-builder)
 
@@ -40,6 +40,8 @@
 
 (use-package projectile
   :bind-keymap ("C-c p" . projectile-command-map)
+  :init
+  (which-key-add-key-based-replacements "C-c p" "projectile")
   :config
   (setq projectile-enable-caching t)
 

@@ -9,8 +9,6 @@
 (use-package gitignore-mode
   :mode (("\\.gitignore$" . gitignore-mode)))
 
-(which-key-add-key-based-replacements "C-c g" "Git")
-
 (use-package magit
   :general
   ("C-c g g" '(magit-status :which-key "status")
@@ -18,6 +16,8 @@
    "C-c g f" '(magit-file-dispatch :which-key "file")
    "C-c g c" '(magit-dispatch :which-key "commands")
    "C-c g r" '(magit-list-repositories :which-key "repositories"))
+  :init
+  (which-key-add-key-based-replacements "C-c g" "git")
   :config
   (if (eq system-type 'windows-nt)
       (setenv "GIT_ASKPASS" "git-gui--askpass"))

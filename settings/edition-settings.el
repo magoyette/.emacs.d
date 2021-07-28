@@ -42,6 +42,8 @@
   (winner-mode 1))
 
 (use-package typo
+  :init
+  (which-key-add-key-based-replacements "C-c 8" "typography")
   :config
   (typo-global-mode))
 

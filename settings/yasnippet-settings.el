@@ -1,5 +1,7 @@
 (use-package yasnippet
   :diminish yas-minor-mode
+  :init
+  (which-key-add-key-based-replacements "C-c &" "yasnippet")
   :config
   (yas-global-mode 1))
 

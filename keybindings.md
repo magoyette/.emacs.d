@@ -3,74 +3,81 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Help](#help)
-- [Packages](#packages)
-- [Files and buffers](#files-and-buffers)
-- [Windows](#windows)
+- [General](#general)
+- [Files and Buffers](#files-and-buffers)
+- [Search and Navigation](#search-and-navigation)
 - [Edition](#edition)
   - [Undo tree](#undo-tree)
   - [Rectangle mark mode](#rectangle-mark-mode)
   - [Multiple cursors](#multiple-cursors)
-- [Navigate in current buffer](#navigate-in-current-buffer)
-- [Search in buffers](#search-in-buffers)
-  - [Search in files](#search-in-files)
-- [Terminal](#terminal)
-- [Dired](#dired)
-- [Treemacs](#treemacs)
-- [Company](#company)
-- [Fonts](#fonts)
-- [Theme](#theme)
 - [Git](#git)
   - [Magit blame](#magit-blame)
   - [Magit commit](#magit-commit)
 - [Org mode](#org-mode)
 - [Markdown](#markdown)
-- [Spelling and Grammar](#spelling-and-grammar)
-- [Flycheck](#flycheck)
-  - [Flycheck error list](#flycheck-error-list)
-- [YASnippet](#yasnippet)
 - [REST](#rest)
 - [YAML](#yaml)
-- [Emacs Lisp](#emacs-lisp)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## Help
+## General
 
-| Keybinding | Action               |
-| ---------- | -------------------- |
-| C-c h      | Help commands prefix |
+| Keybinding | Action                                                        |
+| ---------- | ------------------------------------------------------------- |
+| C-c h      | Help commands prefix                                          |
+| C-x p      | List packages                                                 |
+| M-z        | Switch to another window                                      |
+| C-c w      | Hydra for windows management                                  |
+| C-c T      | Terminal commands prefix                                      |
+| F5         | Alternate between the Modus Operandi and Modus Vivendi themes |
+| C-+        | Increase text scale                                           |
+| C--        | Decrease text scale                                           |
+| C-x C-e    | evaluate the expression before point                          |
+| C-M-x      | evaluate top-level expression containing or following point   |
 
-## Packages
-
-| Keybinding | Action        |
-| ---------- | ------------- |
-| C-x p      | List packages |
-
-## Files and buffers
+## Files and Buffers
 
 | Keybinding | Action                                                    |
 | ---------- | --------------------------------------------------------- |
 | C-x C-r    | List recent files                                         |
 | C-x C-b    | List buffers                                              |
 | C-x C-f    | Find files                                                |
-| C-x d      | Open dired                                                |
-| C-x M-b    | Go to a bookmark or create a bookmark                     |
 | M-x        | Execute                                                   |
 | C-c k      | Kill all open buffers except the current buffer           |
 | C-c r      | Rename current buffer and its visiting file if it has one |
 
-## Windows
+## Search and Navigation
 
-| Keybinding | Action                       |
-| ---------- | ---------------------------- |
-| M-z        | Switch to another window     |
-| C-c w      | Hydra for windows management |
+| Keybinding      | Action                                        |
+| --------------- | --------------------------------------------- |
+| C-c s           | Search & replace commands prefix              |
+| C-s             | Search in buffer                              |
+| C-M-s           | Search in all opened buffers                  |
+| M-i             | imenu in buffer                               |
+| C-c s r         | re-builder (C-c <tab> to change regex syntax) |
+| M-s             | Hydra for dumb-jump                           |
+| C-c p           | Projectile commands prefix                    |
+| C-x d           | Dired (Hydra with .)                          |
+| M-a             | Select or open Treemacs window                |
+| C-c t           | Treemacs commands prefix                      |
+| ? [in Treemacs] | Treemacs hydra                                |
+| C-x M-b         | Go to a bookmark or create a bookmark         |
+| M-g M-g         | Go to line number of buffer                   |
+| C-,             | Input one char, then jump to a character      |
+| C-'             | Input 2 chars, then jump to a character       |
+| C-c a           | Hydra for avy                                 |
 
 ## Edition
 
 | Keybinding | Action                                                            |
 | ---------- | ----------------------------------------------------------------- |
+| TAB        | Company mode expand                                               |
+| C-c f      | Trigger expanson of a file path with company                      |
+| C-c TAB    | Company mode expand                                               |
+| C-c !      | Flycheck commands prefix                                          |
+| C-c L      | LanguageTool commands prefix                                      |
+| C-c y      | Select a snippet (yasnippet)                                      |
+| C-c &      | yasnippet commands prefix                                         |
 | C-c e      | Edition commands prefix                                           |
 | S-RET      | Add a new line below                                              |
 | C-S-RET    | Add a new line above                                              |
@@ -89,8 +96,7 @@
 | C-u C-x n  | Narrow a narrowed buffer                                          |
 | M-,        | Insert a ’ character                                              |
 | C-x 8      | Unicode characters                                                |
-| C-c 8      | Insert Unicode characters with typo.el                            |
-| C-c 8 SPC  | Insert a non-break space with typo.el                             |
+| C-c 8      | Typography commands prefix (with typo.el)                         |
 
 ### Undo tree
 
@@ -120,84 +126,11 @@
 | C-j         | Insert a newline in multiple cursors mode                              |
 | C-c C-<     | Add a cursor to all expressions in the buffer like the selected region |
 
-## Navigate in current buffer
-
-| Keybinding | Action                                   |
-| ---------- | ---------------------------------------- |
-| M-g M-g    | Go to line number of buffer              |
-| C-,        | Input one char, then jump to a character |
-| C-'        | Input 2 chars, then jump to a character  |
-| C-c a      | Hydra for avy                            |
-
-## Search in buffers
-
-| Keybinding | Action                                        |
-| ---------- | --------------------------------------------- |
-| C-c s      | Command prefix for search                     |
-| C-s        | Search in buffer                              |
-| C-M-s      | Search in all opened buffers                  |
-| C-c s g    | Regex replace                                 |
-| C-c s q    | Regex query replace                           |
-| C-c s c    | Select multiple cursors with regex            |
-| M-i        | imenu in buffer                               |
-| C-s s i    | imenu on all opened buffers                   |
-| C-c s r    | re-builder (C-c <tab> to change regex syntax) |
-
-### Search in files
-
-| Keybinding | Action                               |
-| ---------- | ------------------------------------ |
-| C-c s d    | Search files with Ripgrep (deadgrep) |
-| C-c s s    | Search files with Ripgrep (counsel)  |
-| M-s        | Hydra for dumb-jump                  |
-| C-c p      | Command prefix for projectile        |
-
-## Terminal
-
-| Keybinding | Action                   |
-| ---------- | ------------------------ |
-| C-c T      | Terminal commands prefix |
-
-## Dired
-
-| Keybinding | Action               |
-| ---------- | -------------------- |
-| C-x d      | Dired (Hydra with .) |
-
-## Treemacs
-
-| Keybinding      | Action                         |
-| --------------- | ------------------------------ |
-| M-a             | Select or open Treemacs window |
-| C-c t           | Treemacs commands prefix       |
-| ? [in Treemacs] | Treemacs hydra                 |
-
-## Company
-
-| Keybinding | Action                                       |
-| ---------- | -------------------------------------------- |
-| TAB        | Company mode expand                          |
-| C-c f      | Trigger expanson of a file path with company |
-| C-c TAB    | Company mode expand                          |
-
-## Fonts
+## Git
 
 | Keybinding | Action              |
 | ---------- | ------------------- |
-| C-+        | Increase text scale |
-| C--        | Decrease text scale |
-
-## Theme
-
-| Keybinding | Action                                                        |
-| ---------- | ------------------------------------------------------------- |
-| F5         | Alternate between the Modus Operandi and Modus Vivendi themes |
-
-## Git
-
-| Keybinding | Action                  |
-| ---------- | ----------------------- |
-| C-c g      | Prefix for Git commands |
+| C-c g      | Git commands prefix |
 
 ### Magit blame
 
@@ -224,7 +157,7 @@
 
 | Keybinding | Action                                                                      |
 | ---------- | --------------------------------------------------------------------------- |
-| C-c o      | Prefix for Org commands                                                     |
+| C-c o      | Org commands prefix                                                         |
 | M-O        | Select a link to jump to with avy                                           |
 | C-c / T    | Search for a specific TODO keyword and display the results in a sparse tree |
 
@@ -244,40 +177,6 @@
 | C-c C-p    | Move to previous heading                                    |
 | C-c C-d    | Generate a table of contents with DocToc                    |
 
-## Spelling and Grammar
-
-| Keybinding | Action                                            |
-| ---------- | ------------------------------------------------- |
-| C-c L      | LanguageTool prefix (spelling, grammar and style) |
-
-## Flycheck
-
-| Keybinding | Action                                                                    |
-| ---------- | ------------------------------------------------------------------------- |
-| C-c ! n    | Jump to next error                                                        |
-| M-g n      | Jump to next error                                                        |
-| C-c ! p    | Jump to previous error                                                    |
-| M-g p      | Jump to previous error                                                    |
-| C-c ! l    | List all errors in buffer                                                 |
-| C-c ! v    | Verify the Flycheck setup for current buffer and display enabled checkers |
-| C-c ! ?    | Prompt for a checker and display its documentation                        |
-
-### Flycheck error list
-
-| Keybinding | Action                             |
-| ---------- | ---------------------------------- |
-| RET        | Go to current error                |
-| n          | jump to next error                 |
-| p          | jump to previous error             |
-| g          | check buffer and update error list |
-| q          | quit error list                    |
-
-## YASnippet
-
-| Keybinding | Action           |
-| ---------- | ---------------- |
-| C-y        | Select a snippet |
-
 ## REST
 
 | Keybinding | Action                                |
@@ -290,10 +189,3 @@
 | Keybinding | Action             |
 | ---------- | ------------------ |
 | C-c >      | indent-tools hydra |
-
-## Emacs Lisp
-
-| Keybinding | Action                                                      |
-| ---------- | ----------------------------------------------------------- |
-| C-x C-e    | evaluate the expression before point                        |
-| C-M-x      | evaluate top-level expression containing or following point |

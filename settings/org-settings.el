@@ -1,8 +1,5 @@
 (require 'use-package)
 
-(which-key-add-key-based-replacements "C-c o" "Org")
-(which-key-add-key-based-replacements "C-c t" "Org Clock")
-
 (use-package ob-restclient
   :after restclient)
 
@@ -13,6 +10,9 @@
          ("C-c o a" . org-agenda)
          ("C-c o I" . org-clock-in-last)
          ("C-c o o" . org-clock-out))
+  :init
+  (which-key-add-key-based-replacements "C-c o" "org")
+  (which-key-add-key-based-replacements "C-c t" "org clock")
   :config
 
   (add-hook 'org-mode-hook 'visual-line-mode)

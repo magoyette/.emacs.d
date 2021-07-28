@@ -39,15 +39,14 @@
 
 (use-package which-key
   :diminish which-key-mode
+  :bind (("C-c h m" . which-key-show-major-mode))
   :config
   (which-key-mode)
 
-  (which-key-add-key-based-replacements "C-c e" "Edition")
-  (which-key-add-key-based-replacements "C-c h" "Help")
-  (which-key-add-key-based-replacements "C-c s" "Search & Replace")
-  (which-key-add-key-based-replacements "C-c t" "Terminal")
-
-  (global-set-key (kbd "C-c h m") 'which-key-show-major-mode))
+  (which-key-add-key-based-replacements "C-c e" "edition")
+  (which-key-add-key-based-replacements "C-c h" "help")
+  (which-key-add-key-based-replacements "C-c s" "search & replace")
+  (which-key-add-key-based-replacements "C-c T" "terminal"))
 
 ;; Used by ivy to show recent commands in M-x
 (use-package smex)
