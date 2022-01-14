@@ -50,6 +50,9 @@
   ;; Allow M-RET to create a new item without splitting the current line
   (setq org-M-RET-may-split-line '((item . nil)))
 
+  ;; Do not indent text below a headline
+  (setq org-adapt-indentation nil)
+
   ;; Configure org babel languages
   (org-babel-do-load-languages
    'org-babel-load-languages
