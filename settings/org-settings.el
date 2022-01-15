@@ -53,6 +53,9 @@
   ;; Do not indent text below a headline
   (setq org-adapt-indentation nil)
 
+  ;; Start with the headlines folded
+  (setq org-startup-folded t)
+
   ;; Configure org babel languages
   (org-babel-do-load-languages
    'org-babel-load-languages
