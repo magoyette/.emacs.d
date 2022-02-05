@@ -42,9 +42,8 @@
   :init
   (setq modus-themes-bold-constructs t
         modus-themes-fringes 'subtle
-        modus-themes-intense-hl-line t
-        modus-themes-region 'bg-only
-        modus-themes-org-blocks 'grayscale)
+        modus-themes-region '(bg-only)
+        modus-themes-org-blocks 'gray-background)
 
   (modus-themes-load-themes)
   :config
