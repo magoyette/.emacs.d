@@ -1,13 +1,9 @@
 (require 'use-package)
 
-(use-package gitattributes-mode
-  :mode (("\\.gitattributes$" . gitattributes-mode)))
-
-(use-package gitconfig-mode
-  :mode (("\\.gitconfig$" . gitconfig-mode)))
-
-(use-package gitignore-mode
-  :mode (("\\.gitignore$" . gitignore-mode)))
+(use-package git-modes
+  :mode (("\\.gitattributes$" . gitattributes-mode)
+         ("\\.gitconfig$" . gitconfig-mode)
+         ("\\.gitignore$" . gitignore-mode)))
 
 (use-package magit
   :general
