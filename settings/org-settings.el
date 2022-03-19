@@ -36,11 +36,11 @@
         '((sequence "TODO(t)" "NEXT(n)" "STARTED(s)" "WAIT(w)" "|" "DONE(d)")))
 
   (setq org-todo-keyword-faces
-        '(("TODO" . '((t (:inherit font-lock-negation-char-face :weight bold))))
-          ("NEXT" . '((t (:inherit font-lock-constant-face :weight bold))))
-          ("STARTED" . '((t (:inherit font-lock-builtin-face :weight bold))))
-          ("WAIT" . '((t (:inherit font-lock-comment-face :weight bold))))
-          ("DONE" . '((t (:inherit font-lock-type-face))))))
+        '(("TODO" (:inherit font-lock-negation-char-face :weight bold))
+          ("NEXT" (:inherit font-lock-constant-face :weight bold))
+          ("STARTED" (:inherit font-lock-builtin-face :weight bold))
+          ("WAIT" (:inherit font-lock-comment-face :weight bold))
+          ("DONE" (:inherit font-lock-type-face :weight bold))))
 
   (setq org-agenda-window-setup 'current-window)
 
@@ -55,6 +55,9 @@
 
   ;; Start with the headlines folded
   (setq org-startup-folded t)
+
+  ;; Do not change color of DONE headings
+  (setq org-fontify-done-headline nil)
 
   ;; Configure org babel languages
   (org-babel-do-load-languages
