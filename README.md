@@ -110,7 +110,7 @@ Run `install-node-deps.sh` to install the Node dependencies of this configuratio
 
 Node dependencies:
 
-- [doctoc](https://github.com/thlorenz/doctoc) to generate the table of contents of a Markdown file.
+- [doctoc](https://github.com/thlorenz/doctoc) to generate the table of contents of a Markdown file with the script `generate-toc.sh`.
 - [eslint](https://eslint.org/) to lint JavaScript and TypeScript files.
 - [js-yaml](https://github.com/nodeca/js-yaml) is used by Flycheck to check YAML files.
 - Language servers for lsp mode (CSS, Less, HTML, JavaScript, JSON, SASS, SCSS, Typescript, YAML).
@@ -127,6 +127,14 @@ This Emacs configuration need a JDK available in the path of the OS.
 [LanguageTool](https://www.languagetool.org/) is a tool for language spelling, style and grammar.
 
 The variable `langtool-language-tool-jar` must be configured with its path in the file `local-settings.el`.
+
+## Generating the tables of contents
+
+The tables of contents of this repository are generated with a Bash script.
+
+```shell
+./generate-toc.sh
+```
 
 ## Keybindings
 

@@ -115,7 +115,6 @@
 
 ## Markdown packages
 
-- [doctoc.el](https://github.com/magoyette/doctoc.el): Support for [DocToc](https://github.com/thlorenz/doctoc) in Emacs.
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/): Mode for Markdown files.
 
 ## Web packages

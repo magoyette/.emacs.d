@@ -158,7 +158,6 @@
 ;;;;; Load settings and features
 
 ;; Add Git submodules for packages not on Elpa or Melpa
-(add-to-list 'load-path "~/.emacs.d/submodules/doctoc.el/")
 (add-to-list 'load-path "~/.emacs.d/submodules/flycheck-swagger-cli/")
 (add-to-list 'load-path "~/.emacs.d/submodules/openapi-yaml-mode/")
 

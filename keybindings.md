@@ -175,7 +175,6 @@
 | M-LEFT     | Decrease indent of list item                                |
 | C-c C-n    | Move to next heading                                        |
 | C-c C-p    | Move to previous heading                                    |
-| C-c C-d    | Generate a table of contents with DocToc                    |
 
 ## REST
 
