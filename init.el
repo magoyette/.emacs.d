@@ -27,10 +27,6 @@
   (setq auto-save-file-name-transforms
       `((".*" ,(no-littering-expand-var-file-name "auto-save/") t))))
 
-(use-package benchmark-init
-  :config
-  (benchmark-init/activate))
-
 (use-package diminish
   :config
   (diminish 'visual-line-mode))

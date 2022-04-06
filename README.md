@@ -32,6 +32,7 @@ git clone --recursive https://github.com/magoyette/.emacs.d.git
     - [Node and npm](#node-and-npm)
   - [Java Tools](#java-tools)
     - [LanguageTool](#languagetool)
+- [Generating the tables of contents](#generating-the-tables-of-contents)
 - [Keybindings](#keybindings)
 - [Packages](#packages)
 

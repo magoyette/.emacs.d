@@ -28,7 +28,6 @@
 ## init.el packages
 
 - [avy](https://github.com/abo-abo/avy): Jump to a specific position in buffer.
-- [benchmark-init](https://github.com/dholm/benchmark-init-el): Benchmark the loading time of Emacs packages.
 - [counsel](https://github.com/abo-abo/swiper): Alternatives to common commands that leverage Ivy.
 - [crux](https://github.com/bbatsov/crux): Extensions for Emacs.
 - [diminish](https://github.com/emacsmirror/diminish): Hide or abbreviate minor modes.
