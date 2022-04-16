@@ -2,6 +2,8 @@
 
 My personal Emacs configuration. It requires Emacs 27.
 
+This project is now archived and no longer maintained.
+
 This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they are included as Git submodules.
 
 This repository should be cloned in the home folder of the current user with the recursive option to load the submodules immediately.
