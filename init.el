@@ -160,7 +160,6 @@
 (if (file-exists-p "~/.emacs.d/local-settings.el")
     (load "~/.emacs.d/local-settings.el"))
 
-;; Core settings
 (require 'edition-settings)
 (require 'navigation-search-settings)
 (require 'dired-treemacs-settings)
@@ -169,23 +168,12 @@
 (require 'yasnippet-settings)
 (require 'flycheck-settings)
 (require 'spelling-settings)
-
-;; Tools
 (require 'shell-settings)
 (require 'git-settings)
-
-;; Web & markup
 (require 'markdown-settings)
 (require 'web-settings)
 (require 'yaml-settings)
 (require 'rest-settings)
-
-;; Programming
-(require 'docker-settings)
 (require 'lsp-settings)
-
-;; Org
 (require 'org-settings)
-
-;; Emacs Theme
 (require 'theme-settings)

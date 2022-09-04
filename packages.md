@@ -19,7 +19,6 @@
 - [YAML packages](#yaml-packages)
 - [REST packages](#rest-packages)
 - [LSP packages](#lsp-packages)
-- [Docker packages](#docker-packages)
 - [Theme packages](#theme-packages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -137,12 +136,6 @@
 - [lsp-mode](https://github.com/emacs-lsp/lsp-mode): Language Server Protocol support for Emacs.
 - [lsp-treemacs](https://github.com/emacs-lsp/lsp-treemacs): Integrate lsp-mode with treemacs.
 - [lsp-ui](https://github.com/emacs-lsp/lsp-ui): Additional UI features for lsp-mode.
-
-## Docker packages
-
-- [dockerfile-mode](https://github.com/spotify/dockerfile-mode): Mode to edit Dockerfiles.
-- [docker.el](https://github.com/Silex/docker.el): Commands to manage Docker from Emacs.
-- [docker-tramp.el](https://github.com/emacs-pe/docker-tramp.el): A TRAMP method to connect to Docker containers.
 
 ## Theme packages
 

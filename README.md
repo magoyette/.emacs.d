@@ -17,7 +17,6 @@ This repository should be cloned in the home folder of the current user.
     - [all-the-icons.el fonts](#all-the-iconsel-fonts)
   - [General Tools](#general-tools)
     - [Git](#git)
-    - [hadolint](#hadolint)
     - [Pandoc](#pandoc)
     - [RipGrep](#ripgrep)
     - [ShellCheck](#shellcheck)
@@ -69,12 +68,6 @@ The fonts from [all-the-icons.el](https://github.com/domtronn/all-the-icons.el/t
 #### Git
 
 [Git](https://git-scm.com/) is required by [magit](https://github.com/magit/magit).
-
-#### hadolint
-
-[hadolint](https://github.com/hadolint/hadolint) is a Dockerfile linter used by flycheck.
-
-[hadolint rules](https://github.com/hadolint/hadolint#rules)
 
 #### Pandoc
 
