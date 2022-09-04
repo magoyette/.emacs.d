@@ -2,16 +2,7 @@
 
 My personal Emacs configuration. It requires Emacs 27.
 
-This project is now archived and no longer maintained.
-
-This Emacs configuration depends on some packages that are in their initial development. These packages are not available on Melpa, so they are included as Git submodules.
-
-This repository should be cloned in the home folder of the current user with the recursive option to load the submodules immediately.
-
-```shell
-cd ~
-git clone --recursive https://github.com/magoyette/.emacs.d.git
-```
+This repository should be cloned in the home folder of the current user.
 
 ---
 
@@ -111,19 +102,9 @@ Run `install-node-deps.sh` to install the Node dependencies of this configuratio
 ./install-node-deps.sh
 ```
 
-Node dependencies:
-
-- [doctoc](https://github.com/thlorenz/doctoc) to generate the table of contents of a Markdown file with the script `generate-toc.sh`.
-- [eslint](https://eslint.org/) to lint JavaScript and TypeScript files.
-- [js-yaml](https://github.com/nodeca/js-yaml) is used by Flycheck to check YAML files.
-- Language servers for lsp mode (CSS, Less, HTML, JavaScript, JSON, SASS, SCSS, Typescript, YAML).
-- [prettier](https://prettier.io/) to format files.
-- [stylelint](https://stylelint.io/) is used by Flycheck to lint CSS, SASS and LESS files. The [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) is also installed.
-- [Swagger/OpenAPI CLI](https://github.com/APIDevTools/swagger-cli) is used by [flycheck-swagger-cli](https://github.com/magoyette/flycheck-swagger-cli) to validate Swagger/OpenAPI documents with Flycheck.
-
 ### Java Tools
 
-This Emacs configuration need a JDK available in the path of the OS.
+This Emacs configuration needs a JDK available in the path of the OS.
 
 #### LanguageTool
 

@@ -1,6 +1,0 @@
-[submodule "submodules/openapi-yaml-mode"]
-	path = submodules/openapi-yaml-mode
-	url = https://github.com/magoyette/openapi-yaml-mode.git
-[submodule "submodules/flycheck-swagger-cli"]
-	path = submodules/flycheck-swagger-cli
-	url = https://github.com/magoyette/flycheck-swagger-cli.git

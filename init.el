@@ -153,10 +153,6 @@
 
 ;;;;; Load settings and features
 
-;; Add Git submodules for packages not on Elpa or Melpa
-(add-to-list 'load-path "~/.emacs.d/submodules/flycheck-swagger-cli/")
-(add-to-list 'load-path "~/.emacs.d/submodules/openapi-yaml-mode/")
-
 ;; local-settings is used to set local configurations not stored in Git
 (if (file-exists-p "~/.emacs.d/local-settings.el")
     (load "~/.emacs.d/local-settings.el"))
@@ -183,7 +179,6 @@
 
 ;; Programming
 (require 'docker-settings)
-(require 'openapi-settings)
 (require 'lsp-settings)
 
 ;; Org
