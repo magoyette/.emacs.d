@@ -80,7 +80,7 @@
 ## Company packages
 
 - [company](https://company-mode.github.io/): Completion system.
-- [company-quickhelp](https://github.com/expez/company-quickhelp): Documentation popups for company.
+- [company-box](https://github.com/sebastiencs/company-box): Add icons and documentation to company completions.
 
 ## YASnippet packages
 

@@ -4,6 +4,7 @@
          (js-mode . lsp)
          (json-mode . lsp)
          (sass-mode . lsp)
+         (sh-mode . lsp)
          (typescript-mode . lsp)
          (web-mode . lsp)
          (yaml-mode .lsp))
@@ -12,7 +13,8 @@
   (which-key-add-key-based-replacements "C-c l" "lsp")
   :commands lsp
   :config
-  (setq lsp-completion-provider :capf))
+  (setq lsp-completion-provider :capf)
+  (lsp-modeline-code-actions-mode))
 
 (use-package lsp-ui
   :commands lsp-ui-mode)
