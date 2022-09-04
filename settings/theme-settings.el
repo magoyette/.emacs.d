@@ -10,9 +10,6 @@
 ;; Highlight the line of the cursor
 (global-hl-line-mode +1)
 
-;; Highlight matching parenthesis
-(show-paren-mode 1)
-
 ;; Display column number in mode line
 (setq column-number-mode t)
 
