@@ -104,6 +104,9 @@
   (setq counsel-grep-base-command
         "rg -i -M 120 --no-heading --line-number --color never '%s' %s"))
 
+;; Add more information in some describe commands
+(setq completions-detailed t)
+
 (use-package counsel
   :general
   ("M-x" 'counsel-M-x

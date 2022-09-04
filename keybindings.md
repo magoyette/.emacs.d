@@ -43,6 +43,7 @@
 | C-x C-b    | List buffers                                              |
 | C-x C-f    | Find files                                                |
 | M-x        | Execute                                                   |
+| M-X        | Execute a command useful in the current mode              |
 | C-c k      | Kill all open buffers except the current buffer           |
 | C-c r      | Rename current buffer and its visiting file if it has one |
 

@@ -18,7 +18,7 @@
 (setq initial-scratch-message nil)
 
 ;; Use y or n confirmations instead of yes or no
-(fset 'yes-or-no-p 'y-or-n-p)
+(setq use-short-answers t)
 
 ;; Fix dead keys on Linux
 (require 'iso-transl)
