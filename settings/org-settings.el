@@ -1,8 +1,5 @@
 (require 'use-package)
 
-(use-package ob-restclient
-  :after restclient)
-
 (use-package org
   :mode (("\\.org$" . org-mode))
   :bind (("C-c o l" . org-store-link)
@@ -57,14 +54,7 @@
   (setq org-startup-folded t)
 
   ;; Do not change color of DONE headings
-  (setq org-fontify-done-headline nil)
-
-  ;; Configure org babel languages
-  (org-babel-do-load-languages
-   'org-babel-load-languages
-   '((sql . t)
-     (java . t)
-     (restclient . t))))
+  (setq org-fontify-done-headline nil))
 
 (use-package org-superstar
   :after org

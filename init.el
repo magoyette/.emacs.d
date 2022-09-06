@@ -174,7 +174,6 @@
 (require 'markdown-settings)
 (require 'web-settings)
 (require 'yaml-settings)
-(require 'rest-settings)
 (require 'lsp-settings)
 (require 'org-settings)
 (require 'theme-settings)

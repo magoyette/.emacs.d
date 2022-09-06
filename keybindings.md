@@ -15,7 +15,6 @@
   - [Magit commit](#magit-commit)
 - [Org mode](#org-mode)
 - [Markdown](#markdown)
-- [REST](#rest)
 - [YAML](#yaml)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -176,13 +175,6 @@
 | M-LEFT     | Decrease indent of list item                                |
 | C-c C-n    | Move to next heading                                        |
 | C-c C-p    | Move to previous heading                                    |
-
-## REST
-
-| Keybinding | Action                                |
-| ---------- | ------------------------------------- |
-| C-c C-c    | run a query and pretty print response |
-| C-c C-r    | run a query and display response      |
 
 ## YAML
 

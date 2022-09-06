@@ -18,7 +18,6 @@
 - [Markdown packages](#markdown-packages)
 - [Web packages](#web-packages)
 - [YAML packages](#yaml-packages)
-- [REST packages](#rest-packages)
 - [LSP packages](#lsp-packages)
 - [Theme packages](#theme-packages)
 
@@ -106,7 +105,6 @@
 ## Org packages
 
 - [ace-link](https://github.com/abo-abo/ace-link): Select a link to jump to with avy in an org buffer (also work with other modes like Info-mode).
-- [ob-restclient.el](https://github.com/alf/ob-restclient.el): Support for restclient in Org Babel.
 - [org-mode](http://orgmode.org/): Plain text notes, todos, agenda, etc.
 - [org-superstar-mode](https://github.com/integral-dw/org-superstar-mode): Prettify headings and lists with UTF-8 bullets.
 
@@ -126,10 +124,6 @@
 
 - [indent-tools](https://gitlab.com/emacs-stuff/indent-tools): Move around and modify code based on indentation.
 - [yaml-mode](https://github.com/yoshiki/yaml-mode): Mode for YAML files.
-
-## REST packages
-
-- [rest-client](https://github.com/pashky/restclient.el): REST client for Emacs.
 
 ## LSP packages
 
