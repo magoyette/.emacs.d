@@ -25,15 +25,15 @@
 | Keybinding | Action                                                        |
 | ---------- | ------------------------------------------------------------- |
 | C-c h      | Help commands prefix                                          |
-| C-x p      | List packages                                                 |
+| C-x p      | List packages (filter with /)                                 |
 | M-z        | Switch to another window                                      |
 | C-c w      | Hydra for windows management                                  |
 | C-c T      | Terminal commands prefix                                      |
 | F5         | Alternate between the Modus Operandi and Modus Vivendi themes |
 | C-+        | Increase text scale                                           |
 | C--        | Decrease text scale                                           |
-| C-x C-e    | evaluate the expression before point                          |
-| C-M-x      | evaluate top-level expression containing or following point   |
+| C-x C-e    | Evaluate the expression before point                          |
+| C-M-x      | Evaluate top-level expression containing or following point   |
 
 ## Files and Buffers
 
