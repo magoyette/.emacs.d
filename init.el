@@ -162,7 +162,8 @@
 
 (require 'edition-settings)
 (require 'navigation-search-settings)
-(require 'dired-treemacs-settings)
+(require 'dired-settings)
+(require 'treemacs-settings)
 (require 'windows-settings)
 (require 'company-settings)
 (require 'yasnippet-settings)

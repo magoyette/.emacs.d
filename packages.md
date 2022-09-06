@@ -6,7 +6,8 @@
 - [init.el packages](#initel-packages)
 - [Edition packages](#edition-packages)
 - [Navigation and search packages](#navigation-and-search-packages)
-- [Dired and Treemacs packages](#dired-and-treemacs-packages)
+- [All the Icons packages](#all-the-icons-packages)
+- [Treemacs packages](#treemacs-packages)
 - [Windows packages](#windows-packages)
 - [Company packages](#company-packages)
 - [YASnippet packages](#yasnippet-packages)
@@ -59,18 +60,17 @@
 - [projectile](https://github.com/bbatsov/projectile): Library to work with projects.
 - [visual-regexp](https://github.com/benma/visual-regexp.el): Regex replace functions with visual feedback.
 
-## Dired and Treemacs packages
+## All the Icons packages
 
 - [all-the-icons.el](https://github.com/domtronn/all-the-icons.el): Icons for dired and Treemacs.
 - [all-the-icons-dired](https://github.com/jtbm37/all-the-icons-dired): Add icons to dired.
-- [dired-collapse](https://github.com/Fuco1/dired-hacks#dired-collapse) : Collapse nested directories with a single children.
-- [dired-narrow](https://github.com/Fuco1/dired-hacks#dired-narrow) : Filter Dired files.
-- [dired-subtree](https://github.com/Fuco1/dired-hacks#dired-subtree) : Insert a subdirectory in a Dired buffer as a subtree.
-- [peep-dired](https://github.com/asok/peep-dired) : Show file at point in Dired in another window.
+
+## Treemacs packages
+
 - [treemacs](https://github.com/Alexander-Miller/treemacs): A file explorer with a tree layout.
-- [treemacs-all-the-icons](https://github.com/Alexander-Miller/treemacs): Change the theme of treemacs to use all-the-icons.el.
 - [treemacs-magit](https://github.com/Alexander-Miller/treemacs): Allow treemacs to refresh after actions done in magit.
 - [treemacs-projectile](https://github.com/Alexander-Miller/treemacs): Integrates treemacs with projectile.
+- [treemacs-all-the-icons](https://github.com/Alexander-Miller/treemacs): Change the theme of treemacs to use all-the-icons.el.
 
 ## Windows packages
 
