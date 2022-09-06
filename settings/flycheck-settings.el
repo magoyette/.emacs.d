@@ -16,7 +16,7 @@
   (add-to-list 'flycheck-emacs-lisp-load-path "~/.emacs.d/settings/")
   (add-to-list 'flycheck-emacs-lisp-load-path "~/.emacs.d/features/")
 
-  (setq-default flycheck-disabled-checkers '(sh-posix-bash)))
+  (setq-default flycheck-disabled-checkers '(sh-posix-bash emacs-lisp-checkdoc)))
 
 ;; flycheck-pos-tip show flycheck markers in a pop-up
 (use-package flycheck-pos-tip
