@@ -1,6 +1,7 @@
 elpa/
 etc/
 server/
+tree-sitter/
 var/
 flycheck_init.el
 local-settings.el

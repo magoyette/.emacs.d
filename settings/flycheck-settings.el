@@ -14,9 +14,10 @@
 
   ;; Configure the load path of my Emacs configuration
   (add-to-list 'flycheck-emacs-lisp-load-path "~/.emacs.d/settings/")
-  (add-to-list 'flycheck-emacs-lisp-load-path "~/.emacs.d/features/")
 
-  (setq-default flycheck-disabled-checkers '(sh-posix-bash emacs-lisp-checkdoc)))
+  (setq-default flycheck-disabled-checkers '(sh-posix-bash
+                                             emacs-lisp-checkdoc
+                                             json-python-json)))
 
 ;; flycheck-pos-tip show flycheck markers in a pop-up
 (use-package flycheck-pos-tip

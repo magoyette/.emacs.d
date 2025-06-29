@@ -1,6 +1,6 @@
 # .emacs.d
 
-My personal Emacs configuration. It requires Emacs 28.
+My personal Emacs configuration. It requires Emacs 30.
 
 This repository should be cloned in the home folder of the current user.
 
@@ -17,13 +17,14 @@ This repository should be cloned in the home folder of the current user.
     - [all-the-icons.el fonts](#all-the-iconsel-fonts)
   - [General Tools](#general-tools)
     - [Git](#git)
+    - [Delta](#delta)
     - [Pandoc](#pandoc)
     - [RipGrep](#ripgrep)
     - [ShellCheck](#shellcheck)
   - [Node Tools](#node-tools)
     - [Node and npm](#node-and-npm)
-  - [Java Tools](#java-tools)
-    - [LanguageTool](#languagetool)
+    - [Install ESlint LSP server](#install-eslint-lsp-server)
+  - [Emacs LSP Booster](#emacs-lsp-booster)
 - [Generating the tables of contents](#generating-the-tables-of-contents)
 - [Keybindings](#keybindings)
 - [Packages](#packages)
@@ -44,9 +45,6 @@ The `local-settings.el` file is used for configurations that vary depending on t
 ;; Configure which folders are scanned by Magit when listing repositories (`C-c g r`)
 (setq magit-repository-directories '(("~/.emacs.d" . 0)
                                      ("~/repos" . 1)))
-
-;; Path to the LanguageTool jar
-(setq langtool-language-tool-jar "~/bin/LanguageTool-4.7/languagetool-commandline.jar")
 ```
 
 ## External dependencies
@@ -68,6 +66,20 @@ The fonts from [all-the-icons.el](https://github.com/domtronn/all-the-icons.el/t
 #### Git
 
 [Git](https://git-scm.com/) is required by [magit](https://github.com/magit/magit).
+
+#### Delta
+
+[delta](https://dandavison.github.io/delta/installation.html) is used to enable syntax highlight in magit diff.
+
+```shell
+git config --global core.pager delta
+git config --global interactive.diffFilter 'delta --color-only'
+git config --global delta.navigate true
+git config --global merge.conflictStyle zdiff3
+# If line numbers are enabled, then staging by hunks is broken in magit
+git config --global delta.line-numbers false
+git config --global diff.colorMoved default
+```
 
 #### Pandoc
 
@@ -95,15 +107,17 @@ Run `install-node-deps.sh` to install the Node dependencies of this configuratio
 ./install-node-deps.sh
 ```
 
-### Java Tools
+#### Install ESlint LSP server
 
-This Emacs configuration needs a JDK available in the path of the OS.
+```
+M-x
+lsp-install-server
+eslint
+```
 
-#### LanguageTool
+### Emacs LSP Booster
 
-[LanguageTool](https://www.languagetool.org/) is a tool for language spelling, style and grammar.
-
-The variable `langtool-language-tool-jar` must be configured with its path in the file `local-settings.el`.
+Install the [emacs-lsp-booster](https://github.com/blahgeek/emacs-lsp-booster/releases) binary.
 
 ## Generating the tables of contents
 

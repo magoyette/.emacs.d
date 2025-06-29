@@ -25,6 +25,7 @@
   :init
   (require 'spaceline-config)
   (setq powerline-default-separator 'wave)
+  (setq spaceline-window-numbers-unicode t)
   :config
   (spaceline-emacs-theme))
 
@@ -36,15 +37,9 @@
 
 (use-package modus-themes
   :ensure t
-  :init
-  (setq modus-themes-bold-constructs t
-        modus-themes-fringes 'subtle
-        modus-themes-region '(bg-only)
-        modus-themes-org-blocks 'gray-background)
-
-  (modus-themes-load-themes)
   :config
-  (modus-themes-load-operandi)
+  (setq modus-themes-bold-constructs t)
+  (load-theme 'modus-operandi)
   :bind ("<f5>" . modus-themes-toggle-with-spaceline))
 
 (provide 'theme-settings)

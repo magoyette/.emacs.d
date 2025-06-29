@@ -16,11 +16,15 @@
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
 
+(setq backup-directory-alist '(("" . "~/.emacs.d/var/backup/per-save")))
+
 (use-package no-littering
   :config
   (require 'recentf)
-  (add-to-list 'recentf-exclude no-littering-var-directory)
-  (add-to-list 'recentf-exclude no-littering-etc-directory)
+  (add-to-list 'recentf-exclude
+               (recentf-expand-file-name no-littering-var-directory))
+  (add-to-list 'recentf-exclude
+               (recentf-expand-file-name no-littering-etc-directory))
 
   (setq custom-file (no-littering-expand-etc-file-name "custom.el"))
 
@@ -168,12 +172,9 @@
 (require 'company-settings)
 (require 'yasnippet-settings)
 (require 'flycheck-settings)
-(require 'spelling-settings)
 (require 'shell-settings)
 (require 'git-settings)
 (require 'markdown-settings)
-(require 'web-settings)
+(require 'programming-settings)
 (require 'yaml-settings)
-(require 'lsp-settings)
-(require 'org-settings)
 (require 'theme-settings)

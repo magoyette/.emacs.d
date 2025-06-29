@@ -13,7 +13,6 @@
 - [Git](#git)
   - [Magit blame](#magit-blame)
   - [Magit commit](#magit-commit)
-- [Org mode](#org-mode)
 - [Markdown](#markdown)
 - [YAML](#yaml)
 
@@ -50,10 +49,12 @@
 
 | Keybinding      | Action                                        |
 | --------------- | --------------------------------------------- |
-| C-c s           | Search & replace commands prefix              |
+| C-c s s         | Search in current project with rg             |
+| C-c s f         | Search in current project with fzf            |
 | C-s             | Search in buffer                              |
 | C-M-s           | Search in all opened buffers                  |
 | M-i             | imenu in buffer                               |
+| C-c s i         | imenu anywhere                                |
 | C-c s r         | re-builder (C-c <tab> to change regex syntax) |
 | M-s             | Hydra for dumb-jump                           |
 | C-c p           | Projectile commands prefix                    |
@@ -75,9 +76,6 @@
 | C-c f      | Trigger expanson of a file path with company                      |
 | C-c TAB    | Company mode expand                                               |
 | C-c !      | Flycheck commands prefix                                          |
-| C-c L      | LanguageTool commands prefix                                      |
-| C-c y      | Select a snippet (yasnippet)                                      |
-| C-c &      | yasnippet commands prefix                                         |
 | C-c e      | Edition commands prefix                                           |
 | S-RET      | Add a new line below                                              |
 | C-S-RET    | Add a new line above                                              |
@@ -95,8 +93,7 @@
 | C-x n      | Narrow or widen a region, an org block, an org subtree or a defun |
 | C-u C-x n  | Narrow a narrowed buffer                                          |
 | M-,        | Insert a ’ character                                              |
-| C-x 8      | Unicode characters                                                |
-| C-c 8      | Typography commands prefix (with typo.el)                         |
+| C-c e u    | Insert a unicode character by name                                |
 
 ### Undo tree
 
@@ -152,14 +149,6 @@
 | ---------- | ------------- |
 | C-c C-c    | Finish commit |
 | C-c C-k    | Cancel commit |
-
-## Org mode
-
-| Keybinding | Action                                                                      |
-| ---------- | --------------------------------------------------------------------------- |
-| C-c o      | Org commands prefix                                                         |
-| M-O        | Select a link to jump to with avy                                           |
-| C-c / T    | Search for a specific TODO keyword and display the results in a sparse tree |
 
 ## Markdown
 

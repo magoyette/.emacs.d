@@ -35,8 +35,6 @@
   ;; Sort branches with more recent commits or tags at the top of the list
   (setq magit-list-refs-sortby "-creatordate")
 
-  (add-hook 'dired-mode-hook #'diff-hl-dired-mode)
-
   ;; Source: https://manuel-uberti.github.io/emacs/2018/02/17/magit-bury-buffer/
   (defun mu-magit-kill-buffers ()
     "Restore window configuration and kill all Magit buffers."
@@ -58,6 +56,7 @@
   :config
   (global-diff-hl-mode)
   (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh)
+  (add-hook 'dired-mode-hook #'diff-hl-dired-mode)
   (add-hook 'dired-mode-hook 'diff-hl-dired-mode-unless-remote)
 
   (general-define-key
@@ -105,5 +104,11 @@ _p_rev       _u_pper              _=_: upper/lower       _r_esolve
   :hook (magit-diff-visit-file . (lambda ()
                                    (when smerge-mode
                                      (unpackaged/smerge-hydra/body)))))
+
+(use-package magit-delta
+  :hook (magit-mode . magit-delta-mode)
+  :config
+  (setq magit-delta-default-light-theme "GitHub")
+  (setq magit-delta-default-dark-theme "zenburn"))
 
 (provide 'git-settings)
