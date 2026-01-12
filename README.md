@@ -71,16 +71,6 @@ The fonts from [all-the-icons.el](https://github.com/domtronn/all-the-icons.el/t
 
 [delta](https://dandavison.github.io/delta/installation.html) is used to enable syntax highlight in magit diff.
 
-```shell
-git config --global core.pager delta
-git config --global interactive.diffFilter 'delta --color-only'
-git config --global delta.navigate true
-git config --global merge.conflictStyle zdiff3
-# If line numbers are enabled, then staging by hunks is broken in magit
-git config --global delta.line-numbers false
-git config --global diff.colorMoved default
-```
-
 #### Pandoc
 
 [Pandoc](http://pandoc.org/) is necessary to preview markdown documents with markdown-mode.
@@ -110,8 +100,7 @@ Run `install-node-deps.sh` to install the Node dependencies of this configuratio
 #### Install ESlint LSP server
 
 ```
-M-x
-lsp-install-server
+M-x lsp-install-server
 eslint
 ```
 
