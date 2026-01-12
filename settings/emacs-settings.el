@@ -3,7 +3,7 @@
 (set-face-attribute 'fixed-pitch nil :font "DejaVu Sans Mono 12")
 
 ;; Increase amount of data read from process for lsp
-(setq read-process-output-max (* 1024 1024)) ;; 1mb
+(setq read-process-output-max (* 10 1024 1024)) ;; 10mb
 
 ;; Prefer newest Emacs Lisp byte code
 (setq load-prefer-newer t)

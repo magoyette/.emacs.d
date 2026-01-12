@@ -41,12 +41,6 @@
 (when (fboundp 'winner-mode)
   (winner-mode 1))
 
-(use-package typo
-  :init
-  (which-key-add-key-based-replacements "C-c 8" "typography")
-  :config
-  (typo-global-mode))
-
 (use-package undo-tree
   :diminish undo-tree-mode
   :bind (("C-x u" . undo-tree-visualize))

@@ -10,15 +10,12 @@
 - [Treemacs packages](#treemacs-packages)
 - [Windows packages](#windows-packages)
 - [Company packages](#company-packages)
-- [YASnippet packages](#yasnippet-packages)
 - [Flycheck packages](#flycheck-packages)
-- [Spelling packages](#spelling-packages)
 - [Git packages](#git-packages)
-- [Org packages](#org-packages)
 - [Markdown packages](#markdown-packages)
-- [Web packages](#web-packages)
 - [YAML packages](#yaml-packages)
-- [LSP packages](#lsp-packages)
+- [Programming packages](#programming-packages)
+- [YASnippet packages](#yasnippet-packages)
 - [Theme packages](#theme-packages)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -47,7 +44,6 @@
 - [highlight-indentation](https://github.com/antonj/Highlight-Indentation-for-Emacs) : Displays guidelines for indentation.
 - [move-text](https://github.com/emacsfodder/move-text): Move current line or region.
 - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
-- [typo.el](https://github.com/jorgenschaefer/typoel): Insert unicode characters for typography.
 - [undo-tree](https://elpa.gnu.org/packages/undo-tree.html) : Visualize undo history as a tree of changes.
 - [whole-line-or-region](https://github.com/purcell/whole-line-or-region): Package to operate on the current line when the region is not defined.
 
@@ -80,11 +76,6 @@
 - [company](https://company-mode.github.io/): Completion system.
 - [company-box](https://github.com/sebastiencs/company-box): Add icons and documentation to company completions.
 
-## YASnippet packages
-
-- [ivy-yasnippet](https://github.com/mkcms/ivy-yasnippet): Select snippets with ivy.
-- [yasnippet](https://github.com/capitaomorte/yasnippet): Template system.
-
 ## Flycheck packages
 
 - [flycheck](https://github.com/flycheck/flycheck): Syntax checking.
@@ -92,44 +83,39 @@
 - [flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip): Show flycheck issues in tooltip.
 - [flycheck-relint](https://github.com/purcell/flycheck-relint/): Flycheck checker for Emacs Lisp regular expressions.
 
-## Spelling packages
-
-- [emacs-langtool](https://github.com/mhayashi1120/Emacs-langtool): Use LanguageTool from Emacs.
-
 ## Git packages
 
 - [diff-hl](https://github.com/dgutov/diff-hl): Highlight uncommited changes.
 - [git-modes](https://github.com/magit/git-modes): Modes for gitconfig, gitattributes and gitignore files.
 - [magit](https://github.com/magit/magit): Git porcelain for Emacs.
-
-## Org packages
-
-- [ace-link](https://github.com/abo-abo/ace-link): Select a link to jump to with avy in an org buffer (also work with other modes like Info-mode).
-- [org-mode](http://orgmode.org/): Plain text notes, todos, agenda, etc.
-- [org-superstar-mode](https://github.com/integral-dw/org-superstar-mode): Prettify headings and lists with UTF-8 bullets.
+- [magit-delta](https://github.com/dandavison/magit-delta): Display magit diff with Delta.
 
 ## Markdown packages
 
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/): Mode for Markdown files.
-
-## Web packages
-
-- [json-mode](https://github.com/joshwnj/json-mode): Mode for JSON files.
-- [prettier](https://github.com/jscheid/prettier.el): Format with Prettier.
-- [sass-mode](https://github.com/nex3/sass-mode): Mode for .sass Sass files.
-- [typescript-mode](https://github.com/ananthakumaran/typescript.el): Mode for TypeScript files.
-- [web-mode](http://web-mode.org/): Mode for web templates.
 
 ## YAML packages
 
 - [indent-tools](https://gitlab.com/emacs-stuff/indent-tools): Move around and modify code based on indentation.
 - [yaml-mode](https://github.com/yoshiki/yaml-mode): Mode for YAML files.
 
-## LSP packages
+## Programming packages
 
+- [astro-ts-mode](https://git.isincredibly.gay/srxl/astro-ts-mode): Mode for Astro templates.
+- [emacs-lsp-booster](https://github.com/blahgeek/emacs-lsp-booster): Binary and Elisp code to improve the performance of LSP servers.
+- [lsp-ivy](https://github.com/emacs-lsp/lsp-ivy): List workspace synbols with Ivy.
 - [lsp-mode](https://github.com/emacs-lsp/lsp-mode): Language Server Protocol support for Emacs.
+- [lsp-tailwindcss](https://github.com/merrickluo/lsp-tailwindcss/tree/master): Package to support the LSP server of TailwindCSS.
 - [lsp-treemacs](https://github.com/emacs-lsp/lsp-treemacs): Integrate lsp-mode with treemacs.
 - [lsp-ui](https://github.com/emacs-lsp/lsp-ui): Additional UI features for lsp-mode.
+- [prettier](https://github.com/jscheid/prettier.el): Format with Prettier.
+- [treesit-langs](https://github.com/emacs-tree-sitter/treesit-langs/tree/main): Bundle with language grammars for Emacs' 30 treesit.el.
+- [web-mode](http://web-mode.org/): Mode for web templates.
+
+## YASnippet packages
+
+- [ivy-yasnippet](https://github.com/mkcms/ivy-yasnippet): Select snippets with ivy.
+- [yasnippet](https://github.com/capitaomorte/yasnippet): Template system.
 
 ## Theme packages
 
