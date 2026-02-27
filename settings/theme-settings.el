@@ -27,19 +27,17 @@
   (setq powerline-default-separator 'wave)
   (setq spaceline-window-numbers-unicode t)
   :config
-  (spaceline-emacs-theme))
+  (spaceline-spacemacs-theme))
 
-(defun modus-themes-toggle-with-spaceline ()
-  "Switch between the modus-themes and reset spaceline"
-  (interactive)
-  (modus-themes-toggle)
-  (powerline-reset))
-
-(use-package modus-themes
+(use-package doom-themes
   :ensure t
+  :custom
+  (doom-themes-enable-bold nil)
+  (doom-themes-enable-italic nil)
+  (doom-themes-treemacs-theme "doom-one")
   :config
-  (setq modus-themes-bold-constructs t)
-  (load-theme 'modus-operandi)
-  :bind ("<f5>" . modus-themes-toggle-with-spaceline))
+  (load-theme 'doom-one t)
+  (doom-themes-treemacs-config)
+  (doom-themes-org-config))
 
 (provide 'theme-settings)
