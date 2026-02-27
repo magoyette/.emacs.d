@@ -17,7 +17,6 @@ This repository should be cloned in the home folder of the current user.
     - [all-the-icons.el fonts](#all-the-iconsel-fonts)
   - [General Tools](#general-tools)
     - [Git](#git)
-    - [Delta](#delta)
     - [Pandoc](#pandoc)
     - [RipGrep](#ripgrep)
     - [ShellCheck](#shellcheck)
@@ -66,10 +65,6 @@ The fonts from [all-the-icons.el](https://github.com/domtronn/all-the-icons.el/t
 #### Git
 
 [Git](https://git-scm.com/) is required by [magit](https://github.com/magit/magit).
-
-#### Delta
-
-[delta](https://dandavison.github.io/delta/installation.html) is used to enable syntax highlight in magit diff.
 
 #### Pandoc
 

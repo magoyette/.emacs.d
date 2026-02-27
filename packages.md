@@ -88,7 +88,6 @@
 - [diff-hl](https://github.com/dgutov/diff-hl): Highlight uncommited changes.
 - [git-modes](https://github.com/magit/git-modes): Modes for gitconfig, gitattributes and gitignore files.
 - [magit](https://github.com/magit/magit): Git porcelain for Emacs.
-- [magit-delta](https://github.com/dandavison/magit-delta): Display magit diff with Delta.
 
 ## Markdown packages
 

@@ -105,10 +105,4 @@ _p_rev       _u_pper              _=_: upper/lower       _r_esolve
                                    (when smerge-mode
                                      (unpackaged/smerge-hydra/body)))))
 
-(use-package magit-delta
-  :hook (magit-mode . magit-delta-mode)
-  :config
-  (setq magit-delta-default-light-theme "GitHub")
-  (setq magit-delta-default-dark-theme "zenburn"))
-
 (provide 'git-settings)
