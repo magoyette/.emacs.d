@@ -6,7 +6,7 @@
 - [init.el packages](#initel-packages)
 - [Edition packages](#edition-packages)
 - [Navigation and search packages](#navigation-and-search-packages)
-- [All the Icons packages](#all-the-icons-packages)
+- [Dired packages](#dired-packages)
 - [Treemacs packages](#treemacs-packages)
 - [Windows packages](#windows-packages)
 - [Company packages](#company-packages)
@@ -55,17 +55,16 @@
 - [projectile](https://github.com/bbatsov/projectile): Library to work with projects.
 - [visual-regexp](https://github.com/benma/visual-regexp.el): Regex replace functions with visual feedback.
 
-## All the Icons packages
+## Dired packages
 
-- [all-the-icons.el](https://github.com/domtronn/all-the-icons.el): Icons for dired and Treemacs.
-- [all-the-icons-dired](https://github.com/jtbm37/all-the-icons-dired): Add icons to dired.
+- [nerd-icons-dired](https://github.com/rainstormstudio/nerd-icons-dired): Display icons in dired.
 
 ## Treemacs packages
 
 - [treemacs](https://github.com/Alexander-Miller/treemacs): A file explorer with a tree layout.
 - [treemacs-magit](https://github.com/Alexander-Miller/treemacs): Allow treemacs to refresh after actions done in magit.
+- [treemacs-nerd-icons](https://github.com/rainstormstudio/treemacs-nerd-icons) : Treemacs theme for Nerd Icons.
 - [treemacs-projectile](https://github.com/Alexander-Miller/treemacs): Integrates treemacs with projectile.
-- [treemacs-all-the-icons](https://github.com/Alexander-Miller/treemacs): Change the theme of treemacs to use all-the-icons.el.
 
 ## Windows packages
 
@@ -118,7 +117,7 @@
 
 ## Theme packages
 
+- [doom-modeline](https://github.com/seagle0128/doom-modeline) : modeline from Doom Emacs.
 - [doom-themes](https://github.com/doomemacs/themes): doom-one is a dark theme similar to Atom One Dark.
 - [page-break-lines](https://github.com/purcell/page-break-lines): Display page break as lines.
 - [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters): Highlight delimiters according to their depth.
-- [spaceline](https://github.com/TheBB/spaceline): The Powerline theme from Spacemacs.

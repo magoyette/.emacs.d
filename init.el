@@ -164,6 +164,10 @@
 (if (file-exists-p "~/.emacs.d/local-settings.el")
     (load "~/.emacs.d/local-settings.el"))
 
+(use-package nerd-icons
+  :custom
+  (nerd-icons-font-family "DejaVuSansM Nerd Font Mono"))
+
 (require 'edition-settings)
 (require 'navigation-search-settings)
 (require 'dired-settings)

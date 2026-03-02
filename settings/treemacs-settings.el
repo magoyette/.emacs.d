@@ -17,9 +17,9 @@
 (use-package treemacs-magit
   :after treemacs magit)
 
-(use-package treemacs-all-the-icons
-  :after treemacs all-the-icons
+(use-package treemacs-nerd-icons
+  :after treemacs nerd-icons
   :config
-  (treemacs-load-theme "all-the-icons"))
+  (treemacs-load-theme "nerd-icons"))
 
 (provide 'treemacs-settings)

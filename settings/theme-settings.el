@@ -21,23 +21,18 @@
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
-(use-package spaceline
-  :init
-  (require 'spaceline-config)
-  (setq powerline-default-separator 'wave)
-  (setq spaceline-window-numbers-unicode t)
-  :config
-  (spaceline-spacemacs-theme))
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1))
 
 (use-package doom-themes
   :ensure t
   :custom
+  (set-face-bold-p 'bold nil)
   (doom-themes-enable-bold nil)
   (doom-themes-enable-italic nil)
-  (doom-themes-treemacs-theme "doom-one")
   :config
   (load-theme 'doom-one t)
-  (doom-themes-treemacs-config)
   (doom-themes-org-config))
 
 (provide 'theme-settings)

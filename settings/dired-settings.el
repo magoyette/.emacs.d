@@ -1,9 +1,8 @@
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
-(use-package all-the-icons)
-
-(use-package all-the-icons-dired
-  :hook (dired-mode . all-the-icons-dired-mode))
+(use-package nerd-icons-dired
+  :hook
+  (dired-mode . nerd-icons-dired-mode))
 
 (setq dired-kill-when-opening-new-dired-buffer t)
 (setq dired-auto-revert-buffer t)
