@@ -11,10 +11,6 @@ This repository should be cloned in the home folder of the current user.
 
 - [Local settings](#local-settings)
 - [External dependencies](#external-dependencies)
-  - [Windows OS setup](#windows-os-setup)
-    - [Windows HOME variable](#windows-home-variable)
-  - [Fonts](#fonts)
-    - [all-the-icons.el fonts](#all-the-iconsel-fonts)
   - [General Tools](#general-tools)
     - [Git](#git)
     - [Pandoc](#pandoc)
@@ -47,18 +43,6 @@ The `local-settings.el` file is used for configurations that vary depending on t
 ```
 
 ## External dependencies
-
-### Windows OS setup
-
-#### Windows HOME variable
-
-An environment variable named `HOME` is required on a Windows OS to allow Emacs to find the `.emacs.d` folder. The value of `HOME` must be the absolute path to the home folder of the current Windows user (where the `.emacs.d` repo should have been cloned). Magit also needs the `HOME` variable to execute git push from Windows.
-
-### Fonts
-
-#### all-the-icons.el fonts
-
-The fonts from [all-the-icons.el](https://github.com/domtronn/all-the-icons.el/tree/master/fonts) must be installed since many packages use them.
 
 ### General Tools
 
