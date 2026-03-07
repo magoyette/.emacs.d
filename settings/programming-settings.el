@@ -66,7 +66,10 @@
          (tsx-ts-mode . lsp)
          (typescript-ts-mode . lsp)
          (web-mode . lsp)
-         (yaml-mode .lsp))
+         (yaml-mode . lsp))
+  :init
+  (setq lsp-use-plists t)
+  (setenv "LSP_USE_PLISTS" "true")
   :preface
   ;; See https://github.com/blahgeek/emacs-lsp-booster
   (defun lsp-booster--advice-json-parse (old-fn &rest args)
@@ -96,7 +99,7 @@
             (when-let ((command-from-exec-path (executable-find (car orig-result))))  ;; resolve command from exec-path (in case not found in $PATH)
               (setcar orig-result command-from-exec-path))
             (message "Using emacs-lsp-booster for %s!" orig-result)
-            (cons "emacs-lsp-booster" orig-result))
+            (cons "emacs-lsp-booster" (append '("--disable-bytecode" "--") orig-result)))
         orig-result)))
   (advice-add 'lsp-resolve-final-command :around #'lsp-booster--advice-final-command)
   :init
@@ -106,7 +109,8 @@
   :config
   (setq lsp-completion-provider :capf)
   (setq lsp-idle-delay 0.500)
-  (lsp-modeline-code-actions-mode))
+  (setq lsp-log-io nil)
+  (lsp-modeline-code-actions-mode))(functionp 'json-serialize)
 
 (use-package lsp-ui
   :commands lsp-ui-mode)
