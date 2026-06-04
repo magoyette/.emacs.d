@@ -124,6 +124,7 @@
            ("C-c l S" . lsp-ivy-global-workspace-symbol)))
 
 (use-package lsp-tailwindcss
+  :ensure nil
   :after lsp-mode
   :init
   (setq lsp-tailwindcss-add-on-mode t
