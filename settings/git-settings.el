@@ -14,6 +14,21 @@
    "C-c g r" '(magit-list-repositories :which-key "repositories"))
   :init
   (which-key-add-key-based-replacements "C-c g" "git")
+  (with-eval-after-load 'magit-repos
+    (setq magit-repolist-columns
+          `(("Name"    25 ,#'magit-repolist-column-ident ())
+            ("B<U"      3 ,#'magit-repolist-column-unpulled-from-upstream
+             ((:right-align t)
+              (:sort <)))
+            ("B>U"      3 ,#'magit-repolist-column-unpushed-to-upstream
+             ((:right-align t)
+              (:sort <)))
+            ("Flags"    5 ,#'magit-repolist-column-flags ())
+            ("Stashes"  7 ,#'magit-repolist-column-stashes
+             ((:right-align t)
+              (:sort <)))
+            ("Branch"  25 ,#'magit-repolist-column-branch ())
+            ("Path"    99 ,#'magit-repolist-column-path ()))))
   :config
   (if (eq system-type 'windows-nt)
       (setenv "GIT_ASKPASS" "git-gui--askpass"))
