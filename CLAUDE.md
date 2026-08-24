@@ -57,22 +57,22 @@ A `~/.emacs.d/local-settings.el` file must be created for machine-specific confi
 
 Each file handles a specific domain and ends with `(provide 'module-name)`:
 
-| File | Contents |
-| ---- | -------- |
-| `emacs-settings.el` | Font, UI, eldoc, ISO dead keys |
-| `edition-settings.el` | expand-region, multiple-cursors, undo-tree, move-text |
-| `navigation-search-settings.el` | projectile, counsel-projectile, deadgrep, dumb-jump, visual-regexp |
-| `dired-settings.el` | dired + nerd-icons-dired |
-| `treemacs-settings.el` | treemacs + projectile/magit/nerd-icons integrations |
-| `windows-settings.el` | ace-window |
-| `company-settings.el` | company + company-box |
-| `flycheck-settings.el` | flycheck + flycheck-pos-tip, flycheck-package, flycheck-relint |
-| `shell-settings.el` | shell configuration |
-| `git-settings.el` | magit, diff-hl, git-modes, smerge-mode hydra |
-| `markdown-settings.el` | markdown-mode |
-| `yaml-settings.el` | yaml-mode, indent-tools |
-| `programming-settings.el` | lsp-mode (with emacs-lsp-booster integration), lsp-ui, lsp-treemacs, lsp-ivy, lsp-tailwindcss, web-mode, astro-ts-mode, treesit-langs, prettier |
-| `theme-settings.el` | doom-themes, doom-modeline, rainbow-delimiters, page-break-lines |
+| File                            | Contents                                                                                                                                        |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `emacs-settings.el`             | Font, UI, eldoc, ISO dead keys                                                                                                                  |
+| `edition-settings.el`           | expand-region, multiple-cursors, undo-tree, move-text                                                                                           |
+| `navigation-search-settings.el` | projectile, counsel-projectile, deadgrep, visual-regexp                                                                                         |
+| `dired-settings.el`             | dired + nerd-icons-dired                                                                                                                        |
+| `treemacs-settings.el`          | treemacs + projectile/magit/nerd-icons integrations                                                                                             |
+| `windows-settings.el`           | ace-window                                                                                                                                      |
+| `company-settings.el`           | company + company-box                                                                                                                           |
+| `flycheck-settings.el`          | flycheck + flycheck-pos-tip, flycheck-package, flycheck-relint                                                                                  |
+| `shell-settings.el`             | shell configuration                                                                                                                             |
+| `git-settings.el`               | magit, diff-hl, git-modes, smerge-mode hydra                                                                                                    |
+| `markdown-settings.el`          | markdown-mode                                                                                                                                   |
+| `yaml-settings.el`              | yaml-mode, indent-tools                                                                                                                         |
+| `programming-settings.el`       | lsp-mode (with emacs-lsp-booster integration), lsp-ui, lsp-treemacs, lsp-ivy, lsp-tailwindcss, web-mode, astro-ts-mode, treesit-langs, prettier |
+| `theme-settings.el`             | doom-themes, doom-modeline, rainbow-delimiters, page-break-lines                                                                                |
 
 ### Key conventions
 

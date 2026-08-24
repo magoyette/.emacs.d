@@ -51,7 +51,6 @@
 
 - [counsel-projectile](https://github.com/ericdanan/counsel-projectile): Improve integration between projectile and ivy.
 - [deadgrep](https://github.com/Wilfred/deadgrep): Search with [ripgrep](https://github.com/BurntSushi/ripgrep).
-- [dumb-jump](https://github.com/jacktasia/dumb-jump): Jump to definition for many programming languages.
 - [projectile](https://github.com/bbatsov/projectile): Library to work with projects.
 - [visual-regexp](https://github.com/benma/visual-regexp.el): Regex replace functions with visual feedback.
 

@@ -55,7 +55,6 @@
 | M-i             | imenu in buffer                               |
 | C-c s i         | imenu anywhere                                |
 | C-c s r         | re-builder (C-c <tab> to change regex syntax) |
-| M-s             | Hydra for dumb-jump                           |
 | C-c p           | Projectile commands prefix                    |
 | C-x d           | Dired (Hydra with .)                          |
 | M-a             | Select or open Treemacs window                |

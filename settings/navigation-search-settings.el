@@ -22,22 +22,6 @@
 
 (global-set-key (kbd "C-c s r") 're-builder)
 
-(defhydra dumb-jump-hydra (:color blue :columns 3)
-  "Dumb Jump"
-  ("s" dumb-jump-go "Jump")
-  ("w" dumb-jump-go-prompt "Prompt where to jump")
-  ("c" dumb-jump-go-other-window "Jump in other window")
-  ("e" dumb-jump-go-prefer-external "Jump (prefer external)")
-  ("d" dumb-jump-go-prefer-external-other-window "Jump in other window (prefer external)")
-  ("q" dumb-jump-quick-look "Quick look def at point")
-  ("b" dumb-jump-back "Jump back"))
-
-(use-package dumb-jump
-  :bind (("M-s" . dumb-jump-hydra/body))
-  :config
-  (setq dumb-jump-selector 'ivy)
-  (setq dumb-jump-prefer-searcher 'rg))
-
 (use-package projectile
   :bind-keymap ("C-c p" . projectile-command-map)
   :init
