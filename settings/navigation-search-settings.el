@@ -37,7 +37,7 @@
 
   (setq projectile-completion-system 'ivy)
 
-  (projectile-global-mode))
+  (projectile-mode 1))
 
 (use-package counsel-projectile
   :after projectile
