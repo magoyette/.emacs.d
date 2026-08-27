@@ -35,7 +35,6 @@
 - [smex](https://github.com/nonsequitur/smex): Improve M-x by remembering recent commands.
 - [swiper](https://github.com/abo-abo/swiper): Alternative to isearch that uses ivy.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
-- [which-key](https://github.com/justbur/emacs-which-key) : Display available keybindings.
 
 ## Edition packages
 

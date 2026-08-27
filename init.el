@@ -37,12 +37,15 @@
 
 (use-package general)
 
+;; which-key is included in Emacs 30 (keep :ensure nil)
 (use-package which-key
+  :ensure nil
   :diminish which-key-mode
   :bind (("C-c h m" . which-key-show-major-mode))
+  :init
+  (setq which-key-idle-delay 0.5)
+  (which-key-mode 1)
   :config
-  (which-key-mode)
-
   (which-key-add-key-based-replacements "C-c e" "edition")
   (which-key-add-key-based-replacements "C-c h" "help")
   (which-key-add-key-based-replacements "C-c s" "search & replace")
