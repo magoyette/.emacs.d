@@ -7,9 +7,9 @@
   (interactive)
   (unwind-protect
       (progn
-        (linum-mode 1)
+        (display-line-numbers-mode 1)
         (goto-line (read-number "Goto line: ")))
-    (linum-mode -1)))
+    (display-line-numbers-mode -1)))
 
 (use-package deadgrep
   :bind (("C-c s d" . deadgrep)))
