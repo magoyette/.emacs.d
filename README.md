@@ -1,6 +1,6 @@
 # .emacs.d
 
-My personal Emacs configuration. It requires Emacs 30.
+My personal Emacs configuration. It requires Emacs 31.
 
 This repository should be cloned in the home folder of the current user.
 

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Overview
 
-This is a personal Emacs 30 configuration. The repository should be cloned to `~/.emacs.d`.
+This is a personal Emacs 31 configuration. The repository should be cloned to `~/.emacs.d`.
 
 ## Setup
 

@@ -25,6 +25,6 @@
 (font-lock-add-keywords
  'sh-mode '((my-match-variables-in-quotes
              (1 'default t)
-             (2 font-lock-variable-name-face t))))
+             (2 'font-lock-variable-name-face t))))
 
 (provide 'shell-settings)
