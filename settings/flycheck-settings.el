@@ -17,13 +17,9 @@
 
   (setq-default flycheck-disabled-checkers '(sh-posix-bash
                                              emacs-lisp-checkdoc
-                                             json-python-json)))
+                                             json-python-json))
 
-;; flycheck-pos-tip show flycheck markers in a pop-up
-(use-package flycheck-pos-tip
-  :after flycheck
-  :config
-  (flycheck-pos-tip-mode))
+  (global-flycheck-annotate-mode))
 
 (use-package flycheck-package
   :after flycheck
