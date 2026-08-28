@@ -14,6 +14,7 @@ This is a personal Emacs 31 configuration. The repository should be cloned to `~
 - **Git** — required by magit
 - **Pandoc** — required for markdown preview
 - **ShellCheck** — used by flycheck for shell script linting
+- **markdownlint-cli2** — used by flycheck for markdown linting
 - **Node/npm** — required for LSP servers and prettier
 - **emacs-lsp-booster** binary — improves LSP performance
 - **DejaVuSansM Nerd Font Mono** — required by nerd-icons

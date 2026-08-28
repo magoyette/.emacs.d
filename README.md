@@ -16,6 +16,7 @@ This repository should be cloned in the home folder of the current user.
     - [Pandoc](#pandoc)
     - [RipGrep](#ripgrep)
     - [ShellCheck](#shellcheck)
+    - [markdownlint-cli2](#markdownlint-cli2)
   - [Node Tools](#node-tools)
     - [Node and npm](#node-and-npm)
     - [Install ESlint LSP server](#install-eslint-lsp-server)
@@ -63,6 +64,10 @@ Many packages depend on the search tool [RipGrep](https://github.com/BurntSushi/
 [ShellCheck](https://github.com/koalaman/shellcheck) is used for static analysis of shell scripts by flycheck.
 
 [ShellCheck rules](https://github.com/koalaman/shellcheck/wiki)
+
+#### markdownlint-cli2
+
+[markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) is used for static analysis of markdown files by flycheck (checker `markdown-markdownlint-cli2`).
 
 ### Node Tools
 
