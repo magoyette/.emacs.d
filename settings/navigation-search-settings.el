@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 ;; Line numbers activated only when going to a line
 ;; Source: whattheemacsd.com
 (global-set-key [remap goto-line] 'goto-line-with-feedback)

@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 (use-package shell
   :config
   (define-key shell-mode-map

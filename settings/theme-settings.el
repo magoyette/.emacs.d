@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 (require 'use-package)
 
 ;; Commands to change text scale

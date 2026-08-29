@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 ;; Set the garbage collector to only run for each 200 MB
 ;; Important for lsp-mode performance
 (setq gc-cons-threshold 200000000)

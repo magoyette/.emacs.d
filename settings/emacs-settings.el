@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 ;; Font settings
 (set-face-attribute 'default nil :font "DejaVu Sans Mono 12")
 (set-face-attribute 'fixed-pitch nil :font "DejaVu Sans Mono 12")

@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 (use-package yasnippet
   :diminish yas-minor-mode
   :init

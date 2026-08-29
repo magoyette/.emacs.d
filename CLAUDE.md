@@ -33,14 +33,6 @@ Install from inside Emacs: `M-x lsp-install-server` then select `eslint`.
 
 A `~/.emacs.d/local-settings.el` file must be created for machine-specific config (not stored in git). Example:
 
-```elisp
-(defun local-settings-set-org-agenda-files ()
-  (setq org-agenda-files (list "~/notes")))
-
-(setq magit-repository-directories '(("~/.emacs.d" . 0)
-                                     ("~/repos" . 1)))
-```
-
 ### Generating tables of contents
 
 ```shell

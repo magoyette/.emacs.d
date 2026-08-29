@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 (use-package ace-window
   :bind (("M-z" . ace-window)))
 

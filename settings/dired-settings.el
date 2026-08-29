@@ -1,3 +1,5 @@
+;;; -*- lexical-binding: t; -*-
+
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
 (use-package nerd-icons-dired
