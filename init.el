@@ -7,13 +7,6 @@
 ;; Configure Melpa
 (global-set-key (kbd "C-x p") 'list-packages)
 
-;; Necessary for the installation of use-package
-(unless package-archive-contents
-  (package-refresh-contents))
-
-(unless (package-installed-p 'use-package)
-  (package-install 'use-package))
-
 (require 'use-package)
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)

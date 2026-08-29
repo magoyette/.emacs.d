@@ -1,7 +1,5 @@
 ;;; -*- lexical-binding: t; -*-
 
-(require 'use-package)
-
 (use-package git-modes
   :mode (("\\.gitattributes$" . gitattributes-mode)
          ("\\.gitconfig$" . gitconfig-mode)

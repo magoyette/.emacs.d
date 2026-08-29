@@ -1,7 +1,5 @@
 ;;; -*- lexical-binding: t; -*-
 
-(require 'use-package)
-
 ;; Trash integration for Windows
 (setq delete-by-moving-to-trash t)
 

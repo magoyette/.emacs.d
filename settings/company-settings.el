@@ -1,7 +1,5 @@
 ;;; -*- lexical-binding: t; -*-
 
-(require 'use-package)
-
 (use-package company
   :diminish company-mode
   :config
