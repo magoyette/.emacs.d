@@ -14,7 +14,7 @@
 
 ;; Disable welcome screen and welcome message
 (setq inhibit-startup-message t
-      inhibit-startup-echo-area-message t)
+      inhibit-startup-echo-area-message (user-login-name))
 
 ;; Disable initial scratch message
 (setq initial-scratch-message nil)
