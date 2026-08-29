@@ -19,6 +19,10 @@
 (when (fboundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 
+;; Ensure treesit is loaded before package autoloads are activated below.
+;; astro-ts-mode-autoloads.el calls (treesit-ready-p ...) which fails if treesit isn't loaded.
+(require 'treesit nil t)
+
 ;; Configure packages
 (require 'package)
 
