@@ -49,11 +49,11 @@
 | Keybinding      | Action                                        |
 | --------------- | --------------------------------------------- |
 | C-c s s         | Search in current project with rg             |
-| C-c s f         | Search in current project with fzf            |
+| C-c s f         | Search in current project with fd             |
 | C-s             | Search in buffer                              |
 | C-M-s           | Search in all opened buffers                  |
 | M-i             | imenu in buffer                               |
-| C-c s i         | imenu anywhere                                |
+| C-c s i         | imenu in all buffers of same mode or project  |
 | C-c s r         | re-builder (C-c <tab> to change regex syntax) |
 | C-c p           | Projectile commands prefix                    |
 | C-x d           | Dired (Hydra with .)                          |
@@ -70,9 +70,11 @@
 
 | Keybinding | Action                                                            |
 | ---------- | ----------------------------------------------------------------- |
-| TAB        | Company mode expand                                               |
-| C-c f      | Trigger expanson of a file path with company                      |
-| C-c TAB    | Company mode expand                                               |
+| TAB        | Complete at point (Corfu)                                         |
+| C-c f      | Complete a file path (Cape)                                       |
+| C-.        | Act on the completion candidate or thing at point (Embark)        |
+| C-c e a    | Same as C-. (terminal-safe alias)                                 |
+| C-;        | Run the default Embark action on the thing at point               |
 | C-c !      | Flycheck commands prefix                                          |
 | C-c e      | Edition commands prefix                                           |
 | S-RET      | Add a new line below                                              |

@@ -15,6 +15,7 @@ This repository should be cloned in the home folder of the current user.
     - [Git](#git)
     - [Pandoc](#pandoc)
     - [RipGrep](#ripgrep)
+    - [fd](#fd)
     - [ShellCheck](#shellcheck)
     - [markdownlint-cli2](#markdownlint-cli2)
   - [Node Tools](#node-tools)
@@ -58,6 +59,10 @@ The `local-settings.el` file is used for configurations that vary depending on t
 #### RipGrep
 
 Many packages depend on the search tool [RipGrep](https://github.com/BurntSushi/ripgrep).
+
+#### fd
+
+[fd](https://github.com/sharkdp/fd) is used by `consult-fd` (`C-c s f`) for fast, gitignore-aware file search.
 
 #### ShellCheck
 

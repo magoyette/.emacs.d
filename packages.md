@@ -9,7 +9,7 @@
 - [Dired packages](#dired-packages)
 - [Treemacs packages](#treemacs-packages)
 - [Windows packages](#windows-packages)
-- [Company packages](#company-packages)
+- [Completion packages](#completion-packages)
 - [Flycheck packages](#flycheck-packages)
 - [Git packages](#git-packages)
 - [Markdown packages](#markdown-packages)
@@ -23,18 +23,18 @@
 ## init.el packages
 
 - [avy](https://github.com/abo-abo/avy): Jump to a specific position in buffer.
-- [counsel](https://github.com/abo-abo/swiper): Alternatives to common commands that leverage Ivy.
+- [consult](https://github.com/minad/consult): Search and navigation commands based on completing-read.
 - [crux](https://github.com/bbatsov/crux): Extensions for Emacs.
 - [diminish](https://github.com/emacsmirror/diminish): Hide or abbreviate minor modes.
-- [flx](https://github.com/lewang/flx): Fuzzy matching for Ivy.
+- [embark](https://github.com/oantolin/embark): Contextual actions on the completion candidate at point.
+- [embark-consult](https://github.com/oantolin/embark): Consult integration for embark.
 - [general.el](https://github.com/noctuid/general.el): Help to define keys.
-- [imenu-anywhere](https://github.com/vspinu/imenu-anywhere): imenu across buffers.
-- [ivy](https://github.com/abo-abo/swiper): Completion mechanism for Emacs.
 - [hydra](https://github.com/abo-abo/hydra): Regroup related keybindings with a common prefix.
+- [marginalia](https://github.com/minad/marginalia): Rich annotations in the minibuffer.
 - [no-littering](https://github.com/emacscollective/no-littering): Store Emacs configuration files and persistent data in consistent paths.
-- [smex](https://github.com/nonsequitur/smex): Improve M-x by remembering recent commands.
-- [swiper](https://github.com/abo-abo/swiper): Alternative to isearch that uses ivy.
+- [orderless](https://github.com/oantolin/orderless): Space-separated, out-of-order completion matching.
 - [use-package](https://github.com/jwiegley/use-package): Package installation and configuration.
+- [vertico](https://github.com/minad/vertico): Vertical completion UI for the minibuffer.
 
 ## Edition packages
 
@@ -48,7 +48,6 @@
 
 ## Navigation and search packages
 
-- [counsel-projectile](https://github.com/ericdanan/counsel-projectile): Improve integration between projectile and ivy.
 - [deadgrep](https://github.com/Wilfred/deadgrep): Search with [ripgrep](https://github.com/BurntSushi/ripgrep).
 - [projectile](https://github.com/bbatsov/projectile): Library to work with projects.
 - [visual-regexp](https://github.com/benma/visual-regexp.el): Regex replace functions with visual feedback.
@@ -68,10 +67,11 @@
 
 - [ace-window](https://github.com/abo-abo/ace-window): Windows selection.
 
-## Company packages
+## Completion packages
 
-- [company](https://company-mode.github.io/): Completion system.
-- [company-box](https://github.com/sebastiencs/company-box): Add icons and documentation to company completions.
+- [cape](https://github.com/minad/cape): Additional completion-at-point functions.
+- [corfu](https://github.com/minad/corfu): In-buffer completion popup. Works in terminal Emacs natively on Emacs 31 via `tty-child-frames`.
+- [nerd-icons-corfu](https://github.com/LuigiPiucco/nerd-icons-corfu): Add icons to Corfu completions.
 
 ## Flycheck packages
 
@@ -99,7 +99,7 @@
 
 - [astro-ts-mode](https://git.isincredibly.gay/srxl/astro-ts-mode): Mode for Astro templates.
 - [emacs-lsp-booster](https://github.com/blahgeek/emacs-lsp-booster): Binary and Elisp code to improve the performance of LSP servers.
-- [lsp-ivy](https://github.com/emacs-lsp/lsp-ivy): List workspace synbols with Ivy.
+- [consult-lsp](https://github.com/gagbo/consult-lsp): List workspace symbols and diagnostics with Consult.
 - [lsp-mode](https://github.com/emacs-lsp/lsp-mode): Language Server Protocol support for Emacs.
 - [lsp-tailwindcss](https://github.com/merrickluo/lsp-tailwindcss/tree/master): Package to support the LSP server of TailwindCSS.
 - [lsp-treemacs](https://github.com/emacs-lsp/lsp-treemacs): Integrate lsp-mode with treemacs.
@@ -110,7 +110,6 @@
 
 ## YASnippet packages
 
-- [ivy-yasnippet](https://github.com/mkcms/ivy-yasnippet): Select snippets with ivy.
 - [yasnippet](https://github.com/capitaomorte/yasnippet): Template system.
 
 ## Theme packages

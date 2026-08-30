@@ -7,15 +7,20 @@
 ;; Configure Melpa
 (global-set-key (kbd "C-x p") 'list-packages)
 
+;; Index each use-package block in imenu-auto-rescan, must be set before use-package is loaded
+(setq use-package-enable-imenu-support t)
+
 (require 'use-package)
 (require 'use-package-ensure)
 (setq use-package-always-ensure t)
 
 (setq backup-directory-alist '(("" . "~/.emacs.d/var/backup/per-save")))
 
+;; Must be loaded before other packages
 (use-package no-littering
   :config
   (require 'recentf)
+  (recentf-mode 1)
   (add-to-list 'recentf-exclude
                (recentf-expand-file-name no-littering-var-directory))
   (add-to-list 'recentf-exclude
@@ -25,6 +30,14 @@
 
   (setq auto-save-file-name-transforms
       `((".*" ,(no-littering-expand-var-file-name "auto-save/") t))))
+
+;; Persist minibuffer history
+(use-package savehist
+  :ensure nil
+  :init
+  (setq history-length 1000)
+  (setq savehist-additional-variables '(corfu-history search-ring regexp-search-ring))
+  (savehist-mode 1))
 
 (use-package diminish
   :config
@@ -46,13 +59,8 @@
   (which-key-add-key-based-replacements "C-c s" "search & replace")
   (which-key-add-key-based-replacements "C-c T" "terminal"))
 
-;; Used by ivy to show recent commands in M-x
-(use-package smex)
-
-;; Ivy has an hydra
 (use-package hydra)
 
-;; Used by ivy-avy
 (use-package avy
   :bind (("C-," . avy-goto-char)
          ("C-'" . avy-goto-char-2)))
@@ -79,73 +87,89 @@
   ("y" avy-copy-line)
   ("Y" avy-copy-region)))
 
-; Used by ivy while doing fuzzy matching
-(use-package flx)
-
-(use-package ivy
-  :diminish (ivy-mode)
-  :bind (("C-x C-b" . ivy-switch-buffer))
-  :init
-  (setq enable-recursive-minibuffers t)
-  (ivy-mode 1)
-  :config
-  (setq ivy-height 20)
-  (setq ivy-count-format "(%d/%d) ")
-  (setq ivy-use-selectable-prompt t))
-
-(use-package ivy-hydra)
-
-(use-package swiper
-  :bind (("C-s" . counsel-grep-or-swiper)
-         ([remap isearch-backward] . counsel-grep-or-swiper)
-         ("C-M-s" . swiper-all))
-  :config
-  ;; Use rg instead of grep in counsel-grep-or-swiper
-  ;; -M 120 allows to hide lines that are too long to avoid slowdowns
-  ;;        (ex: log files)
-  (setq counsel-grep-base-command
-        "rg -i -M 120 --no-heading --line-number --color never '%s' %s"))
-
 ;; Add more information in some describe commands
 (setq completions-detailed t)
-
-(use-package counsel
-  :general
-  ("M-x" 'counsel-M-x
-   "C-x C-f" 'counsel-find-file
-   "C-x C-r" 'counsel-recentf
-   "C-x d" 'counsel-dired
-   "C-c h f" 'counsel-describe-function
-   "C-c h v" 'counsel-describe-variable
-   "C-c h l" 'counsel-find-library
-   "C-c h i" 'counsel-info-lookup-symbol
-   "C-c h a" 'counsel-apropos
-   "C-c h b" 'counsel-descbinds
-   "C-c e u" 'counsel-unicode-char
-   "M-i" 'counsel-imenu
-   "C-x M-b" 'counsel-bookmark
-   "M-y" 'counsel-yank-pop
-   "C-c T s" 'counsel-switch-to-shell-buffer
-   "C-c s s" '(counsel-rg :which-key "rg")
-   "C-c s f" '(counsel-fzf :which-key "fzf"))
-  :init
-  ;; apropos also search for noninteractive functions
-  (defvar apropos-do-all t)
-  :config
-  (define-key minibuffer-local-map
-    (kbd "C-r") 'counsel-minibuffer-history)
-
-  ;; Use a vertical bar as separator in counsel-yank-pop
-  (setq counsel-yank-pop-separator
-         (format "\n%s\n" (make-string 60 ?┅))))
 
 ;; Disable imenu's results cache
 (setq imenu-auto-rescan t)
 
-;; imenu in all buffers with same major mode or same projectile project
-(use-package imenu-anywhere
+;; apropos also search for noninteractive functions
+(setq apropos-do-all t)
+
+(use-package vertico
+  :init
+  (setq enable-recursive-minibuffers t)
+  (setq vertico-count 20)
+  (setq vertico-cycle t)
+  (vertico-mode))
+
+;; Path editing helpers in find-file (bundled with vertico under extensions/)
+(use-package vertico-directory
+  :ensure nil
+  :after vertico
+  :bind (:map vertico-map
+              ("RET" . vertico-directory-enter)
+              ("DEL" . vertico-directory-delete-char)
+              ("M-DEL" . vertico-directory-delete-word))
+  :hook (rfn-eshadow-update-overlay . vertico-directory-tidy))
+
+(use-package orderless
+  :init
+  (setq completion-styles '(orderless basic)
+        completion-category-defaults nil
+        completion-category-overrides '((file (styles basic partial-completion)))))
+
+(use-package marginalia
+  :bind (:map minibuffer-local-map ("M-A" . marginalia-cycle))
+  :init
+  (marginalia-mode))
+
+;; Hide commands not applicable to the current mode from M-x
+(setq read-extended-command-predicate #'command-completion-default-include-p)
+
+(use-package consult
   :general
-  ("C-c s i" '(ivy-imenu-anywhere :which-key "imenu-anywhere")))
+  ("C-x C-b" 'consult-buffer
+   "C-x C-r" 'consult-recent-file
+   "C-x M-b" 'consult-bookmark
+   "M-y" 'consult-yank-pop
+   "M-i" 'consult-imenu
+   "C-s" 'consult-line
+   "C-M-s" 'consult-line-multi
+   "C-c h i" 'info-lookup-symbol
+   "C-c h f" 'describe-function
+   "C-c h v" 'describe-variable
+   "C-c h l" 'find-library
+   "C-c h a" 'apropos
+   "C-c e u" 'insert-char
+   "C-c s s" '(consult-ripgrep :which-key "rg")
+   "C-c s f" '(consult-fd :which-key "fd")
+   "C-c s i" '(consult-imenu-multi :which-key "imenu-multi"))
+  :bind (([remap isearch-backward] . consult-line)
+         :map minibuffer-local-map
+         ("C-r" . consult-history))
+  :init
+  (setq xref-show-xrefs-function #'consult-xref
+        xref-show-definitions-function #'consult-xref)
+  :config
+  ;; `projectile-project-root' carries no autoload cookie and projectile is
+  ;; deferred until "C-c p", so it must be loaded explicitly here.
+  (setq consult-project-function
+        (lambda (_)
+          (require 'projectile)
+          (projectile-project-root))))
+
+(use-package embark
+  :bind (("C-." . embark-act)
+         ("C-c e a" . embark-act)
+         ("C-;" . embark-dwim)
+         ("C-c h b" . embark-bindings))
+  :init
+  (setq prefix-help-command #'embark-prefix-help-command))
+
+(use-package embark-consult
+  :after (embark consult)
+  :hook (embark-collect-mode . consult-preview-at-point-mode))
 
 (use-package crux
   :bind (("<S-return>" . crux-smart-open-line)
@@ -171,7 +195,7 @@
 (require 'dired-settings)
 (require 'treemacs-settings)
 (require 'windows-settings)
-(require 'company-settings)
+(require 'completion-settings)
 (require 'yasnippet-settings)
 (require 'flycheck-settings)
 (require 'shell-settings)

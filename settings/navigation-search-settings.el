@@ -37,13 +37,8 @@
                 '("elpa" "target" "node_modules" ".svn" ".cache" "bower_components"
                   ".git" ".settings" "dist")))
 
-  (setq projectile-completion-system 'ivy)
+  (setq projectile-completion-system 'default)
 
   (projectile-mode 1))
-
-(use-package counsel-projectile
-  :after projectile
-  :config
-  (counsel-projectile-mode))
 
 (provide 'navigation-search-settings)

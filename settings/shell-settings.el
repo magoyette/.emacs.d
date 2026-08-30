@@ -3,7 +3,7 @@
 (use-package shell
   :config
   (define-key shell-mode-map
-    (kbd "C-r") 'counsel-shell-history))
+    (kbd "C-r") 'consult-history))
 
 ;; Syntax highlight for Bash variables inside strings
 ;; Source: https://fuco1.github.io/2017-06-11-Font-locking-with-custom-matchers.html

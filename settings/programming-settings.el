@@ -72,6 +72,8 @@
   :init
   (setq lsp-use-plists t)
   (setenv "LSP_USE_PLISTS" "true")
+  (setq lsp-keymap-prefix "C-c l")
+  (which-key-add-key-based-replacements "C-c l" "lsp")
   :preface
   ;; See https://github.com/blahgeek/emacs-lsp-booster
   (defun lsp-booster--advice-json-parse (old-fn &rest args)
@@ -104,9 +106,6 @@
             (cons "emacs-lsp-booster" (append '("--disable-bytecode" "--") orig-result)))
         orig-result)))
   (advice-add 'lsp-resolve-final-command :around #'lsp-booster--advice-final-command)
-  :init
-  (setq lsp-keymap-prefix "C-c l")
-  (which-key-add-key-based-replacements "C-c l" "lsp")
   :commands lsp
   :config
   (setq lsp-completion-provider :capf)
@@ -121,9 +120,10 @@
   :config
   (lsp-treemacs-sync-mode 1))
 
-(use-package lsp-ivy
-    :bind (("C-c l s" . lsp-ivy-workspace-symbol)
-           ("C-c l S" . lsp-ivy-global-workspace-symbol)))
+(use-package consult-lsp
+  :bind (("C-c l s" . consult-lsp-symbols)
+         ("C-c l S" . consult-lsp-file-symbols)
+         ("C-c l d" . consult-lsp-diagnostics)))
 
 (use-package lsp-tailwindcss
   :ensure nil

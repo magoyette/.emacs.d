@@ -10,7 +10,8 @@ This is a personal Emacs 31 configuration. The repository should be cloned to `~
 
 ### Required external tools
 
-- **RipGrep** (`rg`) — used by counsel-rg, swiper, and deadgrep
+- **RipGrep** (`rg`) — used by consult-ripgrep, consult-line, and deadgrep
+- **fd** — used by consult-fd
 - **Git** — required by magit
 - **Pandoc** — required for markdown preview
 - **ShellCheck** — used by flycheck for shell script linting
@@ -44,7 +45,7 @@ A `~/.emacs.d/local-settings.el` file must be created for machine-specific confi
 ### Load order
 
 1. `early-init.el` — sets GC threshold, `LSP_USE_PLISTS` env var, disables UI elements, configures package archives (MELPA, NonGNU ELPA, jcs-elpa)
-2. `init.el` — adds `settings/` to load path, installs `use-package`, configures core packages (ivy/counsel/swiper, avy, hydra, crux, nerd-icons), then `require`s all settings modules
+2. `init.el` — adds `settings/` to load path, installs `use-package`, configures core packages (vertico/consult/marginalia/orderless/embark, avy, hydra, crux, nerd-icons), then `require`s all settings modules
 
 ### Settings modules (`settings/`)
 
@@ -54,17 +55,17 @@ Each file handles a specific domain and ends with `(provide 'module-name)`:
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | `emacs-settings.el`             | Font, UI, eldoc, ISO dead keys                                                                                                                  |
 | `edition-settings.el`           | expand-region, multiple-cursors, undo-tree, move-text                                                                                           |
-| `navigation-search-settings.el` | projectile, counsel-projectile, deadgrep, visual-regexp                                                                                         |
+| `navigation-search-settings.el` | projectile, deadgrep, visual-regexp                                                                                                             |
 | `dired-settings.el`             | dired + nerd-icons-dired                                                                                                                        |
 | `treemacs-settings.el`          | treemacs + projectile/magit/nerd-icons integrations                                                                                             |
 | `windows-settings.el`           | ace-window                                                                                                                                      |
-| `company-settings.el`           | company + company-box                                                                                                                           |
+| `completion-settings.el`        | corfu, nerd-icons-corfu, cape                                                                                                                   |
 | `flycheck-settings.el`          | flycheck + flycheck-pos-tip, flycheck-package, flycheck-relint                                                                                  |
 | `shell-settings.el`             | shell configuration                                                                                                                             |
 | `git-settings.el`               | magit, diff-hl, git-modes, smerge-mode hydra                                                                                                    |
 | `markdown-settings.el`          | markdown-mode                                                                                                                                   |
 | `yaml-settings.el`              | yaml-mode, indent-tools                                                                                                                         |
-| `programming-settings.el`       | lsp-mode (with emacs-lsp-booster integration), lsp-ui, lsp-treemacs, lsp-ivy, lsp-tailwindcss, web-mode, astro-ts-mode, treesit-langs, prettier |
+| `programming-settings.el`       | lsp-mode (with emacs-lsp-booster integration), lsp-ui, lsp-treemacs, consult-lsp, lsp-tailwindcss, web-mode, astro-ts-mode, treesit-langs, prettier |
 | `theme-settings.el`             | doom-themes, doom-modeline, rainbow-delimiters, page-break-lines                                                                                |
 
 ### Key conventions
@@ -73,4 +74,4 @@ Each file handles a specific domain and ends with `(provide 'module-name)`:
 - **Keybindings**: `general.el` is used for defining keys (`:general` in `use-package`). `which-key` documents prefix keys (`C-c e` edition, `C-c s` search, `C-c g` git, `C-c l` lsp, `C-c T` terminal).
 - **File storage**: `no-littering` redirects generated files to `var/` and `etc/` subdirectories. Custom variables go to `etc/custom.el`.
 - **LSP performance**: GC threshold set to 200MB in `early-init.el`; `emacs-lsp-booster` wraps LSP server commands when the binary is available.
-- **Completion**: Ivy ecosystem (ivy + counsel + swiper + flx for fuzzy matching + smex for M-x history).
+- **Completion**: minibuffer completion via Vertico + Consult + Marginalia + Orderless (fuzzy/component matching) + Embark (contextual actions); `savehist-mode` persists history, including M-x recency. In-buffer completion via Corfu (+ nerd-icons-corfu for icons; terminal popups work natively via Emacs 31's `tty-child-frames`) + Cape.
