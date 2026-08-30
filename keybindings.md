@@ -88,7 +88,9 @@
 | C-x u      | visualize undo tree                                               |
 | M-=        | Word count for region                                             |
 | C-«        | Set the mark                                                      |
+| C-c e p    | Same as C-« (terminal-safe alias)                                 |
 | M-«        | Jump to mark                                                      |
+| C-c e j    | Same as M-« (terminal-safe alias)                                 |
 | C-x C-x    | Exchange the point and the mark                                   |
 | C-x n      | Narrow or widen a region, an org block, an org subtree or a defun |
 | C-u C-x n  | Narrow a narrowed buffer                                          |
@@ -118,6 +120,7 @@
 | Keybinding  | Action                                                                 |
 | ----------- | ---------------------------------------------------------------------- |
 | C-S-c C-S-c | Edit lines in region with multiple cursors                             |
+| C-c e l     | Same as C-S-c C-S-c (terminal-safe alias)                              |
 | C-c s c     | Select multiple cursors with a regex                                   |
 | C-.         | Show only the lines with multiple cursors                              |
 | C-j         | Insert a newline in multiple cursors mode                              |

@@ -37,6 +37,32 @@
       save-interprogram-paste-before-kill t
       mouse-yank-at-point t)
 
+;; In terminal Emacs under WSL and the terminal multiplexer herdr,
+;; clip.exe is used since herdr doesn't forward copy to Windows clipboard.
+(when (and (not (display-graphic-p)) (getenv "WSL_DISTRO_NAME"))
+  (defun wsl-clipboard-copy (text &optional _push)
+    "Copy TEXT to the Windows clipboard via clip.exe.
+Used as `interprogram-cut-function' in terminal Emacs under WSL."
+    (let ((proc (start-process "clip.exe" nil "clip.exe")))
+      (process-send-string proc text)
+      (process-send-eof proc)))
+
+  (setq interprogram-cut-function #'wsl-clipboard-copy))
+
+;; `xterm-extra-capabilities' defaults to `check': Emacs probes the terminal
+;; with a DA query and only sends the modifyOtherKeys enable sequence
+;; if the reply looks right. Forcing the list skips the probe and
+;; sends it unconditionally.
+(unless (display-graphic-p)
+  (setq xterm-extra-capabilities '(modifyOtherKeys)))
+
+;; Some terminal multiplexers only forward a chord like Ctrl+= to Emacs
+;; if it has enabled the Kitty keyboard protocol.
+;; xterm.el decodes Kitty/CSI-u input natively but never enables the
+;; protocol itself, so kkp.el is needed to actually send the enable sequence.
+(use-package kkp
+  :hook (tty-setup . global-kkp-mode))
+
 ;; Undo redo
 (when (fboundp 'winner-mode)
   (winner-mode 1))
@@ -69,6 +95,7 @@
 
 (use-package multiple-cursors
   :bind (("C-S-c C-S-c" . mc/edit-lines)
+         ("C-c e l" . mc/edit-lines)
          ("C->" . mc/mark-next-like-this)
          ("C-<" . mc/mark-previous-like-this)
          ("C-c C-<" . mc/mark-all-like-this))
@@ -95,6 +122,7 @@ Equivalent to \\[set-mark-command] when \\[transient-mark-mode] is disabled."
   (message "Pushed mark to ring"))
 
 (global-set-key (kbd "C-«") 'push-mark-no-activate)
+(global-set-key (kbd "C-c e p") 'push-mark-no-activate)
 
 (defun jump-to-mark ()
   "Jumps to the local mark, respecting the `mark-ring' order.
@@ -103,6 +131,7 @@ This is the same as using \\[set-mark-command] with the prefix argument."
   (set-mark-command 1))
 
 (global-set-key (kbd "M-«") 'jump-to-mark)
+(global-set-key (kbd "C-c e j") 'jump-to-mark)
 
 ;; Override default exchange-point-and-mark-no-activate
 (defun exchange-point-and-mark-no-activate ()
