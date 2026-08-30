@@ -19,6 +19,17 @@
                                              emacs-lisp-checkdoc
                                              json-python-json))
 
+  ;; The built-in markdown-markdownlint-cli2 checker only looks for
+  ;; .markdownlint-cli2.* config files.
+  (setq-default flycheck-markdown-markdownlint-cli2-config
+                '(".markdownlint-cli2.jsonc"
+                  ".markdownlint-cli2.json"
+                  ".markdownlint-cli2.yaml"
+                  ".markdownlint.jsonc"
+                  ".markdownlint.json"
+                  ".markdownlint.yaml"
+                  ".markdownlint.yml"))
+
   (global-flycheck-annotate-mode))
 
 (use-package flycheck-package
