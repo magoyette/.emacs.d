@@ -13,6 +13,7 @@
 - [Flycheck packages](#flycheck-packages)
 - [Git packages](#git-packages)
 - [Markdown packages](#markdown-packages)
+- [Org packages](#org-packages)
 - [YAML packages](#yaml-packages)
 - [Programming packages](#programming-packages)
 - [YASnippet packages](#yasnippet-packages)
@@ -91,6 +92,10 @@
 
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/): Mode for Markdown files.
 
+## Org packages
+
+- [org-appear](https://github.com/awth13/org-appear): Reveal hidden emphasis markers and links while point is on them.
+
 ## YAML packages
 
 - [indent-tools](https://gitlab.com/emacs-stuff/indent-tools): Move around and modify code based on indentation.
@@ -117,5 +122,6 @@
 
 - [doom-modeline](https://github.com/seagle0128/doom-modeline) : modeline from Doom Emacs.
 - [doom-themes](https://github.com/doomemacs/themes): doom-one is a dark theme similar to Atom One Dark.
+- [modus-themes](https://github.com/protesilaos/modus-themes): Accessible, highly legible light and dark themes; bundled with Emacs, no install needed.
 - [page-break-lines](https://github.com/purcell/page-break-lines): Display page break as lines.
 - [rainbow-delimiters](https://github.com/Fanael/rainbow-delimiters): Highlight delimiters according to their depth.

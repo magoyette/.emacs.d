@@ -64,14 +64,15 @@ Each file handles a specific domain and ends with `(provide 'module-name)`:
 | `shell-settings.el`             | shell configuration                                                                                                                             |
 | `git-settings.el`               | magit, diff-hl, git-modes, smerge-mode hydra                                                                                                    |
 | `markdown-settings.el`          | markdown-mode                                                                                                                                   |
+| `org-settings.el`               | org, org-appear                                                                                                                                 |
 | `yaml-settings.el`              | yaml-mode, indent-tools                                                                                                                         |
 | `programming-settings.el`       | lsp-mode (with emacs-lsp-booster integration), lsp-ui, lsp-treemacs, consult-lsp, lsp-tailwindcss, web-mode, astro-ts-mode, treesit-langs, prettier |
-| `theme-settings.el`             | doom-themes, doom-modeline, rainbow-delimiters, page-break-lines                                                                                |
+| `theme-settings.el`             | doom-themes, modus-themes (bundled), doom-modeline, rainbow-delimiters, page-break-lines; theme via `local-settings-theme`, `C-c z` switches    |
 
 ### Key conventions
 
 - **Package management**: `use-package` with `:ensure t` (set globally). Packages install from MELPA by default.
-- **Keybindings**: `general.el` is used for defining keys (`:general` in `use-package`). `which-key` documents prefix keys (`C-c e` edition, `C-c s` search, `C-c g` git, `C-c l` lsp, `C-c T` terminal).
+- **Keybindings**: `general.el` is used for defining keys (`:general` in `use-package`). `which-key` documents prefix keys (`C-c e` edition, `C-c s` search, `C-c g` git, `C-c l` lsp, `C-c o` org, `C-c z` select theme, `C-c T` terminal).
 - **File storage**: `no-littering` redirects generated files to `var/` and `etc/` subdirectories. Custom variables go to `etc/custom.el`.
 - **LSP performance**: GC threshold set to 200MB in `early-init.el`; `emacs-lsp-booster` wraps LSP server commands when the binary is available.
 - **Completion**: minibuffer completion via Vertico + Consult + Marginalia + Orderless (fuzzy/component matching) + Embark (contextual actions); `savehist-mode` persists history, including M-x recency. In-buffer completion via Corfu (+ nerd-icons-corfu for icons; terminal popups work natively via Emacs 31's `tty-child-frames`) + Cape.

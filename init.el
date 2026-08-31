@@ -201,6 +201,7 @@
 (require 'shell-settings)
 (require 'git-settings)
 (require 'markdown-settings)
+(require 'org-settings)
 (require 'programming-settings)
 (require 'yaml-settings)
 (require 'theme-settings)

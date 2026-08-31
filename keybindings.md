@@ -14,6 +14,7 @@
   - [Magit blame](#magit-blame)
   - [Magit commit](#magit-commit)
 - [Markdown](#markdown)
+- [Org](#org)
 - [YAML](#yaml)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -27,6 +28,7 @@
 | M-z        | Switch to another window                                    |
 | C-c w      | Hydra for windows management                                |
 | C-c T      | Terminal commands prefix                                    |
+| C-c z      | Select and switch theme                                     |
 | C-+        | Increase text scale                                         |
 | C--        | Decrease text scale                                         |
 | C-x C-e    | Evaluate the expression before point                        |
@@ -167,6 +169,23 @@
 | M-LEFT     | Decrease indent of list item                                |
 | C-c C-n    | Move to next heading                                        |
 | C-c C-p    | Move to previous heading                                    |
+
+## Org
+
+| Keybinding | Action                               |
+| ---------- | ------------------------------------ |
+| C-c o l    | Store link                           |
+| C-c o c    | Capture                              |
+| C-c o a    | Agenda                               |
+| C-c o b    | Switch buffer                        |
+| C-c o h    | Jump to a heading with Consult       |
+| C-c o H    | Jump to an agenda item with Consult  |
+| C-c o i    | Clock in                             |
+| C-c o I    | Clock in last                        |
+| C-c o o    | Clock out                            |
+| C-c o C    | Clock cancel                         |
+| C-c o g    | Clock goto                           |
+| C-c o d    | Clock display                        |
 
 ## YAML
 

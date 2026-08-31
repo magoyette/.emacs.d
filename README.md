@@ -42,6 +42,12 @@ The `local-settings.el` file is used for configurations that vary depending on t
 ;; Configure which folders are scanned by Magit when listing repositories (`C-c g r`)
 (setq magit-repository-directories '(("~/.emacs.d" . 0)
                                      ("~/repos" . 1)))
+
+;; Theme to load at startup
+(setq local-settings-theme 'doom-one)
+
+;; Themes included in the theme selection of `C-c z'
+(setq local-settings-themes '(doom-one modus-operandi-tinted modus-vivendi-tinted))
 ```
 
 ## External dependencies
