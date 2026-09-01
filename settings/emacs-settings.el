@@ -7,6 +7,9 @@
 ;; Increase amount of data read from process for lsp
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 
+;; Avoid pathological slowdowns on files with very long lines
+(global-so-long-mode 1)
+
 ;; Prefer newest Emacs Lisp byte code
 (setq load-prefer-newer t)
 
@@ -21,6 +24,9 @@
 
 ;; Use y or n confirmations instead of yes or no
 (setq use-short-answers t)
+
+;; Repeat built-in key sequences without the prefix (e.g. C-x o o o)
+(repeat-mode 1)
 
 ;; Fix dead keys on Linux
 (require 'iso-transl)

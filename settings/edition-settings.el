@@ -11,6 +11,13 @@
 (setq-default tab-width 4)
 (setq require-final-newline t)
 
+;; Bundled since Emacs 30; applies .editorconfig on top of the defaults above
+(use-package editorconfig
+  :ensure nil
+  :diminish editorconfig-mode
+  :config
+  (editorconfig-mode 1))
+
 ;; Sentence end with a single space
 (setq sentence-end-double-space nil)
 
@@ -75,6 +82,9 @@ Used as `interprogram-cut-function' in terminal Emacs under WSL."
 
 ;; Auto indent on return
 (define-key global-map (kbd "RET") 'newline-and-indent)
+
+;; Bracket and quote pairing in code buffers only
+(add-hook 'prog-mode-hook #'electric-pair-local-mode)
 
 ;; Unique buffer names
 (use-package uniquify
