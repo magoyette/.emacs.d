@@ -11,7 +11,13 @@
   (treesit-langs-major-mode-setup))
 
 (use-package astro-ts-mode
-  :mode (("\\.astro\\'" . astro-ts-mode)))
+  :mode (("\\.astro\\'" . astro-ts-mode))
+  :config
+  ;; The treesit-langs bundle does not ship the astro grammar, so build it
+  ;; from source (git + cc) the first time astro-ts-mode loads. Without this,
+  ;; a fresh machine needs a manual `astro-ts-mode-install-parsers' run.
+  (unless (treesit-language-available-p 'astro)
+    (treesit-install-language-grammar 'astro)))
 
 (use-package web-mode
   :mode (("\\.html?\\'" . web-mode))
