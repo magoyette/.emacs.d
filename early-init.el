@@ -23,6 +23,20 @@
 ;; astro-ts-mode-autoloads.el calls (treesit-ready-p ...) which fails if treesit isn't loaded.
 (require 'treesit nil t)
 
+;; astro-ts-mode-autoloads.el calls (treesit-ready-p 'astro) during
+;; `package-initialize', which warns at every startup when the grammar is
+;; missing. The treesit-langs bundle does not ship the astro grammar, so build
+;; it from source (git + cc) once, before the autoloads run.
+(when (and (fboundp 'treesit-available-p)
+           (treesit-available-p)
+           (not (treesit-language-available-p 'astro)))
+  (add-to-list 'treesit-language-source-alist
+               '(astro "https://github.com/virchau13/tree-sitter-astro"))
+  (condition-case err
+      (treesit-install-language-grammar 'astro)
+    (error (message "Could not install the astro tree-sitter grammar: %s"
+                    (error-message-string err)))))
+
 ;; Configure packages
 (require 'package)
 
