@@ -43,6 +43,10 @@
      'magit-status-sections-hook inserter
      'magit-insert-unpulled-from-upstream))
 
+  (magit-add-section-hook 'magit-status-sections-hook
+                          #'magit-insert-worktrees
+                          nil t)
+
   (setq magit-display-buffer-function 'magit-display-buffer-fullframe-status-v1)
 
   (setq magit-process-finish-apply-ansi-colors t)
