@@ -44,18 +44,6 @@
       save-interprogram-paste-before-kill t
       mouse-yank-at-point t)
 
-;; In terminal Emacs under WSL and the terminal multiplexer herdr,
-;; clip.exe is used since herdr doesn't forward copy to Windows clipboard.
-(when (and (not (display-graphic-p)) (getenv "WSL_DISTRO_NAME"))
-  (defun wsl-clipboard-copy (text &optional _push)
-    "Copy TEXT to the Windows clipboard via clip.exe.
-Used as `interprogram-cut-function' in terminal Emacs under WSL."
-    (let ((proc (start-process "clip.exe" nil "clip.exe")))
-      (process-send-string proc text)
-      (process-send-eof proc)))
-
-  (setq interprogram-cut-function #'wsl-clipboard-copy))
-
 ;; `xterm-extra-capabilities' defaults to `check': Emacs probes the terminal
 ;; with a DA query and only sends the modifyOtherKeys enable sequence
 ;; if the reply looks right. Forcing the list skips the probe and
