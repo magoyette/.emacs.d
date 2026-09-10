@@ -14,6 +14,7 @@
 - [Git packages](#git-packages)
 - [Markdown packages](#markdown-packages)
 - [Org packages](#org-packages)
+- [Prose packages](#prose-packages)
 - [YAML packages](#yaml-packages)
 - [Programming packages](#programming-packages)
 - [YASnippet packages](#yasnippet-packages)
@@ -95,6 +96,15 @@
 ## Org packages
 
 - [org-appear](https://github.com/awth13/org-appear): Reveal hidden emphasis markers and links while point is on them.
+
+## Prose packages
+
+- [jinx](https://github.com/minad/jinx): French and English spellchecking.
+- [lsp-ltex-plus](https://github.com/ltex-plus/emacs-ltex-plus): Offline grammar and spelling diagnostics through LTeX+ and LSP.
+- [powerthesaurus](https://github.com/SavchenkoValeriy/emacs-powerthesaurus): English synonyms and antonyms from powerthesaurus.org.
+- [synosaurus](https://github.com/hpdeifel/synosaurus): Offline English thesaurus.
+- [vertico-multiform](https://github.com/minad/vertico): Compact grid layout for the `jinx-correct` candidate list.
+- [wiktionary-bro](https://github.com/agzam/wiktionary-bro.el): Etymology-focused Wiktionary lookups.
 
 ## YAML packages
 

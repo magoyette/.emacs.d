@@ -30,6 +30,15 @@
                   ".markdownlint.yaml"
                   ".markdownlint.yml"))
 
+  ;; lsp-mode creates its Flycheck checker lazily. Once it does, retain
+  ;; markdownlint's structural checks after LSP diagnostics in Markdown modes.
+  ;; The checker mode predicates keep this chain out of Org and programming
+  ;; buffers, including the existing LSP-to-ESLint chain.
+  (with-eval-after-load 'lsp-diagnostics
+    (lsp-diagnostics-lsp-checker-if-needed)
+    (flycheck-add-next-checker
+     'lsp 'markdown-markdownlint-cli2 t))
+
   (global-flycheck-annotate-mode))
 
 (use-package flycheck-package

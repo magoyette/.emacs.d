@@ -15,6 +15,7 @@
   - [Magit commit](#magit-commit)
 - [Markdown](#markdown)
 - [Org](#org)
+- [Prose](#prose)
 - [YAML](#yaml)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -56,7 +57,7 @@
 | C-M-s           | Search in all opened buffers                  |
 | M-i             | imenu in buffer                               |
 | C-c s i         | imenu in all buffers of same mode or project  |
-| C-c s r         | re-builder (C-c <tab> to change regex syntax) |
+| C-c s r         | re-builder (`C-c TAB` changes regex syntax)   |
 | C-c p           | Projectile commands prefix                    |
 | C-x d           | Dired (Hydra with .)                          |
 | M-a             | Select or open Treemacs window                |
@@ -172,20 +173,36 @@
 
 ## Org
 
-| Keybinding | Action                               |
-| ---------- | ------------------------------------ |
-| C-c o l    | Store link                           |
-| C-c o c    | Capture                              |
-| C-c o a    | Agenda                               |
-| C-c o b    | Switch buffer                        |
-| C-c o h    | Jump to a heading with Consult       |
-| C-c o H    | Jump to an agenda item with Consult  |
-| C-c o i    | Clock in                             |
-| C-c o I    | Clock in last                        |
-| C-c o o    | Clock out                            |
-| C-c o C    | Clock cancel                         |
-| C-c o g    | Clock goto                           |
-| C-c o d    | Clock display                        |
+| Keybinding | Action                              |
+| ---------- | ----------------------------------- |
+| C-c o l    | Store link                          |
+| C-c o c    | Capture                             |
+| C-c o a    | Agenda                              |
+| C-c o b    | Switch buffer                       |
+| C-c o h    | Jump to a heading with Consult      |
+| C-c o H    | Jump to an agenda item with Consult |
+| C-c o i    | Clock in                            |
+| C-c o I    | Clock in last                       |
+| C-c o o    | Clock out                           |
+| C-c o C    | Clock cancel                        |
+| C-c o g    | Clock goto                          |
+| C-c o d    | Clock display                       |
+
+## Prose
+
+Keybindings for org and markdown.
+
+| Keybinding | Action                                         |
+| ---------- | ---------------------------------------------- |
+| M-$        | Correct word at point (jinx)                   |
+| C-c c l    | Set jinx languages                             |
+| C-c c d    | Dictionary lookup at point (local dictd)       |
+| C-c c D    | Dictionary search (prompt)                     |
+| C-c c L    | Toggle the prose language (English/French)     |
+| C-c l a    | LSP actions (fix/add/disable/suppress)         |
+| C-c c w    | Wiktionary lookup                              |
+| C-c c p    | English thesaurus lookup (powerthesaurus)      |
+| C-c c s    | English thesaurus lookup, offline (synosaurus) |
 
 ## YAML
 

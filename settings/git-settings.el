@@ -62,7 +62,15 @@
       (magit-restore-window-configuration)
       (mapc #'kill-buffer buffers)))
 
-  (bind-key "q" #'mu-magit-kill-buffers magit-status-mode-map))
+  (bind-key "q" #'mu-magit-kill-buffers magit-status-mode-map)
+
+  (defun git-settings-disable-flycheck ()
+    "Turn off `flycheck-mode' in the Git commit message buffer."
+    (flycheck-mode -1))
+
+  (with-eval-after-load 'git-commit
+    (remove-hook 'git-commit-setup-hook #'git-commit-setup-capf)
+    (add-hook 'git-commit-setup-hook #'git-settings-disable-flycheck)))
 
 (defun kill-magit-buffers ()
   "Prompt to kill each magit buffer."

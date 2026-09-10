@@ -18,7 +18,10 @@ This is a personal Emacs 31 configuration. The repository should be cloned to `~
 - **markdownlint-cli2** — used by flycheck for markdown linting
 - **Node/npm** — required for LSP servers and prettier
 - **emacs-lsp-booster** binary — improves LSP performance
+- **LTeX+ LS** (`ltex-ls-plus`) — local grammar and spelling server
 - **DejaVuSansM Nerd Font Mono** — required by nerd-icons
+- **hunspell + Enchant** (with English and French dictionaries) — spellchecking backend for `jinx`
+- **dictd** (with GCIDE, WordNet, and English/French FreeDict databases) — local offline dictionary server for `dictionary.el`
 
 ### Node dependencies
 
@@ -65,14 +68,15 @@ Each file handles a specific domain and ends with `(provide 'module-name)`:
 | `git-settings.el`               | magit, diff-hl, git-modes, smerge-mode hydra                                                                                                    |
 | `markdown-settings.el`          | markdown-mode                                                                                                                                   |
 | `org-settings.el`               | org, org-appear                                                                                                                                 |
+| `prose-settings.el`             | jinx, LTeX+, prose variables, dictionary.el, thesaurus, and etymology lookups                                                                   |
 | `yaml-settings.el`              | yaml-mode, indent-tools                                                                                                                         |
-| `programming-settings.el`       | lsp-mode (with emacs-lsp-booster integration), lsp-ui, lsp-treemacs, consult-lsp, lsp-tailwindcss, web-mode, astro-ts-mode, treesit-langs, prettier |
+| `programming-settings.el`       | lsp-mode and integrations, web-mode, astro-ts-mode, treesit-langs, prettier                                                                     |
 | `theme-settings.el`             | doom-themes, modus-themes (bundled), doom-modeline, rainbow-delimiters, page-break-lines; theme via `local-settings-theme`, `C-c z` switches    |
 
 ### Key conventions
 
 - **Package management**: `use-package` with `:ensure t` (set globally). Packages install from MELPA by default.
-- **Keybindings**: `general.el` is used for defining keys (`:general` in `use-package`). `which-key` documents prefix keys (`C-c e` edition, `C-c s` search, `C-c g` git, `C-c l` lsp, `C-c o` org, `C-c z` select theme, `C-c T` terminal).
+- **Keybindings**: `general.el` is used for defining keys (`:general` in `use-package`). `which-key` documents prefix keys (`C-c e` edition, `C-c s` search, `C-c g` git, `C-c l` lsp, `C-c o` org, `C-c z` select theme, `C-c T` terminal, `C-c c` prose with `w`/`d` sub-prefixes for writing and dictionary/lookup).
 - **File storage**: `no-littering` redirects generated files to `var/` and `etc/` subdirectories. Custom variables go to `etc/custom.el`.
 - **LSP performance**: GC threshold set to 200MB in `early-init.el`; `emacs-lsp-booster` wraps LSP server commands when the binary is available.
 - **Completion**: minibuffer completion via Vertico + Consult + Marginalia + Orderless (fuzzy/component matching) + Embark (contextual actions); `savehist-mode` persists history, including M-x recency. In-buffer completion via Corfu (+ nerd-icons-corfu for icons; terminal popups work natively via Emacs 31's `tty-child-frames`) + Cape.

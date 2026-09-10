@@ -115,7 +115,9 @@
   (lsp-modeline-code-actions-mode))
 
 (use-package lsp-ui
-  :commands lsp-ui-mode)
+  :commands lsp-ui-mode
+  ;; Flycheck annotations already render diagnostics inline.
+  :custom (lsp-ui-sideline-enable nil))
 
 (use-package lsp-treemacs
   :config
