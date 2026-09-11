@@ -23,6 +23,10 @@
 
 (use-package doom-modeline
   :ensure t
+  :custom
+  (doom-modeline-enable-word-count t)
+  (doom-modeline-continuous-word-count-modes
+   '(markdown-mode gfm-mode org-mode))
   :init (doom-modeline-mode 1))
 
 (defvar local-settings-theme 'doom-one
