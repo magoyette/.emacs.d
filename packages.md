@@ -48,6 +48,7 @@
 - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
 - [undo-tree](https://elpa.gnu.org/packages/undo-tree.html) : Visualize undo history as a tree of changes.
 - [whole-line-or-region](https://github.com/purcell/whole-line-or-region): Package to operate on the current line when the region is not defined.
+- [ws-butler](https://github.com/lewang/ws-butler): Trim trailing whitespace only on edited lines when saving.
 
 ## Navigation and search packages
 

@@ -75,7 +75,7 @@ Each file handles a specific domain and ends with `(provide 'module-name)`:
 
 ### Key conventions
 
-- **Package management**: `use-package` with `:ensure t` (set globally). Packages install from MELPA by default.
+- **Package management**: `use-package` with `:ensure t` (set globally). Packages install from MELPA by default. Document every newly introduced package in `packages.md` under the corresponding section.
 - **Keybindings**: `general.el` is used for defining keys (`:general` in `use-package`). `which-key` documents prefix keys (`C-c e` edition, `C-c s` search, `C-c g` git, `C-c l` lsp, `C-c o` org, `C-c z` select theme, `C-c T` terminal, `C-c c` prose with `w`/`d` sub-prefixes for writing and dictionary/lookup).
 - **File storage**: `no-littering` redirects generated files to `var/` and `etc/` subdirectories. Custom variables go to `etc/custom.el`.
 - **LSP performance**: GC threshold set to 200MB in `early-init.el`; `emacs-lsp-booster` wraps LSP server commands when the binary is available.

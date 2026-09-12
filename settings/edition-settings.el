@@ -29,11 +29,14 @@
 
 (use-package whitespace
   :diminish whitespace-mode
+  :hook (prog-mode . whitespace-mode)
   :config
-  (setq whitespace-style '(face tabs empty trailing))
+  (setq whitespace-style '(face tabs empty trailing)))
 
-  (add-hook 'prog-mode-hook #'whitespace-mode)
-  (add-hook 'before-save-hook #'whitespace-cleanup))
+(use-package ws-butler
+  :custom
+  (ws-butler-keep-whitespace-before-point nil)
+  :hook (prog-mode . ws-butler-mode))
 
 ;; Backup files that are in source control
 (setq vc-make-backup-files t)
