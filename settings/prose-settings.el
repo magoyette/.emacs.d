@@ -1,6 +1,99 @@
 ;;; -*- lexical-binding: t; -*-
 
+(require 'seq)
+
 (which-key-add-key-based-replacements "C-c c" "prose")
+
+(defconst prose-todo-statuses
+  '("IDEA" "TODO" "NEXT" "READING" "STARTED" "WAIT" "DONE")
+  "Ordered statuses used for Markdown tasks.")
+
+(defun prose-todo--status-bounds-on-line ()
+  "Return bounds of a TODO status on the current line.
+Prefer the status at point, otherwise return the first status on the line."
+  (let ((origin (point))
+        (regexp (regexp-opt prose-todo-statuses 'symbols))
+        first-match
+        point-match)
+    (save-excursion
+      (goto-char (line-beginning-position))
+      (while (re-search-forward regexp (line-end-position) t)
+        (let ((bounds (cons (match-beginning 0) (match-end 0))))
+          (unless first-match
+            (setq first-match bounds))
+          (when (and (<= (car bounds) origin)
+                     (<= origin (cdr bounds)))
+            (setq point-match bounds))))
+      (or point-match first-match))))
+
+(defun prose-todo--cycle-status (step)
+  "Cycle the TODO status on the current line by STEP positions."
+  (let* ((bounds (prose-todo--status-bounds-on-line))
+         (status (and bounds
+                      (buffer-substring-no-properties
+                       (car bounds) (cdr bounds))))
+         (position (and status (seq-position prose-todo-statuses status))))
+    (unless position
+      (user-error "No TODO status on the current line"))
+    (let ((replacement
+           (nth (mod (+ position step) (length prose-todo-statuses))
+                prose-todo-statuses)))
+      (save-excursion
+        (goto-char (car bounds))
+        (delete-region (car bounds) (cdr bounds))
+        (insert replacement)))))
+
+(defun prose-todo-cycle-forward ()
+  "Cycle the TODO status on the current line forward."
+  (interactive)
+  (prose-todo--cycle-status 1))
+
+(defun prose-todo-cycle-backward ()
+  "Cycle the TODO status on the current line backward."
+  (interactive)
+  (prose-todo--cycle-status -1))
+
+(defvar-keymap prose-todo-command-map
+  :doc "Keymap for Markdown TODO commands.")
+
+(keymap-global-set "C-c c t" prose-todo-command-map)
+(which-key-add-key-based-replacements "C-c c t" "todo")
+
+(use-package hl-todo
+  :hook (markdown-mode . hl-todo-mode)
+  :bind (:map prose-todo-command-map
+              ("n" . prose-todo-cycle-forward)
+              ("p" . prose-todo-cycle-backward))
+  :custom
+  ;; `consult-todo' uses GNU grep for directory and project searches.  Unlike
+  ;; Emacs, grep does not understand the default symbol-boundary delimiters.
+  (hl-todo-keyword-delimiters 'word)
+  ;; Use semantic faces so status colors follow the active theme.
+  (hl-todo-keyword-faces
+   '(("IDEA"    . warning)
+     ("TODO"    . warning)
+     ("NEXT"    . error)
+     ("READING" . font-lock-keyword-face)
+     ("STARTED" . font-lock-keyword-face)
+     ("WAIT"    . font-lock-constant-face)
+     ("DONE"    . success))))
+
+(use-package consult-todo
+  :after hl-todo
+  :bind (:map prose-todo-command-map
+              ("j" . consult-todo)
+              ("J" . consult-todo-project))
+  :custom
+  (consult-todo-narrow
+   '((?i . "IDEA")
+     (?t . "TODO")
+     (?n . "NEXT")
+     (?r . "READING")
+     (?s . "STARTED")
+     (?w . "WAIT")
+     (?d . "DONE")))
+  ;; Markdown tasks are list items, not comments.
+  (consult-todo-only-comment nil))
 
 (defvar-local prose-language "en_CA"
   "Language of the prose in the current buffer.

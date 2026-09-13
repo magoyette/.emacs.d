@@ -203,6 +203,10 @@ Keybindings for org and markdown.
 | C-c c w    | Wiktionary lookup                              |
 | C-c c p    | English thesaurus lookup (powerthesaurus)      |
 | C-c c s    | English thesaurus lookup, offline (synosaurus) |
+| C-c c t n  | Cycle Markdown TODO status forward             |
+| C-c c t p  | Cycle Markdown TODO status backward            |
+| C-c c t j  | Jump to a TODO in the current buffer           |
+| C-c c t J  | Jump to a TODO in the current project          |
 
 ## YAML
 
