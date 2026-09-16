@@ -4,6 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [General](#general)
+- [Folding](#folding)
 - [Files and Buffers](#files-and-buffers)
 - [Search and Navigation](#search-and-navigation)
 - [Edition](#edition)
@@ -29,11 +30,22 @@
 | M-z        | Switch to another window                                    |
 | C-c w      | Hydra for windows management                                |
 | C-c T      | Terminal commands prefix                                    |
-| C-c z      | Select and switch theme                                     |
+| C-c Z      | Select and switch theme                                     |
 | C-+        | Increase text scale                                         |
 | C--        | Decrease text scale                                         |
 | C-x C-e    | Evaluate the expression before point                        |
 | C-M-x      | Evaluate top-level expression containing or following point |
+
+## Folding
+
+| Keybinding | Action                           |
+| ---------- | -------------------------------- |
+| C-c z a    | Toggle fold at point             |
+| C-c z c    | Close fold at point              |
+| C-c z m    | Close all folds                  |
+| C-c z o    | Open fold at point               |
+| C-c z O    | Open fold recursively            |
+| C-c z r    | Open all folds                   |
 
 ## Files and Buffers
 
@@ -164,6 +176,7 @@
 | C-c C-c p  | preview Markdown file in browser                            |
 | C-c C-c l  | preview Markdown in real time in an Emacs Web Wowser buffer |
 | C-c C-o    | open link at point in a browser                             |
+| TAB        | Cycle heading folding; otherwise indent or advance a table  |
 | M-Up       | Move list item up                                           |
 | M-Down     | Move list item down                                         |
 | M-Right    | Increase indent of list item                                |

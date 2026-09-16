@@ -8,7 +8,8 @@
 
 (use-package treesit-langs
   :config
-  (treesit-langs-major-mode-setup))
+  ;; JSON files use this built-in mode, which treesit-langs does not register.
+  (add-to-list 'treesit-langs-major-mode-alist '(js-json-mode . json)))
 
 ;; The astro tree-sitter grammar is installed from early-init.el.
 (use-package astro-ts-mode

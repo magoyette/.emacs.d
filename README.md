@@ -10,8 +10,6 @@ This repository should be cloned in the home folder of the current user.
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Local settings](#local-settings)
-- [Per-repository prose settings](#per-repository-prose-settings)
-- [Markdown dialects and Pandoc conversion](#markdown-dialects-and-pandoc-conversion)
 - [External dependencies](#external-dependencies)
   - [General Tools](#general-tools)
     - [Git](#git)
@@ -30,6 +28,7 @@ This repository should be cloned in the home folder of the current user.
 - [Generating the tables of contents](#generating-the-tables-of-contents)
 - [Keybindings](#keybindings)
 - [Packages](#packages)
+- [Prose settings](#prose-settings)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

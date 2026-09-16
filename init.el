@@ -203,6 +203,7 @@
 (require 'markdown-settings)
 (require 'org-settings)
 (require 'prose-settings)
+(require 'folding-settings)
 (require 'programming-settings)
 (require 'yaml-settings)
 (require 'theme-settings)

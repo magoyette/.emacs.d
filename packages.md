@@ -11,6 +11,7 @@
 - [Windows packages](#windows-packages)
 - [Completion packages](#completion-packages)
 - [Flycheck packages](#flycheck-packages)
+- [Folding packages](#folding-packages)
 - [Git packages](#git-packages)
 - [Markdown packages](#markdown-packages)
 - [Org packages](#org-packages)
@@ -83,6 +84,13 @@
 - [flycheck-package](https://github.com/purcell/flycheck-package): Flycheck checker for Emacs Lisp packages that invokes [package-lint](https://github.com/purcell/package-lint).
 - [flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip): Show flycheck issues in tooltip.
 - [flycheck-relint](https://github.com/purcell/flycheck-relint/): Flycheck checker for Emacs Lisp regular expressions.
+
+## Folding packages
+
+- [kirigami](https://github.com/jamescherti/kirigami.el): Unified folding commands across folding backends.
+- [outline-indent](https://github.com/jamescherti/outline-indent.el): Fold indentation-sensitive files.
+- [savefold](https://github.com/jcfk/savefold.el): Persist and restore fold state.
+- [treesit-fold](https://github.com/emacs-tree-sitter/treesit-fold): Fold syntax nodes using Tree-sitter parsers.
 
 ## Git packages
 

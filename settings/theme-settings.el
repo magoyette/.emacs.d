@@ -76,8 +76,8 @@ Any theme symbol works; `doom-*' and `modus-*' get family-specific setup.")
    (list (intern (completing-read "Theme: " local-settings-themes nil t))))
   (theme-settings-load theme))
 
-(global-set-key (kbd "C-c z") #'theme-settings-select)
-(which-key-add-key-based-replacements "C-c z" "select theme")
+(global-set-key (kbd "C-c Z") #'theme-settings-select)
+(which-key-add-key-based-replacements "C-c Z" "select theme")
 
 (theme-settings-load local-settings-theme)
 

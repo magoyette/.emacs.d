@@ -41,8 +41,8 @@
   (org-M-RET-may-split-line '((item . nil)))
   ;; Do not indent text below a headline
   (org-adapt-indentation nil)
-  ;; Start with the headlines folded
-  (org-startup-folded t)
+  ;; Let savefold restore per-file visibility
+  (org-startup-folded 'showeverything)
   ;; Keep headings and text flush left; no virtual indentation per level
   (org-startup-indented nil)
   (org-return-follows-link t)
