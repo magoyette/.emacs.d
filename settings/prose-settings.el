@@ -95,7 +95,7 @@ Prefer the status at point, otherwise return the first status on the line."
   ;; Markdown tasks are list items, not comments.
   (consult-todo-only-comment nil))
 
-(defvar-local prose-language "en_CA"
+(defvar-local prose-language "fr_CA"
   "Language of the prose in the current buffer.
 Supported values are `en_CA' and `fr_CA'.")
 
@@ -118,25 +118,21 @@ Markdown files are prose rather than documentation read alongside code.")
   (string-replace "_" "-" prose-language))
 
 (defun prose-apply-language ()
-  "Apply `prose-language' to Jinx and LTeX+ in the current buffer."
-  (setq-local jinx-languages prose-language
-              lsp-ltex-plus-language (prose-ltex-plus-language)))
+  "Apply `prose-language' to LTeX+ in the current buffer."
+  (setq-local lsp-ltex-plus-language (prose-ltex-plus-language)))
 
 (defun prose-toggle-language ()
   "Toggle Canadian English and French in the current buffer."
   (interactive)
   (setq prose-language (if (prose-french-buffer-p) "en_CA" "fr_CA"))
   (prose-apply-language)
-  (when (bound-and-true-p jinx-mode)
-    (jinx-mode -1)
-    (jinx-mode 1))
   ;; The package's minor mode detaches only its add-on client when other LSP
   ;; clients share the buffer, then rejoins the LTeX+ workspace on enable.
   (when (bound-and-true-p lsp-ltex-plus-mode)
     (lsp-ltex-plus-mode -1)
     (lsp-ltex-plus-mode 1))
-  (message "prose-language: %s (Jinx: %s, LTeX+: %s)"
-           prose-language jinx-languages lsp-ltex-plus-language))
+  (message "prose-language: %s (LTeX+: %s)"
+           prose-language lsp-ltex-plus-language))
 
 (global-set-key (kbd "C-c c L") #'prose-toggle-language)
 
@@ -157,7 +153,7 @@ major mode hooks before it calls `hack-local-variables', so
 ;; Word completion from `ispell' needs a plain word-list file
 ;; (`ispell-alternate-dictionary'), which is not installed here, so
 ;; `ispell-completion-at-point' signals an error on every completion attempt.
-;; Spellchecking is handled by jinx, so drop the capf entirely.
+;; Spellchecking is handled on demand by LTeX+, so drop the capf entirely.
 (setopt text-mode-ispell-word-completion nil)
 
 (defun prose-quiet-completion ()
@@ -171,39 +167,31 @@ Both forms are needed because the order in which this runs relative to
 
 (add-hook 'text-mode-hook #'prose-quiet-completion)
 
-(use-package jinx
-  :diminish jinx-mode
-  :bind (("M-$" . jinx-correct)
-         ("C-c c l" . jinx-languages))
-  :init
-  (setq jinx-languages "en_CA"))
+(defcustom prose-personal-dictionary-file
+  (expand-file-name "ltex-plus-dictionary.eld" "~/.dictionary/")
+  "File containing personal LTeX+ words for all prose languages."
+  :type 'file
+  :group 'text)
 
-(use-package vertico-multiform
-  :ensure nil
-  :after vertico
-  :config
-(add-to-list 'vertico-multiform-categories
-               '(jinx grid (vertico-grid-annotate . 20) (vertico-count . 4)))
-  (vertico-multiform-mode 1))
+(defun prose-reload-personal-dictionary ()
+  "Reload the personal dictionary when LTeX+ has already been loaded."
+  (when (featurep 'lsp-ltex-plus)
+    (lsp-ltex-plus-reload-settings)))
 
-(defun prose-enable-language-tools ()
-  "Enable prose checkers after directory-local variables have been applied."
-  (when (derived-mode-p 'text-mode)
-    (prose-apply-language)
-    (jinx-mode 1))
-  (when (and (buffer-file-name)
-             (memq major-mode '(markdown-mode gfm-mode org-mode)))
-    (unless (bound-and-true-p lsp-ltex-plus-mode)
-      (lsp-ltex-plus-mode 1))))
+(defun prose-edit-personal-dictionary ()
+  "Open the personal LTeX+ dictionary and reload it after each save."
+  (interactive)
+  (make-directory (file-name-directory prose-personal-dictionary-file) t)
+  (find-file prose-personal-dictionary-file)
+  (when (= (buffer-size) 0)
+    (insert "(:fr-CA [] :en-CA [])\n"))
+  (add-hook 'after-save-hook #'prose-reload-personal-dictionary nil t))
 
 (use-package lsp-ltex-plus
   :commands lsp-ltex-plus-mode
   :init
-  ;; Enable both checkers here so their first pass uses directory-local values.
-  (add-hook 'hack-local-variables-hook #'prose-enable-language-tools)
   (setq lsp-ltex-plus-dictionary-file
-        (no-littering-expand-var-file-name
-         "lsp-ltex-plus/stored-dictionary.eld")
+        prose-personal-dictionary-file
         lsp-ltex-plus-enabled-rules-file
         (no-littering-expand-var-file-name
          "lsp-ltex-plus/enabled-rules.eld")
@@ -214,11 +202,71 @@ Both forms are needed because the order in which this runs relative to
         (no-littering-expand-var-file-name
          "lsp-ltex-plus/hidden-false-positives.eld"))
   :custom
-  (lsp-ltex-plus-language "en-CA")
+  (lsp-ltex-plus-language "fr-CA")
   (lsp-ltex-plus-lt-server-uri nil)
-  (lsp-ltex-plus-check-frequency "save")
+  (lsp-ltex-plus-check-frequency "edit")
+  (lsp-ltex-plus-save-additions-to 'globally-defined)
   (lsp-ltex-plus-additional-rules-enable-picky-rules nil)
   (lsp-ltex-plus-completion-enabled nil))
+
+(define-minor-mode prose-proofreading-mode
+  "Toggle live LTeX+ spelling and grammar checks in the current buffer."
+  :lighter nil
+  :group 'text
+  (if prose-proofreading-mode
+      (progn
+        (prose-apply-language)
+        (setq-local lsp-ltex-plus-check-frequency "edit")
+        (lsp-ltex-plus-mode 1)
+        (unless (bound-and-true-p lsp-ltex-plus-mode)
+          (setq prose-proofreading-mode nil)))
+    (when (bound-and-true-p lsp-ltex-plus-mode)
+      (lsp-ltex-plus-mode -1))))
+
+(defun prose-proofreading-eligible-buffer-p ()
+  "Return non-nil when the current buffer belongs to a prose session."
+  (and (derived-mode-p 'text-mode)
+       (not (minibufferp))
+       (not buffer-read-only)
+       (not (string-prefix-p " " (buffer-name)))))
+
+(defun prose-proofreading-enable-after-locals ()
+  "Enable proofreading after directory-local variables have been applied."
+  (when (and prose-proofreading-session-mode
+             (prose-proofreading-eligible-buffer-p))
+    (prose-proofreading-mode 1)))
+
+(define-minor-mode prose-proofreading-session-mode
+  "Toggle live proofreading in all eligible buffers for this Emacs session."
+  :global t
+  :group 'text
+  (if prose-proofreading-session-mode
+      (progn
+        (add-hook 'hack-local-variables-hook
+                  #'prose-proofreading-enable-after-locals)
+        (dolist (buffer (buffer-list))
+          (with-current-buffer buffer
+            (when (prose-proofreading-eligible-buffer-p)
+              (prose-proofreading-mode 1)))))
+    (remove-hook 'hack-local-variables-hook
+                 #'prose-proofreading-enable-after-locals)
+    (dolist (buffer (buffer-list))
+      (with-current-buffer buffer
+        (when (bound-and-true-p prose-proofreading-mode)
+          (prose-proofreading-mode -1))))))
+
+(defun prose-proofread-code-action ()
+  "Start proofreading, or run an LTeX+ code action when already active."
+  (interactive)
+  (if (bound-and-true-p prose-proofreading-mode)
+      (call-interactively #'lsp-execute-code-action)
+    (prose-proofreading-mode 1)
+    (message "Proofreading enabled; use C-c c a on a diagnostic to correct it")))
+
+(global-set-key (kbd "C-c c a") #'prose-proofread-code-action)
+(global-set-key (kbd "C-c c c") #'prose-proofreading-mode)
+(global-set-key (kbd "C-c c C") #'prose-proofreading-session-mode)
+(global-set-key (kbd "C-c c e") #'prose-edit-personal-dictionary)
 
 ;; English definitions, thesaurus and etymology from the local dictd server:
 ;; GCIDE (definitions with etymologies), WordNet 3.0, FreeDict fra-eng/eng-fra.

@@ -110,11 +110,9 @@
 
 - [consult-todo](https://github.com/eki3z/consult-todo): Search and jump to highlighted TODO statuses with Consult.
 - [hl-todo](https://github.com/tarsius/hl-todo): Highlight and navigate TODO statuses in Markdown files.
-- [jinx](https://github.com/minad/jinx): French and English spellchecking.
 - [lsp-ltex-plus](https://github.com/ltex-plus/emacs-ltex-plus): Offline grammar and spelling diagnostics through LTeX+ and LSP.
 - [powerthesaurus](https://github.com/SavchenkoValeriy/emacs-powerthesaurus): English synonyms and antonyms from powerthesaurus.org.
 - [synosaurus](https://github.com/hpdeifel/synosaurus): Offline English thesaurus.
-- [vertico-multiform](https://github.com/minad/vertico): Compact grid layout for the `jinx-correct` candidate list.
 - [wiktionary-bro](https://github.com/agzam/wiktionary-bro.el): Etymology-focused Wiktionary lookups.
 
 ## YAML packages

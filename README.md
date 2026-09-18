@@ -145,12 +145,12 @@ See [packages.md](packages.md) for a list of all the included packages.
 
 Prose settings can be changed by repository based on its language with directory-local variables.
 
-| Variable                   | Values               | Effect                                                                                                                     |
-| -------------------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `prose-language`           | `"en_CA"`, `"fr_CA"` | Select Canadian English or French for both Jinx and LTeX+. Defaults to `"en_CA"`; toggle with `C-c c L`.                   |
-| `prose-visual-fill-column` | `t`, `nil`           | Narrow and center Markdown text with `visual-fill-column-mode`. Defaults to `nil`, so Markdown uses the full window width. |
+| Variable                   | Possible values      | Default   | Description                                                  |
+| -------------------------- | -------------------- | --------- | ------------------------------------------------------------ |
+| `prose-language`           | `"en_CA"`, `"fr_CA"` | `"fr_CA"` | Language for LTeX+. Switch values with `C-c c L`.            |
+| `prose-visual-fill-column` | `t`, `nil`           | `nil`     | Narrow and center Markdown text. Switch values with `C-c v`. |
 
-To use French throughout a project, create a `.dir-locals.el` at its root:
+To use French in a project, create `.dir-locals.el` at its root:
 
 ```elisp
 ((nil . ((prose-visual-fill-column . t)
@@ -159,7 +159,12 @@ To use French throughout a project, create a `.dir-locals.el` at its root:
 
 Regardless of `prose-visual-fill-column`, `visual-fill-column-mode` can always be toggled in the current buffer with `C-c v`.
 
-LTeX+ checks Markdown, GFM, and Org when a file is opened or saved, not after every edit.
-`C-c l a` can be used on a diagnostic for corrections, dictionary additions, rule disabling, and false-positive suppression. Its saved choices live under `var/lsp-ltex-plus/`.
+## Spellchecking
 
-Jinx remains enabled as the immediate spellchecker, so some spelling issues can appear in both systems.
+Spelling and grammar verification is done with LTeX+ and is disabled by default.
+`C-c c c` starts a LTeX+ session in the current buffer, that session is disabled
+with the same command. `C-c c C` starts a session for all prose buffers.
+
+`C-c c a` execute a LTeX+ action at point (or starts a LTeX+ session if it's not running).
+`C-c c e` opens the personal dictionary at `~/.dictionary/ltex-plus-dictionary.eld`.
+LTeX+ reloads the dictionary each time the file is saved.

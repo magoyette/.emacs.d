@@ -20,7 +20,7 @@ This is a personal Emacs 31 configuration. The repository should be cloned to `~
 - **emacs-lsp-booster** binary — improves LSP performance
 - **LTeX+ LS** (`ltex-ls-plus`) — local grammar and spelling server
 - **DejaVuSansM Nerd Font Mono** — required by nerd-icons
-- **hunspell + Enchant** (with English and French dictionaries) — spellchecking backend for `jinx`
+- **hunspell + Enchant** (with English and French dictionaries) — retained for optional external use; active Emacs proofreading uses LTeX+
 - **dictd** (with GCIDE, WordNet, and English/French FreeDict databases) — local offline dictionary server for `dictionary.el`
 
 ### Node dependencies
@@ -68,7 +68,7 @@ Each file handles a specific domain and ends with `(provide 'module-name)`:
 | `git-settings.el`               | magit, diff-hl, git-modes, smerge-mode hydra                                                                                                    |
 | `markdown-settings.el`          | markdown-mode                                                                                                                                   |
 | `org-settings.el`               | org, org-appear                                                                                                                                 |
-| `prose-settings.el`             | jinx, LTeX+, prose variables, dictionary.el, thesaurus, and etymology lookups                                                                   |
+| `prose-settings.el`             | on-demand LTeX+, prose variables, dictionary.el, thesaurus, and etymology lookups                                                               |
 | `yaml-settings.el`              | yaml-mode, indent-tools                                                                                                                         |
 | `programming-settings.el`       | lsp-mode and integrations, web-mode, astro-ts-mode, treesit-langs, prettier                                                                     |
 | `folding-settings.el`           | kirigami frontend; outline, indentation, Hideshow, Tree-sitter backends; savefold persistence                                                   |

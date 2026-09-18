@@ -38,14 +38,14 @@
 
 ## Folding
 
-| Keybinding | Action                           |
-| ---------- | -------------------------------- |
-| C-c z a    | Toggle fold at point             |
-| C-c z c    | Close fold at point              |
-| C-c z m    | Close all folds                  |
-| C-c z o    | Open fold at point               |
-| C-c z O    | Open fold recursively            |
-| C-c z r    | Open all folds                   |
+| Keybinding | Action                |
+| ---------- | --------------------- |
+| C-c z a    | Toggle fold at point  |
+| C-c z c    | Close fold at point   |
+| C-c z m    | Close all folds       |
+| C-c z o    | Open fold at point    |
+| C-c z O    | Open fold recursively |
+| C-c z r    | Open all folds        |
 
 ## Files and Buffers
 
@@ -61,25 +61,25 @@
 
 ## Search and Navigation
 
-| Keybinding      | Action                                        |
-| --------------- | --------------------------------------------- |
-| C-c s s         | Search in current project with rg             |
-| C-c s f         | Search in current project with fd             |
-| C-s             | Search in buffer                              |
-| C-M-s           | Search in all opened buffers                  |
-| M-i             | imenu in buffer                               |
-| C-c s i         | imenu in all buffers of same mode or project  |
-| C-c s r         | re-builder (`C-c TAB` changes regex syntax)   |
-| C-c p           | Projectile commands prefix                    |
-| C-x d           | Dired (Hydra with .)                          |
-| M-a             | Select or open Treemacs window                |
-| C-c t           | Treemacs commands prefix                      |
-| ? [in Treemacs] | Treemacs hydra                                |
-| C-x M-b         | Go to a bookmark or create a bookmark         |
-| M-g M-g         | Go to line number of buffer                   |
-| C-,             | Input one char, then jump to a character      |
-| C-'             | Input 2 chars, then jump to a character       |
-| C-c a           | Hydra for avy                                 |
+| Keybinding      | Action                                       |
+| --------------- | -------------------------------------------- |
+| C-c s s         | Search in current project with rg            |
+| C-c s f         | Search in current project with fd            |
+| C-s             | Search in buffer                             |
+| C-M-s           | Search in all opened buffers                 |
+| M-i             | imenu in buffer                              |
+| C-c s i         | imenu in all buffers of same mode or project |
+| C-c s r         | re-builder (`C-c TAB` changes regex syntax)  |
+| C-c p           | Projectile commands prefix                   |
+| C-x d           | Dired (Hydra with .)                         |
+| M-a             | Select or open Treemacs window               |
+| C-c t           | Treemacs commands prefix                     |
+| ? [in Treemacs] | Treemacs hydra                               |
+| C-x M-b         | Go to a bookmark or create a bookmark        |
+| M-g M-g         | Go to line number of buffer                  |
+| C-,             | Input one char, then jump to a character     |
+| C-'             | Input 2 chars, then jump to a character      |
+| C-c a           | Hydra for avy                                |
 
 ## Edition
 
@@ -203,23 +203,25 @@
 
 ## Prose
 
-Keybindings for org and markdown.
+Keybindings for org and markdown. LTeX+ is used for spelling and grammar.
 
-| Keybinding | Action                                         |
-| ---------- | ---------------------------------------------- |
-| M-$        | Correct word at point (jinx)                   |
-| C-c c l    | Set jinx languages                             |
-| C-c c d    | Dictionary lookup at point (local dictd)       |
-| C-c c D    | Dictionary search (prompt)                     |
-| C-c c L    | Toggle the prose language (English/French)     |
-| C-c l a    | LSP actions (fix/add/disable/suppress)         |
-| C-c c w    | Wiktionary lookup                              |
-| C-c c p    | English thesaurus lookup (powerthesaurus)      |
-| C-c c s    | English thesaurus lookup, offline (synosaurus) |
-| C-c c t n  | Cycle Markdown TODO status forward             |
-| C-c c t p  | Cycle Markdown TODO status backward            |
-| C-c c t j  | Jump to a TODO in the current buffer           |
-| C-c c t J  | Jump to a TODO in the current project          |
+| Keybinding | Action                                                                          |
+| ---------- | ------------------------------------------------------------------------------- |
+| C-c c a    | LTeX+ : action at point (or starts a session if it's not started)               |
+| C-c c c    | LTeX+ : toggle checkers in the current buffer                                   |
+| C-c c C    | LTeX+ : toggle checkers for the Emacs session                                   |
+| C-c c e    | LTeX+ : edit the personal dictionary (`~/.dictionary/ltex-plus-dictionary.eld`) |
+| C-c c d    | Dictionary lookup at point (local dictd)                                        |
+| C-c c D    | Dictionary search (prompt)                                                      |
+| C-c c L    | Toggle the prose language (English/French)                                      |
+| C-c l a    | LSP actions (fix/add/disable/suppress)                                          |
+| C-c c w    | Wiktionary lookup                                                               |
+| C-c c p    | English thesaurus lookup (powerthesaurus)                                       |
+| C-c c s    | English thesaurus lookup, offline (synosaurus)                                  |
+| C-c c t n  | Cycle Markdown TODO status forward                                              |
+| C-c c t p  | Cycle Markdown TODO status backward                                             |
+| C-c c t j  | Jump to a TODO in the current buffer                                            |
+| C-c c t J  | Jump to a TODO in the current project                                           |
 
 ## YAML
 
