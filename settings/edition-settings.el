@@ -61,15 +61,45 @@
 (use-package kkp
   :hook (tty-setup . global-kkp-mode))
 
-;; Undo redo
+;; Undo history
 (when (fboundp 'winner-mode)
   (winner-mode 1))
 
-(use-package undo-tree
-  :diminish undo-tree-mode
-  :bind (("C-x u" . undo-tree-visualize))
+(use-package vundo
+  :commands vundo
+  :bind (("C-x u" . edition-settings-vundo))
+  :preface
+  (defun edition-settings-vundo ()
+    "Open Vundo and activate its command Hydra."
+    (interactive)
+    (vundo)
+    (hydra-vundo/body))
   :config
-  (global-undo-tree-mode))
+  (defhydra hydra-vundo (:hint nil :color pink)
+    "
+^Move^                ^Branches^                 ^Saved^           ^Diff^       ^Exit^
+_b_: backward         _p_: branch above         _l_: last saved   _m_: mark    _RET_: accept
+_f_: forward          _n_: branch below         _r_: next saved   _u_: unmark  _q_: cancel
+^ ^                   _a_: previous branch      _C-x C-s_: save   _d_: diff
+^ ^                   _w_: next branch
+^ ^                   _e_: branch tip
+"
+    ("b" vundo-backward)
+    ("f" vundo-forward)
+    ("p" vundo-previous)
+    ("n" vundo-next)
+    ("a" vundo-stem-root)
+    ("w" vundo-next-root)
+    ("e" vundo-stem-end)
+    ("l" vundo-goto-last-saved)
+    ("r" vundo-goto-next-saved)
+    ("C-x C-s" vundo-save)
+    ("m" vundo-diff-mark)
+    ("u" vundo-diff-unmark)
+    ("d" vundo-diff)
+    ("RET" vundo-confirm :color blue)
+    ("q" vundo-quit :color blue)
+    ("C-g" vundo-quit nil :color blue)))
 
 ;; Auto indent on return
 (define-key global-map (kbd "RET") 'newline-and-indent)

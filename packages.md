@@ -48,7 +48,7 @@
 - [kkp](https://github.com/benotn/kkp): Enable the Kitty Keyboard Protocol so terminal Emacs can receive fuller key and modifier information.
 - [move-text](https://github.com/emacsfodder/move-text): Move current line or region.
 - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
-- [undo-tree](https://elpa.gnu.org/packages/undo-tree.html) : Visualize undo history as a tree of changes.
+- [vundo](https://github.com/casouri/vundo): Visualize and navigate native undo history as a tree.
 - [whole-line-or-region](https://github.com/purcell/whole-line-or-region): Package to operate on the current line when the region is not defined.
 - [ws-butler](https://github.com/lewang/ws-butler): Trim trailing whitespace only on edited lines when saving.
 

@@ -57,7 +57,7 @@ Each file handles a specific domain and ends with `(provide 'module-name)`:
 | File                            | Contents                                                                                                                                        |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
 | `emacs-settings.el`             | Font, UI, eldoc, ISO dead keys                                                                                                                  |
-| `edition-settings.el`           | expand-region, multiple-cursors, undo-tree, move-text                                                                                           |
+| `edition-settings.el`           | expand-region, multiple-cursors, vundo, move-text                                                                                               |
 | `navigation-search-settings.el` | projectile, deadgrep, visual-regexp                                                                                                             |
 | `dired-settings.el`             | dired + nerd-icons-dired                                                                                                                        |
 | `treemacs-settings.el`          | treemacs + projectile/magit/nerd-icons integrations                                                                                             |

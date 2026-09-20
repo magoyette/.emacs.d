@@ -8,7 +8,7 @@
 - [Files and Buffers](#files-and-buffers)
 - [Search and Navigation](#search-and-navigation)
 - [Edition](#edition)
-  - [Undo tree](#undo-tree)
+  - [Vundo](#vundo)
   - [Rectangle mark mode](#rectangle-mark-mode)
   - [Multiple cursors](#multiple-cursors)
 - [Git](#git)
@@ -104,7 +104,7 @@
 | M-y        | Yank from history                                                 |
 | C-c d      | Duplicate line or region                                          |
 | C-=        | Expand region by semantic units                                   |
-| C-x u      | visualize undo tree                                               |
+| C-x u      | Open Vundo and its Hydra                                          |
 | M-=        | Word count for region                                             |
 | C-«        | Set the mark                                                      |
 | C-c e p    | Same as C-« (terminal-safe alias)                                 |
