@@ -72,13 +72,6 @@
     (remove-hook 'git-commit-setup-hook #'git-commit-setup-capf)
     (add-hook 'git-commit-setup-hook #'git-settings-disable-flycheck)))
 
-(defun kill-magit-buffers ()
-  "Prompt to kill each magit buffer."
-  (interactive)
-  (let ((buffers (magit-mode-get-buffers)))
-    (magit-restore-window-configuration)
-    (mapc #'kill-buffer buffers)))
-
 (use-package diff-hl
   :config
   (global-diff-hl-mode)
