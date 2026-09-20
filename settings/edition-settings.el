@@ -134,9 +134,6 @@ _f_: forward          _n_: branch below         _r_: next saved   _u_: unmark  _
   ;; Rebind to avoid conflict with avy
   (define-key mc/keymap (kbd "C-.") 'mc-hide-unmatched-lines-mode))
 
-;; Only enabled in specific modes
-(use-package highlight-indentation)
-
 (use-package whole-line-or-region
   :diminish whole-line-or-region-local-mode
   :config

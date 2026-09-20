@@ -3,10 +3,12 @@
 (use-package yaml-mode
   :mode (("\\.yaml$" . yaml-mode)
          ("\\.yml$" . yaml-mode)
-         ("\\.raml$" . yaml-mode))
-  :config
-  (setq highlight-indentation-offset 2)
-  (add-hook 'yaml-mode-hook #'highlight-indentation-mode))
+         ("\\.raml$" . yaml-mode)))
+
+(use-package indent-bars
+  :custom
+  (indent-bars-spacing-override 2)
+  :hook (yaml-mode . indent-bars-mode))
 
 (use-package indent-tools
   :after yaml-mode

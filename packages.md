@@ -44,7 +44,6 @@
 
 - [expand-region](https://github.com/magnars/expand-region.el) : Expand a region by semantic units.
 - [highlight-escape-sequences](https://github.com/dgutov/highlight-escape-sequences): Highlight escape sequences in strings.
-- [highlight-indentation](https://github.com/antonj/Highlight-Indentation-for-Emacs) : Displays guidelines for indentation.
 - [kkp](https://github.com/benotn/kkp): Enable the Kitty Keyboard Protocol so terminal Emacs can receive fuller key and modifier information.
 - [move-text](https://github.com/emacsfodder/move-text): Move current line or region.
 - [multiple-cursors](https://github.com/magnars/multiple-cursors.el) : Add multiple cursors to Emacs.
@@ -118,6 +117,7 @@
 
 ## YAML packages
 
+- [indent-bars](https://github.com/jdtsmith/indent-bars): Fast, configurable indentation guide bars.
 - [indent-tools](https://gitlab.com/emacs-stuff/indent-tools): Move around and modify code based on indentation.
 - [yaml-mode](https://github.com/yoshiki/yaml-mode): Mode for YAML files.
 
