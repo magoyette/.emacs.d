@@ -26,6 +26,10 @@
 | Keybinding | Action                                                      |
 | ---------- | ----------------------------------------------------------- |
 | C-c h      | Help commands prefix                                        |
+| C-c h f    | Describe a function, macro, or special form with Helpful    |
+| C-c h v    | Describe a variable with Helpful                            |
+| C-c h k    | Describe the command bound to a key with Helpful            |
+| C-c h p    | Describe the symbol at point with Helpful                   |
 | C-x p      | List packages (filter with /)                               |
 | M-z        | Switch to another window                                    |
 | C-c w      | Hydra for windows management                                |

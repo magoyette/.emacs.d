@@ -32,6 +32,7 @@
 - [embark](https://github.com/oantolin/embark): Contextual actions on the completion candidate at point.
 - [embark-consult](https://github.com/oantolin/embark): Consult integration for embark.
 - [general.el](https://github.com/noctuid/general.el): Help to define keys.
+- [helpful](https://github.com/Wilfred/helpful): Display contextual information about Emacs functions, variables, keys, and symbols.
 - [hydra](https://github.com/abo-abo/hydra): Regroup related keybindings with a common prefix.
 - [marginalia](https://github.com/minad/marginalia): Rich annotations in the minibuffer.
 - [no-littering](https://github.com/emacscollective/no-littering): Store Emacs configuration files and persistent data in consistent paths.

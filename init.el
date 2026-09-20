@@ -137,8 +137,6 @@
    "C-s" 'consult-line
    "C-M-s" 'consult-line-multi
    "C-c h i" 'info-lookup-symbol
-   "C-c h f" 'describe-function
-   "C-c h v" 'describe-variable
    "C-c h l" 'find-library
    "C-c h a" 'apropos
    "C-c e u" 'insert-char
@@ -158,6 +156,12 @@
         (lambda (_)
           (require 'projectile)
           (projectile-project-root))))
+
+(use-package helpful
+  :bind (("C-c h f" . helpful-callable)
+         ("C-c h v" . helpful-variable)
+         ("C-c h k" . helpful-key)
+         ("C-c h p" . helpful-at-point)))
 
 (use-package embark
   :bind (("C-." . embark-act)
