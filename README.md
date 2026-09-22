@@ -52,8 +52,9 @@ The `local-settings.el` file is used for configurations that vary depending on t
 ;; Theme to load at startup
 (setq local-settings-theme 'doom-one)
 
-;; Themes included in the theme selection of `C-c z'
-(setq local-settings-themes '(doom-one modus-operandi-tinted modus-vivendi-tinted))
+;; Themes included in the theme selection of `C-c Z'
+(setq local-settings-themes '(doom-one modus-operandi-tinted modus-vivendi-tinted
+                              doric-earth doric-almond))
 ```
 
 ## External dependencies

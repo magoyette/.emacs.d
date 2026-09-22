@@ -72,7 +72,7 @@ Each file handles a specific domain and ends with `(provide 'module-name)`:
 | `yaml-settings.el`              | yaml-mode, indent-tools                                                                                                                         |
 | `programming-settings.el`       | lsp-mode and integrations, web-mode, astro-ts-mode, treesit-langs, prettier                                                                     |
 | `folding-settings.el`           | kirigami frontend; outline, indentation, Hideshow, Tree-sitter backends; savefold persistence                                                   |
-| `theme-settings.el`             | doom-themes, modus-themes (bundled), doom-modeline, rainbow-delimiters, page-break-lines; theme via `local-settings-theme`, `C-c Z` switches    |
+| `theme-settings.el`             | doom-themes, modus-themes (bundled), doric-themes, doom-modeline, rainbow-delimiters, page-break-lines; `local-settings-theme`, `C-c Z` selects |
 
 ### Key conventions
 

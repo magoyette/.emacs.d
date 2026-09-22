@@ -140,6 +140,7 @@
 
 ## Theme packages
 
+- [doric-themes](https://github.com/protesilaos/doric-themes): Minimalist themes based on modus-themes.
 - [doom-modeline](https://github.com/seagle0128/doom-modeline) : modeline from Doom Emacs.
 - [doom-themes](https://github.com/doomemacs/themes): doom-one is a dark theme similar to Atom One Dark.
 - [modus-themes](https://github.com/protesilaos/modus-themes): Accessible, highly legible light and dark themes; bundled with Emacs, no install needed.

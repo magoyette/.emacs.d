@@ -31,14 +31,20 @@
 
 (defvar local-settings-theme 'doom-one
   "Theme loaded at startup.  Set this in `local-settings.el'.
-Any theme symbol works; `doom-*' and `modus-*' get family-specific setup.")
+Any theme symbol works; `doom-*', `modus-*', and `doric-*' get family-specific setup.")
 
 (defvar local-settings-themes
-  '(doom-one modus-operandi-tinted modus-vivendi-tinted)
+  '(doom-one modus-operandi-tinted modus-vivendi-tinted
+    doric-earth doric-almond)
   "Themes offered by `theme-settings-select'.  Set in `local-settings.el'.")
 
 ;; Loaded on demand by `theme-settings--doom-setup', only when a doom-* theme is actually selected
 (use-package doom-themes
+  :ensure t
+  :defer t)
+
+;; Bold and italic are enabled for the minimalist doric themes
+(use-package doric-themes
   :ensure t
   :defer t)
 
@@ -60,6 +66,9 @@ Any theme symbol works; `doom-*' and `modus-*' get family-specific setup.")
   (mapc #'disable-theme custom-enabled-themes)
   (let ((name (symbol-name theme)))
     (cond
+     ((string-prefix-p "doric-" name)
+      (require 'doric-themes)
+      (doric-themes-select theme))
      ((string-prefix-p "modus-" name)
       (theme-settings--modus-setup)
       (load-theme theme t))
