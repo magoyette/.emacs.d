@@ -101,6 +101,7 @@
 ## Markdown packages
 
 - [markdown-mode](http://jblevins.org/projects/markdown-mode/): Mode for Markdown files.
+- [markdown-modern](https://github.com/rjprins/markdown-modern): Mode to view and edit styled Markdown files.
 
 ## Org packages
 

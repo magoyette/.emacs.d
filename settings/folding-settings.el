@@ -30,6 +30,25 @@
   ;; visibility cycle.  Bind the distinct GUI TAB event to the same command.
   (keymap-set markdown-mode-map "<tab>" #'markdown-cycle))
 
+;; markdown-modern-mode (settings/markdown-settings.el) folds with its own
+;; visibility cycling: TAB and S-TAB are bound by the mode to commands that
+;; reuse outline.el functions without enabling outline-minor-mode.  The mode
+;; leaves `outline-regexp' unset, so teach outline the ATX heading syntax
+;; those commands need, and keep this cycling the single folding backend by
+;; turning off outline-minor-mode in buffers converted from markdown-mode,
+;; whose bindings would shadow the mode's own C-c C-n / C-c C-p.
+(defun folding-settings-markdown-modern-outline ()
+  "Configure ATX heading rules for `markdown-modern-mode' visibility cycling."
+  (when (bound-and-true-p outline-minor-mode)
+    (outline-minor-mode -1))
+  (setq-local outline-regexp "^\\(#+\\)\\(?:\\s-\\|$\\)")
+  (setq-local outline-level
+              (lambda ()
+                (- (match-end 1) (match-beginning 1)))))
+
+(add-hook 'markdown-modern-mode-hook
+          #'folding-settings-markdown-modern-outline)
+
 (use-package outline-indent
   :commands outline-indent-minor-mode
   :hook ((sass-mode . outline-indent-minor-mode)

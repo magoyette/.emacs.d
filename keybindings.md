@@ -8,13 +8,14 @@
 - [Files and Buffers](#files-and-buffers)
 - [Search and Navigation](#search-and-navigation)
 - [Edition](#edition)
-  - [Vundo](#vundo)
+  - [Undo tree](#undo-tree)
   - [Rectangle mark mode](#rectangle-mark-mode)
   - [Multiple cursors](#multiple-cursors)
 - [Git](#git)
   - [Magit blame](#magit-blame)
   - [Magit commit](#magit-commit)
 - [Markdown](#markdown)
+- [Markdown Modern](#markdown-modern)
 - [Org](#org)
 - [Prose](#prose)
 - [YAML](#yaml)
@@ -187,6 +188,18 @@
 | M-LEFT     | Decrease indent of list item                                |
 | C-c C-n    | Move to next heading                                        |
 | C-c C-p    | Move to previous heading                                    |
+| C-c C-m    | Switch to markdown-modern-mode (reading view)               |
+
+## Markdown Modern
+
+| Keybinding | Action                               |
+| ---------- | ------------------------------------ |
+| TAB        | Next table cell / cycle visibility   |
+| S-TAB      | Previous cell / cycle all visibility |
+| SPC        | Toggle the task checkbox at point    |
+| M-RET      | New list item                        |
+| C-c '      | Edit the code block at point         |
+| C-c C-m    | Back to markdown-mode (writing view) |
 
 ## Org
 

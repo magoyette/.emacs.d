@@ -29,6 +29,7 @@ This repository should be cloned in the home folder of the current user.
 - [Keybindings](#keybindings)
 - [Packages](#packages)
 - [Prose settings](#prose-settings)
+- [Spellchecking](#spellchecking)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

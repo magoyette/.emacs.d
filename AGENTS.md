@@ -66,7 +66,7 @@ Each file handles a specific domain and ends with `(provide 'module-name)`:
 | `flycheck-settings.el`          | flycheck + flycheck-pos-tip, flycheck-package, flycheck-relint                                                                                  |
 | `shell-settings.el`             | shell configuration                                                                                                                             |
 | `git-settings.el`               | magit, diff-hl, git-modes, smerge-mode hydra                                                                                                    |
-| `markdown-settings.el`          | markdown-mode                                                                                                                                   |
+| `markdown-settings.el`          | markdown-mode, markdown-modern                                                                                                                  |
 | `org-settings.el`               | org, org-appear                                                                                                                                 |
 | `prose-settings.el`             | on-demand LTeX+, prose variables, dictionary.el, thesaurus, and etymology lookups                                                               |
 | `yaml-settings.el`              | yaml-mode, indent-tools                                                                                                                         |
